@@ -14,6 +14,7 @@ echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
 echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 echo "[multilib]" | sudo tee -a /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
+sudo pacman -Syu
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si --noconfirm
