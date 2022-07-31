@@ -19,7 +19,7 @@ cd paru
 makepkg -si --noconfirm
 cd ..
 rm -rf paru
-paru -S  cli-visualizer proton-ge-custom-bin brillo python-pywalfox chaotix-aur/linux-xanmod-edge chaotix-aur/linux-xanmod-edge-headers wmderland-git
+paru -S  cli-visualizer proton-ge-custom-bin brillo python-pywalfox chaotix-aur/linux-xanmod-edge chaotix-aur/linux-xanmod-edge-headers
 usermod -aG video $USER
 ##autologin
 sudo mkdir /etc/systemd/system/getty@tty1.service.d/
@@ -37,6 +37,11 @@ echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$
 #cp -r Pictures $HOME/
 #cp -r suckless $HOME/
 #cp -r Music $HOME/
+git clone https://github.com/aesophor/wmderland.git
+cd wmderland && ./build.sh --install
+mkdir -p ~/.config/wmderland
+cp /etc/xdg/wmderland/config ~/.config/wmderland/.
+
 mkdir -p $HOME/.cache/wal/
 touch $HOME/.cache/wal/colors.Xresources
 ln -sf $HOME/.Xresources  $HOME/.cache/wal/colors.Xresources
