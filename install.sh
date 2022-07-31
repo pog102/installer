@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo rm /var/lib/pacman/db.lck
-sudo pacman  -S  --noconfirm ttf-hack ttf-roboto ttf-sazanami ttf-jetbrains-mono \
+sudo pacman  -S ttf-hack ttf-roboto ttf-sazanami ttf-jetbrains-mono \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh nvidia-dkms \
 nsxiv mpv xwallpaper fzf yt-dlp unclutter \
@@ -18,14 +18,14 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si --noconfirm
 cd ..
-paru --noconfirm  -S  cli-visualizer proton-ge-custom-bin brillo python-pywalfox
+paru -S  cli-visualizer proton-ge-custom-bin brillo python-pywalfox chaotix-aur/linux-xanmod-edge chaotix-aur/linux-xanmod-edge-headers
 usermod -aG video $USER
 ##autologin
 sudo mkdir /etc/systemd/system/getty@tty1.service.d/
 sudo touch /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "[Service]" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
-echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin username - $TERM" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
+echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$TERM" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 ##dots
 #cp -r .config/ $HOME/
 #cp .zshrc $HOME/
@@ -37,7 +37,7 @@ echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin username -
 #cp -r suckless $HOME/
 #cp -r Music $HOME/
 ln -sf $HOME/.Xresources  $HOME/.cache/wal/colors.Xresources
-sudo pacman -S --noconfirm steam
+sudo pacman -S steam
 ##make dwm
 #cd ~/suckless/dwm/
 #sudo make install
