@@ -32,6 +32,7 @@ echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$
 mkdir $HOME/.config/
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
+mv zprofile $HOME/.zprofile
 mv config/ $HOME/.config/
 #cp .xinitrc $HOME/
 #cp .zprofile $HOME/
