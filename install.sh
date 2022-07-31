@@ -4,7 +4,7 @@ sudo pacman -S ttf-hack ttf-roboto ttf-sazanami ttf-jetbrains-mono ttf-liberatio
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
 sxiv mpv xwallpaper fzf yt-dlp unclutter nvidia-dkms \
-xclip maim kitty
+xclip maim kitty polybar
 chsh -s /usr/bin/zsh
 systemctl enable bluetooth.service
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
@@ -20,7 +20,7 @@ cd paru
 makepkg -si --noconfirm
 cd ..
 rm -rf paru
-paru -S  cli-visualizer brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom bumblebee-status
+paru -S  cli-visualizer brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom
 sudo usermod -aG video $USER
 ##autologin
 sudo mkdir /etc/systemd/system/getty@tty1.service.d/
