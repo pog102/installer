@@ -47,7 +47,7 @@ echo "exec wmderland" > ~/.xinitrc
 mkdir -p $HOME/.cache/wal/
 touch $HOME/.cache/wal/colors.Xresources
 ln -sf $HOME/.Xresources  $HOME/.cache/wal/colors.Xresources
-sudo pacman -S steam
+sudo pacman -S steam-native-runtime
 ##make dwm
 #cd ~/suckless/dwm/
 #sudo make install
