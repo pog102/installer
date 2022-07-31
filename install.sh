@@ -61,4 +61,5 @@ sudo pacman -S steam-native-runtime
 #Footer
 sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
 sudo mv bluetooth /var/lib
+sudo hwclock -w
 
