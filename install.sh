@@ -21,7 +21,7 @@ makepkg -si --noconfirm
 cd ..
 rm -rf paru
 paru -S  cli-visualizer brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers
-usermod -aG video $USER
+sudo usermod -aG video $USER
 ##autologin
 sudo mkdir /etc/systemd/system/getty@tty1.service.d/
 sudo touch /etc/systemd/system/getty@tty1.service.d/autologin.conf
