@@ -4,7 +4,7 @@ sudo pacman -S ttf-hack ttf-roboto ttf-sazanami ttf-jetbrains-mono \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh nvidia-dkms \
 nsxiv mpv xwallpaper fzf yt-dlp unclutter \
-xclip maim 
+xclip maim kitty
 chsh -s /usr/bin/zsh
 systemctl enable bluetooth.service
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
