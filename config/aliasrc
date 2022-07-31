@@ -1,4 +1,4 @@
-n="nvim"
-get="sudo pacman -S"
-up="sudo pacman -Syu && paru"
-ban="sudo pacman -Rs"
+alias n="nvim"
+alias get="sudo pacman -S"
+alias up="sudo pacman -Syu && paru"
+alias ban="sudo pacman -Rs"
