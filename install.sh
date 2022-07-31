@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo rm /var/lib/pacman/db.lck
-sudo pacman -S ttf-hack ttf-roboto ttf-sazanami ttf-jetbrains-mono \
+sudo pacman -S ttf-hack ttf-roboto ttf-sazanami ttf-jetbrains-mono ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
 sxiv mpv xwallpaper fzf yt-dlp unclutter \
