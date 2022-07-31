@@ -29,6 +29,7 @@ echo "[Service]" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologi
 echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$TERM" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 ##dots
+mkdir $HOME/.config/
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
 mv config/aliasrc $HOME/.config/
