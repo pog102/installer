@@ -19,7 +19,7 @@ cd paru
 makepkg -si --noconfirm
 cd ..
 rm -rf paru
-paru -S  cli-visualizer proton-ge-custom-bin brillo python-pywalfox chaotix-aur/linux-xanmod-edge chaotix-aur/linux-xanmod-edge-headers
+paru -S  cli-visualizer brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers
 usermod -aG video $USER
 ##autologin
 sudo mkdir /etc/systemd/system/getty@tty1.service.d/
