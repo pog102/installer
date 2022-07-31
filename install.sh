@@ -60,4 +60,5 @@ sudo pacman -S steam-native-runtime
 #sudo make install
 #Footer
 sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
+sudo mv bluetooth /var/lib
 
