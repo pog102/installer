@@ -18,7 +18,8 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si --noconfirm
 cd ..
-paru -S  cli-visualizer proton-ge-custom-bin brillo python-pywalfox chaotix-aur/linux-xanmod-edge chaotix-aur/linux-xanmod-edge-headers
+rm -rf paru
+paru -S  cli-visualizer proton-ge-custom-bin brillo python-pywalfox chaotix-aur/linux-xanmod-edge chaotix-aur/linux-xanmod-edge-headers wmderland-git
 usermod -aG video $USER
 ##autologin
 sudo mkdir /etc/systemd/system/getty@tty1.service.d/
@@ -36,6 +37,8 @@ echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$
 #cp -r Pictures $HOME/
 #cp -r suckless $HOME/
 #cp -r Music $HOME/
+mkdir -p $HOME/.cache/wal/
+touch $HOME/.cache/wal/colors.Xresources
 ln -sf $HOME/.Xresources  $HOME/.cache/wal/colors.Xresources
 sudo pacman -S steam
 ##make dwm
