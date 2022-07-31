@@ -34,7 +34,7 @@ mkdir $HOME/.config/
 mv zshrc $HOME/.zshrc
 mv xinitrc $HOME/.xinitrc 
 mv zprofile $HOME/.zprofile
-mv config/ $HOME/.config/
+mv config/* $HOME/.config/
 #cp .xinitrc $HOME/
 #cp .zprofile $HOME/
 #cp .bin $HOME/
