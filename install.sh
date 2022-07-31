@@ -55,4 +55,4 @@ sudo pacman -S steam
 #cd ~/suckless/dwmblocks
 #sudo make install
 #Footer
-sudo sed -i 's/-linux/-linux-xanmod-edge/g' /usr/share/bootctl/arch.conf
+sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
