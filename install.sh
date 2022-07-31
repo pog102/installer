@@ -30,8 +30,8 @@ echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autolo
 echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$TERM" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 ##dots
 #cp -r .config/ $HOME/
-#cp .zshrc $HOME/
-#cp .xprofile $HOME/
+mv zshrc $HOME/.zshrc
+mv config/aliasrc $HOME/.config/
 #cp .xinitrc $HOME/
 #cp .zprofile $HOME/
 #cp .bin $HOME/
@@ -57,3 +57,4 @@ sudo pacman -S steam-native-runtime
 #sudo make install
 #Footer
 sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
+
