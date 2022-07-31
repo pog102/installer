@@ -1,3 +1,4 @@
 n="nvim"
 get="sudo pacman -S"
 up="sudo pacman -Syu && paru"
+ban="sudo pacman -Rs"
