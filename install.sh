@@ -34,6 +34,7 @@ echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$
 ##dots
 mkdir $HOME/.config/
 mkdir $HOME/.bin
+sudo mv bin/transadd /usr/local/bin
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
 mv xprofile $HOME/.xprofile
@@ -71,5 +72,6 @@ my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
 mkdir $HOME/.config/dunst/
 mp applications/* $HOME/.local/share/applications
+
 
 
