@@ -1,0 +1,46 @@
+#!/bin/sh
+#Dependencies: imagemagick feh
+
+steam_user=pogpog69420
+
+steam_idKey=
+rm -rf $HOME/.cache/steam_trophies/images
+mkdir -p $HOME/.cache/steam_trophies/images
+cachedir="$HOME/.cache/steam_trophies"
+#delays for internet connection
+[ -n $cachedir/number.txt ] && echo 0 > $cachedir/number.txt
+while [ -z "$(ip r)" ]; do sleep 1; done
+
+curl -s  https://steamcommunity.com/id/$steam_user/games/?tab=all |  
+sed 's/logo/\n /g' |
+grep -o '"appid":.*' |
+sed 's/.*"name//g; s/"."//g; s/\s/ /g; s/[\u2122]//g' > $cachedir/titles.txt
+
+# find games 
+
+number=$(cat $cachedir/titles.txt | wc -l)
+#updater checker, checks if the numbers are the same if not creates image, this is added for performance cost
+#[ "$number" -eq $(cat $cachedir/number.txt) ] && sh ~/.config/scripts/kanji2 && exit
+n=0
+number=3
+for i in $(seq $number)
+  do
+
+curl "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=4295BA616BB91DAC922BE2C1B86F19CD&steamid=76561198396788215&include_appinfo=true&format=json" |
+sed 's/playtime_linux_forever/\n /g' |
+ grep -o "$(head -n $i $cachedir/titles.txt | tail -1).*"  > $cachedir/titles2.txt
+
+#curl -s $( curl "https://www.deviantart.com/search?q=HazZbroGaminG%20$(head -n $i $cachedir/titles.txt | tail -1)"  |
+#grep -o "https://images-wixmp.*" | 
+#sed 's#"/></div.*##g' |
+#tail -n +2 ) > $cachedir/images/imagestest.png
+##[ -s $cachedir/images/imagestest.png ] && n=$(($n+1)) && mv $cachedir/images/imagestest.png $cachedir/images/imagestest$n.png   
+
+
+##x[$n]="-geometry +230+45 $cachedir/images/imagestest$n.png; "
+done
+#convert $HOME/.cache/kanji/original.jpg \( -resize 170x170 ${x[2]} \) -background None -composite $HOME/.cache/kanji/custom1.jpg
+#sh ~/.config/scripts/kanji2
+#in your i3 config add
+#exec --no-startup-id bash ~/.config/scripts/kanji
+#exec --no-startup-id feh --bg-fill ~/.cache/kanji/custom.jpg

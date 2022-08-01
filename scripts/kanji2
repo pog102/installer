@@ -1,0 +1,34 @@
+#!/bin/sh
+#Dependencies: imagemagick feh
+
+mkdir -p $HOME/.cache/kanji
+cachedir="$HOME/.cache/kanji"
+#delays for internet connection
+while [ -z "$(ip r)" ]; do sleep 1; done
+
+curl -s https://www.coolgenerator.com/random-japanese-words-generator > $cachedir/tmp.html
+
+# Get kanji character and output to info.html 
+kanji=$(grep -oP "font-18'><b><span>.*\[" $cachedir/tmp.html |
+	sed 's#\[.*##g; s#.*>##g')
+
+
+
+#get text
+info=$(grep -oP -m 1 "font-18'><b><span>.*\[" $cachedir/tmp.html |  
+sed 's#]</span></b></p><p class="text-center grey">Meaning:&nbsp;<span># #; s#</span>.*##g; s#.*\[##g' |
+sed 's/ / \n/')
+#adds kanji to image
+
+#Settings
+x=740
+y=277
+size=30
+#you might need to change (or install) the font if there is no text on display
+#add image in $HOME/.cache/kanji and change original.jpg to your own
+
+convert -font Noto-Sans-JP-Medium -fill white -pointsize $(($size+15)) -draw "text $x, $y '$kanji' " -pointsize $size -draw "text $x, $(($y+42)) '$info' " $cachedir/custom1.jpg $cachedir/custom2.jpg
+
+#in your i3 config add
+#exec --no-startup-id bash ~/.config/scripts/kanji
+#exec --no-startup-id feh --bg-fill ~/.cache/kanji/custom.jpg

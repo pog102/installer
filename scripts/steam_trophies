@@ -1,0 +1,33 @@
+#!/bin/sh
+#Dependencies: imagemagick feh
+
+steam_user=Endorphinsu
+mkdir -p $HOME/.cache/steam_trophies
+cachedir="$HOME/.cache/steam_trophies"
+#delays for internet connection
+[ -n $cachedir/number.txt ] && echo 0 > $cachedir/number.txt
+while [ -z "$(ip r)" ]; do sleep 1; done
+
+curl -s  https://steamcommunity.com/id/$steam_user/games/?tab=perfect > $cachedir/tmp.html
+
+# find games 
+
+number=$(grep -o '"appid"' $cachedir/tmp.html | wc -l)
+#updater checker, checks if the numbers are the same if not creates image, this is added for performance cost
+[ "$number" -eq $(cat $cachedir/number.txt) ] && sh ~/.config/scripts/kanji2 && exit
+echo "$number" > $cachedir/number.txt
+font="''"
+n=0
+for i in $(seq $number)
+  do
+	  x[i]="text $((730+$n)), 217  $font;"
+	  n=61+$n
+	  [ $i = "8" ] && break
+ done
+
+convert -font Font-Awesome-5-Free-Solid -fill '#e2e2e2' -pointsize 35 -draw "${x[*]}" $HOME/.cache/kanji/original.jpg $HOME/.cache/kanji/custom1.jpg
+
+sh ~/.config/scripts/kanji2
+#in your i3 config add
+#exec --no-startup-id bash ~/.config/scripts/kanji
+#exec --no-startup-id feh --bg-fill ~/.cache/kanji/custom.jpg

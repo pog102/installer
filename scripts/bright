@@ -1,0 +1,24 @@
+#!/bin/bash
+
+function send_notification() {
+	light=$(printf "%.0f\n" $(brillo -G))
+	
+	(( $light > 0 )) && im=''
+	(( $light > 25 )) && im=''
+	(( $light > 50 )) && im=''
+	(( $light > 75 )) && im=''
+	dunstify -a "changelight" -u low -r "9991" -h int:value:"$light" -i "light-$1" "$im" -t 800
+}
+
+case $1 in
+up)
+	# Set the light on (if it was muted)
+	brillo -q -A 1 
+	send_notification $1
+	;;
+down)
+	brillo -q -U 1 
+	send_notification $1
+	;;
+esac
+

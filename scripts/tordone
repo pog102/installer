@@ -1,0 +1,7 @@
+#!/bin/sh
+# Sends a notification when a torrent is completed in transmission
+# Signals an update to the bar torrent module
+
+notify-send "Transmission-daemon" "$TR_TORRENT_NAME has completely downloaded" -t 1200 
+paplay ~/.local/sounds/done.wav
+

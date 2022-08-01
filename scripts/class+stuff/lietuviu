@@ -1,0 +1,12 @@
+#!/bin/bash
+
+word=$(grep -oE "[A-Za-z|À-ž]+_+[a-z|À-ž]+" uzd | sed 's/_//')
+
+for i in $(echo "$word"); do
+	zodis=$(echo "$i" | cut -d'_' -f1)
+	zodis2=$(echo "$i" | cut -d'_' -f2 | uconv -x nfd -c -t us)
+#	echo "${zodis}_${zodis2}"
+	grep -Eo "^$zodis[a-z|À-ž]{1,2}$zodis2" words.txt | head -1
+ 
+ done
+

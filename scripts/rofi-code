@@ -1,0 +1,52 @@
+#!/bin/bash
+myterm=kitty
+myEdit=nvim
+cd ~/code/
+
+menu(){
+	#if the file exists then show all .cpp related files
+	[ -n "$(ls *.cpp)" ] && printf "$(ls | grep ".cpp" | sed 's/\..*//g' )\n" 
+        printf "[+] new file\n"
+        printf "[-] delete file\n"
+}
+menu2(){
+        #if the file exists then show all .cpp related files
+	[ -n "$(ls *.cpp)" ] && printf "$(ls | grep ".cpp" | sed 's/\..*//g' )\n"
+}
+
+main(){
+    #pick a entry
+    choice=$(menu | rofi -dmenu | cut -d. -f1)
+    case $choice in	   
+        "[+] new file")
+		file=$(rofi -dmenu -theme title)
+		case $file in
+			#if nothing is inputed then exit
+			"") 
+		        	exit
+				;;
+		         #imports the blueptint, creates a file and edit the file	
+			*)
+	     cp ~/.config/scripts/blueprint $file.cpp;$myterm -e sh -c "sleep 0.2 ; $myEdit $file.cpp"; 
+		;;
+               esac
+	       ;;
+         "[-] delete file")
+	   choice2=$(menu2 | rofi -dmenu | cut -d. -f1)
+		 rm $choice2.cpp $choice2
+		 main
+               ;;
+         "")
+		 exit
+               ;;
+	#edit file from the selected entry
+        *)
+$myterm -e sh -c "sleep 0.2 ; $myEdit $choice.cpp"
+	    
+	       ;;
+
+        esac       
+
+}
+
+main

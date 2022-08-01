@@ -1,0 +1,148 @@
+#!/bin/bash
+
+
+info(){ 
+        eval "subject$1=' informatika' id$1=76364516932 psw$1=QT7EKc" 
+}
+indzi(){ 
+        eval "subject$1=indzinerija id$1=76364516932 psw$1=QT7EKc" 
+}
+chemi(){ 
+        eval "subject$1=chemija id$1=76364516932 psw$1=QT7EKc" 
+}
+etika(){ 
+        eval "subject$1=etika id$1=76364516932 psw$1=QT7EKc" 
+}
+anglu(){ 
+        eval "subject$1=anglu id$1=76364516932 psw$1=QT7EKc" 
+}
+kuna(){ 
+        eval "subject$1=fizinis id$1=71220276724 psw$1=a7K643" 
+}
+muzika(){ 
+        eval "subject$1=muzika id$1=76364516932 psw$1=QT7EKc" 
+}
+matke(){ 
+        eval "subject$1=matematika id$1=76364516932 psw$1=" 
+}
+fizika(){ 
+        eval "subject$1=fizika id$1=76364516932 psw$1=QT7EKc" 
+}
+geo(){ 
+	eval "subject$1=geografija id$1=76364516932 psw$1=QT7EKc" 
+}
+liesa(){
+	eval "subject$1=Lietuviu id$1=76364516932 psw$1="  
+}
+
+day=$(date +'%A')
+case $day in
+
+  Monday)
+	  liesa 1
+	  liesa 2
+	  matke 3
+	  matke 4
+	  geo 5
+	  fizika 6
+	  fizika 7
+	  ;;
+
+  Tuesday)
+	  anglu 1
+	  anglu 2
+	  geo 3
+	  etika 4
+	  liesa 5
+	  fizika 6
+	  fizika 7
+
+	  ;;
+
+  Wensday)
+	  chemi 1
+	  chemi 2
+	  liesa 3
+	  liesa 4
+	  matke 5
+	  indzi 6
+	  indzi 7
+	 
+	  ;;
+  Thursday)
+        anglu 1
+	anglu 2
+	matke 3
+	matke 4
+	info 5
+	info 6
+	  ;;
+   Friday)
+	matke 1   
+        liesa 2
+        gei 3
+	kuna 4
+	muzika 5
+	muzika 6
+          ;;
+  *)
+      notify-send "its the weekend"
+      exit
+    ;;
+esac
+
+time=$(($(date +"%H")*60+$(date +"%M")))
+#time=577
+
+[ $time -le 895 ] && i=$subject7
+[ $time -le 840 ] && i=$subject6
+[ $time -le 770 ] && i=$subject5
+[ $time -le 700 ] && i=$subject4
+[ $time -le 630 ] && i=$subject3
+[ $time -le 575 ] && i=$subject2
+[ $time -le 520 ] && i=$subject1
+
+
+
+
+
+menu(){
+	[ -n "$i" ] && printf "curently: $i \n" '\e[1;34m%-6s\e[m' 
+	[ -n "$subject1" ] && printf "1. $subject1\n"
+	[ -n "$subject2" ] && printf "2. $subject2\n"
+	[ -n "$subject3" ] && printf "3. $subject3\n"
+	[ -n "$subject4" ] && printf "4. $subject4\n"
+	[ -n "$subject5" ] && printf "5. $subject5\n"
+	[ -n "$subject6" ] && printf "6. $subject6\n"
+	[ -n "$subject7" ] && printf "7. $subject7\n"
+}
+main(){
+    choice=$(menu | rofi -dmenu | cut -d. -f1)
+
+    case $choice in
+		1)
+            zoom "zoommtg://zoom.us/join?confno=$id1&pwd=$psw1"
+	    ;;
+		2)
+            zoom "zoommtg://zoom.us/join?confno=$id2&pwd=$psw2"
+	    ;;
+		3)
+	    zoom "zoommtg://zoom.us/join?confno=$id3&pwd=$psw3"
+            ;;
+		4)
+	    zoom "zoommtg://zoom.us/join?confno=$id4&pwd=$psw4"
+            ;;
+		5)
+	    zoom "zoommtg://zoom.us/join?confno=$id5&pwd=$psw5"
+            ;;
+		6)
+	    zoom "zoommtg://zoom.us/join?confno=$id6&pwd=$psw6"
+            ;;
+		7)
+	    zoom "zoommtg://zoom.us/join?confno=$id6&pwd=$psw6"
+            ;;
+
+        esac
+}
+
+main

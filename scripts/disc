@@ -1,0 +1,26 @@
+#!/bin/bash
+for(( ;; ))
+
+do
+
+echo "Enter message"
+
+read message
+
+id=616334131814596634
+
+curl \
+
+-H "Authorization: otpauth://totp/Discord:ernestasdamanskis@gmail.com?secret=UKAQZJTN2I5XVHZN&issuer=Discord" \
+
+-H "User-Agent: Testosterone" \
+
+-H "Content-Type: application/json" \
+
+-X POST \
+
+-d "{\"content\": \"${message}\"}" \
+
+https://discordapp.com/api/v6/channels/${id}/messages
+
+done
