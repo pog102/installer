@@ -68,3 +68,4 @@ cd /usr/share/applications/
 sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.desktop qv412.desktop qvidcap.desktop
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
+ln -s $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
