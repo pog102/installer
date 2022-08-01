@@ -1,0 +1,20 @@
+#!/bin/sh
+# Description: Script to get current volume
+
+source color
+
+percent="$(pamixer --get-volume)"
+if [ "$percent" -gt 80 ]; then
+    icon_volume=" "
+elif [ "$percent" -gt 60 ]; then
+    icon_volume="墳 "
+elif [ "$percent" -gt 30 ]; then
+    icon_volume="奔 "
+else
+    icon_volume=" "
+fi
+
+printf "%s %s%s%s%% " "$bg2$fg0" "$icon_volume" "$reset$fg2" " $percent"
+#xsetroot -name "$bg2$fg0  ${icon_volume}$reset$fg2 $percent "
+#echo "$bg2$fg0 $icon_volume $percent$reset"
+#echo "$icon_volume $percent"

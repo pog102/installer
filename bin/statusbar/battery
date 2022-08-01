@@ -1,0 +1,38 @@
+#!/bin/sh
+source color
+battery="/sys/class/power_supply/BAT1"
+
+percent=$(cat "$battery/capacity")  # battery percentage
+    status="$(cat "$battery/status")"   # battery status
+
+
+    if  [ "$status" = "Charging" ]; then
+        icon_battery=""
+    elif  [ "$percent" -eq 100 ]; then
+        icon_battery=""
+        dunstify " Full chage" -t 5100 -r 6 
+    elif [ "$percent" -ge 90 ]; then
+        icon_battery=""
+    elif [ "$percent" -ge 80 ]; then
+        icon_battery=""
+    elif [ "$percent" -ge 70 ]; then
+        icon_battery=""
+    elif [ "$percent" -ge 60 ]; then
+        icon_battery=""
+    elif [ "$percent" -ge 50 ]; then
+        icon_battery=""
+    elif [ "$percent" -ge 40 ]; then
+        icon_battery=""
+    elif [ "$percent" -ge 30 ]; then
+        icon_battery=""
+    elif [ "$percent" -ge 20 ]; then
+        icon_battery=""
+    elif [ "$percent" -ge 10 ]; then
+        icon_battery=""
+    else
+        icon_battery=""
+	[ "$status" != "Charging" ] && dunstify " Battery is getting low" -t 5100 -r 6 && sleep 1 && dunstify " Battery is getting low" -t 5100 -r 6
+    fi
+
+    printf "%s %s %s%s%% " "$bg4$fg0" "$icon_battery" "$reset$fg4" " $percent" 
+    #echo "$bg4$fg0 $icon_battery ${percent} $reset" 

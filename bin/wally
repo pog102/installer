@@ -1,0 +1,4 @@
+#!/bin/bash
+wal -i $PWD/$1
+dir=/home/chad/.cache/wal/multi_intensity
+sed -i 's/,/ /g' $dir

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+pamixer -${1} 2
+dunstify "$(pamixer --get-volume)%" -t 900 -r 1
+pkill -RTMIN+10 dwmblocks
+
+

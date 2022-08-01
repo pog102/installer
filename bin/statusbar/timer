@@ -1,0 +1,4 @@
+#!/bin/sh
+source color
+printf " %s%s%s%s " "$bg5$fg0" "  " "$reset$fg5" "" "$(date '+%H:%M') $reset"
+

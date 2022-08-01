@@ -1,0 +1,13 @@
+#!/bin/sh
+
+xdotool key Super+f
+xdotool key Super+b
+vis &
+espeak -v lithuanian "sveiki, koks tavo vardas?"
+commad=$(rofi -dmenu -theme frost)
+espeak -v lithuanian "labas, $commad"
+sleep 1
+espeak -v lithuanian "ka nori daryti"
+echo -e "zaisti \n nieko \n" | rofi -dmenu -theme frost
+espeak -v lithuanian "sita funkcija neveikia"
+
