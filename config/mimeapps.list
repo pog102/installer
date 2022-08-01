@@ -1,0 +1,6 @@
+[Added Associations]
+x-scheme-handler/magnet=torrent.desktop;
+application/x.bittorrent=torrent.desktop;
+image/svg+xml=gimp.desktop;brave-browser.desktop;inkscape.desktop;
+application/x-php=vscodium-bin.desktop;
+

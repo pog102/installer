@@ -1,0 +1,55 @@
+
+[global]
+     font = Monospace 13
+     corner_radius = 0
+    # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
+    geometry = "0x0-30+20"
+    shrink = yes
+    # Show multiple notifications in the same box
+    separator_height = 1
+    # Sort messages by urgency.
+    sort = yes
+    # Add vertical padding to the inside of the notification
+    padding = 10
+    # Ignore newlines '\n' in notifications.
+    ignore_newline = no
+
+    # Add horizontal padding for when the text gets long enough
+    horizontal_padding = 24
+
+    # The frame color and width of the notification
+    frame_color = "{color4}"
+    frame_width = 2
+
+    # How long a user needs to be idle for sticky notifications
+    idle_threshold = 120
+
+    # Font and typography settings
+    alignment = left
+    icons_position = Left
+    min_icon = 0
+    max_icon = 32
+    icon_path = /home/chad/.local/share/icons/custom/
+    word_wrap = yes
+    origin = top-center
+    highlight="{color4}"
+    # Markup is allowed
+    format = "<b>%s</b>\n%b"
+    # Allow some HTML tags like <i> and <u> in notifications
+    markup = full
+
+   # transparency = 30
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    history = ctrl+grave
+[urgency_low]
+    background ="{background}"
+    foreground ="{color4}"
+[urgency_normal]
+    background = "{background}"
+    foreground = "{color4}"
+
+[urgency_critical]
+    background = "{background}"
+    foreground = "{color4}"

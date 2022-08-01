@@ -1,0 +1,28 @@
+sw_volume: 100
+audio_device_state:1:pulse audio
+state: pause
+current: 1
+time: 22.788000
+random: 1
+repeat: 0
+single: 1
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:【Ado】うっせぇわ.flac
+1:Berserk - Sign (Full Version).flac
+2:Creepy Nuts _ よふかしのうた【MV】.flac
+3:Devil May Cry 5 - Crimson Cloud (Special Edit).flac
+4:Devil May Cry 5 - Devil Trigger (Special Edit).flac
+5:Enemy (From the series Arcane League of Legends).flac
+6:Gold.flac
+7:I Am (All of Me) - Shadow the Hedgehog [OST].flac
+8:Kikuo - ようこそ星のお宿【Official MV】.flac
+9:kingdom.flac
+10:MY FIRST STORY -不可逆リプレイス-【Official Video】.flac
+11:[REMASTERED] Devil May Cry 5 - Bury The Light (Special Edit).flac
+12:YOASOBI「怪物」Official Music Video　(YOASOBI - Monster).flac
+13:アウトサイダー - Eve MV.flac
+playlist_end

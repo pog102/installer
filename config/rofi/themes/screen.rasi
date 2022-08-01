@@ -1,0 +1,129 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+
+ *
+ */
+
+configuration {
+    show-icons:                     false;
+	font:                      		"Comfortaa 14";
+    disable-history:                false;
+	sidebar-mode: 					false;
+}
+
+
+@import "~/.cache/wal/game.rasi"
+
+* {
+    background-color:               @bg;
+    text-color:                     @fg;
+}
+
+window {
+    transparency:                   "real";
+    border-radius:                  0px;
+    location:                       center;
+    width:                       	500px;
+    x-offset:                       0px;
+    y-offset:                       0px;
+}
+
+prompt {
+    enabled: 						true;
+    padding:                        10px;
+	background-color: 				@bg7;
+	text-color: 					@bg2;
+    border:                  		2px 2px 2px 2px;
+    border-radius:                  0px;
+    border-color:                  	@bg2;
+}
+
+textbox-prompt-colon {
+	expand: 						false;
+	str: 							" Mirror ";
+	background-color: 				@bg2;
+	text-color: 					@bg;
+    padding:                        12px 10px 0px 10px;
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, prompt ];
+    spacing:                        0px;
+    background-color:               @bg;
+    text-color:                     @fg;
+    expand:                         false;
+    border:                  		0px;
+    border-radius:                  0px;
+    border-color:                  	@bg2;
+    margin:                         0px 0px 0px 0px;
+    padding:                        0px;
+    position:                       center;
+}
+
+listview {
+    columns:						3;
+    lines:							1;
+    spacing:                        15px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @bg;
+    children:                       [ inputbar, listview ];
+    spacing:                        15px;
+    margin:                         40px;
+}
+
+element {
+    background-color:               @bg4;
+    text-color:                     @fg;
+    orientation:                    vertical;
+    border-radius:                  0px;
+}
+
+element-text {
+    background-color: 				inherit;
+    text-color:       				inherit;
+	font:							"Iosevka Nerd Font 32";
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         40px 0px 40px 0px;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               @off;
+    text-color:                     @bg;
+    border-radius:                  0px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               @on;
+    text-color:                     @bg;
+}
+
+element selected {
+    background-color:               @bg2;
+    text-color:                     @bg;
+    border:                  		0px;
+    border-radius:                  0px;
+    border-color:                  	@bg4;
+}
+
+element selected.urgent {
+    background-color:               @on;
+    text-color:                     @bg;
+}
+
+element selected.active {
+    background-color:               @off;
+    color:                          @bg;
+}
