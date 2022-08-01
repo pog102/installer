@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo rm /var/lib/pacman/db.lck
+pactl set-card-profile alsa_card.usb-Sony_Interactive_Entertainment_Wireless_Controller-00 off
 sudo mv bluetooth /var/lib
 sudo pacman -S ttf-hack ttf-roboto ttf-sazanami ttf-jetbrains-mono ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
