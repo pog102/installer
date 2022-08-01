@@ -49,6 +49,7 @@ mv config/* $HOME/.config/
 #cp -r Pictures $HOME/
 #cp -r suckless $HOME/
 #cp -r Music $HOME/
+mv applications/* $HOME/.local/share/applications
 git clone https://github.com/aesophor/wmderland.git
 cd wmderland && ./build.sh --install
 mkdir -p $HOME/.cache/wal/
@@ -64,13 +65,12 @@ sudo pacman -S steam-native-runtime
 #sudo make install
 #Footer
 sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
-
 sudo hwclock -w
 cd /usr/share/applications/
 sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.desktop qv412.desktop qvidcap.desktop
 mkdir $HOME/.config/dunst/
 ln -s $HOME/.config/dunst/dunstrc $HOME/.cache/wal/dunstrc 
-mv applications/* $HOME/.local/share/applications
+
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
 
