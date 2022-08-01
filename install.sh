@@ -22,7 +22,8 @@ cd paru
 makepkg -si --noconfirm
 cd ..
 rm -rf paru
-paru -S  cli-visualizer brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom autojump pamixer
+paru -S  cli-visualizer brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
+autojump pamixer transmission-remote-cli-git
 sudo usermod -aG video $USER
 ##autologin
 sudo mkdir /etc/systemd/system/getty@tty1.service.d/
