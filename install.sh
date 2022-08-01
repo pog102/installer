@@ -70,7 +70,6 @@ sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.de
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
 mkdir $HOME/.config/dunst/
-mkdir -p $HOME/.local/share/applications
 mp applications/* $HOME/.local/share/applications
 
 
