@@ -33,6 +33,7 @@ mkdir $HOME/.config/
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
 mv xprofile $HOME/.xprofile
+mv Pictures $HOME/
 mv xinitrc $HOME/.xinitrc 
 mv zprofile $HOME/.zprofile
 mv config/* $HOME/.config/
@@ -63,4 +64,4 @@ sudo pacman -S steam-native-runtime
 sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
 sudo mv bluetooth /var/lib
 sudo hwclock -w
-
+Wal -i $HOME/Pictures 
