@@ -1,6 +1,6 @@
 # Luke's config for the Zoomer Shell
-
-# Enable colors and change prompt:
+export PATH=$HOME/.bin:$PATH
+# Enable colors and change rompt:
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
