@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo rm /var/lib/pacman/db.lck
+sudo mv bluetooth /var/lib
 sudo pacman -S ttf-hack ttf-roboto ttf-sazanami ttf-jetbrains-mono ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
@@ -60,7 +61,7 @@ sudo pacman -S steam-native-runtime
 #sudo make install
 #Footer
 sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
-sudo mv bluetooth /var/lib
+
 sudo hwclock -w
 cd /usr/share/applications/
 sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.desktop qv412.desktop qvidcap.desktop
