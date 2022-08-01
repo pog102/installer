@@ -64,5 +64,5 @@ sudo pacman -S steam-native-runtime
 sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
 sudo mv bluetooth /var/lib
 sudo hwclock -w
-my_array=($HOME/Downloads/Pictures/*)
+my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
