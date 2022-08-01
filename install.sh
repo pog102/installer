@@ -45,10 +45,6 @@ mv config/* $HOME/.config/
 #cp -r Music $HOME/
 git clone https://github.com/aesophor/wmderland.git
 cd wmderland && ./build.sh --install
-mkdir -p ~/.config/wmderland
-cp /etc/xdg/wmderland/config ~/.config/wmderland/.
-echo "bindsym \$Mod+Return exec kitty" >> ~/.config/wmderland/config
-echo "exec wmderland" > ~/.xinitrc
 mkdir -p $HOME/.cache/wal/
 touch $HOME/.cache/wal/colors.Xresources
 ln -sf $HOME/.Xresources  $HOME/.cache/wal/colors.Xresources
