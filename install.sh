@@ -30,10 +30,12 @@ echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autolo
 echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$TERM" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 ##dots
 mkdir $HOME/.config/
+mkdir $HOME/.bin
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
 mv xprofile $HOME/.xprofile
 mv Pictures $HOME/
+mv bin/* $HOME/.bin
 mv xinitrc $HOME/.xinitrc 
 mv zprofile $HOME/.zprofile
 mv config/* $HOME/.config/
