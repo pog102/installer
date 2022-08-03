@@ -5,7 +5,7 @@ sudo mv bluetooth /var/lib
 sudo pacman -S ttf-roboto-mono ttf-fira-code ttf-font-awesome ttf-sazanami ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
-sxiv mpv xwallpaper fzf yt-dlp unclutter nvidia-dkms neovim \
+sxiv mpv feh fzf yt-dlp unclutter nvidia-dkms neovim \
 xclip maim alacritty polybar networkmanager
 sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
