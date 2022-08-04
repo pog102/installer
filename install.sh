@@ -24,7 +24,7 @@ makepkg -si --noconfirm
 cd ..
 rm -rf paru
 paru -S  cli-visualizer brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
-autojump pamixer transmission-remote-tui-git 
+autojump pamixer transmission-remote-tui-git sfeed
 sudo usermod -aG video $USER
 brillo -c -S 1
 ##autologin
@@ -73,6 +73,7 @@ sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.de
 mkdir $HOME/.config/dunst/
 ln -s $HOME/.config/dunst/dunstrc $HOME/.cache/wal/dunstrc 
 mkdir -p $HOME/.local/share/icons/custom/
+mkdir -p "$HOME/.sfeed/feeds"
 
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
