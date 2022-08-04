@@ -26,6 +26,7 @@ rm -rf paru
 paru -S  cli-visualizer brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
 autojump pamixer transmission-remote-tui-git
 sudo usermod -aG video $USER
+brillo -c -S 1
 ##autologin
 sudo mkdir /etc/systemd/system/getty@tty1.service.d/
 sudo touch /etc/systemd/system/getty@tty1.service.d/autologin.conf
