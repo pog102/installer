@@ -77,6 +77,7 @@ mkdir -p "$HOME/.sfeed/feeds"
 
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
+ls -s $HOME/.cache/wal/alacritty.yml $HOME/.config/alacritty/alacritty.yml
 
 
 
