@@ -36,6 +36,7 @@ echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$
 ##dots
 mkdir $HOME/.config/
 mkdir $HOME/.bin
+mkdir $HOME/.local/share/sounds
 sudo mv bin/transadd /usr/local/bin
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
