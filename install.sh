@@ -33,7 +33,8 @@ sudo touch /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "[Service]" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$TERM" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
-##dots
+echo "DefaultTimeoutStopSec=4"  | sudo tee -a /etc/systemd/system.conf
+##.dots
 mkdir $HOME/.config/
 mkdir $HOME/.bin
 mkdir $HOME/.local/share/sounds
