@@ -24,7 +24,7 @@ makepkg -si --noconfirm
 cd ..
 rm -rf paru
 paru -S  cli-visualizer brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
-autojump pamixer transmission-remote-tui-git sfeed
+autojump pamixer transmission-remote-tui-git sfeed clifm 
 sudo usermod -aG video $USER
 brillo -c -S 1
 ##autologin
