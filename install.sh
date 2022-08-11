@@ -47,6 +47,7 @@ mv bin/* $HOME/.bin
 mv xinitrc $HOME/.xinitrc 
 mv zprofile $HOME/.zprofile
 mv config/* $HOME/.config/
+mv mbsyncrc $HOME/.mbsyncrc
 #cp .xinitrc $HOME/
 #cp .zprofile $HOME/
 #cp .bin $HOME/
@@ -76,6 +77,8 @@ mkdir $HOME/.config/dunst/
 ln -s $HOME/.config/dunst/dunstrc $HOME/.cache/wal/dunstrc 
 mkdir -p $HOME/.local/share/icons/custom/
 mkdir -p "$HOME/.sfeed/feeds"
+transmission-remote -td "http://nyaa.tracker.wf:7777/announce"
+
 
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
