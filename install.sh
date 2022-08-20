@@ -80,10 +80,13 @@ mkdir -p $HOME/.local/share/icons/custom/
 mkdir -p "$HOME/.sfeed/feeds"
 
 
+cd $HOME/.config/suckless/st
+make
+sudo make install 
 
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
-ls -s $HOME/.cache/wal/alacritty.yml $HOME/.config/alacritty/alacritty.yml
+
 
 
 
