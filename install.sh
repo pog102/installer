@@ -6,7 +6,7 @@ sudo pacman -S ttf-roboto-mono ttf-fira-code ttf-nerd-font ttf-sazanami ttf-libe
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
 sxiv mpv feh fzf yt-dlp unclutter nvidia-dkms neovim \
-xclip maim alacritty polybar networkmanager
+xclip maim isync polybar networkmanager
 sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
 systemctl enable bluetooth.service
