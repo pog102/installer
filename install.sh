@@ -1,4 +1,6 @@
 #!/bin/bash
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 sudo rm /var/lib/pacman/db.lck
 pactl set-card-profile alsa_card.usb-Sony_Interactive_Entertainment_Wireless_Controller-00 off
 sudo mv bluetooth /var/lib
