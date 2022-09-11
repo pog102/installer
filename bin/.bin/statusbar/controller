@@ -1,0 +1,19 @@
+#!/bin/sh
+source color
+battery="$(cat /sys/class/power_supply/ps-controller-battery-4c:b9:9b:33:02:fe/capacity)"
+status="$(cat /sys/class/power_supply/ps-controller-battery-4c:b9:9b:33:02:fe/status)"   # battery status
+
+
+    if [ "$battery" -ge 90 ]; then
+        icon_battery=" 調"
+    elif [ "$battery" -ge 60 ]; then
+        icon_battery=" ﱍ "
+    elif [ "$battery" -ge 10 ]; then
+        icon_battery=" ﱌ "
+    #elif [ "$battery" -ge 5 ]; then
+	# [ "$status" != "Charging" ] && dunstify "調low battery" -t 7100 -r 8 
+    else
+        exit 0
+    fi
+
+    printf "%s%s%s%s%% " "$bg6$fg0" "$icon_battery" "$reset$fg6" " $battery"

@@ -1,5 +1,0 @@
-#!/bin/sh
-# Description: Script to get current volume
-pamixer -$1 2
-volume=$(pamixer --get-volume)
-	dunstify -a "changevolume" -u low -r "2" -h int:value:"$volume" -i "volume-$1" "${volume}%" -t 1100

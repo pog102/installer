@@ -1,0 +1,3 @@
+#!/bin/bash
+dualsensectl lightbar 00 210 33
+

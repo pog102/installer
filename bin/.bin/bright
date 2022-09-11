@@ -1,0 +1,19 @@
+#!/bin/sh
+# Description: Script to get current volume
+
+percent="$(brillo | cut -d. -f1)"
+#if [ "$percent" -gt 90 ]; then
+#    icon_volume=""
+#elif [ "$percent" -gt 70 ]; then
+#    icon_volume=""
+#elif [ "$percent" -gt 40 ]; then
+#    icon_volume=""
+#elif [ "$percent" -gt 30 ]; then
+#    icon_volume=""
+#elif [ "$percent" -gt 10 ]; then
+#    icon_volume=""
+#else
+#    icon_volume=""
+#fi
+echo "${percent}%"
+

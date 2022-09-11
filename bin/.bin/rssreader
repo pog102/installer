@@ -1,0 +1,10 @@
+#!/bin/bash
+sfeed_update
+url=$(sfeed_plain "$HOME/.sfeed/feeds/"* | rofi -theme music -dmenu -l 9 -i -selected-row 1 -p "RSS feeds: "  | \
+	sed -n 's@^.* \([a-zA-Z]*://\)\(.*\)$@\1\2@p')
+if [ ! -f $( echo "$url" | grep phoronix ) ]
+then
+st -e w3m "${url}"
+else
+xdg-open "${url}"
+fi

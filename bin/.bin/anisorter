@@ -1,0 +1,9 @@
+#!/bin/bash
+dir="/run/media/chad/4C99-6202"
+for file in "$dir"/*
+do
+  if [ ! -d "$file" ]; then
+    fol=$(echo "$file" | grep -Eo "\] \w.* - [0-9]{1,2}" | tr -d ']' | sed 's/^ *//g' | sed 's/ -.*//g' | sed 's/ /\ /g')
+[ ! -d "$dir/$fol" ] && mkdir "$dir/$fol" && mv "$file" "$dir/$fol" || mv "$file" "$dir/$fol"
+  fi
+done

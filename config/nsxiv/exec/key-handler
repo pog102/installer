@@ -1,0 +1,25 @@
+#!/bin/sh
+
+while read file
+do
+  case "$1" in
+    "w") wal -i "$file"
+
+    color=$(sed '5!d' ~/.cache/wal/colors)
+    for i in $HOME/.local/share/icons/custom/*; do
+    convert $i -fill "$color" -colorize 100 $i
+    done
+    pkill dunst && dunst &
+        ;;
+    "l") wal -i  "$file" -l
+
+    color=$(sed '5!d' ~/.cache/wal/colors)
+    for i in $HOME/.local/share/icons/custom/*; do
+    convert $i -fill "$color" -colorize 100 $i
+    done
+    pkill dunst && dunst &
+        ;;
+
+    "d") rm "$file";;
+  esac
+done

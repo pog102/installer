@@ -1,0 +1,33 @@
+#!/bin/sh
+[ ! -f "/run/media/$USER/4C99-6202/.progress" ] && touch "/run/media/$USER/4C99-6202/.progress"
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
+files=$(cat $HOME/.config/nyaa/config)
+for i in $files
+do
+math=$(cat "/run/media/$USER/4C99-6202/.progress" | grep "$i" | grep -Po "[0-9]+" || echo "0" )
+query=$(printf '%s' "$i" | tr ' ' '+' )
+
+#add while loop
+mag="p"
+b=1
+while [ ! -z $mag ] #new
+do #new
+    mat=$(($math+$b))
+    [ "$mat" -lt "10" ] && mat="0$mat"
+mag=$(curl -s "https://nyaa.si/?page=rss&q=$query+$mat+1080p&c=1_2&f=0" | grep -Po '<nyaa:infoHash>.*?</nyaa:infoHash>' | sed 's#<nyaa:infoHash>##g; s#<\/nyaa:infoHash>##g;' | tail -1)
+##progress
+transmission-remote -a "magnet:?xt=urn:btih:$mag"
+b=$(($b+1))
+done #new
+mat=$((10#$mat-1))
+    if [ ! -z $(grep "$i" "/run/media/$USER/4C99-6202/.progress" ) ]
+    then
+        sed -i "s/$i.*/$i $mat/g"  "/run/media/$USER/4C99-6202/.progress"
+    else
+        echo -e "$i $mat" >> "/run/media/$USER/4C99-6202/.progress"
+    fi
+[ "$(($mat-$math))" -ne "0" ] && notify-send "$i" " $(($mat-$math)) episodes found" && polybar-msg action "#torrents.hook.0"
+done
+IFS=$SAVEIFS

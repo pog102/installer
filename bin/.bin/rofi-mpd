@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+mb() { rofi -theme music.rasi -dmenu -i -kb-custom-1 "Alt+q" "$@" ;}
+
+song() {
+  lines="$(mpc list title | wc -l)"
+  [ "$lines" -gt 30 ] && lines=30
+  mpc list title | mb -p "Song" -l 8
+}
+
+song=$(song)
+cod=$?
+[ ! "$song" ] && exit
+[ "$cod" -eq 10 ] || mpc clear
+mpc search "(title==\"$song\")" | mpc add
+mpc play >/dev/null

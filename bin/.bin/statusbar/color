@@ -1,0 +1,10 @@
+#!/bin/sh
+# status2d colors
+reset="^d^"
+# read Xresources colors (if enable)
+    for i in {0..15}; do
+        colorX="$(xrdb -get color${i})"
+        eval "fg${i}=^c${colorX}^"
+	eval "bg${i}=^b${colorX}^"
+    done
+    unset colorX

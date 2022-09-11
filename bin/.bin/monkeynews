@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xdg-open $(curl -s 'https://raw.githubusercontent.com/globaldothealth/monkeypox/main/latest.csv' | grep "Lithuania" | grep -Eo "https.*[a-z]" | tail -1 | tr -d ',')
+

@@ -1,0 +1,6 @@
+#!/bin/sh
+# Sends a notification when a torrent is completed in transmission
+# Signals an update to the bar torrent module
+
+notify-send "Transmission-daemon" "$TR_TORRENT_NAME has completely downloaded" && polybar-msg action "#torrents.hook.0"  #&& pkill -SIGRTMIN+2 i3blocks
+transmission-remote -l | awk '$2 == "100%"{ system("transmission-remote -t " $1 " --remove") }'

@@ -1,0 +1,6 @@
+#!/bin/sh
+query=$(printf '%s' "$*" | tr ' ' '+' )
+
+mag=$(curl -s "https://nyaa.si/?page=rss&q=$query&c=1_2&f=0" | grep -Po '<title>.*?<\/title>|<nyaa:infoHash>.*?</nyaa:infoHash>' | sed 's#<title>##g; s#<\/title>##g; s#<nyaa:infoHash>##g; s#<\/nyaa:infoHash>##g;' | tail -n +2 | awk '{ if(NR % 2) { printf $0 } else { print "\t\t\t\t\t\t\t\t\t\t\t\t\t\tmagnet:?xt=urn:btih:" $0 } }' | rofi -dmenu -p anime -theme animes | grep -Po "magnet.*")
+
+[ ! -z $mag ] && transmission-remote -a $mag && notify-send "Transmission-daemon" "Torrent added." && polybar-msg action "#torrents.hook.0"

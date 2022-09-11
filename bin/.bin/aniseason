@@ -1,0 +1,38 @@
+#!/bin/sh
+mkdir -p ~/.cache/anime/applications
+mkdir -p ~/.cache/anime/images
+
+desktop=~/.cache/anime/applications
+image=~/.cache/anime/images
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+title=$(curl -s 'https://anilist.co/search/anime/this-season' | grep -Eo "^\w.*" | tail -n +3)
+images=$(curl -s 'https://anilist.co/search/anime/this-season' | grep -Eo "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/.*(jpg|png)")
+a=1
+desktop_entry() {
+cat <<EOF
+[Desktop Entry]
+Name=$1
+Exec=$HOME/.bin/nyatog "$1"
+Icon=~/.cache/anime/images/$a.jpg
+Terminal=false
+Type=Application
+Categories=Anime;
+EOF
+}
+
+for i in $title
+do
+    desktop_entry "$i" "$a" > $desktop/$a.desktop
+    a=$(($a+1))
+done
+a=1
+for e in $images
+do
+    curl -s $e > $image/$a.jpg
+    a=$(($a+1))
+done
+
+
+#[ ! -z $mag ] && transmission-remote -a $mag
+IFS=$SAVEIFS

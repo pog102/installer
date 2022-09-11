@@ -1,0 +1,9 @@
+#!/bin/sh
+mbsync -a >/dev/null 2>&1
+unread="$(find $HOME/Mail/ernesto/INBOX/new/ -type f | wc -l 2>/dev/null)"
+#pidof mbsync >/dev/null 2>&1 && icon="勒"
+if [ "$unread" != "0" ]
+then
+   echo  " $unread "
+    notify-send "$unread new mail "
+fi

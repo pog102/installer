@@ -1,0 +1,5 @@
+#!/bin/bash
+st -e pipes.sh & 
+st -e btop & 
+st -e pfetch &
+tty-clock -c

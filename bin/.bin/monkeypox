@@ -1,0 +1,12 @@
+#!/bin/bash
+
+i=1
+while [ -z "$(ip r)" ] && [ $i -lt 8 ]
+do
+    sleep 1
+    i=$(($i+1))
+done
+
+##[ "$(stat -c %y ~/.cache/monkeypox | cut -d' ' -f1)" != "$(date '+%Y-%m-%d')" ] &&
+curl -s https://raw.githubusercontent.com/globaldothealth/monkeypox/main/timeseries-country-confirmed.csv > ~/.cache/monkeypox
+grep "Lithuania" ~/.cache/monkeypox | tail -1 | awk -F',' '{print "  "  $2 "  " $3 " " }' | sed 's/ 0 //g'

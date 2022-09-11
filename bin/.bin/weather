@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Deps:
+# 	curl
+i=1
+while [ -z "$(ip r)" ] && [ $i -lt 8 ]
+do
+    sleep 1
+    i=$(($i+1))
+done
+
+sou=$(curl -s "wttr.in/?format=1" |
+	sed "s/⛅//" |
+	sed "s/☀//" |
+	sed "s/🌦/ /" |
+	sed "s/☁️/ /"
+)
+icon=$( echo $sou | awk '{print $1;}' )
+temp=$( echo $sou | grep -Eo '[\+|\-].*°C' )
+[ "$icon" != "Unknown" ] && echo "$icon $temp "
