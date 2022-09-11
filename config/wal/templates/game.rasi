@@ -15,4 +15,7 @@
     bg10: {color10};
     bg11: {color11};
     bg12: {color12};
+    bg13: {color13};
+    bg14: {color14};
+    bg15: {color15};
 }}

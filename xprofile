@@ -1,11 +1,11 @@
 wal -R
 mpd &
-transmission-daemon & 
+transmission-daemon &
 unclutter &
-dwmblocks &
-autom &
-//picom --experimental-backend &
-eww daemon &
+~/.bin/autom
+#picom --experimental-backend &
+#eww daemon &
 redshift -l 47.845490:22.672390 &
 dunst &
 udiskie &
+#paplay ~/.local/share/sounds/startup.ogg

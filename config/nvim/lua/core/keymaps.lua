@@ -1,89 +1,102 @@
------------------------------------------------------------
--- Define keymaps of Neovim and installed plugins.
------------------------------------------------------------
+vim.g.mapleader = ';'
 
-local function map(mode, lhs, rhs, opts)
-  local options = { noremap = true, silent = true }
-  if opts then
-    options = vim.tbl_extend('force', options, opts)
-  end
-  vim.api.nvim_set_keymap(mode, lhs, rhs, options)
-end
+-- keymaps
+vim.keymap.set('i', '<C-g>', '<esc>')
+vim.keymap.set('i', '<C-;>', '::') -- for C++ and Rust
+vim.keymap.set('n', '\\', ':')
+-- f: file tree
+vim.keymap.set('n', '<F3>', ':NvimTreeToggle<cr>')
+vim.keymap.set('n', '<leader>ff', ':NvimTreeToggle<cr>')
+vim.keymap.set('n', '<leader>ft', ':NvimTreeFocus<cr>')
+-- y: telescope
+vim.keymap.set('n', '<F9>', function() require 'telescope.builtin'.find_files {} end)
+vim.keymap.set('n', '<F10>', function() require 'telescope.builtin'.git_files {} end)
+vim.keymap.set('n', '<F11>', function() require 'telescope.builtin'.buffers {} end)
+	--clipboard
+vim.keymap.set({ 'n', 'i' }, '<C-p>', function() require 'telescope.builtin'.registers {} end)
+-- w: window
+vim.keymap.set('n', '<leader>wh', '<c-w>h')
+vim.keymap.set('n', '<leader>wj', '<c-w>j')
+vim.keymap.set('n', '<leader>wk', '<c-w>k')
+vim.keymap.set('n', '<leader>wl', '<c-w>l')
+vim.keymap.set('n', '<leader>w1', '<c-w>o')
+vim.keymap.set('n', '<leader>wx', ':x<cr>')
+vim.keymap.set('n', '<leader>w2', ':sp<cr>')
+vim.keymap.set('n', '<leader>w3', ':vs<cr>')
+-- window resize
+vim.keymap.set('n', '<m-9>', '<c-w><')
+vim.keymap.set('n', '<m-0>', '<c-w>>')
+vim.keymap.set('n', '<m-->', '<c-w>-')
+vim.keymap.set('n', '<m-=>', '<c-w>+')
+-- b: buffer
+vim.keymap.set('n', '<leader>bn', ':bn<cr>')
+vim.keymap.set('n', '<leader>bp', ':bp<cr>')
+vim.keymap.set('n', '<leader>bd', ':Bdelete<cr>')
+-- p: plugins
+vim.keymap.set('n', '<leader>pi', ':PackerInstall<cr>')
+vim.keymap.set('n', '<leader>pc', ':PackerClean<cr>')
+-- s: search
+vim.keymap.set('n', '<leader>ss', '/')
+vim.keymap.set('n', '<leader>sw', '/\\<lt>\\><left><left>')
+-- l/g/w: language
+-- l: general
+-- g: goto
+-- w: workspace
+-- c: inlay hints
+vim.keymap.set('n', '<leader>le', ':Lspsaga show_line_diagnostics<cr>')
+vim.keymap.set('n', '<leader>lE', ':Lspsaga show_cursor_diagnostics<cr>')
+vim.keymap.set('n', '<leader>lq', vim.diagnostic.setloclist)
+vim.keymap.set('n', '<leader>lk', vim.lsp.buf.hover)
+vim.keymap.set('n', '<leader>ld', ':Lspsaga preview_definition<cr>')
+vim.keymap.set('n', '<leader>lr', ':Lspsaga rename<cr>')
+vim.keymap.set('n', '<leader>lh', vim.lsp.buf.signature_help)
+vim.keymap.set('n', '<leader>la', vim.lsp.buf.code_action)
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.formatting)
+vim.keymap.set('n', '<leader>lb', ':LSoutlineToggle<cr>')
+vim.keymap.set('n', '<leader>la', ':Lspsaga code_action<cr>')
+vim.keymap.set('n', '<leader>lu', ':Lspsaga lsp_finder<cr>')
+vim.keymap.set('n', '<F12>', ':Lspsaga code_action<cr>')
+vim.keymap.set('n', '<leader>it', function() require('rust-tools.inlay_hints').toggle_inlay_hints() end)
+vim.keymap.set('n', '<leader>is', function() require('rust-tools.inlay_hints').set_inlay_hints() end)
+vim.keymap.set('n', '<leader>id', function() require('rust-tools.inlay_hints').diable_inlay_hints() end)
+vim.keymap.set('n', '<f4>', ':SymbolsOutline<cr>')
 
--- Change leader to a comma
-vim.g.mapleader = ' '
+vim.keymap.set('n', '<leader>gD', vim.lsp.buf.declaration)
+vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition)
+vim.keymap.set('n', '<leader>gt', vim.lsp.buf.type_definition)
+vim.keymap.set('n', '<leader>gi', vim.lsp.buf.implementation)
+vim.keymap.set('n', '<leader>gp', ':Lspsaga diagnostic_jump_prev<cr>')
+vim.keymap.set('n', '<leader>gn', ':Lspsaga diagnostic_jump_next<cr>')
+vim.keymap.set('n', '<leader>gr', vim.lsp.buf.references)
 
------------------------------------------------------------
--- Neovim shortcuts
------------------------------------------------------------
+vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder)
+vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder)
+vim.keymap.set('n', '<leader>wl', function() print(vim.inspect(vim.lsp.buf.list_workspace_folders())) end)
+-- t: terminal
+-- use <f5> to toggle terminal, this can be set in lua/configs/terminal.lua
+-- the default position is also set in lua/configs/terminal.lua
+vim.keymap.set('t', '<esc>', '<C-\\><C-n>')
+vim.keymap.set('n', '<leader>tt', ':ToggleTerm direction=tab<cr>')
+vim.keymap.set('n', '<leader>tf', ':ToggleTerm direction=float<cr>')
+vim.keymap.set('n', '<leader>th', ':ToggleTerm direction=horizontal<cr>')
+vim.keymap.set('n', '<leader>tv', ':ToggleTerm direction=vertical<cr>')
 
--- Telescope bindings
-function _find_files()
-    local is_git = os.execute("git status &>/dev/null")
-    if (is_git == 0) then
-        vim.cmd(":Telescope git_files")
-    else
-        vim.cmd(":Telescope find_files")
-    end
-end
-
--- Binding for code runner
-map('n', '<C-z>', ':Run<CR>', { noremap = true, silent = true })
-
-
-map('n', '<Leader>f', ':lua_find_files()<CR>', { noremap = true, silent = true })
-map('n', '<Leader>o', ':Telescope oldfiles<CR>', { noremap = true, silent = true })
-map('n', '<Leader>s', ':Telescope live_grep<CR>', { noremap = true, silent = true })
-
--- LSP Diagnostics Toggle bindings
-map('n', '<Leader>d', ':ToggleDiag<CR>', { noremap = true, silent = true })
-map('n', '<leader>du', '<Plug>(toggle-lsp-diag-underline)', { silent = true })
-map('n', '<leader>ds', '<Plug>(toggle-lsp-diag-signs)', { silent = true })
-map('n', '<leader>dv', '<Plug>(toggle-lsp-diag-vtext)', { silent = true })
-map('n', '<leader>di', '<Plug>(toggle-lsp-diag-update_in_insert)', { silent = true })
-
--- Map Esc to kk
-map('i', 'kk', '<Esc>')
-
--- Clear search highlighting with <leader> and c
-map('n', '<leader>c', ':nohl<CR>')
-
--- Toggle auto-indenting for code paste
-map('n', '<F2>', ':set invpaste paste?<CR>')
-vim.opt.pastetoggle = '<F2>'
-
--- Change split orientation
-map('n', '<leader>tk', '<C-w>t<C-w>K') -- change vertical to horizontal
-map('n', '<leader>th', '<C-w>t<C-w>H') -- change horizontal to vertical
-
--- Move around splits using Ctrl + {h,j,k,l}
-map('n', '<C-h>', '<C-w>h')
-map('n', '<C-j>', '<C-w>j')
-map('n', '<C-k>', '<C-w>k')
-map('n', '<C-l>', '<C-w>l')
-
--- Reload configuration without restart nvim
-map('n', '<leader>r', ':so %<CR>')
-
--- Fast saving with <leader> and s
-map('n', '<leader>s', ':w<CR>')
-map('i', '<leader>s', '<C-c>:w<CR>')
-
--- Close all windows and exit from Neovim with <leader> and q
-map('n', '<leader>q', ':qa!<CR>')
-
------------------------------------------------------------
--- Applications and Plugins shortcuts
------------------------------------------------------------
-
--- Terminal mappings
-map('n', '<C-t>', ':Term<CR>', { noremap = true })  -- open
-map('t', '<Esc>', '<C-\\><C-n>')                    -- exit
-
--- NvimTree
-map('n', '<C-n>', ':NvimTreeToggle<CR>')            -- open/close
---map('n', '<leader>f', ':NvimTreeRefresh<CR>')       -- refresh
-map('n', '<leader>n', ':NvimTreeFindFile<CR>')      -- search file
-
--- Tagbar
-map('n', '<leader>z', ':TagbarToggle<CR>')          -- open/close
+-- h: git
+vim.keymap.set('n', '<leader>hu', ':Gitsigns undo_stage_hunk<cr>')
+vim.keymap.set('n', '<leader>hn', ':Gitsigns next_hunk<cr>')
+vim.keymap.set('n', '<leader>hc', ':Gitsigns preview_hunk<cr>')
+vim.keymap.set('n', '<leader>hr', ':Gitsigns reset_hunk<cr>')
+vim.keymap.set('n', '<leader>hR', ':Gitsigns reset_buffer')
+vim.keymap.set('n', '<leader>hb', ':Gitsigns blame_line<cr>')
+vim.keymap.set('n', '<leader>hd', ':Gitsigns diffthis<cr>')
+vim.keymap.set('n', '<leader>hs', ':<C-U>Gitsigns select_hunk<CR>')
+vim.keymap.set('n', 'tt', ':ToggleDiag<CR>')
+vim.keymap.set('n', '<F1>', ':setlocal spell! spelllang=lt<CR>')
+--code runner
+--vim.keymap.set('n', 'r', ':RunCode<CR>', { noremap = true, silent = false })
+--vim.keymap.set('n', 'rf', ':RunFile<CR>', { noremap = true, silent = false })
+--vim.keymap.set('n', '<leader>rft', ':RunFile tab<CR>', { noremap = true, silent = false })
+--vim.keymap.set('n', '<leader>rp', ':RunProject<CR>', { noremap = true, silent = false })
+--vim.keymap.set('n', '<leader>rc', ':RunClose<CR>', { noremap = true, silent = false })
+--vim.keymap.set('n', '<leader>crf', ':CRFiletype<CR>', { noremap = true, silent = false })
+--vim.keymap.set('n', '<leader>crp', ':CRProjects<CR>', { noremap = true, silent = false })

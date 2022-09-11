@@ -1,2 +1,2 @@
-[ -f ~/.xprofile ] && . ~/.xprofile
-exec wmderland 
+[ -f ~/.xprofile ] && sh ~/.xprofile
+exec i3

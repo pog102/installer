@@ -1,4 +1,0 @@
-#!/bin/bash
-. ~/.local/bin/statusbar/nord
-printf "^c$blue^^b$black^  ^d^"
-

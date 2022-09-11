@@ -26,7 +26,7 @@ makepkg -si --noconfirm
 cd ..
 rm -rf paru
 paru -S  cli-visualizer brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
-autojump pamixer transmission-remote-tui-git sfeed clifm 
+autojump pamixer transmission-remote-tui-git sfeed clifm
 sudo usermod -aG video $USER
 brillo -c -S 1
 ##autologin
@@ -47,7 +47,7 @@ mv zshrc $HOME/.zshrc
 mv xprofile $HOME/.xprofile
 mv Pictures $HOME/
 mv bin/* $HOME/.bin
-mv xinitrc $HOME/.xinitrc 
+mv xinitrc $HOME/.xinitrc
 mv zprofile $HOME/.zprofile
 mv config/* $HOME/.config/
 mv mbsyncrc $HOME/.mbsyncrc
@@ -57,13 +57,15 @@ mv mbsyncrc $HOME/.mbsyncrc
 #cp -r Pictures $HOME/
 #cp -r suckless $HOME/
 #cp -r Music $HOME/
-mv applications/* $HOME/.local/share/applications
-git clone https://github.com/aesophor/wmderland.git
-cd wmderland && ./build.sh --install
-mkdir -p $HOME/.cache/wal/
-touch $HOME/.cache/wal/colors.Xresources
-ln -sf $HOME/.Xresources  $HOME/.cache/wal/colors.Xresources
-sudo pacman -S steam-native-runtime
+
+#mv applications/* $HOME/.local/share/applications
+#git clone https://github.com/aesophor/wmderland.git
+#cd wmderland && ./build.sh --install
+#mkdir -p $HOME/.cache/wal/
+#touch $HOME/.cache/wal/colors.Xresources
+#ln -sf $HOME/.Xresources  $HOME/.cache/wal/colors.Xresources
+#sudo pacman -S steam-native-runtime
+
 ##make dwm
 #cd ~/suckless/dwm/
 #sudo make install
@@ -77,14 +79,14 @@ sudo hwclock -w
 cd /usr/share/applications/
 sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.desktop qv412.desktop qvidcap.desktop
 mkdir $HOME/.config/dunst/
-ln -s $HOME/.config/dunst/dunstrc $HOME/.cache/wal/dunstrc 
+ln -s $HOME/.config/dunst/dunstrc $HOME/.cache/wal/dunstrc
 mkdir -p $HOME/.local/share/icons/custom/
 mkdir -p "$HOME/.sfeed/feeds"
 
 
 cd $HOME/.config/suckless/st
 make
-sudo make install 
+sudo make install
 
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}

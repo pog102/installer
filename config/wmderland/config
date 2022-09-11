@@ -11,31 +11,22 @@
 ; (2) and (3) are optional.
 ; example: float URxvt,urxvt,urxvt true
 
-; lnd pywall
+set $sound = /home/chad/.local/share/sounds/spaces.ogg
+set $deselect = ; lnd pywall
 Global Variables]
 ; `set <Key> = <Value>` to set a builtin varaible
 ; `set $<Variable> = <Value>` to define your own variable
 ; -----------------------------------------------------------------------
-set gap_width = 10
+set gap_width = 15
 set border_width = 3
 set min_window_width = 100
 set min_window_height = 100
 set float_move_step = 10
 set float_resize_step = 10
 ;set focused_color = ff596e84
-;set unfocused_color = ff394859
+;set unfocused_color = 278ED1
 set focus_follows_mouse = true
-set_from_resource $fg wmderland.color7 #f0f0f0
-set_from_resource $bg wmderland.color2 #f0f0f0
-.
-# class                 border  backgr. text indicator child_border
-client.focused          $bg     $bg     $fg  $bg       $bg
-client.focused_inactive $bg     $bg     $fg  $bg       $bg
-client.unfocused        $bg     $bg     $fg  $bg       $bg
-client.urgent           $bg     $bg     $fg  $bg       $bg
-client.placeholder      $bg     $bg     $fg  $bg       $bg
-
-client.background       $bg
+include "/home/chad/.cache/wal/wmderland"
 
 set $Alt = Mod1
 set $Cmd = Mod4
@@ -48,7 +39,7 @@ set $Mod = $Cmd
 assign URxvt 1
 assign jetbrains-idea 2
 assign Google-chrome 3
-assign Firefox 3
+;assign Firefox 3
 assign dolphin 4
 assign ark 4
 assign Et 5
@@ -77,10 +68,9 @@ floating systemsettings true
 floating SimpleScreenRecorder true
 floating Sxiv true
 floating feh true
-floating mpv true
 floating Peek true
 floating Gcolor2 true
-floating Steam true
+;floating Steam true
 floating PCSX2 true
 floating Wine true
 floating VirtualBox Machine true
@@ -112,15 +102,16 @@ prohibit Wine,Wine System Tray true
 ; `bindsym <Modifier>+<Key> action1; action2; action3; ...` where
 ; an action can be either a built-in action or a shell command to execute
 ; -----------------------------------------------------------------------
-bindsym $Mod+1 goto_workspace 1
-bindsym $Mod+2 goto_workspace 2
-bindsym $Mod+3 goto_workspace 3
-bindsym $Mod+4 goto_workspace 4
-bindsym $Mod+5 goto_workspace 5
-bindsym $Mod+6 goto_workspace 6
-bindsym $Mod+7 goto_workspace 7
-bindsym $Mod+8 goto_workspace 8
-bindsym $Mod+9 goto_workspace 9
+bindsym $Mod+1 goto_workspace 1; exec paplay $sound
+bindsym $Mod+2 goto_workspace 2; exec paplay $sound
+bindsym $Mod+3 goto_workspace 3; exec paplay $sound
+bindsym $Mod+4 goto_workspace 4; exec paplay $sound
+bindsym $Mod+5 goto_workspace 5; exec paplay $sound
+bindsym $Mod+6 goto_workspace 6; exec paplay $sound
+bindsym $Mod+7 goto_workspace 7; exec paplay $sound
+bindsym $Mod+8 goto_workspace 8; exec paplay $sound
+bindsym $Mod+9 goto_workspace 9; exec paplay $sound
+
 
 bindsym $Mod+Shift+j workspace -1
 bindsym $Mod+Shift+k workspace +1
@@ -135,29 +126,36 @@ bindsym $Mod+Shift+7 move_window_to_workspace 7
 bindsym $Mod+Shift+8 move_window_to_workspace 8
 bindsym $Mod+Shift+9 move_window_to_workspace 9
 
-bindsym Control+Right exec brillo -q -A 1
-bindsym Control+Left exec  brillo -q -U 1
+bindsym $Mod+a exec ~/.bin/anisdisplay
+bindsym Control+Right exec ~/.bin/upbright A
+bindsym Control+Left exec  ~/.bin/upbright U
+bindsym Control+Up exec  ~/.bin/upvol i
+bindsym Control+Down exec  ~/.bin/upvol d
 
-bindsym $Mod+h navigate_left
-bindsym $Mod+l navigate_right
-bindsym $Mod+k navigate_up
-bindsym $Mod+j navigate_down
+bindsym $Mod+Left navigate_left
+bindsym $Mod+Right navigate_right
+bindsym $Mod+Up navigate_up
+bindsym $Mod+Down navigate_down
 bindsym $Mod+$Alt+Shift+h float_move_left
 bindsym $Mod+$Alt+Shift+l float_move_right
 bindsym $Mod+$Alt+Shift+k float_move_up
 bindsym $Mod+$Alt+Shift+j float_move_down
-bindsym $Mod+$Alt+h resize_width -3
-bindsym $Mod+$Alt+l resize_width +3
-bindsym $Mod+$Alt+k resize_height -3
-bindsym $Mod+$Alt+j resize_height +3
+bindsym $Mod+$Alt+Right resize_width -3
+bindsym $Mod+$Alt+Left resize_width +3
+bindsym $Mod+$Alt+Down resize_height -3
+bindsym $Mod+$Alt+Up resize_height +3
 bindsym $Mod+g tile_h
 bindsym $Mod+v tile_v
 bindsym $Mod+Shift+space toggle_floating
 bindsym $Mod+f toggle_fullscreen
-bindsym $Mod+q kill
+bindsym $Mod+q kill; exec paplay /home/chad/.local/share/sounds/deselect.ogg
+
+
 bindsym $Mod+g exec ~/scripts/games/wrapper.sh
 bindsym $Mod+Shift+Escape exit
 bindsym $Mod+Shift+r reload
+bindsym $Mod+r exec ~/.bin/rssreader
+bindsym $Mod+n exec nsxiv -t ~/Pictures/
 
 bindsym $Mod+$Alt+1 resize_set_ratio 10
 bindsym $Mod+$Alt+2 resize_set_ratio 20
@@ -170,8 +168,8 @@ bindsym $Mod+$Alt+8 resize_set_ratio 80
 bindsym $Mod+$Alt+9 resize_set_ratio 90
 bindsym $Mod+$Alt+equal resize_reset_ratios
 
-bindsym XF86MonBrightnessUp exec uplight A 1
-bindsym XF86MonBrightnessDown exec uplight U 1
+bindsym XF86MonBrightnessUp exec upbright A
+bindsym XF86MonBrightnessDown exec upbright U
 bindsym XF86KbdBrightnessUp exec kbdlight up 10
 bindsym XF86KbdBrightnessDown exec kbdlight down 10
 bindsym XF86LaunchA exec rofi -show window
@@ -180,8 +178,8 @@ bindsym XF86AudioPrev exec mpc prev
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioMute exec amixer -q -D pulse set Master toggle
-bindsym XF86AudioRaiseVolume exec amixer -q -D pulse set Master 5%+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q -D pulse set Master 5%- unmute
+bindsym XF86AudioRaiseVolume exec upvol i
+bindsym XF86AudioLowerVolume exec upvol d
 bindsym XF86PowerOff exec qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout -1 -1 -1
 bindsym $Mod+Escape exec toggle_screen.sh
 
@@ -190,18 +188,17 @@ bindsym Control+Shift+4 exec scrotutl -s
 bindsym Control+Shift+space+4 exec
 
 bindsym $Mod+d exec rofi -show drun -theme rib
-bindsym $Mod+Return exec alacritty
+bindsym $Mod+Return exec st; exec paplay /home/chad/.local/share/sounds/select.ogg
+
 
 
 ; [Autostart]
 ; Applications to execute when WM starts up (DON'T append '&' at the end)
 ; -----------------------------------------------------------------------
-exec pulseaudio --start --log-target=syslog
+;exec pulseaudio --start --log-target=syslog
 exec_on_reload ~/.config/mpd/launch.sh
+exec_on_reload ~/.config/polybar/launch.sh
 exec dunst
 exec dispad
 exec displayctl
 exec klipper
-exec killall krunner
-exec compton --config ~/.config/compton/compton.conf
-exec_on_reload ~/.config/polybar/launch.sh
