@@ -4,7 +4,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 sudo rm /var/lib/pacman/db.lck
 pactl set-card-profile alsa_card.usb-Sony_Interactive_Entertainment_Wireless_Controller-00 off
 sudo mv bluetooth /var/lib
-sudo pacman -S ttf-roboto-mono ttf-fira-code ttf-nerd-font ttf-sazanami ttf-liberation \
+sudo pacman -S zathura ttf-roboto-mono ttf-fira-code ttf-nerd-font ttf-sazanami ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
 sxiv mpv feh fzf yt-dlp unclutter nvidia-dkms neovim \
@@ -51,6 +51,7 @@ mv xinitrc $HOME/.xinitrc
 mv zprofile $HOME/.zprofile
 mv config/* $HOME/.config/
 mv mbsyncrc $HOME/.mbsyncrc
+mv apps/* $HOME/.local/share/applications/
 #cp .xinitrc $HOME/
 #cp .zprofile $HOME/
 #cp .bin $HOME/
@@ -81,7 +82,7 @@ sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.de
 mkdir $HOME/.config/dunst/
 ln -s $HOME/.config/dunst/dunstrc $HOME/.cache/wal/dunstrc
 mkdir -p $HOME/.local/share/icons/custom/
-mkdir -p "$HOME/.sfeed/feeds"
+# mkdir -p "$HOME/.sfeed/feeds"
 
 
 cd $HOME/.config/suckless/st

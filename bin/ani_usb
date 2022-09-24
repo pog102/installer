@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+dir="/run/media/chad/4C99-6202/"
+cd $dir
+dire=$(ls | rofi -dmenu -theme music)
+[ -z "$dire" ] && exit
+[ -d "$dire" ] && cd "$dire" || mpv "$dire"
+
+file=$(ls | rofi -dmenu -theme music)
+[ -z "$file" ] && exit
+mpv "$file"
+
+

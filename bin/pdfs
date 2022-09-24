@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+#
+# A rofi powered menu to execute power related action.
+# Uses: amixer mpc poweroff reboot rofi rofi-prompt
+dir=~/Documents/IT/
+cd $dir
+file=$(ls *pdf | rofi -dmenu -theme music)
+[ -f "$file" ] && zathura $dir$file
+
+
+
+

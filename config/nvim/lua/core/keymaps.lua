@@ -9,7 +9,7 @@ vim.keymap.set('n', '<F3>', ':NvimTreeToggle<cr>')
 vim.keymap.set('n', '<leader>ff', ':NvimTreeToggle<cr>')
 vim.keymap.set('n', '<leader>ft', ':NvimTreeFocus<cr>')
 -- y: telescope
-vim.keymap.set('n', '<F9>', function() require 'telescope.builtin'.find_files {} end)
+vim.keymap.set('n', 'f', function() require 'telescope.builtin'.oldfiles {} end)
 vim.keymap.set('n', '<F10>', function() require 'telescope.builtin'.git_files {} end)
 vim.keymap.set('n', '<F11>', function() require 'telescope.builtin'.buffers {} end)
 	--clipboard
@@ -29,8 +29,8 @@ vim.keymap.set('n', '<m-0>', '<c-w>>')
 vim.keymap.set('n', '<m-->', '<c-w>-')
 vim.keymap.set('n', '<m-=>', '<c-w>+')
 -- b: buffer
-vim.keymap.set('n', '<leader>bn', ':bn<cr>')
-vim.keymap.set('n', '<leader>bp', ':bp<cr>')
+vim.keymap.set('n', '<tab>', ':bn<cr>')
+vim.keymap.set('n', '<backspace>', ':bp<cr>')
 vim.keymap.set('n', '<leader>bd', ':Bdelete<cr>')
 -- p: plugins
 vim.keymap.set('n', '<leader>pi', ':PackerInstall<cr>')

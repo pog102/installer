@@ -48,3 +48,20 @@ autocmd BufNewFile *.cs 0r ~/.config/nvim/blues/template.cs
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+
+syntax on
+set nu
+set tabstop=4
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+set smartindent
+set showmatch
+set incsearch
+
+function! ToggleEndChar(charToMatch)
+    s/\v(.)$/\=submatch(1)==a:charToMatch ? '' : submatch(1).a:charToMatch
+endfunction
+nnoremap w :call ToggleEndChar(';')<CR>

@@ -10,6 +10,7 @@ alias usb="sudo umount -l /dev/sda"
 alias c="clifm"
 alias ns="nsxiv"
 alias ls="lsd"
+alias music="yt-dlp -x --add-metadata --output '~/Music/%(title)s.%(ext)s' --audio-quality 0 -i --audio-format flac "
 acer(){
 scp -r $1 cha@192.168.1.85:/home/cha/$2
 }

@@ -22,11 +22,12 @@ client.background       $bg
 # export FILE="ranger"
 #export TERMINAL="st"
 #export TERMINAL="st"
-
+bindsym F9 exec maim -s | tee ~/Pictures/class/$(date +%s).png | xclip -selection clipboard -t image/png
 bindsym Control+Up exec  ~/.bin/upvol i
 bindsym Control+Down exec  ~/.bin/upvol d
 bindsym Control+Right exec ~/.bin/upbright A
 bindsym Control+Left exec  ~/.bin/upbright U
+bindsym $Mod+p exec  ~/.bin/pdfs
 
 bindsym $Mod+g exec ~/scripts/games/wrapper.sh
 #bindsym $Mod+r exec ~/.bin/rssreader
@@ -59,6 +60,8 @@ bindsym $mod+Shift+Return	exec --no-startup-id samedir
 bindsym $mod+Shift+space 	floating toggle
 bindsym $mod+space		focus mode_toggle
 bindsym $mod+Return		exec st
+bindsym $mod+m		exec rofi-mpd
+bindsym $mod+a		exec ani_usb
 bindsym Mod1+Return		exec st
 
 bindsym $mod+Escape		workspace prev
@@ -87,7 +90,6 @@ bindsym $mod+Shift+i		exec --no-startup-id i3resize up
 bindsym $mod+o			sticky toggle
 bindsym $mod+Shift+o		exec --no-startup-id i3resize right
 
-bindsym $mod+a			exec --no-startup-id ddspawn dropdowncalc -f mono:pixelsize=24
 
 bindsym $mod+s			gaps inner current plus 5
 bindsym $mod+Shift+s		gaps inner current minus 5
