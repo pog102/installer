@@ -7,7 +7,7 @@ sudo mv bluetooth /var/lib
 sudo pacman -S zathura i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanami ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
-sxiv mpv feh fzf yt-dlp unclutter nvidia-dkms neovim \
+mpv feh fzf yt-dlp unclutter nvidia-dkms neovim \
 xclip maim isync polybar networkmanager
 sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
@@ -25,7 +25,7 @@ cd paru
 makepkg -si --noconfirm
 cd ..
 rm -rf paru
-paru -S  cli-visualizer brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
+paru -S  cli-visualizer nsxiv brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
 autojump pamixer transmission-remote-tui-git sfeed clifm
 sudo usermod -aG video $USER
 brillo -c -S 1
