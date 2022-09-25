@@ -52,6 +52,9 @@ mv zprofile $HOME/.zprofile
 mv config/* $HOME/.config/
 mv mbsyncrc $HOME/.mbsyncrc
 mv apps/* $HOME/.local/share/applications/
+mkdir $HOME/.local/share/icons/custom/
+mv icons/* $HOME/.local/share/icons/custom/
+
 #cp .xinitrc $HOME/
 #cp .zprofile $HOME/
 #cp .bin $HOME/
@@ -81,7 +84,6 @@ cd /usr/share/applications/
 sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.desktop qv412.desktop qvidcap.desktop
 mkdir $HOME/.config/dunst/
 
-ln -s $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
 mkdir -p $HOME/.local/share/icons/custom/
 # mkdir -p "$HOME/.sfeed/feeds"
 
@@ -90,8 +92,12 @@ cd $HOME/.config/suckless/st
 make
 sudo make install
 
+
+
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
+ln -s $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
+
 
 
 
