@@ -80,7 +80,8 @@ sudo hwclock -w
 cd /usr/share/applications/
 sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.desktop qv412.desktop qvidcap.desktop
 mkdir $HOME/.config/dunst/
-ln -s $HOME/.config/dunst/dunstrc $HOME/.cache/wal/dunstrc
+
+ln -s $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
 mkdir -p $HOME/.local/share/icons/custom/
 # mkdir -p "$HOME/.sfeed/feeds"
 
