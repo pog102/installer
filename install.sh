@@ -97,6 +97,7 @@ sudo make install
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
 ln -s $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
+ln -s $HOME/.cache/wal/zathurarc $HOME/.config/zathura/zathurarc
 sudo xset b off
 
 
