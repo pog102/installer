@@ -88,7 +88,7 @@ mkdir -p $HOME/.local/share/icons/custom/
 # mkdir -p "$HOME/.sfeed/feeds"
 
 
-cd $HOME/.config/suckless/st
+cd $HOME/.config/st
 make
 sudo make install
 
