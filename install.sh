@@ -32,15 +32,17 @@ brillo -c -S 1
 ##autologin
 sudo mkdir /etc/systemd/system/getty@tty1.service.d/
 sudo touch /etc/systemd/system/getty@tty1.service.d/autologin.conf
-echo "ATTRS{idVendor}==\"152d\", ATTRS{idProduct}==\"2329\", RUN+=\"$HOME/.bin/nyaupdate\"" | sudo tee -a /etc/udev/rules.d/test.rules
+# echo "ATTRS{idVendor}==\"152d\", ATTRS{idProduct}==\"2329\", RUN+=\"$HOME/.bin/nyaupdate\"" | sudo tee -a /etc/udev/rules.d/test.rules
 echo "[Service]" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$TERM" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
-echo "DefaultTimeoutStopSec=4"  | sudo tee -a /etc/systemd/system.conf
+echo "DefaultTimeoutStopSec=1"  | sudo tee -a /etc/systemd/system.conf
 ##.dots
 mkdir $HOME/.config/
 mkdir $HOME/.bin
-mkdir $HOME/.local/share/sounds
+mkdir -p $HOME/.local/share/sounds
+mkdir -p $HOME/.local/share/icons/custom/
+mkdir -p $HOME/.local/share/applications/
 sudo mv bin/transadd /usr/local/bin
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
@@ -52,7 +54,6 @@ mv zprofile $HOME/.zprofile
 mv config/* $HOME/.config/
 mv mbsyncrc $HOME/.mbsyncrc
 mv apps/* $HOME/.local/share/applications/
-mkdir $HOME/.local/share/icons/custom/
 mv icons/* $HOME/.local/share/icons/custom/
 
 #cp .xinitrc $HOME/
@@ -78,6 +79,7 @@ mv icons/* $HOME/.local/share/icons/custom/
 #cd ~/suckless/dwmblocks
 #sudo make install
 #Footer
+####
 sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
 sudo hwclock -w
 cd /usr/share/applications/
