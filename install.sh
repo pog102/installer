@@ -8,6 +8,7 @@ sudo pacman --needed -S autotiling zathura zathura-pdf-poppler i3-gaps ttf-robot
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
 mpv feh fzf yt-dlp unclutter nvidia-dkms neovim \
+xorg-server xorg-xinit \
 xclip maim isync polybar networkmanager
 sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
