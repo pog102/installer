@@ -1,4 +1,9 @@
 #!/bin/bash
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si --noconfirm
+cd ..
+rm -rf paru
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 sudo rm /var/lib/pacman/db.lck
@@ -21,11 +26,6 @@ echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 echo "[multilib]" | sudo tee -a /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
 sudo pacman -Syu
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si --noconfirm
-cd ..
-rm -rf paru
 paru --needed -S  cli-visualizer nsxiv brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
 autojump pamixer transmission-remote-tui-git sfeed clifm
 sudo usermod -aG video $USER

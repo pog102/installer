@@ -18,3 +18,4 @@ ani (){
 ssh cha@192.168.1.85 "sh /home/cha/bin/nyatog \"$1\""
 }
 alias ani_up="ssh cha@192.168.1.85 \"sh /home/cha/bin/nyaupdate2 \""
+alias size="du -h --max-depth=0"

@@ -60,8 +60,8 @@ bindsym $mod+Shift+Return	exec --no-startup-id samedir
 bindsym $mod+Shift+space 	floating toggle
 bindsym $mod+space		focus mode_toggle
 bindsym $mod+Return		exec st
-bindsym $mod+m		exec rofi-mpd
-bindsym $mod+a		exec ani_usb
+bindsym $mod+m		exec ~/.bin/rofi-mpd
+bindsym $mod+a		exec ~/.bin/ani_usb
 bindsym Mod1+Return		exec st
 
 bindsym $mod+Escape		workspace prev
@@ -122,6 +122,7 @@ bindsym $mod+Shift+l		move right 30
 bindsym $mod+Ctrl+l		move workspace to output right
 
 bindsym $mod+z			gaps outer current plus 5
+bindsym $mod+x			gaps outer current minus 5
 bindsym $mod+Shift+z		gaps outer current minus 5
 
 bindsym $mod+c			exec --no-startup-id cabl
@@ -140,7 +141,10 @@ bindsym $mod+End		workspace $ws10
 bindsym $mod+Shift+End		move container to workspace $ws10
 bindsym $mod+Prior		workspace prev
 bindsym $mod+Shift+Prior	move container to workspace prev
-bindsym $mod+Next		workspace next
+
+bindsym --whole-window --border $mod+button4 workspace next
+bindsym --whole-window --border $mod+button5 workspace prev
+#bindsym $mod+Next		workspace next
 bindsym $mod+Shift+Next		move container to workspace next
 bindsym $mod+Tab		workspace back_and_forth
 bindsym $mod+XF86Back		workspace prev
