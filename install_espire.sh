@@ -7,7 +7,7 @@ sudo mv bluetooth /var/lib
 sudo pacman --needed -S zathura zathura-pdf-poppler i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanami ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
-mpv feh fzf yt-dlp unclutter nvidia-dkms neovim \
+mpv feh fzf yt-dlp unclutter neovim \
 xclip maim isync polybar networkmanager
 sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
@@ -25,8 +25,8 @@ cd paru
 makepkg -si --noconfirm
 cd ..
 rm -rf paru
-paru --needed -S  cli-visualizer nsxiv brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
-autojump pamixer transmission-remote-tui-git sfeed clifm
+paru --needed -S  cli-visualizer nsxiv brillo python-pywalfox proton-ge-custom \
+autojump pamixer transmission-remote-tui-git
 sudo usermod -aG video $USER
 brillo -c -S 1
 ##autologin
@@ -80,7 +80,7 @@ mv icons/* $HOME/.local/share/icons/custom/
 #sudo make install
 #Footer
 ####
-sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
+# sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
 sudo hwclock -w
 cd /usr/share/applications/
 sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.desktop qv412.desktop qvidcap.desktop
