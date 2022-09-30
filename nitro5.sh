@@ -95,6 +95,7 @@ cd $HOME/.config/st
 make
 sudo make install
 
+timedatectl set-timezone Etc/GMT-3
 
 
 my_array=($HOME/Pictures/*)
