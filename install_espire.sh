@@ -90,6 +90,8 @@ mkdir $HOME/.config/dunst/
 # mkdir -p "$HOME/.sfeed/feeds"
 
 
+timedatectl set-timezone Etc/GMT-3
+
 cd $HOME/.config/st
 make
 sudo make install
