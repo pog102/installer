@@ -13,7 +13,7 @@ sudo mv bluetooth /var/lib
 sudo pacman --needed -S zathura zathura-pdf-poppler i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanami ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
-mpv feh fzf yt-dlp unclutter nvidia-dkms neovim \
+mpv feh fzf yt-dlp unclutter nvidia-open-dkms neovim \
 xorg-server xorg-xinit \
 xclip maim isync polybar networkmanager
 sudo systemctl enable NetworkManager
