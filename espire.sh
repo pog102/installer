@@ -48,6 +48,7 @@ mkdir -p $HOME/.local/share/applications/
 sudo mv bin/transadd /usr/local/bin
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
+mv scripts $HOME/
 mv xprofile $HOME/.xprofile
 mv Pictures $HOME/
 mv bin/* $HOME/.bin
