@@ -1,0 +1,7 @@
+#!/bin/sh
+charge=$(cat /sys/class/power_supply/BAT1/charge_now)
+current=$(cat /sys/class/power_supply/BAT1/current_now)
+time=$((${charge}*60/${current}))
+#rofi -theme bat -e "$(($time/60))h $(($time%60))min"
+notify-send "$(($time/60))h $(($time%60))min"
+
