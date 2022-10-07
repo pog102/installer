@@ -42,12 +42,14 @@ echo "DefaultTimeoutStopSec=1"  | sudo tee -a /etc/systemd/system.conf
 ##.dots
 mkdir $HOME/.config/
 mkdir $HOME/.bin
+mkdir $HOME/.mozilla
 mkdir -p $HOME/.local/share/sounds
 mkdir -p $HOME/.local/share/icons/custom/
 mkdir -p $HOME/.local/share/applications/
 sudo mv bin/transadd /usr/local/bin
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
+mv mozilla/* $HOME/.mozilla
 mv scripts $HOME/
 mv xprofile $HOME/.xprofile
 mv Pictures $HOME/
