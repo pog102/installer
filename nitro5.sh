@@ -15,6 +15,7 @@ sudo pacman --needed --noconfirm -S i3-gaps ttf-roboto-mono ttf-fira-code ttf-ne
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
 mpv feh fzf yt-dlp unclutter nvidia-open-dkms neovim \
 xorg-server xorg-xinit \
+lib32-libglvnd lib32-nvidia-utils lib32-sdl12-compat \
 xclip maim isync polybar networkmanager
 sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
