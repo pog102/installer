@@ -27,7 +27,7 @@ echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 echo "[multilib]" | sudo tee -a /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
 
-paru -S  cli-visualizer nsxiv zaread autotiling brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
+paru -S  cli-visualizer python-pywalfox nsxiv zaread autotiling brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
 autojump pamixer transmission-remote-tui-git sfeed clifm
 sudo usermod -aG video $USER
 brillo -c -S 1
