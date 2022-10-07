@@ -10,7 +10,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 sudo rm /var/lib/pacman/db.lck
 pactl set-card-profile alsa_card.usb-Sony_Interactive_Entertainment_Wireless_Controller-00 off
 sudo mv bluetooth /var/lib
-sudo pacman --needed -S zathura vulkan-intel zathura-pdf-poppler i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanami ttf-liberation \
+sudo pacman --needed -S vulkan-intel zathura-pdf-poppler i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanami ttf-liberation \
 rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
 mpv feh fzf yt-dlp unclutter neovim \
@@ -27,7 +27,7 @@ echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 echo "[multilib]" | sudo tee -a /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
 
-paru -S  cli-visualizer nsxiv brillo python-pywalfox proton-ge-custom \
+paru -S  cli-visualizer zaread nsxiv brillo python-pywalfox proton-ge-custom \
 autojump pamixer transmission-remote-tui-git
 sudo usermod -aG video $USER
 brillo -c -S 1
