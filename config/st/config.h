@@ -5,12 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font ="JetBrainsMono:pixelsize=18:antialias=true:autohint=true";
+static char *font ="Fira Code:pixelsize=18:antialias=true:autohint=true";
 static char *font2[] = {
 "FontAwesome:pixelsize=16:antialias=true:autohint=true",
 	"Hack Nerd Font:pixelsize=16:antialias=true:autohint=true",
 	"Sazanami :pixelsize=16:antialias=true:autohint=true",
-	"Fira Code:pixelsize=18:antialias=true:autohint=true"};
+	"JetBrainsMono:pixelsize=18:antialias=true:autohint=true"};
 static int borderpx = 2;
 
 /*
