@@ -137,7 +137,6 @@ function M.config()
 	--kind[type_number][2] = icon -- see lua/lspsaga/lspkind.lua
 
 	-- use default config
-  ------
 	-- saga.init_lsp_saga({
 	-- 	border_style = "single",
 	-- 	saga_winblend = 0,

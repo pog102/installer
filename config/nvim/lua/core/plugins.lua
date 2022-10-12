@@ -9,7 +9,7 @@ return require('packer').startup(function()
 	use 'nathom/filetype.nvim'
 	use 'WhoIsSethDaniel/toggle-lsp-diagnostics.nvim'
 	--pywal
-	use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
+  use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
 	-- bufferlua
 	use {
 		'akinsho/bufferline.nvim',

@@ -27,10 +27,13 @@ autocmd FileType markdown setlocal spell
 augroup exec_code
 	autocmd!
 
+	autocmd FileType *,m nnoremap <buffer> r
+				\ gg=G
+				\ :w <CR> :24split <bar> term octave % <CR>
 	autocmd FileType bash,sh nnoremap <buffer> r
 				\ :bash % <CR>
 
-	autocmd FileType python nnoremap <buffer> r
+	autocmd FileType python,py nnoremap <buffer> r
 				\ gg=G
 				\ :w <CR> :24split <bar> term python % <CR>
 
@@ -40,9 +43,11 @@ augroup exec_code
 	autocmd FileType cs nnoremap <buffer> r
 				\ gg=G
 				\ :w <CR> :24split <bar> term mcs % &&  mono %:r.exe <CR>
+
 augroup END
 
 autocmd BufNewFile *.cs 0r ~/.config/nvim/blues/template.cs
+autocmd BufNewFile *.sh 0r ~/.config/nvim/blues/template.sh
 
 
 if has("autocmd")
@@ -63,5 +68,5 @@ set incsearch
 
 function! ToggleEndChar(charToMatch)
     s/\v(.)$/\=submatch(1)==a:charToMatch ? '' : submatch(1).a:charToMatch
-endfunction
 nnoremap w :call ToggleEndChar(';')<CR>
+endfunction

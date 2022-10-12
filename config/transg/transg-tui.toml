@@ -1,0 +1,24 @@
+refresh-interval = 1200
+traffic-monitor = "upload"
+show-icons = true
+
+[[connections]]
+name = "localhost"
+username = ""
+password = ""
+url = "http://127.0.0.1:9091/transmission/rpc"
+download-dir = ""
+local-download-dir = ""
+
+[colors.main]
+text = "Gray"
+highlight = "Gray"
+highlight-text = "Red"
+text-soft = "Gray"
+text-error = "Red"
+[colors.details]
+text = "Gray"
+highlight = "LightGreen"
+highlight-text = "DarkGray"
+text-soft = "Gray"
+text-error = "Red"

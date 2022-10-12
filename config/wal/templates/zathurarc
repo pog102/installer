@@ -1,3 +1,5 @@
+map <S-Down> scroll full-down
+map <S-Up> scroll full-up
 set recolor "true"
 set completion-bg "{background}"
 set completion-fg "{foreground}"

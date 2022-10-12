@@ -4,8 +4,8 @@
 # Uses: amixer mpc poweroff reboot rofi rofi-prompt
 dir=~/Documents/IT/
 cd $dir
-file=$(ls *pdf | rofi -dmenu -theme music)
-[ -f "$file" ] && zathura $dir$file
+file=$(ls | rofi -dmenu -theme music)
+[ -f "$file" ] && zaread $dir$file
 
 
 
