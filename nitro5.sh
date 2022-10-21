@@ -40,6 +40,8 @@ echo "[Service]" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologi
 echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$TERM" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "DefaultTimeoutStopSec=1"  | sudo tee -a /etc/systemd/system.conf
+echo "SUBSYSTEM==\"power_supply\", ATTR{status}==\"Discharging\", ATTR{capacity}==\"[0-1]\", RUN+=\"/usr/bin/systemctl shutdown\""  | sudo tee -a /etc/udev/rules.d/99-lowbat.rules
+
 ##.dots
 mkdir $HOME/.config/
 mkdir $HOME/.bin
