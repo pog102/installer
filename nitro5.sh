@@ -13,7 +13,7 @@ sudo mv bluetooth /var/lib
 sudo pacman --needed --noconfirm -S i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanami ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
-mpv feh fzf yt-dlp unclutter nvidia-open-dkms neovim zip unzip \
+mpv feh fzf yt-dlp unclutter nvidia-open-dkms neovim zip unzip zathura-pdf-poppler\
 xorg-server xorg-xinit \
 lib32-libglvnd lib32-nvidia-utils lib32-sdl12-compat \
 xclip maim isync polybar networkmanager
