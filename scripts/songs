@@ -1,0 +1,24 @@
+#!/bin/sh
+list=(
+ 'https://youtu.be/nBNlO7x41LY'
+ 'https://youtu.be/51_1zQg2k6s'
+ 'https://youtu.be/vX1lUMGURbY'
+ 'https://youtu.be/qTsgfcoFoyA'
+ 'https://youtu.be/eLAvVQQxZ5s'
+ 'https://youtu.be/kFZKgf5WG0g'
+ 'https://youtu.be/lX44CAz-JhU'
+ 'https://youtu.be/S03T47hapAc'
+ 'https://youtu.be/oPgsK0oKfks'
+ 'https://youtu.be/9gMpODhx2Bw'
+ 'https://youtu.be/DBXTRtm07RA'
+ 'https://youtu.be/bIBDmDJ7SDc'
+ 'https://youtu.be/6dPezw1HxSU'
+ 'https://youtu.be/n9FmLmWpDvM'
+ 'https://youtu.be/9YO5ruvFSCU'
+ )
+
+for song in "${list[@]}"
+do
+    yt-dlp -x --add-metadata --output '~/Music/%(title)s.%(ext)s' --audio-quality 0 -i --audio-format flac "$song"
+    # xdg-open "$song"
+done
