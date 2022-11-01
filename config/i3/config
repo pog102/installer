@@ -23,8 +23,8 @@ client.background       $bg
 #export TERMINAL="st"
 #export TERMINAL="st"
 bindsym F10 exec maim -s | tee ~/Pictures/class/$(date +%s).png | xclip -selection clipboard -t image/png
-bindsym Control+Up exec  ~/.bin/upvol i
-bindsym Control+Down exec  ~/.bin/upvol d
+bindsym Control+Up exec  ~/.bin/upvol +
+bindsym Control+Down exec  ~/.bin/upvol -
 bindsym Control+Right exec ~/.bin/upbright A
 bindsym Control+Left exec  ~/.bin/upbright U
 bindsym $Mod+p exec  ~/.bin/pdfs
@@ -39,6 +39,7 @@ gaps inner 8
 gaps outer 8
 set $term --no-startup-id $TERMINAL
 set $mod Mod4
+set $mod2 Mod1
 bindsym $mod+minus scratchpad show
 smart_borders on
 # #---Dropdown Windows---# #
@@ -58,10 +59,13 @@ for_window [instance="dropdown_*"] move position center
 bindsym $mod+Shift+Return	exec --no-startup-id samedir
 
 bindsym $mod+Shift+space 	floating toggle
-bindsym $mod+space		focus mode_toggle
+##bindsym $mod+space		focus mode_toggle
 bindsym $mod+Return		exec st
 bindsym $mod+m		exec ~/.bin/rofi-mpd
 bindsym $mod+a		exec ~/.bin/ani_usb
+bindsym $mod2+Up		exec mpc toggle
+bindsym $mod2+Left		exec mpc prev
+bindsym $mod2+Right		exec mpc next
 bindsym Mod1+Return		exec st
 
 bindsym $mod+Escape		workspace prev
@@ -89,6 +93,7 @@ bindsym $mod+Shift+i		exec --no-startup-id i3resize up
 
 bindsym $mod+o			sticky toggle
 bindsym $mod+Shift+o		exec --no-startup-id i3resize right
+bindsym $Mod+space		exec ~/scripts/keyboard
 
 
 bindsym $mod+s			gaps inner current plus 5
@@ -156,6 +161,8 @@ bindsym $mod+apostrophe		split horizontal ;; exec $term
 bindsym $mod+slash		split vertical ;; exec $term
 bindsym $mod+Shift+slash	kill
 bindsym $mod+backslash		workspace back_and_forth
+bindsym XF86AudioRaiseVolume exec ~/.bin/upvol +
+bindsym XF86AudioLowerVolume exec ~/.bin/upvol -
 
 workspace 1 output $fm
 workspace 2 output $fm
