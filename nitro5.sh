@@ -44,6 +44,7 @@ echo "SUBSYSTEM==\"power_supply\", ATTR{status}==\"Discharging\", ATTR{capacity}
 
 ##.dots
 mkdir $HOME/.config/
+mkdir $HOME/Music
 mkdir $HOME/.bin
 mkdir $HOME/.mozilla
 mkdir -p $HOME/.local/share/sounds
