@@ -31,7 +31,7 @@ sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
 systemctl enable bluetooth.service
 
-paru -S  cli-visualizer python-pywalfox nsxiv zaread autotiling brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
+paru -S  cli-visualizer python-pywalfox nsxiv zaread autotiling brillo python-pywalfox linux-tkg-pds-generic_v3  linux-tkg-pds-generic_v3-headers proton-ge-custom \
 pamixer transmission-remote-tui-git steam-native-runtime
 sudo usermod -aG video $USER
 brillo -c -S 1
