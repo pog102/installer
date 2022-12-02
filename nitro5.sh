@@ -19,7 +19,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 sudo rm /var/lib/pacman/db.lck
 pactl set-card-profile alsa_card.usb-Sony_Interactive_Entertainment_Wireless_Controller-00 off
 sudo mv bluetooth /var/lib
-yes | sudo pacman --needed -S i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanami ttf-liberation \
+sudo pacman --needed --noconfirm -S libva gnu-free-fonts \
+i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanami ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
 mpv feh fzf yt-dlp unclutter nvidia-open-dkms neovim zip unzip zathura-pdf-poppler \
@@ -30,8 +31,8 @@ sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
 systemctl enable bluetooth.service
 
-yes | paru -S  cli-visualizer python-pywalfox nsxiv zaread autotiling brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
-autojump pamixer transmission-remote-tui-git steam-native-runtime
+paru -S  cli-visualizer python-pywalfox nsxiv zaread autotiling brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
+pamixer transmission-remote-tui-git steam-native-runtime
 sudo usermod -aG video $USER
 brillo -c -S 1
 ##autologin
