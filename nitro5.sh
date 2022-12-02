@@ -13,7 +13,7 @@ echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 echo "[multilib]" | sudo tee -a /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
 
-sudo pacman -Syu
+sudo pacman --noconfirm -Syu
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 sudo rm /var/lib/pacman/db.lck
@@ -31,8 +31,9 @@ sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
 systemctl enable bluetooth.service
 
-paru -S  cli-visualizer python-pywalfox nsxiv zaread autotiling brillo python-pywalfox linux-tkg-pds-generic_v3  linux-tkg-pds-generic_v3-headers proton-ge-custom \
-pamixer transmission-remote-tui-git steam-native-runtime
+paru --noconfirm -S  cli-visualizer python-pywalfox brillo zaread 
+paru --noconfirm -S nsxiv autotiling linux-tkg-pds-generic_v3  linux-tkg-pds-generic_v3-headers proton-ge-custom \
+pamixer steam-native-runtime
 sudo usermod -aG video $USER
 brillo -c -S 1
 ##autologin
@@ -47,6 +48,7 @@ echo "SUBSYSTEM==\"power_supply\", ATTR{status}==\"Discharging\", ATTR{capacity}
 
 ##.dots
 mkdir $HOME/.config/
+mkdir $HOME/Downloads
 mkdir $HOME/Music
 mkdir $HOME/Csharp
 mkdir $HOME/.bin
@@ -106,7 +108,7 @@ cd $HOME/.config/st
 make
 sudo make install
 
-timedatectl set-timezone Etc/GMT-3
+timedatectl set-timezone Etc/GMT-2
 
 
 my_array=($HOME/Pictures/*)
