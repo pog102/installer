@@ -4,6 +4,15 @@ cd paru
 makepkg -si --noconfirm
 cd ..
 rm -rf paru
+
+sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key FBA220DFC880C036
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
+echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
+echo "[multilib]" | sudo tee -a /etc/pacman.conf
+echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
+
 sudo pacman -Syu
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -20,13 +29,6 @@ xclip maim isync polybar networkmanager rclone
 sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
 systemctl enable bluetooth.service
-sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
-sudo pacman-key --lsign-key FBA220DFC880C036
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
-echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
-echo "[multilib]" | sudo tee -a /etc/pacman.conf
-echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
 
 yes | paru -S  cli-visualizer python-pywalfox nsxiv zaread autotiling brillo python-pywalfox linux-xanmod-edge linux-xanmod-edge-headers proton-ge-custom \
 autojump pamixer transmission-remote-tui-git sfeed clifm
