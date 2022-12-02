@@ -12,7 +12,7 @@
     "blocklist-url": "http://www.example.com/blocklist",
     "cache-size-mb": 4,
     "dht-enabled": true,
-    "download-dir": "/run/media/chad/4C99-6202/Bleach Sennen Kessen Hen",
+    "download-dir": "/home/chad/anime",
     "download-queue-enabled": true,
     "download-queue-size": 5,
     "encryption": 1,
