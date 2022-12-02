@@ -93,7 +93,7 @@ mv icons/* $HOME/.local/share/icons/custom/
 #sudo make install
 #Footer
 ####
-sudo sed -i 's/-linux/-linux-xanmod-edge/g' /boot/loader/entries/*
+sudo sed -i 's/-linux/-linux-tkg-pds-generic_v3/g' /boot/loader/entries/*
 sudo hwclock -w
 cd /usr/share/applications/
 sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.desktop qv412.desktop qvidcap.desktop
