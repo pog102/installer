@@ -1,39 +1,50 @@
 #!/bin/sh
-[ ! -f "/run/media/$USER/4C99-6202/.progress" ] && touch "/run/media/$USER/4C99-6202/.progress"
+# dir=/run/media/$USER/4C99-6202/
+[ -d "/run/media/$USER/4C99-6202/" ] && download_dir="/run/media/$USER/4C99-6202/" || download_dir="/home/chad/anime/" #download directory
+ani_folder=$HOME/.config/nyaa # folder
+
+ani_list="$ani_folder/config" #anime list
+progress="$ani_folder/progress" #anime progress directory
+##Creating directories and a file
+[ ! -d "$ani_folder" ] && mkdir -p "$ani_folder"
+[ ! -f "$ani_list" ] && touch "$ani_list" && echo "add some anime in the $ani_list" && exit
+[ ! -f "$progress" ] && touch "$progress"
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 
-files=$(cat $HOME/.config/nyaa/config)
-for a in $files
+for anime_entry in $(cat $ani_list)
 do
-    i=$(echo $a | cut -d# -f1)
-end=$(echo $a | cut -d# -f2)
+    title=$(echo $anime_entry| cut -d# -f1)
+    [ ! -d "$download_dir$title" ] && mkdir "$download_dir$title"
+    total_ep=$(echo $anime_entry| cut -d# -f2)
 
-math=$(cat "/run/media/$USER/4C99-6202/.progress" | grep "$i" | grep -Po "#[0-9]+" | tr -d '#' || echo "0" )
-query=$(printf '%s' "$i" | tr ' ' '+' )
-echo "----------------------"
-echo "checking $i"
-#add while loop
-mag="p"
-b=1
-while [ ! -z $mag ] #new
-do #new
-    mat=$(($math+$b))
-    [ "$mat" -lt "10" ] && mat="0$mat"
-mag=$(curl -s "https://nyaa.si/?page=rss&q=$query+$mat+1080p&c=1_2&f=0" | grep -Po '<nyaa:infoHash>.*?</nyaa:infoHash>' | sed 's#<nyaa:infoHash>##g; s#<\/nyaa:infoHash>##g;' | tail -1)
-##progress
-[ ! -z $mag ] && transmission-remote -a "magnet:?xt=urn:btih:$mag"
-b=$(($b+1))
-done #new
-mat=$((10#$mat-1))
-    if [ ! -z $(grep "$i" "/run/media/$USER/4C99-6202/.progress" ) ]
+    current_ep=$(cat "$progress" | grep "$title" | grep -Po "#[0-9]+" | tr -d '#')
+    [ -z "$current_ep" ] && current_ep=$(echo 0)
+    query=$(printf '%s' "$title" | tr ' ' '+' )
+    echo "--------------------------------------"
+    echo -e "checking $title"
+    mag="p"
+    i=1
+    while true
+        do
+        next_ep=$(($current_ep+$i))
+        [ "$next_ep" -lt "10" ] && next_ep="0$next_ep" #makes one digit into two digits
+        mag=$(curl -s "https://nyaa.si/?page=rss&q=$query+$next_ep+1080p&c=1_2&f=0" | grep -Po '<nyaa:infoHash>.*?</nyaa:infoHash>' |
+        sed 's#<nyaa:infoHash>##g; s#<\/nyaa:infoHash>##g;' | tail -1) #finds torrent info hash
+        [ ! -z $mag ] && transmission-remote -U -w "$download_dir$title" --add "magnet:?xt=urn:btih:$mag" &>/dev/null && #adds magnet link to transmission
+        echo -e "found episode $next_ep" || break
+        i=$(($i+1))
+    done
+    next_ep=$((10#$next_ep-1)) #newest episode
+    if [ ! -z $(grep "$title" "$progress" ) ]
     then
-        sed -i "s/$i.*/$i #$mat/g"  "/run/media/$USER/4C99-6202/.progress"
+        sed -i "s/$title.*/$title #$next_ep/g"  $progress #updates progress
     else
-        echo -e "$i #$mat" >> "/run/media/$USER/4C99-6202/.progress"
+        echo -e "$title #$next_ep" >> $progress #adds a new anime entry to progress
     fi
-#[ "$(($mat - $math))" -ne "0" ] && notify-send "$i" "$(($mat-$math)) episodes found" &&
-polybar-msg action "#torrents.hook.0"
-[ "$end" -eq "$mat" ] && sed -i "s/$i.*//g; /^$/d" "$HOME/.config/nyaa/config"
+    [ "$(($next_ep - $current_ep))" -ne "0" ] && notify-send -t 1900 "$title" "$(($next_ep-$current_ep)) episodes found" #notifies new episodes
+    polybar-msg action "#torrents.hook.0" >/dev/null
+    [ "$total_ep" -eq "$next_ep" ] && sed -i "s/$title.*//g; /^$/d" "$ani_list" #removes anime entry from the list
 done
+echo "--------------------------------------"
 IFS=$SAVEIFS

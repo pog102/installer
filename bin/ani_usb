@@ -1,12 +1,22 @@
 #!/usr/bin/env bash
 dir="/run/media/chad/4C99-6202/"
 cd $dir
-dire=$(ls | rofi -dmenu -theme music)
+dire=$(ls | rofi -dmenu -theme music -matching fuzzy)
 [ -z "$dire" ] && exit
 [ -d "$dire" ] && cd "$dire" || mpv "$dire"
 
 file=$(ls | rofi -dmenu -theme music)
 [ -z "$file" ] && exit
-mpv "$file"
-
-
+num=$(echo $file | grep -Eo '[0-9][0-9] ' | xargs)
+# let num--
+echo $num
+SAVEIFS=$IFS #for string values whith whitespaces
+IFS=$(echo -en "\n\b")
+list=$(ls | tail -n +$num)
+echo $list
+for i in $list 
+do
+  mpv "$i"
+  
+done
+IFS=$SAVEIFS

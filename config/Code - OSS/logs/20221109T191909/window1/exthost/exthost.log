@@ -1,0 +1,155 @@
+2022-11-09 19:19:11.052 [info] Extension host with pid 3364 started
+2022-11-09 19:19:11.102 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2022-11-09 19:19:11.102 [info] ExtensionService#_doActivateExtension dlasagno.wal-theme, startup: true, activationEvent: '*'
+2022-11-09 19:19:11.102 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: true, activationEvent: '*'
+2022-11-09 19:19:11.187 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2022-11-09 19:19:11.187 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2022-11-09 19:19:11.239 [info] Eager extensions activated
+2022-11-09 19:19:11.252 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 19:19:11.252 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 19:19:11.253 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 19:19:11.253 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 19:19:49.493 [info] Extension host terminating: received terminate message from renderer
+2022-11-09 19:19:49.501 [info] Extension host with pid 3364 exiting with code 0
+2022-11-09 19:19:51.210 [info] Extension host with pid 3470 started
+2022-11-09 19:19:51.210 [info] Skipping acquiring lock for /home/chad/.config/Code - OSS/User/workspaceStorage/e7a09f8b642e4f4c852ecaaa82863ec8.
+2022-11-09 19:19:51.287 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2022-11-09 19:19:51.287 [info] ExtensionService#_doActivateExtension dlasagno.wal-theme, startup: true, activationEvent: '*'
+2022-11-09 19:19:51.287 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: true, activationEvent: '*'
+2022-11-09 19:19:51.348 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2022-11-09 19:19:51.348 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2022-11-09 19:19:51.401 [info] ExtensionService#_doActivateExtension muhammad-sammy.csharp, startup: true, activationEvent: 'workspaceContains:**/*.{csproj,sln,slnf,csx,cake}'
+2022-11-09 19:19:51.489 [info] Eager extensions activated
+2022-11-09 19:19:51.494 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 19:19:51.494 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 19:19:51.494 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 19:19:51.495 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 19:19:52.628 [info] ExtensionService#_doActivateExtension k--kato.docomment, startup: false, activationEvent: 'onLanguage:csharp'
+2022-11-09 19:19:53.202 [warning] DiagnosticCollection with name 'csharp' does already exist.
+2022-11-09 19:19:53.215 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:19:53.215 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: undefined
+2022-11-09 19:19:54.497 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:19:54.497 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 6
+2022-11-09 19:20:39.316 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:20:39.316 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 210
+2022-11-09 19:27:51.579 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:27:51.579 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 3574
+2022-11-09 19:29:51.708 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:29:51.708 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 3996
+2022-11-09 19:30:24.419 [info] ExtensionService#_doActivateExtension asvetliakov.vscode-neovim, startup: false, activationEvent: '*'
+2022-11-09 19:31:57.670 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:31:57.670 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 4864
+2022-11-09 19:36:20.755 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:36:20.755 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 6003
+2022-11-09 19:38:25.887 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:38:25.887 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 6287
+2022-11-09 19:38:56.249 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:38:56.249 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 6527
+2022-11-09 19:43:43.113 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:43:43.113 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 7973
+2022-11-09 19:44:46.713 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:46.713 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:46.713 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:46.713 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:46.713 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:46.713 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:46.713 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:46.713 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:47.932 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:47.932 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:47.932 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:47.933 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:47.933 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:47.933 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:47.933 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:47.933 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:50.561 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:50.561 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:50.561 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:50.561 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:50.561 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:50.561 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:59.931 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:59.931 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:59.931 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:59.931 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:59.931 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:59.931 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:44:59.931 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:00.692 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:00.692 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:00.692 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:00.692 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:00.692 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:00.692 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:00.692 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:01.469 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:01.469 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:01.469 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:01.469 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:01.469 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:01.469 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:01.469 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:01.469 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:39.531 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:39.531 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:39.531 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:39.531 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:39.531 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:39.531 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:39.531 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:39.531 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:53.124 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:53.124 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:53.124 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:53.124 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:53.124 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:53.124 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:53.124 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:54.625 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:54.625 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:54.625 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:54.625 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:54.625 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:54.625 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:45:54.625 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:46:02.142 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:46:02.142 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:46:02.142 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:46:02.142 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:46:02.142 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:46:02.142 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:46:02.142 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:46:02.142 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 19:47:18.331 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:47:18.331 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 10003
+2022-11-09 19:48:10.436 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:48:10.437 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 10311
+2022-11-09 19:51:08.436 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:51:08.436 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 11214
+2022-11-09 19:51:47.119 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:51:47.119 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 11740
+2022-11-09 19:53:06.759 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:53:06.759 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 12193
+2022-11-09 19:54:20.086 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 19:54:20.086 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 12604
+2022-11-09 20:02:53.547 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 20:02:53.547 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 13935
+2022-11-09 20:04:06.189 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 20:04:06.189 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 14560
+2022-11-09 20:04:55.615 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 20:04:55.615 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 14881
+2022-11-09 20:04:56.720 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 20:04:56.720 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 14893
+2022-11-09 20:07:53.468 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 20:07:53.468 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 15693
+2022-11-09 20:09:33.016 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 20:09:33.016 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 16285
+2022-11-09 20:09:45.669 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 20:09:45.670 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 16461
+2022-11-09 20:10:51.744 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 20:10:51.744 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 16782
+2022-11-09 20:13:49.583 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 20:13:49.583 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 17898
+2022-11-09 20:15:07.641 [info] Extension host terminating: received terminate message from renderer
+2022-11-09 20:15:07.657 [info] Extension host with pid 3470 exiting with code 0

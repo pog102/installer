@@ -1,0 +1,51 @@
+#!/bin/sh
+[ -d "/run/media/$USER/4C99-6202/" ] && download_dir="/run/media/$USER/4C99-6202/" || download_dir="/home/chad/anime/" #download directory
+ani_folder=$HOME/.config/nyaa #folder ##change here
+
+ani_list="$ani_folder/config" #anime list
+progress="$ani_folder/progress" #anime progress directory
+##Creating directories and a file
+[ ! -d "$ani_folder" ] && mkdir -p "$ani_folder"
+[ ! -f "$ani_list" ] && touch "$ani_list" && echo "add some anime in the $ani_list" && exit
+[ ! -f "$progress" ] && touch "$progress"
+
+SAVEIFS=$IFS #for string values whith whitespaces
+IFS=$(echo -en "\n\b")
+
+for anime_entry in $(cat $ani_list)
+do
+    if [ "${anime_entry:0:1}" != "/" ]
+    then
+    title=$(echo $anime_entry| cut -d# -f1)
+    [ ! -d "$download_dir$title" ] && mkdir "$download_dir$title"
+    total_ep=$(echo $anime_entry| cut -d# -f2)
+    current_ep=$(cat "$progress" | grep "$title" | awk -F "#" '{print $2}')
+    [ -z "$current_ep" ] && current_ep=$(echo 0)
+    query=$(printf '%s' "$title" | tr ' ' '+' )
+    echo "--------------------------------------"
+    echo -e "checking $title"
+    mag="p"
+    i=1
+    while true
+        do
+        next_ep=$(($current_ep+$i))
+        [ "$next_ep" -lt "10" ] && next_ep="0$next_ep" #makes one digit into two digits
+        mag=$(curl -s "https://nyaa.si/?page=rss&q=$query+$next_ep+1080p&c=1_2&f=0" | grep -Po '<nyaa:infoHash>.*?</nyaa:infoHash>' |
+        sed 's#<nyaa:infoHash>##g; s#<\/nyaa:infoHash>##g;' | tail -1) #finds torrent info hash
+        [ ! -z $mag ] && transmission-remote -U -w "$download_dir$title" --add "magnet:?xt=urn:btih:$mag" &>/dev/null && #adds magnet link to transmission
+        echo -e "found episode $next_ep" || break
+        i=$(($i+1))
+    done
+    next_ep=$((10#$next_ep-1)) #displaying newest episode
+    if [ ! -z $(grep "$title" "$progress" ) ]
+    then
+        sed -i "s/$title.*/$title #$next_ep/g"  $progress #updates progress
+    else
+        echo -e "$title #$next_ep" >> $progress #adds a new anime entry to progress
+    fi
+    [ "$(($next_ep - $current_ep))" -ne "0" ] && notify-send -t 1900 "$title" "$(($next_ep-$current_ep)) episodes found" #notifies new episodes
+    [ "$total_ep" -eq "$next_ep" ] && sed -i "s/$title.*//g; /^$/d" "$ani_list" #removes anime entry from the list
+    fi
+done
+echo "--------------------------------------"
+IFS=$SAVEIFS

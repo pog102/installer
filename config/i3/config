@@ -103,8 +103,8 @@ bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
 bindsym $mod+d		exec rofi -show drun -theme rib
 
 set $freeze Distraction-free mode (super+shift+f to reactivate bindings)
-mode "$freeze" { bindsym $mod+Shift+f mode "default"
-}
+  mode "$freeze" { bindsym $mod+Shift+f mode "default"
+  }
 
 bindsym $mod+f			fullscreen toggle
 bindsym $mod+Shift+f		mode "$freeze" ;; exec --no-startup-id notify-send "Distraction-free mode activated." "Press Super+Shift+f to return."
@@ -270,6 +270,8 @@ no_focus [title="mpvfloat"]
 bindsym $mod+r		restart
 
 # #---Arrow Keys---# #
+floating_modifier $mod
+
 bindsym $mod+Left		focus left
 bindsym $mod+Ctrl+Left		move workspace to output left
 bindsym $mod+Down		focus down

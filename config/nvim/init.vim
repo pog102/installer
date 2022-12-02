@@ -34,22 +34,21 @@ augroup exec_code
 				\ :bash % <CR>
 
 	autocmd FileType python,py nnoremap <buffer> r
-				\ gg=G
 				\ :w <CR> :24split <bar> term python % <CR>
 
 	autocmd FileType cpp nnoremap <buffer> r
 				\ :w <CR> :!g++ -std=c++11 % -Wall -g -o %.out && ./%.out && rm %.out <CR>
 
 	autocmd FileType cs nnoremap <buffer> r
-				\ gg=G
-				\ :w <CR> :24split <bar> term mcs % &&  mono %:r.exe <CR>
+				\ :w <CR> :34split <bar> term dotnet run<CR>
+
+	autocmd FileType html nnoremap <buffer> r
+				\ :w <CR> :!firefox % <CR>
 
 augroup END
 
 autocmd BufNewFile *.cs 0r ~/.config/nvim/blues/template.cs
 autocmd BufNewFile *.sh 0r ~/.config/nvim/blues/template.sh
-
-
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif

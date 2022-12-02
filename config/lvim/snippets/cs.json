@@ -1,0 +1,15 @@
+{
+  "///": {
+    "prefix": "///",
+    "body": [
+         "const ${TM_FILENAME_BASE}: React.FC = () => {",
+      "\treturn (",
+      "\t\t${1}",
+      "\t)",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+    ],
+    "description": "print Hello, World!"
+  }
+}
