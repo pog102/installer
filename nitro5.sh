@@ -118,6 +118,6 @@ ln -s $HOME/.cache/wal/zathurarc $HOME/.config/zathura/zathurarc
 sudo pywalfox install
 sudo xset b off
 
-
+reboot
 
 
