@@ -12,7 +12,7 @@ echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
 echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 echo "[multilib]" | sudo tee -a /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
-
+echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
 sudo pacman --noconfirm -Syu
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
