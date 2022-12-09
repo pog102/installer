@@ -122,7 +122,7 @@ ln -fs $HOME/.cache/wal/gtkrc $HOME/.themes/wal/gtk-2.0/gtkrc
 
 sudo pywalfox install
 sudo xset b off
-
+ export QT_QPA_PLATFORMTHEME=qt5ct
 reboot
 
 
