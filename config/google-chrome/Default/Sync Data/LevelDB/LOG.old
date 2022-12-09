@@ -1,0 +1,5 @@
+2022/11/05-21:29:43.045 45aa Creating DB /home/chad/.config/google-chrome/Default/Sync Data/LevelDB since it was missing.
+2022/11/05-21:29:43.048 45aa Reusing MANIFEST /home/chad/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2022/11/05-21:35:14.951 4b66 Level-0 table #5: started
+2022/11/05-21:35:14.963 4b66 Level-0 table #5: 173722 bytes OK
+2022/11/05-21:35:14.964 4b66 Delete type=0 #3

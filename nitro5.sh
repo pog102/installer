@@ -31,7 +31,7 @@ sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
 systemctl enable bluetooth.service
 
-paru --noconfirm -S  cli-visualizer python-pywalfox brillo zaread 
+paru --noconfirm -S  cli-visualizer python-pywalfox brillo zaread
 paru --noconfirm -S nsxiv autotiling linux-tkg-pds-generic_v3  linux-tkg-pds-generic_v3-headers proton-ge-custom \
 pamixer steam-native-runtime
 sudo usermod -aG video $USER
@@ -56,6 +56,7 @@ mkdir $HOME/.mozilla
 mkdir -p $HOME/.local/share/sounds
 mkdir -p $HOME/.local/share/icons/custom/
 mkdir -p $HOME/.local/share/applications/
+mkdir -p $HOME/.themes/wal/gtk-2.0
 sudo mv bin/transadd /usr/local/bin
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
@@ -70,7 +71,7 @@ mv config/* $HOME/.config/
 mv mbsyncrc $HOME/.mbsyncrc
 mv apps/* $HOME/.local/share/applications/
 mv icons/* $HOME/.local/share/icons/custom/
-
+mv gtk-2 $HOME/.gtk-2.0
 #cp .xinitrc $HOME/
 #cp .zprofile $HOME/
 #cp .bin $HOME/
@@ -113,8 +114,12 @@ timedatectl set-timezone Etc/GMT-2
 
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
-ln -s $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
-ln -s $HOME/.cache/wal/zathurarc $HOME/.config/zathura/zathurarc
+ln -fs $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
+ln -fs $HOME/.cache/wal/zathurarc $HOME/.config/zathura/zathurarc
+ln -fs $HOME/.cache/wal/qt.conf $HOME/.config/qt5ct/colors/wal.conf
+ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.css
+ln -fs $HOME/.cache/wal/gtkrc $HOME/.themes/wal/gtk-2.0/gtkrc
+
 sudo pywalfox install
 sudo xset b off
 

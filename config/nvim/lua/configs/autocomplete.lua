@@ -200,6 +200,7 @@ function M.config()
 	require('rust-tools').setup()
 require'lspconfig'.omnisharp.setup {
     cmd = { "dotnet", "/home/chad/.local/share/omnisharp-roslyn/bin/Release/OmniSharp.Stdio.Driver/net6.0/OmniSharp.dll" },
+    -- cmd = { "dotnet", "omnisharp" },
 
     -- Enables support for reading code style, naming convention and analyzer
     -- settings from .editorconfig.

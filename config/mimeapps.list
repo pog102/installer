@@ -7,4 +7,5 @@ application/x-php=vscodium-bin.desktop;
 [Default Applications]
 x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
 x-scheme-handler/discord-863127630534148136=discord-863127630534148136.desktop
+x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
 
