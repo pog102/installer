@@ -27,7 +27,7 @@ chsh -s /usr/bin/zsh
 systemctl enable bluetooth.service
 
 paru --noconfirm -S  cli-visualizer python-pywalfox brillo zaread
-paru --noconfirm -S nsxiv autotiling linux-tkg-pds-generic_v3  linux-tkg-pds-generic_v3-headers proton-ge-custom \
+paru --noconfirm -S nsxiv xmenu autotiling linux-tkg-pds-generic_v3  linux-tkg-pds-generic_v3-headers proton-ge-custom \
 pamixer steam-native-runtime
 sudo usermod -aG video $USER
 brillo -c -S 1
