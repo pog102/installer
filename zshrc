@@ -1,8 +1,9 @@
-# Luke's config for the Zoomer Shell
-[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# Luke's config for the Zoomer Shell
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 export PATH=$HOME/.bin:$PATH
 # Enable colors and change rompt:
 # cat ~/.cache/wal/sequences
@@ -13,8 +14,8 @@ PS1="%B%{$fg[red]%}[%{$fg[blue]%} %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_col
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
