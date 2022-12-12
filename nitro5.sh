@@ -22,7 +22,7 @@ mpv feh fzf yt-dlp unclutter nvidia-open-dkms neovim zip unzip zathura-pdf-poppl
 xorg-server xorg-xinit \
 lib32-libglvnd lib32-nvidia-utils lib32-sdl12-compat \
 xclip maim isync polybar networkmanager rclone papirus-icon-theme \
-zsh-autosuggestions zsh-syntax-highlighting
+zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search
 sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
 systemctl enable bluetooth.service
