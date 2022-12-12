@@ -1,8 +1,11 @@
 # Luke's config for the Zoomer Shell
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 export PATH=$HOME/.bin:$PATH
 # Enable colors and change rompt:
-cat ~/.cache/wal/sequences
+# cat ~/.cache/wal/sequences
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[blue]%} %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
@@ -10,7 +13,8 @@ PS1="%B%{$fg[red]%}[%{$fg[blue]%} %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_col
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
-
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -61,8 +65,7 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Load aliases and shortcuts if existent.
-[ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 # Load zsh-syntax-highlighting; should be last.
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
