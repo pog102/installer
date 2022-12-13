@@ -32,7 +32,7 @@ bindsym $Mod+p exec  ~/.bin/pdfs
 bindsym $Mod+g exec ~/scripts/games/wrapper.sh
 #bindsym $Mod+r exec ~/.bin/rssreader
 bindsym $Mod+n exec nsxiv -t ~/Pictures/
-
+bindsym --whole-window --border $Mod+button1 exec ~/.bin/menu
 # #---Basic Definitions---# #
 for_window [class="^.*"] border pixel 2
 gaps inner 8
