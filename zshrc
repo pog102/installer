@@ -1,7 +1,5 @@
-
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Luke's config for the Zoomer Shell
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 export PATH=$HOME/.bin:$PATH
@@ -14,8 +12,6 @@ PS1="%B%{$fg[red]%}[%{$fg[blue]%} %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_col
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -70,3 +66,7 @@ bindkey '^e' edit-command-line
 
 # Load zsh-syntax-highlighting; should be last.
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh

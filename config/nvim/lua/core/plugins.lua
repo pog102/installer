@@ -10,6 +10,7 @@ return require('packer').startup(function()
 	use 'WhoIsSethDaniel/toggle-lsp-diagnostics.nvim'
 	--pywal
   use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
+  -- use { 'dylanaraps/wal.vim' }
 	-- bufferlua
 	use {
 		'akinsho/bufferline.nvim',
