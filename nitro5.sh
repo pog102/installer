@@ -43,6 +43,7 @@ echo "DefaultTimeoutStopSec=1"  | sudo tee -a /etc/systemd/system.conf
 echo "SUBSYSTEM==\"power_supply\", ATTR{status}==\"Discharging\", ATTR{capacity}==\"[0-1]\", RUN+=\"/usr/bin/systemctl shutdown\""  | sudo tee -a /etc/udev/rules.d/99-lowbat.rules
 
 ##.dots
+mkdir $HOME/.config/zathura/
 mkdir $HOME/.config/
 mkdir $HOME/Downloads
 mkdir $HOME/Music

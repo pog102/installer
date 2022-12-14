@@ -57,6 +57,8 @@ sudo mv bin/transadd /usr/local/bin
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
 mv moziila/* $HOME/.mozilla
+
+mkdir $HOME/.config/zathura/
 mv scripts $HOME/
 mv xprofile $HOME/.xprofile
 mv Pictures $HOME/
