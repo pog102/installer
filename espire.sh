@@ -1,39 +1,35 @@
 #!/bin/bash
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si --noconfirm
-cd ..
-rm -rf paru
 
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key FBA220DFC880C036
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+sudo pacman --noconfirm -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
 echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 echo "[multilib]" | sudo tee -a /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
-
+echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
 sudo pacman --noconfirm -Syu
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 sudo rm /var/lib/pacman/db.lck
 pactl set-card-profile alsa_card.usb-Sony_Interactive_Entertainment_Wireless_Controller-00 off
-sudo mv bluetooth /var/lib
-sudo pacman --needed --noconfirm -S libva gnu-free-fonts \
+#sudo mv bluetooth /var/lib
+sudo pacman --needed --noconfirm -S paru libva gnu-free-fonts \
 i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanami ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
 mpv feh fzf yt-dlp unclutter libva-intel-driver neovim zip unzip zathura-pdf-poppler \
 xorg-server xorg-xinit \
 lib32-libglvnd lib32-nvidia-utils lib32-sdl12-compat \
-xclip maim isync polybar networkmanager rclone
+xclip maim isync polybar networkmanager rclone papirus-icon-theme \
+zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search
 sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
 systemctl enable bluetooth.service
 
-paru --noconfirm -S  cli-visualizer python-pywalfox brillo zaread
-paru --noconfirm -S nsxiv autotiling linux-tkg-pds-generic_v3  linux-tkg-pds-generic_v3-headers proton-ge-custom \
-pamixer steam-native-runtime
+paru --noconfirm -S picom-jonaburg-git cli-visualizer python-pywalfox brillo zaread
+paru --noconfirm -S nsxiv xmenu autotiling \
+pamixer
 sudo usermod -aG video $USER
 brillo -c -S 1
 ##autologin
@@ -96,7 +92,6 @@ mv gtk-2 $HOME/.gtk-2.0
 #sudo make install
 #Footer
 ####
-sudo sed -i 's/-linux/-linux-tkg-pds-generic_v3/g' /boot/loader/entries/*
 sudo hwclock -w
 cd /usr/share/applications/
 sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.desktop qv412.desktop qvidcap.desktop
@@ -120,9 +115,10 @@ ln -fs $HOME/.cache/wal/qt.conf $HOME/.config/qt5ct/colors/wal.conf
 ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.css
 ln -fs $HOME/.cache/wal/gtkrc $HOME/.themes/wal/gtk-2.0/gtkrc
 
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 sudo pywalfox install
 sudo xset b off
- export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME=qt5ct
 reboot
 
 

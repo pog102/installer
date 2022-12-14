@@ -116,6 +116,8 @@ ln -fs $HOME/.cache/wal/qt.conf $HOME/.config/qt5ct/colors/wal.conf
 ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.css
 ln -fs $HOME/.cache/wal/gtkrc $HOME/.themes/wal/gtk-2.0/gtkrc
 
+
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 sudo pywalfox install
 sudo xset b off
 export QT_QPA_PLATFORMTHEME=qt5ct
