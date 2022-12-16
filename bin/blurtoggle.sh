@@ -1,10 +1,10 @@
 #!/usr/bin/sh
 
-if pgrep -x "picom" > /dev/null
+if (($(ps -aux | grep [p]icom | wc -l) > 0))
 then
-polybar-msg action "#blur-toggle.hook.1"
- picom -b --config=/home/$USER/.config/picom/picom.conf --experimental-backends --backend glx --blur-method dual_kawase &
+  polybar-msg hook blur-toggle 1
+  pkill -9 picom
 else
- polybar-msg action "#blur-toggle.hook.0"
-	killall picom
+  polybar-msg hook blur-toggle 2
+  picom -b --config=/home/chad/.config/picom/picom.conf --experimental-backends --backend glx --blur-method dual_kawase &
 fi

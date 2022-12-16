@@ -24,8 +24,8 @@ do
       total_ep=$(curl -s -L -A "Googlebot/2.1 (+http://www.google.com/bo t.html)" "https://anidb.net/anime/?adb.search=${query1}&do.update=1&noalias=1&orderby.name=0.1&type.tvseries=1" |
       grep -Eo "numberOfEpisodes.*" | tail -1 | grep -o "[0-9]*") # gets the episode metadata from aniDb
 
-      current_ep=$(cat "$progress" | grep "$anime_entry" | awk -F "#" '{print $2}')
-      # current_ep=$(awk -F "$anime_entry #" '{print $2}' $progress | xargs)
+      # current_ep=$(cat "$progress" | grep "$anime_entry" | awk -F "#" '{print $2}')
+      current_ep=$(awk -F "$anime_entry #" '{print $2}' $progress | xargs echo)
       [ -z "$current_ep" ] && current_ep=$(echo 0)
       [ -z "$total_ep" ] && total_ep=$(echo -1)
       echo "--------------------------------------"

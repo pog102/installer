@@ -1,13 +1,4 @@
 #!/bin/sh
-
 cat <<EOF | xmenu | sh &
-Applications
-	IMG:./web.png	Web Browser	firefox
-	IMG:./gimp.png	Image editor	gimp
-Terminal (st)				st
-Steam				steam
-Terminal (st)					st
-
-Shutdown						poweroff
-Reboot						reboot
+Screenshot	maim -s | xclip -selection clipboard -t image/png
 EOF
