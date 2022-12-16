@@ -3,5 +3,5 @@
 # Sends a notification when a torrent is added to transmission
 
 pgrep -x transmission-daemon > /dev/null || transmission-daemon
-
-transmission-remote --add "$@" && notify-send "Transmission-daemon" "Torrent added." && polybar-msg action "#torrents.hook.0" #&& pkill -SIGRTMIN+2 i3blocks
+[ -d "/run/media/$USER/4C99-6202/" ] && download_dir="/run/media/$USER/4C99-6202/" || download_dir="/home/chad/anime/" #download directory
+transmission-remote-U -U -w "$download_dir" --add "$@" && notify-send "Transmission-daemon" "Torrent added." && polybar-msg action "#torrents.hook.0" #&& pkill -SIGRTMIN+2 i3blocks
