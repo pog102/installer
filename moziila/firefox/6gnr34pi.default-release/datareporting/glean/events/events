@@ -1,0 +1,14 @@
+{"timestamp":1097754,"category":"nimbus_events","name":"validation_failed","extra":{"reason":"invalid-feature","experiment":"dap-telemetry-first-ingress-test","feature":"dapTelemetry"}}
+{"timestamp":1118127,"category":"perf","name":"page_load","extra":{"js_exec_time":"516","fcp_time":"1019","load_type":"LINK","load_time":"3659","response_time":"205"}}
+{"timestamp":1121374,"category":"perf","name":"page_load","extra":{"js_exec_time":"692","load_time":"2053","load_type":"LINK","response_time":"438","fcp_time":"1069"}}
+{"timestamp":1169871,"category":"perf","name":"page_load","extra":{"load_type":"NORMAL","fcp_time":"794","js_exec_time":"218","response_time":"221","load_time":"2056"}}
+{"timestamp":1174493,"category":"perf","name":"page_load","extra":{"load_type":"LINK","js_exec_time":"668","fcp_time":"793","response_time":"452","load_time":"1947"}}
+{"timestamp":1397692,"category":"perf","name":"page_load","extra":{"load_time":"3333","fcp_time":"2351","load_type":"LINK","response_time":"1471","js_exec_time":"213"}}
+{"timestamp":1492696,"category":"perf","name":"page_load","extra":{"response_time":"221","load_time":"2922","load_type":"HISTORY","fcp_time":"1324","js_exec_time":"427"}}
+{"timestamp":1521181,"category":"perf","name":"page_load","extra":{"load_type":"LINK","fcp_time":"982","response_time":"118","load_time":"3151","js_exec_time":"477"}}
+{"timestamp":1525234,"category":"perf","name":"page_load","extra":{"load_time":"1281","fcp_time":"950","js_exec_time":"153","load_type":"LINK","response_time":"348"}}
+{"timestamp":1577440,"category":"perf","name":"page_load","extra":{"fcp_time":"910","load_type":"NORMAL","js_exec_time":"123","response_time":"252","load_time":"2176"}}
+{"timestamp":1581934,"category":"perf","name":"page_load","extra":{"fcp_time":"1382","response_time":"746","load_type":"LINK","js_exec_time":"412","load_time":"2019"}}
+{"timestamp":1598195,"category":"perf","name":"page_load","extra":{"response_time":"746","load_type":"LINK","load_time":"8976","js_exec_time":"2690","fcp_time":"1949"}}
+{"timestamp":1672222,"category":"perf","name":"page_load","extra":{"load_type":"LINK","response_time":"294","js_exec_time":"196","load_time":"1420","fcp_time":"1280"}}
+{"timestamp":1687241,"category":"perf","name":"page_load","extra":{"load_type":"LINK","js_exec_time":"3165","load_time":"10834","fcp_time":"1597","response_time":"597"}}
