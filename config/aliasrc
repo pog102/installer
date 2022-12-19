@@ -1,6 +1,6 @@
 alias n="nvim"
 alias t="startx"
-alias installer="git clone https://github.com/pog102/installer"
+alias config="git push --git-dir=$HOME/installer https://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@github.com/pog102/installer.git"
 alias get="sudo pacman -S"
 alias up="sudo pacman -Syu && paru"
 alias dots="git clone https://github.com/pog102/installer"
