@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo sed -i "s/user/$USER/g" hosts
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key FBA220DFC880C036
 sudo pacman --noconfirm -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
@@ -69,6 +69,7 @@ mv mbsyncrc $HOME/.mbsyncrc
 mv apps/* $HOME/.local/share/applications/
 mv icons/* $HOME/.local/share/icons/custom/
 mv gtk-2 $HOME/.gtk-2.0
+sudo mv hosts /etc/hosts
 #cp .xinitrc $HOME/
 #cp .zprofile $HOME/
 #cp .bin $HOME/
