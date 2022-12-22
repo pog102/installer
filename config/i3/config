@@ -23,8 +23,8 @@ client.background       $bg
 #export TERMINAL="st"
 #export TERMINAL="st"
 bindsym F10 exec maim -s | tee ~/Pictures/class/$(date +%s).png | xclip -selection clipboard -t image/png
-bindsym Control+Up exec  ~/.bin/upvol +
-bindsym Control+Down exec  ~/.bin/upvol -
+bindsym Control+Up exec  ~/.bin/upvol i
+bindsym Control+Down exec  ~/.bin/upvol d
 bindsym Control+Right exec ~/.bin/upbright A
 bindsym Control+Left exec  ~/.bin/upbright U
 bindsym $Mod+p exec  ~/.bin/pdfs
