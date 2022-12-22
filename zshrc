@@ -1,5 +1,6 @@
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-colored-man-pages/colored-man-pages.plugin.zsh
 # Luke's config for the Zoomer Shell
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 export PATH=$HOME/.bin:$PATH

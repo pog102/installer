@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["knife.nvim"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/knife.nvim",
+    url = "https://github.com/cranberry-clockworks/knife.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -166,6 +171,12 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/pywal.nvim",
     url = "https://github.com/AlphaTechnolog/pywal.nvim"
   },
+  ["startup.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fstartup\frequire\0" },
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/startup.nvim",
+    url = "https://github.com/startup-nvim/startup.nvim"
+  },
   ["telescope-fzf-native.nvim"] = {
     cond = { true },
     loaded = false,
@@ -197,6 +208,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: startup.nvim
+time([[Config for startup.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fstartup\frequire\0", "config", "startup.nvim")
+time([[Config for startup.nvim]], false)
 -- Conditional loads
 time([[Conditional loading of telescope-fzf-native.nvim]], true)
   require("packer.load")({"telescope-fzf-native.nvim"}, {}, _G.packer_plugins)

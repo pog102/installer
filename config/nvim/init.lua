@@ -55,6 +55,16 @@ use { 'CRAG666/code_runner.nvim' }
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
   use 'lewis6991/gitsigns.nvim'
+  use 'cranberry-clockworks/knife.nvim'
+  
+  use {
+  "startup-nvim/startup.nvim",
+  requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+  config = function()
+    require"startup".setup()
+  end
+}
+  require("startup").setup({theme = "dashboard"}) -- put theme name here
 
   -- use 'navarasu/onedark.nvim' -- Theme inspired by Atom
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
@@ -125,6 +135,7 @@ vim.o.smartcase = true
 -- Decrease update time
 vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
+vim.api.nvim_set_option('clipboard','unnamedplus')
 
 -- Set colorscheme
 vim.o.termguicolors = true
@@ -216,6 +227,7 @@ require('telescope').setup {
 pcall(require('telescope').load_extension, 'fzf')
 
 -- See `:help telescope.builtin`
+-- vim.keymap.set('n', '<leader>lb', require('knife').generate_xml_doc_under_cursor(), { desc = 'Find recently opened files' })
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
 vim.keymap.set('n', '<leader>/', function()

@@ -1,6 +1,0 @@
-2022-11-09 19:19:13.642 [info] [perf] Render performance baseline is 40ms
-2022-11-09 19:19:20.701 [error] Error while registering log channel file:///home/chad/.config/Code%20-%20OSS/logs/20221109T191909/userDataSync.log Timed out while waiting for file to be created
-2022-11-09 19:19:53.642 [info] [perf] Render performance baseline is 36ms
-2022-11-09 19:20:00.663 [error] Error while registering log channel file:///home/chad/.config/Code%20-%20OSS/logs/20221109T191909/userDataSync.log Timed out while waiting for file to be created
-2022-11-09 19:29:20.317 [error] RequestService#request (browser) - error https://open-vsx.org/vscode/asset/asvetliakov/vscode-neovim/0.0.94/Microsoft.VisualStudio.Code.Manifest?targetPlatform=universal {}
-2022-11-09 19:29:20.318 [error] RequestService#request (browser) - error https://open-vsx.org/vscode/asset/asvetliakov/vscode-neovim/0.0.94/Microsoft.VisualStudio.Code.Manifest?targetPlatform=universal {}

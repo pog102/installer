@@ -1,3 +1,0 @@
-2022-11-09 20:17:07.027 [error] RequestService#request (browser) - error https://open-vsx.org/vscode/gallery/extensionquery {}
-2022-11-09 20:17:08.820 [info] [perf] Render performance baseline is 31ms
-2022-11-09 20:17:15.894 [error] Error while registering log channel file:///home/chad/.config/Code%20-%20OSS/logs/20221109T201704/userDataSync.log Timed out while waiting for file to be created
