@@ -37,7 +37,7 @@ sudo mkdir /etc/systemd/system/getty@tty1.service.d/
 sudo touch /etc/systemd/system/getty@tty1.service.d/autologin.conf
 # echo "ATTRS{idVendor}==\"152d\", ATTRS{idProduct}==\"2329\", RUN+=\"$HOME/.bin/nyaupdate\"" | sudo tee -a /etc/udev/rules.d/test.rules
 echo "[Service]" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
-#echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
+echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$TERM" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "DefaultTimeoutStopSec=1"  | sudo tee -a /etc/systemd/system.conf
 echo "SUBSYSTEM==\"power_supply\", ATTR{status}==\"Discharging\", ATTR{capacity}==\"[0-1]\", RUN+=\"/usr/bin/systemctl shutdown\""  | sudo tee -a /etc/udev/rules.d/99-lowbat.rules
