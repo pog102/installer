@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo sed -i "s/user/$USER/g" hosts
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key FBA220DFC880C036
 sudo pacman --noconfirm -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
@@ -18,7 +18,7 @@ sudo pacman --needed --noconfirm -S paru libva gnu-free-fonts \
 i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanami ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
-mpv feh fzf yt-dlp unclutter libva-intel-driver neovim zip unzip zathura-pdf-poppler \
+mpv feh fzf yt-dlp unclutter neovim zip unzip zathura-pdf-poppler \
 xorg-server xorg-xinit \
 lib32-libglvnd lib32-nvidia-utils lib32-sdl12-compat \
 xclip maim isync polybar networkmanager rclone papirus-icon-theme \
@@ -37,12 +37,16 @@ sudo mkdir /etc/systemd/system/getty@tty1.service.d/
 sudo touch /etc/systemd/system/getty@tty1.service.d/autologin.conf
 # echo "ATTRS{idVendor}==\"152d\", ATTRS{idProduct}==\"2329\", RUN+=\"$HOME/.bin/nyaupdate\"" | sudo tee -a /etc/udev/rules.d/test.rules
 echo "[Service]" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
-echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
+#echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$TERM" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "DefaultTimeoutStopSec=1"  | sudo tee -a /etc/systemd/system.conf
 echo "SUBSYSTEM==\"power_supply\", ATTR{status}==\"Discharging\", ATTR{capacity}==\"[0-1]\", RUN+=\"/usr/bin/systemctl shutdown\""  | sudo tee -a /etc/udev/rules.d/99-lowbat.rules
 
+echo "timeout 1" | sudo tee /boot/loader/loader.conf
+
 ##.dots
+mkdir $HOME/.config/zathura/
+mkdir -p /usr/share/zsh/plugins/
 mkdir $HOME/.config/
 mkdir $HOME/Downloads
 mkdir $HOME/Music
@@ -57,8 +61,6 @@ sudo mv bin/transadd /usr/local/bin
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
 mv moziila/* $HOME/.mozilla
-
-mkdir $HOME/.config/zathura/
 mv scripts $HOME/
 mv xprofile $HOME/.xprofile
 mv Pictures $HOME/
@@ -70,6 +72,7 @@ mv mbsyncrc $HOME/.mbsyncrc
 mv apps/* $HOME/.local/share/applications/
 mv icons/* $HOME/.local/share/icons/custom/
 mv gtk-2 $HOME/.gtk-2.0
+sudo mv hosts /etc/hosts
 #cp .xinitrc $HOME/
 #cp .zprofile $HOME/
 #cp .bin $HOME/
@@ -94,6 +97,10 @@ mv gtk-2 $HOME/.gtk-2.0
 #sudo make install
 #Footer
 ####
+sudo git clone https://github.com/ael-code/zsh-colored-man-pages.git /usr/share/zsh/plugins/zsh-colored-man-pages
+
+
+sudo sed -i 's/-linux/-linux-tkg-pds-generic_v3/g' /boot/loader/entries/*
 sudo hwclock -w
 cd /usr/share/applications/
 sudo rm steam.desktop avahi-discover.desktop bssh.desktop bvnc.desktop lstopo.desktop qv412.desktop qvidcap.desktop
@@ -117,12 +124,12 @@ ln -fs $HOME/.cache/wal/qt.conf $HOME/.config/qt5ct/colors/wal.conf
 ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.css
 ln -fs $HOME/.cache/wal/gtkrc $HOME/.themes/wal/gtk-2.0/gtkrc
 
+
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 sed -i 's/background.*//g' ~/.local/share/nvim/site/pack/packer/start/pywal/lua/pywal/core.lua
-
 sudo pywalfox install
 sudo xset b off
-export QT_QPA_PLATFORMTHEME=qt5ct
+# export QT_QPA_PLATFORMTHEME=qt5ct
 reboot
 
 
