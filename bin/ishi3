@@ -1,4 +1,5 @@
 #!/bin/sh
+pgrep -x transmission-daemon > /dev/null || transmission-daemon
 [ -d "/run/media/$USER/4C99-6202/" ] && download_dir="/run/media/$USER/4C99-6202/" || download_dir="/home/chad/anime/" #download directory
 ani_folder=$HOME/.config/nyaa #folder ##change here
 

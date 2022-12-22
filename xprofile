@@ -1,6 +1,6 @@
 wal -R
 mpd &
-transmission-daemon &
+#transmission-daemon &
 unclutter &
 ~/.bin/autom
 #picom --experimental-backend &
