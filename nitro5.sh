@@ -46,6 +46,7 @@ echo "timeout 1" | sudo tee /boot/loader/loader.conf
 
 ##.dots
 mkdir $HOME/.config/zathura/
+mkdir -p /usr/share/zsh/plugins/
 mkdir $HOME/.config/
 mkdir $HOME/Downloads
 mkdir $HOME/Music
@@ -96,6 +97,9 @@ sudo mv hosts /etc/hosts
 #sudo make install
 #Footer
 ####
+sudo git clone https://github.com/ael-code/zsh-colored-man-pages.git /usr/share/zsh/plugins/zsh-colored-man-pages
+
+
 sudo sed -i 's/-linux/-linux-tkg-pds-generic_v3/g' /boot/loader/entries/*
 sudo hwclock -w
 cd /usr/share/applications/
