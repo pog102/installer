@@ -30,7 +30,7 @@ systemctl enable bluetooth.service
 
 paru --noconfirm -S picom-jonaburg-git cli-visualizer python-pywalfox brillo zaread
 paru --noconfirm -S nsxiv xmenu autotiling \
-pamixer
+pamixer openssl-1.1
 sudo usermod -aG video $USER
 brillo -c -S 1
 ##autologin
