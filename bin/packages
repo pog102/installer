@@ -1,4 +1,10 @@
 #!/bin/sh
+k=0
+while [ -z "$(ip r)" ] && [ $k < 9 ]
+do 
+    sleep 1
+    let k++ 
+done
 
 updates_arch=$(checkupdates | wc -l)
 

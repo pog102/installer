@@ -130,6 +130,10 @@ ln -fs $HOME/.cache/wal/gtkrc $HOME/.themes/wal/gtk-2.0/gtkrc
 sed -i 's/background.*//g' ~/.local/share/nvim/site/pack/packer/start/pywal.nvim/lua/pywal/core.lua
 sudo pywalfox install
 sudo xset b off
+color=$(sed '5!d' ~/.cache/wal/colors)
+for i in $HOME/.local/share/icons/custom/*; do
+convert $i -fill "$color" -colorize 100 $i
+done
 export QT_QPA_PLATFORMTHEME=qt5ct
 reboot
 

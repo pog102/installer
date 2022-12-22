@@ -1,8 +1,12 @@
 #!/bin/sh
-# Description: Script to get current volume
-pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo ${1}2%
-pactl set-sink-volume alsa_output.pci-0000_01_00.1.hdmi-stereo ${1}2%
-volume=$(pactl list sinks | grep '^[[:space:]]Volume:' | \
-    head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')
+# pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo ${1}2%
+# pactl set-sink-volume alsa_output.pci-0000_01_00.1.hdmi-stereo ${1}2%
+# volume=$(pactl list sinks | grep '^[[:space:]]volume:' | \
+#     head -n $(( $sink + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')
+#
+# 	dunstify -a "changevolume" -u low -r "2" -h int:value:"$volume" -i "volume$1" "${volume}%" -t 1100
+#
+pamixer -${1} 1
+volume=$(pamixer --get-volume)
+dunstify -a "changevolume" -u low -r "2" -h int:value:"$volume" -i "volume$1" "${volume}%" -t 1100
 
-	dunstify -a "changevolume" -u low -r "2" -h int:value:"$volume" -i "volume$1" "${volume}%" -t 1100
