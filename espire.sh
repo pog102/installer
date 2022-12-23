@@ -117,7 +117,12 @@ sudo make install
 
 timedatectl set-timezone Etc/GMT-2
 
+mpd&
 mpc load ~/Music/mylist
+mpc load ~/Music/mylist
+mpc repeat off
+mpc random on
+
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
 ln -fs $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc

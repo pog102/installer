@@ -126,8 +126,10 @@ ln -fs $HOME/.cache/wal/qt.conf $HOME/.config/qt5ct/colors/wal.conf
 ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.css
 ln -fs $HOME/.cache/wal/gtkrc $HOME/.themes/wal/gtk-2.0/gtkrc
 
-
+mpd&
 mpc load ~/Music/mylist
+mpc repeat off
+mpc random on
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
 sed -i 's/background.*//g' ~/.local/share/nvim/site/pack/packer/start/pywal.nvim/lua/pywal/core.lua
 sudo pywalfox install
