@@ -1,0 +1,59 @@
+sw_volume: 100
+audio_device_state:1:pulse audio
+state: stop
+random: 1
+repeat: 0
+single: 1
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:100 gecs - stupid horse (Official Audio Stream).flac
+1:Aests - FIGHT!.flac
+2:Blumenkranz.flac
+3:#BrooklynBloodPop!.flac
+4:Cash Cash - Overtime.flac
+5:David Guetta & Showtek - Bad ft.Vassy (Lyrics Video).flac
+6:[Full Song⧸Official Lyrics] Crimson Cloud - V's battle theme from Devil May Cry 5.flac
+7:Gorillaz - Cracker Island ft. Thundercat (Official Video).flac
+8:Gorillaz - The Pink Phantom ft. Elton John & 6LACK (Official Lyric Video).flac
+9:GRANDit 2： Fly Version.flac
+10:Imagine Dragons & JID - Enemy (Lyrics) oh the misery everybody wants to be my enemy.flac
+11:Jecht - FFX  Extreme Battle Theme.flac
+12:Ken Ashcorp - Absolute Territory.flac
+13:Luvoratorrrrry!.flac
+14:Necromancin Dancin.flac
+15:[REMASTERED] Devil May Cry 3 - Devils Never Cry (Special Edit).flac
+16:Rhinestone Eyes.flac
+17:Scanty & Kneesocks' Absolute Territory.flac
+18:SHADOW.flac
+19:SIAMÉS ＂The Wolf＂ [Official Animated Music Video].flac
+20:Slayer's Paradise (Gangsta's Paradise Cover) 100k subscribers special.flac
+21:Sporty - o - Let Me Hit It ( Audiostalkers Original Mix)  BEST QUALITY !!!.flac
+22:The Bomb (These Sounds Fall Into My Mind).flac
+23:YUNO GASAI - Mirai Nikki -「My Crazy Yandere Girlfriend」-Official Video- Neotokio3 █▀█ ▀█▀ █ █ █.flac
+24:100 gecs - stupid horse (Official Audio Stream).flac
+25:Aests - FIGHT!.flac
+26:Blumenkranz.flac
+27:Cash Cash - Overtime.flac
+28:David Guetta & Showtek - Bad ft.Vassy (Lyrics Video).flac
+29:[Full Song⧸Official Lyrics] Crimson Cloud - V's battle theme from Devil May Cry 5.flac
+30:Gorillaz - Cracker Island ft. Thundercat (Official Video).flac
+31:Gorillaz - The Pink Phantom ft. Elton John & 6LACK (Official Lyric Video).flac
+32:GRANDit 2： Fly Version.flac
+33:Imagine Dragons & JID - Enemy (Lyrics) oh the misery everybody wants to be my enemy.flac
+34:Jecht - FFX  Extreme Battle Theme.flac
+35:Ken Ashcorp - Absolute Territory.flac
+36:Luvoratorrrrry!.flac
+37:Necromancin Dancin.flac
+38:[REMASTERED] Devil May Cry 3 - Devils Never Cry (Special Edit).flac
+39:Rhinestone Eyes.flac
+40:Scanty & Kneesocks' Absolute Territory.flac
+41:SHADOW.flac
+42:SIAMÉS ＂The Wolf＂ [Official Animated Music Video].flac
+43:Slayer's Paradise (Gangsta's Paradise Cover) 100k subscribers special.flac
+44:Sporty - o - Let Me Hit It ( Audiostalkers Original Mix)  BEST QUALITY !!!.flac
+45:The Bomb (These Sounds Fall Into My Mind).flac
+46:YUNO GASAI - Mirai Nikki -「My Crazy Yandere Girlfriend」-Official Video- Neotokio3 █▀█ ▀█▀ █ █ █.flac
+playlist_end

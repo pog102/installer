@@ -73,6 +73,7 @@ mv mbsyncrc $HOME/.mbsyncrc
 mv apps/* $HOME/.local/share/applications/
 mv icons/* $HOME/.local/share/icons/custom/
 mv gtk-2 $HOME/.gtk-2.0
+mv mylist.m3u ~/Music/
 sudo mv hosts /etc/hosts
 #cp .xinitrc $HOME/
 #cp .zprofile $HOME/
@@ -126,6 +127,7 @@ ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.cs
 ln -fs $HOME/.cache/wal/gtkrc $HOME/.themes/wal/gtk-2.0/gtkrc
 
 
+mpc load ~/Music/mylist.m3u
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
 sed -i 's/background.*//g' ~/.local/share/nvim/site/pack/packer/start/pywal.nvim/lua/pywal/core.lua
 sudo pywalfox install
