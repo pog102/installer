@@ -126,7 +126,7 @@ ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.cs
 ln -fs $HOME/.cache/wal/gtkrc $HOME/.themes/wal/gtk-2.0/gtkrc
 
 mpd&
-mpc load mylist
+mpc load mylist.m3u
 mpc repeat on
 mpc random on
 mpc single off

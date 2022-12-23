@@ -117,7 +117,7 @@ sudo make install
 timedatectl set-timezone Etc/GMT-2
 
 mpd&
-mpc load mylist
+mpc load mylist.m3u
 mpc repeat on
 mpc random on
 mpc single off
