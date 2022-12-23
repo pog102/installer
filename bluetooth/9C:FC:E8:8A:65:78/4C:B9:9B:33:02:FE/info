@@ -12,3 +12,8 @@ Source=2
 Vendor=1356
 Product=3302
 Version=256
+
+[LinkKey]
+Key=047D9E455A009750FFB6DDE149DCC56A
+Type=4
+PINLength=0

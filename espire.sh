@@ -73,7 +73,6 @@ mv mbsyncrc $HOME/.mbsyncrc
 mv apps/* $HOME/.local/share/applications/
 mv icons/* $HOME/.local/share/icons/custom/
 mv gtk-2 $HOME/.gtk-2.0
-mv mylist.m3u ~/Music/
 sudo mv hosts /etc/hosts
 #cp .xinitrc $HOME/
 #cp .zprofile $HOME/
@@ -118,10 +117,11 @@ sudo make install
 timedatectl set-timezone Etc/GMT-2
 
 mpd&
-mpc load ~/Music/mylist
-mpc load ~/Music/mylist
-mpc repeat off
+mpc load mylist
+mpc repeat on
 mpc random on
+mpc single off
+mv mylist.m3u ~/Music/
 
 my_array=($HOME/Pictures/*)
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
