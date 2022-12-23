@@ -15,6 +15,15 @@ list=(
  'https://youtu.be/6dPezw1HxSU'
  'https://youtu.be/n9FmLmWpDvM'
  'https://youtu.be/9YO5ruvFSCU'
+ 'https://music.youtube.com/watch?v=raQGZjp-98A&feature=share'
+'https://music.youtube.com/watch?v=oC-GflRB0y4&feature=share'
+'https://music.youtube.com/watch?v=85ftfVUTzM4&feature=share'
+'https://music.youtube.com/watch?v=X3oOQ8XnQWU&feature=share'
+'https://music.youtube.com/watch?v=8AGvhCWFpGA&feature=share'
+'https://music.youtube.com/watch?v=q1bTAcMAQDc&feature=share'
+'https://music.youtube.com/watch?v=X4UGPCR3zEQ&feature=share'
+'https://youtu.be/txEbcmDKrYE'
+'https://youtu.be/3BsJ7Zgr9_k'
  )
 
 for song in "${list[@]}"
