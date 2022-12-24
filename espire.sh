@@ -26,7 +26,7 @@ xclip maim isync polybar networkmanager rclone papirus-icon-theme \
 zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search
 sudo systemctl enable NetworkManager
 chsh -s /usr/bin/zsh
-systemctl enable bluetooth.service
+sudo systemctl enable bluetooth.service
 
 paru --noconfirm -S picom-jonaburg-git cli-visualizer python-pywalfox brillo zaread
 paru --noconfirm -S nsxiv xmenu autotiling \
@@ -114,7 +114,7 @@ cd $HOME/.config/st
 make
 sudo make install
 
-timedatectl set-timezone Etc/GMT-2
+sudo timedatectl set-timezone Etc/GMT-2
 
 mpd&
 mpc load mylist.m3u
