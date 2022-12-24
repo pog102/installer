@@ -1,0 +1,3 @@
+2022-11-22 20:14:36.738 [info] Starting worker process with pid 5169 (type: fileWatcher, window: 1).
+2022-11-22 20:14:54.656 [info] Worker process with pid 5169 terminated normally (type: fileWatcher, window: 1).
+2022-11-22 20:14:55.707 [info] Starting worker process with pid 5219 (type: fileWatcher, window: 1).

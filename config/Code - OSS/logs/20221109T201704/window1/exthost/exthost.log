@@ -1,0 +1,40 @@
+2022-11-09 20:17:06.338 [info] Extension host with pid 5879 started
+2022-11-09 20:17:06.338 [info] Skipping acquiring lock for /home/chad/.config/Code - OSS/User/workspaceStorage/e7a09f8b642e4f4c852ecaaa82863ec8.
+2022-11-09 20:17:06.499 [info] ExtensionService#_doActivateExtension k--kato.docomment, startup: false, activationEvent: 'onLanguage:csharp'
+2022-11-09 20:17:06.499 [info] ExtensionService#_doActivateExtension muhammad-sammy.csharp, startup: false, activationEvent: 'onLanguage:csharp'
+2022-11-09 20:17:06.499 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2022-11-09 20:17:06.499 [info] ExtensionService#_doActivateExtension asvetliakov.vscode-neovim, startup: true, activationEvent: '*'
+2022-11-09 20:17:06.499 [info] ExtensionService#_doActivateExtension dlasagno.wal-theme, startup: true, activationEvent: '*'
+2022-11-09 20:17:06.500 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: true, activationEvent: '*'
+2022-11-09 20:17:06.691 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2022-11-09 20:17:06.692 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2022-11-09 20:17:06.963 [info] Eager extensions activated
+2022-11-09 20:17:07.024 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 20:17:07.024 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 20:17:07.025 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 20:17:07.025 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2022-11-09 20:17:08.329 [warning] DiagnosticCollection with name 'csharp' does already exist.
+2022-11-09 20:17:08.344 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 20:17:08.344 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: undefined
+2022-11-09 20:17:09.164 [error] [muhammad-sammy.csharp] provider FAILED
+2022-11-09 20:17:09.164 [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: undefined
+2022-11-09 20:18:32.518 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:18:32.519 [warning] muhammad-sammy.csharp - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+2022-11-09 20:24:02.028 [info] Extension host terminating: received terminate message from renderer
+2022-11-09 20:24:02.044 [info] Extension host with pid 5879 exiting with code 0

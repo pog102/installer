@@ -1,13 +1,26 @@
 configuration {{
     font:                           "JetBrains Mono";
 }}
-
+inputbar {{
+    background-image:            url("{wallpaper}", width);
+}}
 * {{
+    font:                        "jetbrains mono nerd font 10";
     background-color:               transparent;
     background:                     {background};
-    background-transparent:         {background}A0;
-    text-color:                     {foreground};
-    primary:                        {color1};
-    secondary:                      {color2};
+    background-alt:         {background}A0;
+    foreground:                     {foreground};
+    selected:                        {color1};
+    active:                        {color2};
+    color3:                        {color3};
+    color3:                        {color3};
+    color4:                        {color4};
+    color5:                        {color5};
+    color6:                        {color6};
+    color7:                        {color7};
+    color8:                        {color8};
+    color9:                        {color9};
+    color10:                        {color10};
+    color11:                      {color11};
     urgent:                         #BF616A;
 }}

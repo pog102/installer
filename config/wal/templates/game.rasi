@@ -1,21 +1,14 @@
+configuration {{
+    font:                           "JetBrains Mono";
+}}
+
 * {{
-   fg: {foreground};
-    trans: {background}A0;
-    bg: {background};
-    bg1: {color1};
-    bg2: {color2};
-    bg3: {color3};
-    bg4: {color4};
-    bg5: {color5};
-    bg6: {color6};
-    bg7: {color7};
-    bg8: {color8};
-    bg9: {color9};
-    bg0: {color0};
-    bg10: {color10};
-    bg11: {color11};
-    bg12: {color12};
-    bg13: {color13};
-    bg14: {color14};
-    bg15: {color15};
+    background-color:               transparent;
+    background:                     {background};
+    /* background-transparent:         {background}A0; */
+    background-transparent:         {background};
+    text-color:                     {foreground};
+    primary:                        {color1};
+    secondary:                      {color2};
+    urgent:                         #BF616A;
 }}

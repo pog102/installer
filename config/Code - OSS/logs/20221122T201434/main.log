@@ -1,0 +1,5 @@
+2022-11-22 20:14:34.697 [info] update#ctor - updates are disabled as there is no update URL
+2022-11-22 20:14:35.746 [info] Starting extension host with pid 5115 (fork() took 8 ms).
+2022-11-22 20:14:54.632 [info] Extension host with pid 5115 exited with code: 0, signal: null.
+2022-11-22 20:14:55.706 [info] Starting extension host with pid 5218 (fork() took 5 ms).
+2022-11-22 20:24:22.075 [info] Extension host with pid 5218 exited with code: 0, signal: null.

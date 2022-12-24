@@ -1,4 +1,4 @@
-@import "~/.cache/wal/colors.rasi"
+@import "~/.cache/wal/game.rasi"
 
 window {
     height:                         240;
