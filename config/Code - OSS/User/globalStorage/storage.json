@@ -2,12 +2,12 @@
     "telemetry.machineId": "e1e2911531148242ed7dddee5f40d74947e0811f1aecc48649c6a75bf65e804e",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [
+        "folders": [],
+        "emptyWindows": [
             {
-                "folderUri": "file:///home/chad/Csharp/u6/lab6/linux_lab5"
+                "backupFolder": "1671959842290"
             }
-        ],
-        "emptyWindows": []
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -99,6 +99,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/chad/wha.txt",
+                                        "path": "/home/chad/wha.txt",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/wha.txt"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -311,10 +322,6 @@
                         "label": "&&Close Editor"
                     },
                     {
-                        "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
-                    },
-                    {
                         "id": "workbench.action.closeWindow",
                         "label": "Clos&&e Window"
                     },
@@ -507,8 +514,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar",
-                                    "checked": true
+                                    "label": "&&Primary Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -754,7 +760,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -763,7 +770,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1265,11 +1273,6 @@
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
             },
-            "workbench.action.closeFolder": {
-                "label": "Ctrl+K F",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k f"
-            },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
                 "userSettingsLabel": "alt+f4"
@@ -1638,14 +1641,13 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/chad/Csharp/u6/lab6/linux_lab5",
-            "backupPath": "/home/chad/.config/Code - OSS/Backups/7f652f9ade182723a210e6b531a717d3",
+            "backupPath": "/home/chad/.config/Code - OSS/Backups/1671959842290",
             "uiState": {
                 "mode": 1,
-                "x": 18,
-                "y": 48,
-                "width": 936,
-                "height": 1014
+                "x": 16,
+                "y": 46,
+                "width": 1888,
+                "height": 1018
             }
         },
         "openedWindows": []
@@ -1669,7 +1671,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 234,
+            "sideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }

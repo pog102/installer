@@ -12,7 +12,7 @@
          sidebar-mode:                   false;
  }
 
-@theme "~/.cache/wal/game.rasi"
+@theme "~/.cache/wal/color.rasi"
 * {
     font:   "Roboto 12";
 
@@ -31,7 +31,7 @@
 window {
     location:   center;
     width:      480;
-    y-offset:   -120;
+    /* y-offset:   -120; */
 
     background-color:   @bg;
 }
@@ -40,7 +40,7 @@ inputbar {
     spacing:    8px; 
     padding:    8px;
 
-    background-color:   @bg14;
+    background-color:   @bg;
 }
 
 prompt, entry, element-icon, element-text {

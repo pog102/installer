@@ -9,7 +9,7 @@
          sidebar-mode:                   false;
  }
 
-@theme "~/.cache/wal/game.rasi"
+@theme "~/.cache/wal/color.rasi"
 * {
     font:   "Roboto 9";
    display-dmenu:                   "Song";

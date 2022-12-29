@@ -7,7 +7,7 @@ if xrandr | grep 'HDMI-1-0' | grep ' connected' &>/dev/null; then
         # xrandr --output HDMI-1-0 --auto --output eDP-1 --off
         notify-send " xrandr" "Screen layout changed: HDMI-1-0"
   else
-        xrandr --auto --output HDMI-1-0 --mode 1920x1080 --rate 144 --primary --right-of eDP-1
+        xrandr --output eDP-1 --auto --output HDMI-1-0 --mode 1920x1080 --rate 144 --primary --right-of eDP-1
 
 		sh ~/.config/polybar/launch.sh
 		polybar hdmi &

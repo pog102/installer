@@ -12,4 +12,4 @@ cod=$?
 [ ! "$song" ] && exit
 [ "$cod" -eq 10 ] || mpc clear
 mpc search "(title==\"$song\")" | mpc add
-mpc play >/dev/null
+# echo "mpc search \"(title==\"$song\")\""

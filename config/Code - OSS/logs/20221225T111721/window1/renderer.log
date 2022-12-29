@@ -1,0 +1,2 @@
+2022-12-25 11:17:22.631 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/chad/wha.txt","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2022-12-25 11:17:26.007 [info] [perf] Render performance baseline is 28ms

@@ -1,0 +1,95 @@
+(20:32:31) INFO:    [Connection]:       Connectivity: check-online
+(20:32:31) INFO:    [Connection]:       Pinging external endpoints
+(20:32:31) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary --version
+(20:32:31) INFO:    [Legendary]:        Legendary location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary
+(20:32:31) INFO:    [Gog]:              GOGDL location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl
+(20:32:31) WARNING: [Backend]:          Protocol already registered.
+(20:32:31) INFO:    [Connection]:       Connectivity: online
+(20:32:31) INFO:    [Gog]:              Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl --version
+(20:32:31) INFO:    [Backend]:          AreWeAntiCheatYet data downloaded
+(20:32:31) INFO:    [Backend]:          
+
+Heroic Version: 2.5.2 Yamato
+Legendary Version:  0.20.31 Dark Energy (hotfix #5)
+GOGdl Version: 0.5
+OS: Arch KERNEL: 6.0.15-273-tkg-pds ARCH: x64
+CPU: Intel Core™ i5-10300H @2.5 GOVERNOR: ondemand
+RAM: Total: 7.6 GiB Available: 6.18 GiB
+GRAPHICS: GPU0: CometLake-H GT2 [UHD Graphics]  VRAM: 256MB  GPU1: NVIDIA GeForce GTX 1650 VRAM: 4096MB DRIVER: 525.60.11 
+PROTOCOL: tty
+
+(20:32:31) INFO:    [Backend]:          Checking for new Heroic Updates
+(20:32:31) INFO:    [Backend]:          Checking for current version changelog
+(20:32:31) INFO:    [Frontend]:         Refreshing Library
+(20:32:31) INFO:    [Legendary]:        Refreshing library...
+(20:32:31) INFO:    [Legendary]:        Refreshing Epic Games...
+(20:32:31) INFO:    [Legendary]:        Game list updated, got 25 games & DLCs
+(20:32:31) INFO:    [Backend]:          Frontend Ready
+(20:32:32) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(20:32:33) INFO:    [Legendary]:        Checking if EOS Overlay is enabled: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary eos-overlay info --prefix "/home/chad/Games/Heroic/Prefixes/Death Stranding/pfx"
+(20:32:33) INFO:    [Backend]:          Using cached HowLongToBeat data for Death Stranding 
+(20:32:33) DEBUG:   [Legendary]:        Using cached install info
+(20:32:33) DEBUG:   [Legendary]:        Using cached install info
+(20:32:33) INFO:    [Legendary]:        Abort command "/opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary eos-overlay info --prefix "/home/chad/Games/Heroic/Prefixes/Death Stranding/pfx""
+(20:32:33) INFO:    [Winetricks]:       Downloading Winetricks
+(20:32:38) INFO:    [Backend]:          Starting the Download Queue
+(20:32:43) INFO:    [Backend]:          Launching Death Stranding (Boga)
+(20:32:43) INFO:    [Backend]:          Preventing display from sleep
+(20:32:43) DEBUG:   [Legendary]:        Using cached install info
+(20:32:43) DEBUG:   [Legendary]:        Using cached install info
+(20:32:43) WARNING: [Backend]:          You are using Proton, this can lead to some bugs. Please do not open issues with bugs related to games
+(20:32:43) DEBUG:   [Backend]:          Running Wine command: run wineboot --init
+(20:32:45) INFO:    [Backend]:          Created/Updated Wineprefix at /home/chad/Games/Heroic/Prefixes/Death Stranding
+(20:32:45) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch Boga --json --offline
+(20:32:45) INFO:    [Legendary]:        Launching Death Stranding: LD_PRELOAD= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/chad/.steam/steam STEAM_COMPAT_DATA_PATH="/home/chad/Games/Heroic/Prefixes/Death Stranding" DXVK_HUD=fps PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-DeathStranding PROTON_LOG_DIR=/home/chad /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch Boga --language en --no-wine --wrapper "'/home/chad/.local/share/Steam/steamapps/common/Proton - Experimental/proton' run"
+(20:33:45) INFO:    [Backend]:          Trying to kill Boga
+(20:33:45) INFO:    [Backend]:          Killed Boga
+(20:33:46) INFO:    [Backend]:          Stopping Display Power Saver Blocker
+(20:33:46) INFO:    [Frontend]:         Refreshing Library
+(20:33:46) INFO:    [Legendary]:        Refreshing library...
+(20:33:46) INFO:    [Legendary]:        Game list updated, got 25 games & DLCs
+(20:33:46) DEBUG:   [Legendary]:        Using cached install info
+(20:33:46) DEBUG:   [Legendary]:        Using cached install info
+(20:33:46) DEBUG:   [Legendary]:        Using cached install info
+(20:33:46) DEBUG:   [Legendary]:        Using cached install info
+(20:33:51) INFO:    [Backend]:          Writing config for Boga
+(20:33:51) INFO:    [Backend]:          Changed config: wineVersion from {"bin":"/home/chad/.local/share/Steam/steamapps/common/Proton - Experimental/proton","name":"Proton - Proton - Experimental","type":"proton"} to {"bin":"/home/chad/.local/share/Steam/steamapps/common/Proton 7.0/proton","name":"Proton - Proton 7.0","type":"proton"}
+(20:34:11) INFO:    [Backend]:          Writing config for Boga
+(20:34:11) INFO:    [Backend]:          Changed config: useSteamRuntime from undefined to true
+(20:34:21) INFO:    [Legendary]:        Checking if EOS Overlay is enabled: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary eos-overlay info --prefix "/home/chad/Games/Heroic/Prefixes/Death Stranding/pfx"
+(20:34:21) INFO:    [Backend]:          Using cached HowLongToBeat data for Death Stranding 
+(20:34:21) DEBUG:   [Legendary]:        Using cached install info
+(20:34:21) DEBUG:   [Legendary]:        Using cached install info
+(20:34:21) INFO:    [Legendary]:        Abort command "/opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary eos-overlay info --prefix "/home/chad/Games/Heroic/Prefixes/Death Stranding/pfx""
+(20:34:22) INFO:    [Backend]:          Launching Death Stranding (Boga)
+(20:34:22) INFO:    [Backend]:          Preventing display from sleep
+(20:34:22) DEBUG:   [Legendary]:        Using cached install info
+(20:34:22) DEBUG:   [Legendary]:        Using cached install info
+(20:34:23) WARNING: [Backend]:          You are using Proton, this can lead to some bugs. Please do not open issues with bugs related to games
+(20:34:23) DEBUG:   [Backend]:          Running Wine command: run wineboot --init
+(20:34:28) INFO:    [Backend]:          Created/Updated Wineprefix at /home/chad/Games/Heroic/Prefixes/Death Stranding
+(20:34:28) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch Boga --json --offline
+(20:34:28) INFO:    [Legendary]:        Launching Death Stranding: LD_PRELOAD= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/chad/.steam/steam STEAM_COMPAT_DATA_PATH="/home/chad/Games/Heroic/Prefixes/Death Stranding" DXVK_HUD=fps PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-DeathStranding PROTON_LOG_DIR=/home/chad /home/chad/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier/run --filesystem=/home/chad/Games/Heroic/DeathStranding -- /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch Boga --language en --no-wine --wrapper "'/home/chad/.local/share/Steam/steamapps/common/Proton 7.0/proton' run"
+(20:39:09) INFO:    [Connection]:       Connectivity: offline
+(20:39:11) INFO:    [Connection]:       Connectivity: check-online
+(20:39:11) INFO:    [Connection]:       Pinging external endpoints
+(20:39:11) INFO:    [Connection]:       Connectivity: online
+(20:46:01) INFO:    [Connection]:       Connectivity: offline
+(20:46:02) INFO:    [Connection]:       Connectivity: check-online
+(20:46:02) INFO:    [Connection]:       Pinging external endpoints
+(20:46:03) INFO:    [Connection]:       Connectivity: online
+(20:52:55) INFO:    [Connection]:       Connectivity: offline
+(20:52:56) INFO:    [Connection]:       Connectivity: check-online
+(20:52:56) INFO:    [Connection]:       Pinging external endpoints
+(20:52:57) INFO:    [Connection]:       Connectivity: online
+(20:59:48) INFO:    [Connection]:       Connectivity: offline
+(20:59:50) INFO:    [Connection]:       Connectivity: check-online
+(20:59:50) INFO:    [Connection]:       Pinging external endpoints
+(20:59:50) INFO:    [Connection]:       Connectivity: online
+(21:00:33) INFO:    [Backend]:          Stopping Display Power Saver Blocker
+(21:00:33) INFO:    [Frontend]:         Refreshing Library
+(21:00:33) INFO:    [Legendary]:        Refreshing library...
+(21:00:33) INFO:    [Legendary]:        Game list updated, got 25 games & DLCs
+(21:00:33) DEBUG:   [Legendary]:        Using cached install info
+(21:00:33) DEBUG:   [Legendary]:        Using cached install info
+(21:00:33) DEBUG:   [Legendary]:        Using cached install info

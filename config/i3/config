@@ -161,8 +161,8 @@ bindsym $mod+apostrophe		split horizontal ;; exec $term
 bindsym $mod+slash		split vertical ;; exec $term
 bindsym $mod+Shift+slash	kill
 bindsym $mod+backslash		workspace back_and_forth
-bindsym XF86AudioRaiseVolume exec ~/.bin/upvol +
-bindsym XF86AudioLowerVolume exec ~/.bin/upvol -
+bindsym XF86AudioRaiseVolume exec ~/.bin/upvol i
+bindsym XF86AudioLowerVolume exec ~/.bin/upvol d
 
 workspace 1 output $fm
 workspace 2 output $fm

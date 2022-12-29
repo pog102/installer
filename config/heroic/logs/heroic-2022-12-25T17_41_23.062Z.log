@@ -1,0 +1,1306 @@
+(19:41:23) INFO:    [Connection]:       Connectivity: check-online
+(19:41:23) INFO:    [Connection]:       Pinging external endpoints
+(19:41:23) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary --version
+(19:41:23) INFO:    [Legendary]:        Legendary location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary
+(19:41:23) INFO:    [Gog]:              GOGDL location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl
+(19:41:23) WARNING: [Backend]:          Protocol already registered.
+(19:41:23) INFO:    [Gog]:              Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl --version
+(19:41:23) INFO:    [Connection]:       Connectivity: online
+(19:41:23) INFO:    [Backend]:          User Not Found, removing it from Store
+(19:41:23) INFO:    [Backend]:          AreWeAntiCheatYet data downloaded
+(19:41:23) INFO:    [Backend]:          Checking for new Heroic Updates
+(19:41:23) INFO:    [Backend]:          Frontend Ready
+(19:41:23) INFO:    [Backend]:          Checking for current version changelog
+(19:41:23) INFO:    [Frontend]:         Updated to a new version, cleaaning up the cache.
+(19:41:23) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary cleanup
+(19:41:24) INFO:    [Backend]:          
+
+Heroic Version: 2.5.2 Yamato
+Legendary Version:  0.20.31 Dark Energy (hotfix #5)
+GOGdl Version: 0.5
+OS: Arch KERNEL: 6.0.15-273-tkg-pds ARCH: x64
+CPU: Intel Core™ i5-10300H @2.5 GOVERNOR: ondemand
+RAM: Total: 7.6 GiB Available: 6.06 GiB
+GRAPHICS: GPU0: CometLake-H GT2 [UHD Graphics]  VRAM: 256MB  GPU1: NVIDIA GeForce GTX 1650 VRAM: 4096MB DRIVER: 525.60.11 
+PROTOCOL: tty
+
+(19:41:25) INFO:    [Winetricks]:       Downloading Winetricks
+(19:41:25) INFO:    [DXVKInstaller]:    Updating vkd3d to: vkd3d-proton-2.7
+(19:41:26) INFO:    [DXVKInstaller]:    Updating dxvk to: dxvk-2.0
+(19:41:26) INFO:    [DXVKInstaller]:    downloaded vkd3d
+(19:41:26) INFO:    [DXVKInstaller]:    extracting vkd3d
+(19:41:26) INFO:    [DXVKInstaller]:    vkd3d updated!
+(19:41:27) INFO:    [DXVKInstaller]:    downloaded dxvk
+(19:41:27) INFO:    [DXVKInstaller]:    extracting dxvk
+(19:41:27) INFO:    [DXVKInstaller]:    dxvk updated!
+(19:41:28) INFO:    [Backend]:          Starting the Download Queue
+(19:44:46) INFO:    [Legendary]:        Logging in: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary auth --code <redacted>
+(19:44:48) INFO:    [Frontend]:         Refreshing Library
+(19:44:48) INFO:    [Legendary]:        Refreshing library...
+(19:44:48) INFO:    [Legendary]:        Refreshing Epic Games...
+(19:44:48) INFO:    [Legendary]:        Game list updated, got 0 games & DLCs
+(19:44:48) INFO:    [Frontend]:         No cache found, getting data from legendary...
+(19:44:48) INFO:    [Legendary]:        Refreshing library...
+(19:44:48) INFO:    [Legendary]:        Game list updated, got 0 games & DLCs
+(19:44:48) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(19:44:52) INFO:    [Frontend]:         Refreshing Library
+(19:44:52) INFO:    [Legendary]:        Refreshing library...
+(19:44:52) INFO:    [Legendary]:        Refreshing Epic Games...
+(19:44:52) INFO:    [Legendary]:        Game list updated, got 25 games & DLCs
+(19:44:52) INFO:    [Frontend]:         No cache found, getting data from legendary...
+(19:44:52) INFO:    [Legendary]:        Refreshing library...
+(19:44:52) INFO:    [Legendary]:        Game list updated, got 25 games & DLCs
+(19:44:52) INFO:    [Frontend]:         Force Update
+(19:44:52) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(19:44:52) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:52) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) ERROR:   [Legendary]:        Error Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) ERROR:   [Legendary]:        Error Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) ERROR:   [Legendary]:        Error Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) ERROR:   [Legendary]:        Error Getting Info from Epic API
+(19:44:53) ERROR:   [Legendary]:        Error Getting Info from Epic API
+(19:44:53) ERROR:   [Legendary]:        Error Getting Info from Epic API
+(19:44:53) ERROR:   [Legendary]:        Error Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) INFO:    [Legendary]:        Getting Info from Epic API
+(19:44:53) ERROR:   [Legendary]:        Error Getting Info from Epic API
+(19:45:23) INFO:    [Backend]:          Getting HowLongToBeat data for DOOM 64
+(19:45:23) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(19:45:23) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(19:45:23) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info 5b60142e120c4f2d88027595c21d4a04 --platform Windows --json
+(19:45:24) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info 5b60142e120c4f2d88027595c21d4a04 --platform Windows --json
+(19:45:28) INFO:    [Backend]:          Getting HowLongToBeat data for Death Stranding
+(19:45:28) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(19:45:28) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(19:45:28) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info Boga --platform Windows --json
+(19:45:29) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info Boga --platform Windows --json
+(19:45:30) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(19:45:31) DEBUG:   [Backend]:          {"free":243508006912,"diskSize":481784274944,"message":"226.78 GiB / 448.7 GiB","validPath":true}
+(19:45:31) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info Boga --platform Windows --json
+(19:45:34) DEBUG:   [Backend]:          {"free":243507994624,"diskSize":481784274944,"message":"226.78 GiB / 448.7 GiB","validPath":true}
+(19:45:49) INFO:    [Backend]:          Writing config for Boga
+(19:45:49) INFO:    [Backend]:          Changed config: winePrefix from /home/chad/.wine to /home/chad/Games/Heroic/Prefixes/Death Stranding
+(19:45:49) INFO:    [DownloadManager]:  Boga added to download manager queue.
+(19:45:49) DEBUG:   [Legendary]:        Using cached install info
+(19:45:49) INFO:    [Backend]:          Preventing machine to sleep
+(19:45:49) DEBUG:   [Legendary]:        Using cached install info
+(19:45:49) DEBUG:   [Legendary]:        Using cached install info
+(19:45:49) DEBUG:   [Legendary]:        Using cached install info
+(19:45:49) INFO:    [Legendary]:        Installing Boga: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary install Boga --platform Windows --base-path /home/chad/Games/Heroic --skip-dlcs --skip-sdl -y
+(19:45:49) DEBUG:   [Legendary]:        Logging to file "/home/chad/.config/heroic/GamesConfig/Boga.log"
+(19:45:55) INFO:    [Legendary]:        Progress for Boga: 0.21%/135.34MiB/00:22:57 Down: 0MiB/s / Disk: 0MiB/s
+(19:45:55) DEBUG:   [Legendary]:        Using cached install info
+(19:45:55) DEBUG:   [Legendary]:        Using cached install info
+(19:45:56) INFO:    [Legendary]:        Progress for Boga: 0.29%/185.34MiB/00:23:18 Down: 49.93MiB/s / Disk: 0MiB/s
+(19:45:57) INFO:    [Legendary]:        Progress for Boga: 0.36%/233.35MiB/00:22:49 Down: 0MiB/s / Disk: 0MiB/s
+(19:45:58) INFO:    [Legendary]:        Progress for Boga: 0.44%/283.35MiB/00:22:11 Down: 0MiB/s / Disk: 0MiB/s
+(19:45:59) INFO:    [Legendary]:        Progress for Boga: 0.52%/334.35MiB/00:21:52 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:00) INFO:    [Legendary]:        Progress for Boga: 0.59%/382.35MiB/00:22:09 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:02) INFO:    [Legendary]:        Progress for Boga: 0.75%/482.36MiB/00:21:50 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:03) INFO:    [Legendary]:        Progress for Boga: 0.81%/523.36MiB/00:22:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:05) INFO:    [Legendary]:        Progress for Boga: 0.96%/617.36MiB/00:22:11 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:06) INFO:    [Legendary]:        Progress for Boga: 1.03%/664.37MiB/00:22:18 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:07) INFO:    [Legendary]:        Progress for Boga: 1.11%/713.37MiB/00:22:13 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:09) INFO:    [Legendary]:        Progress for Boga: 1.26%/813.37MiB/00:22:02 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:10) INFO:    [Legendary]:        Progress for Boga: 1.34%/863.37MiB/00:22:01 Down: 49.94MiB/s / Disk: 0MiB/s
+(19:46:12) INFO:    [Legendary]:        Progress for Boga: 1.49%/961.38MiB/00:21:52 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:15) INFO:    [Legendary]:        Progress for Boga: 1.71%/1102.38MiB/00:21:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:16) INFO:    [Legendary]:        Progress for Boga: 1.78%/1146.38MiB/00:22:06 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:21) INFO:    [Legendary]:        Progress for Boga: 2.17%/1398.39MiB/00:21:42 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:22) INFO:    [Legendary]:        Progress for Boga: 2.25%/1448.40MiB/00:21:40 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:23) INFO:    [Legendary]:        Progress for Boga: 2.31%/1491.40MiB/00:21:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:24) INFO:    [Legendary]:        Progress for Boga: 2.39%/1539.40MiB/00:21:51 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:27) INFO:    [Legendary]:        Progress for Boga: 2.62%/1686.41MiB/00:21:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:28) INFO:    [Backend]:          Getting HowLongToBeat data for Wonder Boy The Dragons Trap
+(19:46:28) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(19:46:28) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(19:46:29) INFO:    [Legendary]:        Progress for Boga: 2.77%/1784.42MiB/00:21:36 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:29) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info 4c30fe9841264abfb120b581d061a8fd --platform Windows --json
+(19:46:29) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info 4c30fe9841264abfb120b581d061a8fd --platform Windows --json
+(19:46:30) INFO:    [Legendary]:        Progress for Boga: 2.85%/1836.42MiB/00:21:35 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:32) INFO:    [Legendary]:        Progress for Boga: 3%/1933.42MiB/00:21:35 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:34) INFO:    [Legendary]:        Progress for Boga: 3.14%/2027.43MiB/00:21:29 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:34) INFO:    [Backend]:          Getting HowLongToBeat data for Nioh The Complete Edition
+(19:46:34) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(19:46:34) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(19:46:34) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info b5e42b0dc2f544a5bbb4080a433b8b71 --platform Windows --json
+(19:46:34) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info b5e42b0dc2f544a5bbb4080a433b8b71 --platform Windows --json
+(19:46:35) INFO:    [Legendary]:        Progress for Boga: 3.22%/2076.43MiB/00:21:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:36) INFO:    [Legendary]:        Progress for Boga: 3.3%/2125.43MiB/00:21:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:37) INFO:    [Legendary]:        Progress for Boga: 3.37%/2175.43MiB/00:21:30 Down: 49.94MiB/s / Disk: 36.95MiB/s
+(19:46:38) INFO:    [Legendary]:        Progress for Boga: 3.45%/2223.44MiB/00:21:21 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:38) INFO:    [Backend]:          Getting HowLongToBeat data for Spirit of the North
+(19:46:38) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(19:46:38) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(19:46:39) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info d2d941e5c1ec44ae9e87e9e7cdddf1dd --platform Windows --json
+(19:46:39) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info d2d941e5c1ec44ae9e87e9e7cdddf1dd --platform Windows --json
+(19:46:40) INFO:    [Legendary]:        Progress for Boga: 3.6%/2319.41MiB/00:21:16 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:41) INFO:    [Legendary]:        Progress for Boga: 3.67%/2369.41MiB/00:21:20 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:42) INFO:    [Legendary]:        Progress for Boga: 3.75%/2416.40MiB/00:21:17 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:43) INFO:    [Legendary]:        Progress for Boga: 3.82%/2465.40MiB/00:21:16 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:44) INFO:    [Legendary]:        Progress for Boga: 3.89%/2506.39MiB/00:21:27 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:46) INFO:    [Legendary]:        Progress for Boga: 4.04%/2604.38MiB/00:21:17 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:47) INFO:    [Legendary]:        Progress for Boga: 4.12%/2656.38MiB/00:21:15 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:48) INFO:    [Connection]:       Connectivity: offline
+(19:46:48) INFO:    [Legendary]:        Progress for Boga: 4.2%/2705.39MiB/00:21:11 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:48) ERROR:   [Legendary]:        Error: Failed to parse install info for d2d941e5c1ec44ae9e87e9e7cdddf1dd with: SyntaxError: Unexpected end of JSON input
+    at R.getInstallInfo (/opt/Heroic/resources/app.asar/build/electron/main.f5946442.js:57:8862)
+    at async /opt/Heroic/resources/app.asar/build/electron/main.f5946442.js:134:6572
+    at async node:electron/js2c/browser_init:193:551
+(19:46:48) ERROR:   [Legendary]:        Error: Failed to parse install info for d2d941e5c1ec44ae9e87e9e7cdddf1dd with: SyntaxError: Unexpected end of JSON input
+    at R.getInstallInfo (/opt/Heroic/resources/app.asar/build/electron/main.f5946442.js:57:8862)
+    at async /opt/Heroic/resources/app.asar/build/electron/main.f5946442.js:134:6572
+    at async node:electron/js2c/browser_init:193:551
+(19:46:48) ERROR:   [Frontend]:         Cannot get game info
+(19:46:48) ERROR:   [Frontend]:         Cannot get game info
+(19:46:49) INFO:    [Legendary]:        Progress for Boga: 4.2%/2705.39MiB/00:21:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:49) INFO:    [Connection]:       Connectivity: check-online
+(19:46:49) INFO:    [Connection]:       Pinging external endpoints
+(19:46:49) INFO:    [Connection]:       Connectivity: online
+(19:46:51) INFO:    [Legendary]:        Progress for Boga: 4.27%/2753.39MiB/00:21:57 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:53) INFO:    [Legendary]:        Progress for Boga: 4.42%/2847.39MiB/00:21:54 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:54) INFO:    [Legendary]:        Progress for Boga: 4.47%/2882.40MiB/00:21:59 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:55) INFO:    [Legendary]:        Progress for Boga: 4.55%/2931.40MiB/00:22:01 Down: 48.94MiB/s / Disk: 0MiB/s
+(19:46:56) INFO:    [Legendary]:        Progress for Boga: 4.62%/2978.40MiB/00:21:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:57) INFO:    [Legendary]:        Progress for Boga: 4.69%/3026.41MiB/00:21:54 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:58) INFO:    [Legendary]:        Progress for Boga: 4.76%/3072.41MiB/00:21:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:46:59) INFO:    [Legendary]:        Progress for Boga: 4.79%/3087.41MiB/00:22:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:00) INFO:    [Legendary]:        Progress for Boga: 4.83%/3116.41MiB/00:22:19 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:01) INFO:    [Legendary]:        Progress for Boga: 4.9%/3162.41MiB/00:22:18 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:02) INFO:    [Legendary]:        Progress for Boga: 4.98%/3212.41MiB/00:22:11 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:03) INFO:    [Legendary]:        Progress for Boga: 5.05%/3259.40MiB/00:22:13 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:04) INFO:    [Legendary]:        Progress for Boga: 5.13%/3306.40MiB/00:22:10 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:05) INFO:    [Legendary]:        Progress for Boga: 5.16%/3328.40MiB/00:22:18 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:06) INFO:    [Legendary]:        Progress for Boga: 5.19%/3349.40MiB/00:22:29 Down: 20.97MiB/s / Disk: 0MiB/s
+(19:47:07) INFO:    [Legendary]:        Progress for Boga: 5.22%/3367.40MiB/00:22:42 Down: 17.98MiB/s / Disk: 0MiB/s
+(19:47:08) INFO:    [Legendary]:        Progress for Boga: 5.25%/3388.40MiB/00:22:46 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:09) INFO:    [Legendary]:        Progress for Boga: 5.29%/3413.40MiB/00:22:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:11) INFO:    [Legendary]:        Progress for Boga: 5.45%/3514.41MiB/00:22:47 Down: 50.94MiB/s / Disk: 0MiB/s
+(19:47:12) INFO:    [Legendary]:        Progress for Boga: 5.52%/3558.41MiB/00:22:45 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:13) INFO:    [Legendary]:        Progress for Boga: 5.59%/3605.42MiB/00:22:44 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:14) INFO:    [Legendary]:        Progress for Boga: 5.67%/3655.42MiB/00:22:41 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:15) INFO:    [Legendary]:        Progress for Boga: 5.7%/3675.42MiB/00:22:49 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:18) INFO:    [Legendary]:        Progress for Boga: 5.88%/3791.42MiB/00:22:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:19) INFO:    [Legendary]:        Progress for Boga: 5.95%/3839.42MiB/00:22:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:20) INFO:    [Legendary]:        Progress for Boga: 6.03%/3888.41MiB/00:22:49 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:22) INFO:    [Legendary]:        Progress for Boga: 6.19%/3989.42MiB/00:22:46 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:23) INFO:    [Legendary]:        Progress for Boga: 6.26%/4039.42MiB/00:22:41 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:24) INFO:    [Legendary]:        Progress for Boga: 6.34%/4090.42MiB/00:22:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:26) INFO:    [Legendary]:        Progress for Boga: 6.49%/4188.43MiB/00:22:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:27) INFO:    [Legendary]:        Progress for Boga: 6.57%/4234.43MiB/00:22:31 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:28) INFO:    [Legendary]:        Progress for Boga: 6.64%/4282.43MiB/00:22:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:28) INFO:    [Backend]:          Using cached HowLongToBeat data for Death Stranding 
+(19:47:28) DEBUG:   [Legendary]:        Using cached install info
+(19:47:28) DEBUG:   [Legendary]:        Using cached install info
+(19:47:29) INFO:    [Legendary]:        Progress for Boga: 6.67%/4302.44MiB/00:22:39 Down: 19.97MiB/s / Disk: 0MiB/s
+(19:47:32) INFO:    [Legendary]:        Progress for Boga: 6.87%/4433.44MiB/00:22:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:33) INFO:    [Legendary]:        Progress for Boga: 6.95%/4480.45MiB/00:22:31 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:34) INFO:    [Legendary]:        Progress for Boga: 7.02%/4527.45MiB/00:22:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:36) INFO:    [Legendary]:        Progress for Boga: 7.17%/4625.46MiB/00:22:25 Down: 48.94MiB/s / Disk: 0MiB/s
+(19:47:38) INFO:    [Legendary]:        Progress for Boga: 7.32%/4722.46MiB/00:22:21 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:39) INFO:    [Legendary]:        Progress for Boga: 7.4%/4772.46MiB/00:22:19 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:40) INFO:    [Legendary]:        Progress for Boga: 7.47%/4819.45MiB/00:22:17 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:41) INFO:    [Legendary]:        Progress for Boga: 7.55%/4870.45MiB/00:22:13 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:43) INFO:    [Legendary]:        Progress for Boga: 7.7%/4968.46MiB/00:22:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:45) INFO:    [Legendary]:        Progress for Boga: 7.85%/5064.46MiB/00:22:06 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:46) INFO:    [Legendary]:        Progress for Boga: 7.93%/5111.46MiB/00:22:04 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:47) INFO:    [Legendary]:        Progress for Boga: 8%/5156.47MiB/00:22:03 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:48) INFO:    [Legendary]:        Progress for Boga: 8.07%/5206.46MiB/00:21:59 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:49) INFO:    [Legendary]:        Progress for Boga: 8.11%/5227.46MiB/00:22:05 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:53) INFO:    [Legendary]:        Progress for Boga: 8.36%/5394.46MiB/00:22:04 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:54) INFO:    [Legendary]:        Progress for Boga: 8.44%/5441.47MiB/00:22:03 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:57) INFO:    [Legendary]:        Progress for Boga: 8.66%/5586.45MiB/00:21:59 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:58) INFO:    [Legendary]:        Progress for Boga: 8.74%/5635.44MiB/00:21:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:47:59) INFO:    [Legendary]:        Progress for Boga: 8.82%/5685.45MiB/00:21:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:01) INFO:    [Legendary]:        Progress for Boga: 8.96%/5779.45MiB/00:21:50 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:04) INFO:    [Legendary]:        Progress for Boga: 9.2%/5930.44MiB/00:21:44 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:05) INFO:    [Legendary]:        Progress for Boga: 9.27%/5976.41MiB/00:21:42 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:11) INFO:    [Legendary]:        Progress for Boga: 9.72%/6268.38MiB/00:21:31 Down: 49.93MiB/s / Disk: 0MiB/s
+(19:48:12) INFO:    [Legendary]:        Progress for Boga: 9.8%/6318.38MiB/00:21:29 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:15) INFO:    [Legendary]:        Progress for Boga: 10.03%/6466.32MiB/00:21:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:16) INFO:    [Legendary]:        Progress for Boga: 10.1%/6516.32MiB/00:21:21 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:19) INFO:    [Legendary]:        Progress for Boga: 10.26%/6617.33MiB/00:21:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:20) INFO:    [Legendary]:        Progress for Boga: 10.34%/6666.29MiB/00:21:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:22) INFO:    [Legendary]:        Progress for Boga: 10.49%/6765.29MiB/00:21:21 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:26) INFO:    [Legendary]:        Progress for Boga: 10.79%/6956.28MiB/00:21:15 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:26) INFO:    [Backend]:          Using cached HowLongToBeat data for Death Stranding 
+(19:48:26) DEBUG:   [Legendary]:        Using cached install info
+(19:48:26) DEBUG:   [Legendary]:        Using cached install info
+(19:48:29) INFO:    [Legendary]:        Progress for Boga: 11.01%/7101.27MiB/00:21:11 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:30) INFO:    [Legendary]:        Progress for Boga: 11.09%/7152.27MiB/00:21:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:31) INFO:    [Legendary]:        Progress for Boga: 11.17%/7201.28MiB/00:21:05 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:33) INFO:    [Legendary]:        Progress for Boga: 11.31%/7295.28MiB/00:21:05 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:34) INFO:    [Legendary]:        Progress for Boga: 11.4%/7350.27MiB/00:21:00 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:36) INFO:    [Legendary]:        Progress for Boga: 11.55%/7448.26MiB/00:20:58 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:37) INFO:    [Legendary]:        Progress for Boga: 11.61%/7490.27MiB/00:20:58 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:38) INFO:    [Legendary]:        Progress for Boga: 11.68%/7534.27MiB/00:20:58 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:40) INFO:    [Legendary]:        Progress for Boga: 11.82%/7623.22MiB/00:20:56 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:41) INFO:    [Legendary]:        Progress for Boga: 11.89%/7666.22MiB/00:20:57 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:42) INFO:    [Legendary]:        Progress for Boga: 11.96%/7711.22MiB/00:20:52 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:44) INFO:    [Legendary]:        Progress for Boga: 12.1%/7805.21MiB/00:20:50 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:45) INFO:    [Legendary]:        Progress for Boga: 12.17%/7848.21MiB/00:20:51 Down: 42.95MiB/s / Disk: 0MiB/s
+(19:48:46) INFO:    [Legendary]:        Progress for Boga: 12.24%/7894.22MiB/00:20:48 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:47) INFO:    [Legendary]:        Progress for Boga: 12.31%/7941.22MiB/00:20:47 Down: 46.94MiB/s / Disk: 0MiB/s
+(19:48:48) INFO:    [Legendary]:        Progress for Boga: 12.39%/7987.18MiB/00:20:46 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:49) INFO:    [Legendary]:        Progress for Boga: 12.47%/8040.18MiB/00:20:45 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:51) INFO:    [Legendary]:        Progress for Boga: 12.61%/8133.19MiB/00:20:44 Down: 47.94MiB/s / Disk: 0MiB/s
+(19:48:52) INFO:    [Legendary]:        Progress for Boga: 12.68%/8180.18MiB/00:20:40 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:53) INFO:    [Legendary]:        Progress for Boga: 12.77%/8232.17MiB/00:20:39 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:54) INFO:    [Legendary]:        Progress for Boga: 12.84%/8280.17MiB/00:20:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:55) INFO:    [Legendary]:        Progress for Boga: 12.92%/8330.17MiB/00:20:39 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:56) INFO:    [Legendary]:        Progress for Boga: 12.99%/8380.17MiB/00:20:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:57) INFO:    [Legendary]:        Progress for Boga: 13.07%/8430.16MiB/00:20:33 Down: 49.93MiB/s / Disk: 0MiB/s
+(19:48:58) INFO:    [Legendary]:        Progress for Boga: 13.15%/8478.17MiB/00:20:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:48:59) INFO:    [Legendary]:        Progress for Boga: 13.22%/8523.17MiB/00:20:31 Down: 44.94MiB/s / Disk: 0MiB/s
+(19:49:00) INFO:    [Legendary]:        Progress for Boga: 13.29%/8569.17MiB/00:20:28 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:01) INFO:    [Legendary]:        Progress for Boga: 13.35%/8608.17MiB/00:20:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:03) INFO:    [Legendary]:        Progress for Boga: 13.45%/8671.17MiB/00:20:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:04) INFO:    [Legendary]:        Progress for Boga: 13.5%/8707.17MiB/00:20:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:05) INFO:    [Legendary]:        Progress for Boga: 13.56%/8742.18MiB/00:20:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:06) INFO:    [Legendary]:        Progress for Boga: 13.61%/8775.18MiB/00:20:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:07) INFO:    [Legendary]:        Progress for Boga: 13.66%/8807.18MiB/00:20:35 Down: 31.96MiB/s / Disk: 0MiB/s
+(19:49:08) INFO:    [Legendary]:        Progress for Boga: 13.7%/8837.17MiB/00:20:36 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:09) INFO:    [Legendary]:        Progress for Boga: 13.76%/8872.16MiB/00:20:37 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:10) INFO:    [Legendary]:        Progress for Boga: 13.8%/8902.17MiB/00:20:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:11) INFO:    [Legendary]:        Progress for Boga: 13.86%/8940.17MiB/00:20:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:12) INFO:    [Legendary]:        Progress for Boga: 13.94%/8987.17MiB/00:20:37 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:13) INFO:    [Legendary]:        Progress for Boga: 14.01%/9034.16MiB/00:20:35 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:14) INFO:    [Legendary]:        Progress for Boga: 14.07%/9071.16MiB/00:20:37 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:15) INFO:    [Legendary]:        Progress for Boga: 14.14%/9121.16MiB/00:20:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:16) INFO:    [Legendary]:        Progress for Boga: 14.22%/9168.17MiB/00:20:32 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:17) INFO:    [Legendary]:        Progress for Boga: 14.28%/9208.17MiB/00:20:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:18) INFO:    [Legendary]:        Progress for Boga: 14.36%/9260.17MiB/00:20:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:19) INFO:    [Legendary]:        Progress for Boga: 14.43%/9308.18MiB/00:20:28 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:20) INFO:    [Legendary]:        Progress for Boga: 14.51%/9358.17MiB/00:20:28 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:21) INFO:    [Legendary]:        Progress for Boga: 14.57%/9399.18MiB/00:20:27 Down: 40.95MiB/s / Disk: 46.94MiB/s
+(19:49:22) INFO:    [Legendary]:        Progress for Boga: 14.64%/9443.18MiB/00:20:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:23) INFO:    [Legendary]:        Progress for Boga: 14.7%/9480.18MiB/00:20:28 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:24) INFO:    [Legendary]:        Progress for Boga: 14.76%/9517.18MiB/00:20:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:25) INFO:    [Legendary]:        Progress for Boga: 14.83%/9563.18MiB/00:20:25 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:26) INFO:    [Legendary]:        Progress for Boga: 14.9%/9608.18MiB/00:20:23 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:27) INFO:    [Legendary]:        Progress for Boga: 14.97%/9656.18MiB/00:20:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:28) INFO:    [Legendary]:        Progress for Boga: 15.02%/9689.19MiB/00:20:23 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:30) INFO:    [Legendary]:        Progress for Boga: 15.13%/9756.16MiB/00:20:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:31) INFO:    [Legendary]:        Progress for Boga: 15.17%/9784.16MiB/00:20:26 Down: 27.96MiB/s / Disk: 0MiB/s
+(19:49:32) INFO:    [Legendary]:        Progress for Boga: 15.24%/9825.15MiB/00:20:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:33) INFO:    [Legendary]:        Progress for Boga: 15.31%/9874.15MiB/00:20:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:35) INFO:    [Legendary]:        Progress for Boga: 15.46%/9972.15MiB/00:20:21 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:36) INFO:    [Legendary]:        Progress for Boga: 15.53%/10014.15MiB/00:20:20 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:37) INFO:    [Legendary]:        Progress for Boga: 15.58%/10050.15MiB/00:20:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:38) INFO:    [Legendary]:        Progress for Boga: 15.65%/10093.15MiB/00:20:19 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:39) INFO:    [Legendary]:        Progress for Boga: 15.7%/10125.16MiB/00:20:21 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:40) INFO:    [Legendary]:        Progress for Boga: 15.75%/10158.16MiB/00:20:22 Down: 32.96MiB/s / Disk: 0MiB/s
+(19:49:41) INFO:    [Legendary]:        Progress for Boga: 15.81%/10198.16MiB/00:20:21 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:42) INFO:    [Legendary]:        Progress for Boga: 15.87%/10236.16MiB/00:20:21 Down: 37.95MiB/s / Disk: 0MiB/s
+(19:49:43) INFO:    [Legendary]:        Progress for Boga: 15.94%/10280.16MiB/00:20:20 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:44) INFO:    [Legendary]:        Progress for Boga: 16%/10319.16MiB/00:20:20 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:45) INFO:    [Legendary]:        Progress for Boga: 16.07%/10363.15MiB/00:20:19 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:47) INFO:    [Legendary]:        Progress for Boga: 16.22%/10459.15MiB/00:20:16 Down: 51.94MiB/s / Disk: 0MiB/s
+(19:49:48) INFO:    [Legendary]:        Progress for Boga: 16.29%/10503.15MiB/00:20:15 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:49) INFO:    [Legendary]:        Progress for Boga: 16.36%/10553.15MiB/00:20:13 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:50) INFO:    [Legendary]:        Progress for Boga: 16.44%/10600.15MiB/00:20:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:51) INFO:    [Legendary]:        Progress for Boga: 16.51%/10646.15MiB/00:20:11 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:54) INFO:    [Legendary]:        Progress for Boga: 16.73%/10792.16MiB/00:20:07 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:55) INFO:    [Legendary]:        Progress for Boga: 16.82%/10844.16MiB/00:20:06 Down: 51.93MiB/s / Disk: 0MiB/s
+(19:49:56) INFO:    [Legendary]:        Progress for Boga: 16.89%/10892.16MiB/00:20:05 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:57) INFO:    [Legendary]:        Progress for Boga: 16.96%/10940.16MiB/00:20:04 Down: 0MiB/s / Disk: 0MiB/s
+(19:49:59) INFO:    [Legendary]:        Progress for Boga: 17.12%/11041.17MiB/00:20:00 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:00) INFO:    [Legendary]:        Progress for Boga: 17.2%/11089.17MiB/00:19:57 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:01) INFO:    [Legendary]:        Progress for Boga: 17.27%/11137.17MiB/00:19:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:02) INFO:    [Legendary]:        Progress for Boga: 17.35%/11187.18MiB/00:19:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:03) INFO:    [Legendary]:        Progress for Boga: 17.42%/11232.18MiB/00:19:52 Down: 44.94MiB/s / Disk: 0MiB/s
+(19:50:04) INFO:    [Legendary]:        Progress for Boga: 17.49%/11278.18MiB/00:19:51 Down: 45.94MiB/s / Disk: 0MiB/s
+(19:50:05) INFO:    [Legendary]:        Progress for Boga: 17.52%/11298.18MiB/00:19:54 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:06) INFO:    [Legendary]:        Progress for Boga: 17.57%/11331.18MiB/00:19:56 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:07) INFO:    [Legendary]:        Progress for Boga: 17.65%/11380.19MiB/00:19:52 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:08) INFO:    [Legendary]:        Progress for Boga: 17.73%/11431.19MiB/00:19:50 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:09) INFO:    [Legendary]:        Progress for Boga: 17.8%/11480.19MiB/00:19:50 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:11) INFO:    [Legendary]:        Progress for Boga: 17.95%/11575.20MiB/00:19:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:12) INFO:    [Legendary]:        Progress for Boga: 18.03%/11626.20MiB/00:19:45 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:13) INFO:    [Legendary]:        Progress for Boga: 18.1%/11675.20MiB/00:19:43 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:16) INFO:    [Legendary]:        Progress for Boga: 18.33%/11822.21MiB/00:19:39 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:18) INFO:    [Legendary]:        Progress for Boga: 18.49%/11924.21MiB/00:19:36 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:20) INFO:    [Legendary]:        Progress for Boga: 18.64%/12023.22MiB/00:19:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:21) INFO:    [Legendary]:        Progress for Boga: 18.72%/12071.22MiB/00:19:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:22) INFO:    [Legendary]:        Progress for Boga: 18.8%/12123.19MiB/00:19:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:23) INFO:    [Legendary]:        Progress for Boga: 18.88%/12173.17MiB/00:19:27 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:24) INFO:    [Legendary]:        Progress for Boga: 18.95%/12222.13MiB/00:19:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:26) INFO:    [Legendary]:        Progress for Boga: 19.1%/12318.13MiB/00:19:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:29) INFO:    [Legendary]:        Progress for Boga: 19.34%/12473.14MiB/00:19:18 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:30) INFO:    [Legendary]:        Progress for Boga: 19.41%/12517.14MiB/00:19:17 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:31) INFO:    [Legendary]:        Progress for Boga: 19.49%/12572.14MiB/00:19:15 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:32) INFO:    [Legendary]:        Progress for Boga: 19.57%/12619.15MiB/00:19:13 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:33) INFO:    [Legendary]:        Progress for Boga: 19.65%/12669.15MiB/00:19:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:34) INFO:    [Legendary]:        Progress for Boga: 19.72%/12720.14MiB/00:19:10 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:35) INFO:    [Legendary]:        Progress for Boga: 19.8%/12769.14MiB/00:19:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:39) INFO:    [Legendary]:        Progress for Boga: 20.1%/12960.15MiB/00:19:04 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:40) INFO:    [Legendary]:        Progress for Boga: 20.17%/13009.16MiB/00:19:02 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:41) INFO:    [Legendary]:        Progress for Boga: 20.25%/13058.16MiB/00:19:01 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:42) INFO:    [Legendary]:        Progress for Boga: 20.33%/13112.16MiB/00:18:58 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:43) INFO:    [Legendary]:        Progress for Boga: 20.41%/13159.16MiB/00:18:58 Down: 46.94MiB/s / Disk: 0MiB/s
+(19:50:45) INFO:    [Legendary]:        Progress for Boga: 20.56%/13259.17MiB/00:18:54 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:47) INFO:    [Legendary]:        Progress for Boga: 20.71%/13356.17MiB/00:18:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:49) INFO:    [Legendary]:        Progress for Boga: 20.87%/13459.18MiB/00:18:49 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:51) INFO:    [Legendary]:        Progress for Boga: 21.02%/13555.18MiB/00:18:46 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:52) INFO:    [Legendary]:        Progress for Boga: 21.1%/13606.18MiB/00:18:44 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:53) INFO:    [Legendary]:        Progress for Boga: 21.17%/13655.19MiB/00:18:43 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:54) INFO:    [Legendary]:        Progress for Boga: 21.25%/13702.19MiB/00:18:42 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:55) INFO:    [Legendary]:        Progress for Boga: 21.33%/13755.19MiB/00:18:40 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:56) INFO:    [Legendary]:        Progress for Boga: 21.41%/13804.19MiB/00:18:39 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:57) INFO:    [Legendary]:        Progress for Boga: 21.48%/13849.20MiB/00:18:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:58) INFO:    [Legendary]:        Progress for Boga: 21.55%/13897.20MiB/00:18:36 Down: 0MiB/s / Disk: 0MiB/s
+(19:50:59) INFO:    [Legendary]:        Progress for Boga: 21.63%/13948.20MiB/00:18:35 Down: 50.93MiB/s / Disk: 0MiB/s
+(19:51:00) INFO:    [Legendary]:        Progress for Boga: 21.7%/13995.20MiB/00:18:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:01) INFO:    [Legendary]:        Progress for Boga: 21.78%/14043.21MiB/00:18:32 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:02) INFO:    [Legendary]:        Progress for Boga: 21.85%/14093.21MiB/00:18:31 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:04) INFO:    [Legendary]:        Progress for Boga: 22.01%/14193.21MiB/00:18:27 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:05) INFO:    [Legendary]:        Progress for Boga: 22.08%/14238.22MiB/00:18:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:06) INFO:    [Legendary]:        Progress for Boga: 22.16%/14291.22MiB/00:18:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:07) INFO:    [Legendary]:        Progress for Boga: 22.23%/14335.22MiB/00:18:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:08) INFO:    [Legendary]:        Progress for Boga: 22.31%/14387.23MiB/00:18:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:10) INFO:    [Legendary]:        Progress for Boga: 22.46%/14483.23MiB/00:18:21 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:11) INFO:    [Legendary]:        Progress for Boga: 22.54%/14535.23MiB/00:18:18 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:12) INFO:    [Legendary]:        Progress for Boga: 22.62%/14585.23MiB/00:18:17 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:14) INFO:    [Legendary]:        Progress for Boga: 22.76%/14679.24MiB/00:18:15 Down: 50.94MiB/s / Disk: 49.04MiB/s
+(19:51:15) INFO:    [Legendary]:        Progress for Boga: 22.83%/14724.24MiB/00:18:13 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:17) INFO:    [Legendary]:        Progress for Boga: 22.97%/14812.24MiB/00:18:13 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:18) INFO:    [Legendary]:        Progress for Boga: 23.05%/14863.25MiB/00:18:10 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:19) INFO:    [Legendary]:        Progress for Boga: 23.11%/14903.25MiB/00:18:10 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:20) INFO:    [Legendary]:        Progress for Boga: 23.18%/14951.25MiB/00:18:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:21) INFO:    [Legendary]:        Progress for Boga: 23.26%/15001.25MiB/00:18:06 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:23) INFO:    [Legendary]:        Progress for Boga: 23.41%/15096.25MiB/00:18:06 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:24) INFO:    [Legendary]:        Progress for Boga: 23.49%/15147.26MiB/00:18:04 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:27) INFO:    [Legendary]:        Progress for Boga: 23.7%/15286.25MiB/00:18:00 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:28) INFO:    [Legendary]:        Progress for Boga: 23.78%/15337.26MiB/00:17:58 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:29) INFO:    [Legendary]:        Progress for Boga: 23.86%/15384.26MiB/00:17:58 Down: 46.94MiB/s / Disk: 0MiB/s
+(19:51:30) INFO:    [Legendary]:        Progress for Boga: 23.93%/15434.25MiB/00:17:56 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:32) INFO:    [Legendary]:        Progress for Boga: 24.09%/15533.23MiB/00:17:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:33) INFO:    [Legendary]:        Progress for Boga: 24.16%/15582.24MiB/00:17:52 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:34) INFO:    [Legendary]:        Progress for Boga: 24.23%/15628.24MiB/00:17:51 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:36) INFO:    [Legendary]:        Progress for Boga: 24.39%/15729.25MiB/00:17:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:37) INFO:    [Legendary]:        Progress for Boga: 24.46%/15776.24MiB/00:17:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:38) INFO:    [Legendary]:        Progress for Boga: 24.53%/15819.25MiB/00:17:46 Down: 42.95MiB/s / Disk: 0MiB/s
+(19:51:39) INFO:    [Legendary]:        Progress for Boga: 24.59%/15855.23MiB/00:17:45 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:40) INFO:    [Legendary]:        Progress for Boga: 24.62%/15875.23MiB/00:17:48 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:41) INFO:    [Legendary]:        Progress for Boga: 24.69%/15920.24MiB/00:17:46 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:42) INFO:    [Legendary]:        Progress for Boga: 24.75%/15962.24MiB/00:17:46 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:43) INFO:    [Legendary]:        Progress for Boga: 24.82%/16009.24MiB/00:17:45 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:45) INFO:    [Legendary]:        Progress for Boga: 24.98%/16108.24MiB/00:17:42 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:46) INFO:    [Legendary]:        Progress for Boga: 25.04%/16149.24MiB/00:17:41 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:47) INFO:    [Legendary]:        Progress for Boga: 25.11%/16193.24MiB/00:17:40 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:49) INFO:    [Legendary]:        Progress for Boga: 25.26%/16290.24MiB/00:17:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:51) INFO:    [Legendary]:        Progress for Boga: 25.41%/16385.24MiB/00:17:36 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:52) INFO:    [Legendary]:        Progress for Boga: 25.48%/16431.22MiB/00:17:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:54) INFO:    [Legendary]:        Progress for Boga: 25.62%/16525.22MiB/00:17:32 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:55) INFO:    [Legendary]:        Progress for Boga: 25.69%/16569.22MiB/00:17:31 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:58) INFO:    [Legendary]:        Progress for Boga: 25.92%/16713.23MiB/00:17:29 Down: 0MiB/s / Disk: 0MiB/s
+(19:51:59) INFO:    [Legendary]:        Progress for Boga: 25.99%/16762.24MiB/00:17:27 Down: 48.95MiB/s / Disk: 0MiB/s
+(19:52:00) INFO:    [Legendary]:        Progress for Boga: 26.07%/16814.24MiB/00:17:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:01) INFO:    [Legendary]:        Progress for Boga: 26.14%/16858.24MiB/00:17:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:02) INFO:    [Legendary]:        Progress for Boga: 26.21%/16904.25MiB/00:17:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:03) INFO:    [Legendary]:        Progress for Boga: 26.29%/16953.25MiB/00:17:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:04) INFO:    [Legendary]:        Progress for Boga: 26.36%/16999.25MiB/00:17:21 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:05) INFO:    [Legendary]:        Progress for Boga: 26.44%/17049.25MiB/00:17:19 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:06) INFO:    [Legendary]:        Progress for Boga: 26.51%/17098.26MiB/00:17:18 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:07) INFO:    [Legendary]:        Progress for Boga: 26.59%/17149.26MiB/00:17:17 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:08) INFO:    [Legendary]:        Progress for Boga: 26.67%/17197.26MiB/00:17:15 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:09) INFO:    [Legendary]:        Progress for Boga: 26.74%/17243.27MiB/00:17:15 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:10) INFO:    [Legendary]:        Progress for Boga: 26.81%/17288.27MiB/00:17:14 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:11) INFO:    [Legendary]:        Progress for Boga: 26.89%/17339.27MiB/00:17:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:12) INFO:    [Legendary]:        Progress for Boga: 26.96%/17387.28MiB/00:17:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:13) INFO:    [Legendary]:        Progress for Boga: 27.04%/17435.28MiB/00:17:10 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:14) INFO:    [Legendary]:        Progress for Boga: 27.11%/17483.28MiB/00:17:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:15) INFO:    [Legendary]:        Progress for Boga: 27.18%/17526.28MiB/00:17:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:16) INFO:    [Legendary]:        Progress for Boga: 27.26%/17577.29MiB/00:17:07 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:17) INFO:    [Legendary]:        Progress for Boga: 27.33%/17627.29MiB/00:17:06 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:18) INFO:    [Legendary]:        Progress for Boga: 27.41%/17677.29MiB/00:17:04 Down: 49.94MiB/s / Disk: 0MiB/s
+(19:52:19) INFO:    [Legendary]:        Progress for Boga: 27.48%/17724.30MiB/00:17:03 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:20) INFO:    [Legendary]:        Progress for Boga: 27.56%/17774.30MiB/00:17:02 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:22) INFO:    [Legendary]:        Progress for Boga: 27.71%/17872.31MiB/00:16:59 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:24) INFO:    [Legendary]:        Progress for Boga: 27.87%/17973.31MiB/00:16:56 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:25) INFO:    [Legendary]:        Progress for Boga: 27.95%/18024.32MiB/00:16:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:26) INFO:    [Legendary]:        Progress for Boga: 28.03%/18073.32MiB/00:16:54 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:27) INFO:    [Legendary]:        Progress for Boga: 28.1%/18122.32MiB/00:16:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:29) INFO:    [Legendary]:        Progress for Boga: 28.25%/18221.33MiB/00:16:50 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:30) INFO:    [Legendary]:        Progress for Boga: 28.33%/18269.33MiB/00:16:49 Down: 47.94MiB/s / Disk: 0MiB/s
+(19:52:31) INFO:    [Legendary]:        Progress for Boga: 28.41%/18321.33MiB/00:16:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:34) INFO:    [Legendary]:        Progress for Boga: 28.64%/18471.34MiB/00:16:43 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:35) INFO:    [Legendary]:        Progress for Boga: 28.72%/18518.35MiB/00:16:43 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:37) INFO:    [Legendary]:        Progress for Boga: 28.87%/18616.35MiB/00:16:40 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:38) INFO:    [Legendary]:        Progress for Boga: 28.94%/18666.36MiB/00:16:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:39) INFO:    [Legendary]:        Progress for Boga: 29.02%/18714.36MiB/00:16:37 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:40) INFO:    [Legendary]:        Progress for Boga: 29.1%/18767.36MiB/00:16:36 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:42) INFO:    [Legendary]:        Progress for Boga: 29.25%/18862.37MiB/00:16:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:43) INFO:    [Legendary]:        Progress for Boga: 29.33%/18913.37MiB/00:16:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:44) INFO:    [Legendary]:        Progress for Boga: 29.4%/18959.37MiB/00:16:31 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:45) INFO:    [Legendary]:        Progress for Boga: 29.48%/19008.38MiB/00:16:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:46) INFO:    [Legendary]:        Progress for Boga: 29.55%/19056.38MiB/00:16:29 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:47) INFO:    [Legendary]:        Progress for Boga: 29.62%/19102.37MiB/00:16:28 Down: 45.93MiB/s / Disk: 0MiB/s
+(19:52:48) INFO:    [Legendary]:        Progress for Boga: 29.7%/19153.37MiB/00:16:27 Down: 50.93MiB/s / Disk: 0MiB/s
+(19:52:49) INFO:    [Legendary]:        Progress for Boga: 29.78%/19204.37MiB/00:16:25 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:51) INFO:    [Legendary]:        Progress for Boga: 29.94%/19305.33MiB/00:16:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:52) INFO:    [Legendary]:        Progress for Boga: 30.01%/19354.33MiB/00:16:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:53) INFO:    [Legendary]:        Progress for Boga: 30.09%/19404.33MiB/00:16:20 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:54) INFO:    [Legendary]:        Progress for Boga: 30.16%/19450.33MiB/00:16:20 Down: 45.94MiB/s / Disk: 0MiB/s
+(19:52:55) INFO:    [Legendary]:        Progress for Boga: 30.24%/19501.32MiB/00:16:20 Down: 50.91MiB/s / Disk: 0MiB/s
+(19:52:57) INFO:    [Legendary]:        Progress for Boga: 30.39%/19598.29MiB/00:16:17 Down: 47.94MiB/s / Disk: 45.94MiB/s
+(19:52:58) INFO:    [Legendary]:        Progress for Boga: 30.46%/19643.29MiB/00:16:15 Down: 0MiB/s / Disk: 0MiB/s
+(19:52:59) INFO:    [Legendary]:        Progress for Boga: 30.54%/19694.29MiB/00:16:13 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:00) INFO:    [Legendary]:        Progress for Boga: 30.61%/19742.28MiB/00:16:13 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:02) INFO:    [Legendary]:        Progress for Boga: 30.76%/19836.24MiB/00:16:10 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:03) INFO:    [Legendary]:        Progress for Boga: 30.84%/19886.25MiB/00:16:09 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:04) INFO:    [Legendary]:        Progress for Boga: 30.91%/19934.25MiB/00:16:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:05) INFO:    [Legendary]:        Progress for Boga: 30.99%/19986.25MiB/00:16:07 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:06) INFO:    [Legendary]:        Progress for Boga: 31.07%/20037.25MiB/00:16:05 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:07) INFO:    [Legendary]:        Progress for Boga: 31.14%/20082.26MiB/00:16:04 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:08) INFO:    [Legendary]:        Progress for Boga: 31.22%/20132.26MiB/00:16:03 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:09) INFO:    [Legendary]:        Progress for Boga: 31.29%/20181.26MiB/00:16:02 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:10) INFO:    [Legendary]:        Progress for Boga: 31.37%/20232.26MiB/00:16:00 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:11) INFO:    [Legendary]:        Progress for Boga: 31.46%/20285.27MiB/00:15:59 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:13) INFO:    [Legendary]:        Progress for Boga: 31.59%/20375.27MiB/00:15:56 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:14) INFO:    [Legendary]:        Progress for Boga: 31.68%/20428.27MiB/00:15:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:15) INFO:    [Legendary]:        Progress for Boga: 31.74%/20471.28MiB/00:15:54 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:16) INFO:    [Legendary]:        Progress for Boga: 31.82%/20521.28MiB/00:15:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:17) INFO:    [Legendary]:        Progress for Boga: 31.9%/20572.28MiB/00:15:52 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:19) INFO:    [Legendary]:        Progress for Boga: 32.05%/20670.28MiB/00:15:49 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:20) INFO:    [Legendary]:        Progress for Boga: 32.13%/20720.29MiB/00:15:48 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:21) INFO:    [Legendary]:        Progress for Boga: 32.21%/20772.29MiB/00:15:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:22) INFO:    [Legendary]:        Progress for Boga: 32.28%/20820.29MiB/00:15:46 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:23) INFO:    [Legendary]:        Progress for Boga: 32.36%/20869.29MiB/00:15:44 Down: 48.94MiB/s / Disk: 0MiB/s
+(19:53:24) INFO:    [Legendary]:        Progress for Boga: 32.44%/20918.30MiB/00:15:43 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:25) INFO:    [Legendary]:        Progress for Boga: 32.52%/20969.30MiB/00:15:42 Down: 50.94MiB/s / Disk: 0MiB/s
+(19:53:26) INFO:    [Legendary]:        Progress for Boga: 32.59%/21019.30MiB/00:15:41 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:27) INFO:    [Legendary]:        Progress for Boga: 32.66%/21065.31MiB/00:15:39 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:28) INFO:    [Legendary]:        Progress for Boga: 32.74%/21115.31MiB/00:15:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:29) INFO:    [Legendary]:        Progress for Boga: 32.82%/21165.31MiB/00:15:37 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:30) INFO:    [Legendary]:        Progress for Boga: 32.89%/21213.31MiB/00:15:36 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:31) INFO:    [Legendary]:        Progress for Boga: 32.97%/21263.31MiB/00:15:35 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:32) INFO:    [Legendary]:        Progress for Boga: 33.04%/21310.32MiB/00:15:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:33) INFO:    [Legendary]:        Progress for Boga: 33.12%/21360.31MiB/00:15:32 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:35) INFO:    [Legendary]:        Progress for Boga: 33.28%/21460.32MiB/00:15:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:36) INFO:    [Legendary]:        Progress for Boga: 33.36%/21511.32MiB/00:15:28 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:37) INFO:    [Legendary]:        Progress for Boga: 33.43%/21557.32MiB/00:15:28 Down: 45.94MiB/s / Disk: 0MiB/s
+(19:53:38) INFO:    [Legendary]:        Progress for Boga: 33.51%/21609.31MiB/00:15:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:40) INFO:    [Connection]:       Connectivity: offline
+(19:53:40) INFO:    [Legendary]:        Progress for Boga: 33.61%/21676.27MiB/00:15:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:41) INFO:    [Connection]:       Connectivity: check-online
+(19:53:41) INFO:    [Connection]:       Pinging external endpoints
+(19:53:41) INFO:    [Connection]:       Connectivity: online
+(19:53:41) INFO:    [Legendary]:        Progress for Boga: 33.61%/21676.27MiB/00:15:28 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:44) INFO:    [Legendary]:        Progress for Boga: 33.65%/21703.27MiB/00:15:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:45) INFO:    [Legendary]:        Progress for Boga: 33.67%/21712.27MiB/00:15:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:46) INFO:    [Legendary]:        Progress for Boga: 33.68%/21721.27MiB/00:15:35 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:47) INFO:    [Legendary]:        Progress for Boga: 33.69%/21728.27MiB/00:15:37 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:48) INFO:    [Legendary]:        Progress for Boga: 33.71%/21740.27MiB/00:15:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:49) INFO:    [Legendary]:        Progress for Boga: 33.72%/21747.28MiB/00:15:40 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:50) INFO:    [Legendary]:        Progress for Boga: 33.73%/21754.28MiB/00:15:41 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:51) INFO:    [Connection]:       Connectivity: offline
+(19:53:51) INFO:    [Legendary]:        Progress for Boga: 33.74%/21760.28MiB/00:15:43 Down: 5.99MiB/s / Disk: 0MiB/s
+(19:53:52) INFO:    [Legendary]:        Progress for Boga: 33.74%/21760.28MiB/00:15:45 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:53) INFO:    [Legendary]:        Progress for Boga: 33.74%/21760.28MiB/00:15:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:54) INFO:    [Legendary]:        Progress for Boga: 33.74%/21760.28MiB/00:15:49 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:55) INFO:    [Legendary]:        Progress for Boga: 33.74%/21760.28MiB/00:15:51 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:56) INFO:    [Connection]:       Connectivity: check-online
+(19:53:56) INFO:    [Connection]:       Pinging external endpoints
+(19:53:56) INFO:    [Connection]:       Connectivity: online
+(19:53:56) INFO:    [Legendary]:        Progress for Boga: 33.74%/21760.28MiB/00:15:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:53:57) INFO:    [Legendary]:        Progress for Boga: 33.76%/21771.28MiB/00:15:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:00) INFO:    [Legendary]:        Progress for Boga: 33.85%/21827.28MiB/00:16:01 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:01) INFO:    [Legendary]:        Progress for Boga: 33.9%/21863.28MiB/00:16:03 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:02) INFO:    [Legendary]:        Progress for Boga: 33.98%/21916.28MiB/00:15:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:03) INFO:    [Legendary]:        Progress for Boga: 34.06%/21962.28MiB/00:15:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:06) INFO:    [Legendary]:        Progress for Boga: 34.28%/22108.29MiB/00:15:48 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:07) INFO:    [Legendary]:        Progress for Boga: 34.36%/22159.29MiB/00:15:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:08) INFO:    [Legendary]:        Progress for Boga: 34.41%/22193.29MiB/00:15:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:09) INFO:    [Legendary]:        Progress for Boga: 34.45%/22214.29MiB/00:15:48 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:10) INFO:    [Legendary]:        Progress for Boga: 34.5%/22247.30MiB/00:15:48 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:11) INFO:    [Legendary]:        Progress for Boga: 34.57%/22297.30MiB/00:15:46 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:13) INFO:    [Legendary]:        Progress for Boga: 34.73%/22398.31MiB/00:15:43 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:14) INFO:    [Legendary]:        Progress for Boga: 34.8%/22443.31MiB/00:15:42 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:15) INFO:    [Legendary]:        Progress for Boga: 34.88%/22493.31MiB/00:15:40 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:16) INFO:    [Legendary]:        Progress for Boga: 34.96%/22545.31MiB/00:15:39 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:17) INFO:    [Legendary]:        Progress for Boga: 35.03%/22592.32MiB/00:15:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:18) INFO:    [Legendary]:        Progress for Boga: 35.11%/22639.32MiB/00:15:37 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:19) INFO:    [Legendary]:        Progress for Boga: 35.19%/22692.32MiB/00:15:35 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:20) INFO:    [Legendary]:        Progress for Boga: 35.26%/22738.32MiB/00:15:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:22) INFO:    [Legendary]:        Progress for Boga: 35.4%/22828.32MiB/00:15:32 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:23) INFO:    [Legendary]:        Progress for Boga: 35.45%/22862.32MiB/00:15:32 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:24) INFO:    [Legendary]:        Progress for Boga: 35.51%/22902.31MiB/00:15:31 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:25) INFO:    [Legendary]:        Progress for Boga: 35.56%/22933.30MiB/00:15:32 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:26) INFO:    [Legendary]:        Progress for Boga: 35.64%/22983.29MiB/00:15:30 Down: 49.95MiB/s / Disk: 0MiB/s
+(19:54:27) INFO:    [Legendary]:        Progress for Boga: 35.71%/23029.28MiB/00:15:29 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:28) INFO:    [Legendary]:        Progress for Boga: 35.79%/23080.28MiB/00:15:27 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:29) INFO:    [Legendary]:        Progress for Boga: 35.86%/23128.27MiB/00:15:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:30) INFO:    [Legendary]:        Progress for Boga: 35.94%/23176.26MiB/00:15:25 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:31) INFO:    [Legendary]:        Progress for Boga: 36.01%/23224.26MiB/00:15:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:32) INFO:    [Legendary]:        Progress for Boga: 36.09%/23272.26MiB/00:15:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:33) INFO:    [Legendary]:        Progress for Boga: 36.16%/23322.26MiB/00:15:21 Down: 49.94MiB/s / Disk: 0MiB/s
+(19:54:34) INFO:    [Legendary]:        Progress for Boga: 36.24%/23373.26MiB/00:15:19 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:35) INFO:    [Legendary]:        Progress for Boga: 36.31%/23418.27MiB/00:15:18 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:36) INFO:    [Legendary]:        Progress for Boga: 36.39%/23469.27MiB/00:15:17 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:37) INFO:    [Legendary]:        Progress for Boga: 36.46%/23515.27MiB/00:15:16 Down: 45.94MiB/s / Disk: 0MiB/s
+(19:54:38) INFO:    [Legendary]:        Progress for Boga: 36.53%/23561.28MiB/00:15:15 Down: 45.95MiB/s / Disk: 0MiB/s
+(19:54:40) INFO:    [Legendary]:        Progress for Boga: 36.69%/23662.28MiB/00:15:12 Down: 48.94MiB/s / Disk: 0MiB/s
+(19:54:41) INFO:    [Legendary]:        Progress for Boga: 36.77%/23713.28MiB/00:15:11 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:42) INFO:    [Legendary]:        Progress for Boga: 36.81%/23741.28MiB/00:15:11 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:43) INFO:    [Legendary]:        Progress for Boga: 36.85%/23762.28MiB/00:15:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:45) INFO:    [Legendary]:        Progress for Boga: 36.91%/23806.29MiB/00:15:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:46) INFO:    [Legendary]:        Progress for Boga: 36.94%/23824.29MiB/00:15:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:47) INFO:    [Legendary]:        Progress for Boga: 37%/23864.29MiB/00:15:12 Down: 39.95MiB/s / Disk: 0MiB/s
+(19:54:48) INFO:    [Legendary]:        Progress for Boga: 37.08%/23913.29MiB/00:15:10 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:49) INFO:    [Legendary]:        Progress for Boga: 37.16%/23961.26MiB/00:15:10 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:50) INFO:    [Legendary]:        Progress for Boga: 37.23%/24011.27MiB/00:15:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:52) INFO:    [Legendary]:        Progress for Boga: 37.37%/24099.23MiB/00:15:06 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:53) INFO:    [Legendary]:        Progress for Boga: 37.42%/24133.23MiB/00:15:06 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:55) INFO:    [Legendary]:        Progress for Boga: 37.57%/24228.23MiB/00:15:03 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:56) INFO:    [Legendary]:        Progress for Boga: 37.63%/24269.22MiB/00:15:02 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:58) INFO:    [Legendary]:        Progress for Boga: 37.79%/24369.22MiB/00:15:00 Down: 0MiB/s / Disk: 0MiB/s
+(19:54:59) INFO:    [Legendary]:        Progress for Boga: 37.86%/24416.22MiB/00:14:59 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:00) INFO:    [Legendary]:        Progress for Boga: 37.93%/24463.22MiB/00:14:58 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:02) INFO:    [Legendary]:        Progress for Boga: 38.09%/24561.22MiB/00:14:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:04) INFO:    [Legendary]:        Progress for Boga: 38.24%/24659.21MiB/00:14:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:05) INFO:    [Legendary]:        Progress for Boga: 38.31%/24709.21MiB/00:14:52 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:06) INFO:    [Legendary]:        Progress for Boga: 38.38%/24752.21MiB/00:14:51 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:07) INFO:    [Legendary]:        Progress for Boga: 38.46%/24803.21MiB/00:14:50 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:08) INFO:    [Legendary]:        Progress for Boga: 38.53%/24850.21MiB/00:14:49 Down: 46.94MiB/s / Disk: 0MiB/s
+(19:55:09) INFO:    [Legendary]:        Progress for Boga: 38.61%/24902.21MiB/00:14:46 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:13) INFO:    [Legendary]:        Progress for Boga: 38.83%/25042.20MiB/00:14:45 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:14) INFO:    [Legendary]:        Progress for Boga: 38.91%/25090.20MiB/00:14:44 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:16) INFO:    [Legendary]:        Progress for Boga: 39.05%/25186.17MiB/00:14:42 Down: 46.91MiB/s / Disk: 0MiB/s
+(19:55:17) INFO:    [Legendary]:        Progress for Boga: 39.13%/25237.16MiB/00:14:40 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:19) INFO:    [Legendary]:        Progress for Boga: 39.28%/25334.16MiB/00:14:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:20) INFO:    [Legendary]:        Progress for Boga: 39.36%/25385.13MiB/00:14:36 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:21) INFO:    [Legendary]:        Progress for Boga: 39.43%/25431.07MiB/00:14:35 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:22) INFO:    [Legendary]:        Progress for Boga: 39.51%/25480.08MiB/00:14:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:23) INFO:    [Legendary]:        Progress for Boga: 39.59%/25529.08MiB/00:14:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:25) INFO:    [Legendary]:        Progress for Boga: 39.74%/25625.08MiB/00:14:31 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:26) INFO:    [Legendary]:        Progress for Boga: 39.81%/25674.09MiB/00:14:29 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:27) INFO:    [Legendary]:        Progress for Boga: 39.89%/25722.09MiB/00:14:28 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:28) INFO:    [Legendary]:        Progress for Boga: 39.96%/25771.08MiB/00:14:27 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:29) INFO:    [Legendary]:        Progress for Boga: 40.04%/25819.08MiB/00:14:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:31) INFO:    [Legendary]:        Progress for Boga: 40.19%/25920.07MiB/00:14:23 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:32) INFO:    [Legendary]:        Progress for Boga: 40.27%/25969.07MiB/00:14:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:34) INFO:    [Legendary]:        Progress for Boga: 40.42%/26065.06MiB/00:14:19 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:35) INFO:    [Legendary]:        Progress for Boga: 40.49%/26115.07MiB/00:14:18 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:36) INFO:    [Legendary]:        Progress for Boga: 40.57%/26165.07MiB/00:14:17 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:37) INFO:    [Legendary]:        Progress for Boga: 40.65%/26214.07MiB/00:14:15 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:40) INFO:    [Legendary]:        Progress for Boga: 40.87%/26355.07MiB/00:14:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:42) INFO:    [Legendary]:        Progress for Boga: 41.02%/26455.06MiB/00:14:10 Down: 49.93MiB/s / Disk: 0MiB/s
+(19:55:43) INFO:    [Legendary]:        Progress for Boga: 41.1%/26505.04MiB/00:14:09 Down: 49.92MiB/s / Disk: 0MiB/s
+(19:55:44) INFO:    [Legendary]:        Progress for Boga: 41.17%/26553.03MiB/00:14:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:45) INFO:    [Legendary]:        Progress for Boga: 41.25%/26602.03MiB/00:14:06 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:46) INFO:    [Legendary]:        Progress for Boga: 41.32%/26649.02MiB/00:14:05 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:47) INFO:    [Legendary]:        Progress for Boga: 41.41%/26703.02MiB/00:14:04 Down: 53.93MiB/s / Disk: 0MiB/s
+(19:55:48) INFO:    [Legendary]:        Progress for Boga: 41.48%/26750.02MiB/00:14:02 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:50) INFO:    [Legendary]:        Progress for Boga: 41.63%/26846.98MiB/00:14:00 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:53) INFO:    [Legendary]:        Progress for Boga: 41.82%/26970.96MiB/00:13:58 Down: 25.95MiB/s / Disk: 25.96MiB/s
+(19:55:54) INFO:    [Legendary]:        Progress for Boga: 41.86%/26993.93MiB/00:13:58 Down: 22.95MiB/s / Disk: 0MiB/s
+(19:55:56) INFO:    [Legendary]:        Progress for Boga: 42.02%/27096.92MiB/00:13:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:57) INFO:    [Legendary]:        Progress for Boga: 42.09%/27146.92MiB/00:13:54 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:58) INFO:    [Legendary]:        Progress for Boga: 42.17%/27197.92MiB/00:13:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:55:59) INFO:    [Legendary]:        Progress for Boga: 42.25%/27246.92MiB/00:13:51 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:00) INFO:    [Legendary]:        Progress for Boga: 42.33%/27298.91MiB/00:13:50 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:01) INFO:    [Legendary]:        Progress for Boga: 42.4%/27343.91MiB/00:13:49 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:02) INFO:    [Legendary]:        Progress for Boga: 42.48%/27395.90MiB/00:13:48 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:03) INFO:    [Legendary]:        Progress for Boga: 42.55%/27442.89MiB/00:13:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:04) INFO:    [Legendary]:        Progress for Boga: 42.63%/27494.88MiB/00:13:45 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:05) INFO:    [Legendary]:        Progress for Boga: 42.71%/27544.87MiB/00:13:44 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:06) INFO:    [Legendary]:        Progress for Boga: 42.79%/27593.86MiB/00:13:43 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:07) INFO:    [Legendary]:        Progress for Boga: 42.86%/27642.86MiB/00:13:41 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:10) INFO:    [Legendary]:        Progress for Boga: 43.09%/27789.83MiB/00:13:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:11) INFO:    [Legendary]:        Progress for Boga: 43.17%/27837.82MiB/00:13:37 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:13) INFO:    [Legendary]:        Progress for Boga: 43.32%/27934.82MiB/00:13:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:14) INFO:    [Legendary]:        Progress for Boga: 43.4%/27986.82MiB/00:13:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:15) INFO:    [Legendary]:        Progress for Boga: 43.47%/28035.81MiB/00:13:32 Down: 48.92MiB/s / Disk: 0MiB/s
+(19:56:16) INFO:    [Legendary]:        Progress for Boga: 43.55%/28083.81MiB/00:13:31 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:17) INFO:    [Legendary]:        Progress for Boga: 43.63%/28135.72MiB/00:13:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:18) INFO:    [Legendary]:        Progress for Boga: 43.7%/28183.71MiB/00:13:29 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:19) INFO:    [Legendary]:        Progress for Boga: 43.78%/28233.70MiB/00:13:27 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:20) INFO:    [Legendary]:        Progress for Boga: 43.86%/28284.69MiB/00:13:27 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:21) INFO:    [Legendary]:        Progress for Boga: 43.94%/28336.69MiB/00:13:25 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:22) INFO:    [Legendary]:        Progress for Boga: 44.02%/28385.68MiB/00:13:23 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:24) INFO:    [Legendary]:        Progress for Boga: 44.17%/28483.67MiB/00:13:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:25) INFO:    [Legendary]:        Progress for Boga: 44.25%/28534.66MiB/00:13:20 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:26) INFO:    [Legendary]:        Progress for Boga: 44.32%/28584.66MiB/00:13:19 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:29) INFO:    [Legendary]:        Progress for Boga: 44.56%/28738.63MiB/00:13:14 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:30) INFO:    [Legendary]:        Progress for Boga: 44.64%/28787.63MiB/00:13:13 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:31) INFO:    [Legendary]:        Progress for Boga: 44.72%/28837.64MiB/00:13:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:33) INFO:    [Legendary]:        Progress for Boga: 44.87%/28937.64MiB/00:13:09 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:34) INFO:    [Legendary]:        Progress for Boga: 44.96%/28991.65MiB/00:13:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:35) INFO:    [Legendary]:        Progress for Boga: 45.03%/29041.65MiB/00:13:07 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:36) INFO:    [Legendary]:        Progress for Boga: 45.11%/29089.64MiB/00:13:05 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:37) INFO:    [Legendary]:        Progress for Boga: 45.18%/29136.64MiB/00:13:04 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:38) INFO:    [Legendary]:        Progress for Boga: 45.26%/29188.65MiB/00:13:03 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:39) INFO:    [Legendary]:        Progress for Boga: 45.33%/29234.65MiB/00:13:02 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:40) INFO:    [Legendary]:        Progress for Boga: 45.41%/29283.65MiB/00:13:01 Down: 48.93MiB/s / Disk: 0MiB/s
+(19:56:41) INFO:    [Legendary]:        Progress for Boga: 45.49%/29334.64MiB/00:13:00 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:43) INFO:    [Legendary]:        Progress for Boga: 45.64%/29435.63MiB/00:12:57 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:44) INFO:    [Legendary]:        Progress for Boga: 45.72%/29484.63MiB/00:12:56 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:45) INFO:    [Legendary]:        Progress for Boga: 45.8%/29534.64MiB/00:12:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:46) INFO:    [Legendary]:        Progress for Boga: 45.87%/29581.64MiB/00:12:54 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:50) INFO:    [Legendary]:        Progress for Boga: 46.17%/29776.64MiB/00:12:49 Down: 48.94MiB/s / Disk: 0MiB/s
+(19:56:51) INFO:    [Legendary]:        Progress for Boga: 46.25%/29826.64MiB/00:12:48 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:52) INFO:    [Legendary]:        Progress for Boga: 46.33%/29875.64MiB/00:12:46 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:53) INFO:    [Legendary]:        Progress for Boga: 46.4%/29923.64MiB/00:12:45 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:54) INFO:    [Legendary]:        Progress for Boga: 46.47%/29970.65MiB/00:12:44 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:55) INFO:    [Legendary]:        Progress for Boga: 46.55%/30021.65MiB/00:12:43 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:56) INFO:    [Legendary]:        Progress for Boga: 46.63%/30072.65MiB/00:12:42 Down: 50.94MiB/s / Disk: 0MiB/s
+(19:56:57) INFO:    [Legendary]:        Progress for Boga: 46.67%/30094.65MiB/00:12:42 Down: 21.97MiB/s / Disk: 0MiB/s
+(19:56:58) INFO:    [Legendary]:        Progress for Boga: 46.71%/30124.66MiB/00:12:41 Down: 0MiB/s / Disk: 0MiB/s
+(19:56:59) INFO:    [Legendary]:        Progress for Boga: 46.79%/30174.66MiB/00:12:41 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:00) INFO:    [Legendary]:        Progress for Boga: 46.87%/30226.65MiB/00:12:39 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:01) INFO:    [Legendary]:        Progress for Boga: 46.94%/30273.65MiB/00:12:38 Down: 46.94MiB/s / Disk: 0MiB/s
+(19:57:03) INFO:    [Legendary]:        Progress for Boga: 47.1%/30374.65MiB/00:12:36 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:04) INFO:    [Legendary]:        Progress for Boga: 47.18%/30423.64MiB/00:12:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:05) INFO:    [Legendary]:        Progress for Boga: 47.25%/30471.64MiB/00:12:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:06) INFO:    [Legendary]:        Progress for Boga: 47.32%/30518.65MiB/00:12:32 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:07) INFO:    [Legendary]:        Progress for Boga: 47.4%/30570.65MiB/00:12:31 Down: 51.94MiB/s / Disk: 0MiB/s
+(19:57:08) INFO:    [Legendary]:        Progress for Boga: 47.47%/30615.65MiB/00:12:30 Down: 44.94MiB/s / Disk: 0MiB/s
+(19:57:10) INFO:    [Legendary]:        Progress for Boga: 47.62%/30708.66MiB/00:12:28 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:11) INFO:    [Legendary]:        Progress for Boga: 47.69%/30757.66MiB/00:12:27 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:12) INFO:    [Legendary]:        Progress for Boga: 47.77%/30805.66MiB/00:12:26 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:13) INFO:    [Legendary]:        Progress for Boga: 47.84%/30854.66MiB/00:12:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:14) INFO:    [Legendary]:        Progress for Boga: 47.92%/30904.67MiB/00:12:23 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:15) INFO:    [Legendary]:        Progress for Boga: 48%/30954.67MiB/00:12:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:16) INFO:    [Legendary]:        Progress for Boga: 48.07%/31002.67MiB/00:12:21 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:17) INFO:    [Legendary]:        Progress for Boga: 48.15%/31053.67MiB/00:12:20 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:18) INFO:    [Legendary]:        Progress for Boga: 48.23%/31101.68MiB/00:12:18 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:19) INFO:    [Legendary]:        Progress for Boga: 48.3%/31150.68MiB/00:12:18 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:21) INFO:    [Legendary]:        Progress for Boga: 48.38%/31199.68MiB/00:12:16 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:22) INFO:    [Legendary]:        Progress for Boga: 48.46%/31249.69MiB/00:12:15 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:23) INFO:    [Legendary]:        Progress for Boga: 48.53%/31299.69MiB/00:12:15 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:24) INFO:    [Legendary]:        Progress for Boga: 48.61%/31349.69MiB/00:12:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:25) INFO:    [Legendary]:        Progress for Boga: 48.69%/31399.44MiB/00:12:11 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:26) INFO:    [Legendary]:        Progress for Boga: 48.76%/31447.44MiB/00:12:10 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:27) INFO:    [Legendary]:        Progress for Boga: 48.84%/31497.45MiB/00:12:09 Down: 49.94MiB/s / Disk: 0MiB/s
+(19:57:28) INFO:    [Legendary]:        Progress for Boga: 48.91%/31544.45MiB/00:12:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:32) INFO:    [Legendary]:        Progress for Boga: 49.22%/31740.46MiB/00:12:03 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:33) INFO:    [Legendary]:        Progress for Boga: 49.3%/31790.46MiB/00:12:02 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:34) INFO:    [Legendary]:        Progress for Boga: 49.37%/31840.47MiB/00:12:01 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:35) INFO:    [Legendary]:        Progress for Boga: 49.45%/31890.47MiB/00:12:00 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:36) INFO:    [Legendary]:        Progress for Boga: 49.53%/31942.47MiB/00:11:58 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:39) INFO:    [Legendary]:        Progress for Boga: 49.76%/32091.47MiB/00:11:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:41) INFO:    [Legendary]:        Progress for Boga: 49.91%/32185.48MiB/00:11:54 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:42) INFO:    [Legendary]:        Progress for Boga: 49.99%/32236.48MiB/00:11:52 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:43) INFO:    [Legendary]:        Progress for Boga: 50.06%/32285.48MiB/00:11:51 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:44) INFO:    [Legendary]:        Progress for Boga: 50.14%/32334.48MiB/00:11:50 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:45) INFO:    [Legendary]:        Progress for Boga: 50.22%/32387.48MiB/00:11:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:47) INFO:    [Legendary]:        Progress for Boga: 50.37%/32484.48MiB/00:11:46 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:50) INFO:    [Legendary]:        Progress for Boga: 50.6%/32633.48MiB/00:11:42 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:52) INFO:    [Legendary]:        Progress for Boga: 50.76%/32737.47MiB/00:11:39 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:55) INFO:    [Legendary]:        Progress for Boga: 50.99%/32884.47MiB/00:11:36 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:56) INFO:    [Legendary]:        Progress for Boga: 51.06%/32931.47MiB/00:11:35 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:57) INFO:    [Legendary]:        Progress for Boga: 51.15%/32983.47MiB/00:11:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:57:58) INFO:    [Legendary]:        Progress for Boga: 51.22%/33033.47MiB/00:11:32 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:00) INFO:    [Legendary]:        Progress for Boga: 51.37%/33128.47MiB/00:11:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:02) INFO:    [Legendary]:        Progress for Boga: 51.53%/33228.47MiB/00:11:28 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:03) INFO:    [Legendary]:        Progress for Boga: 51.6%/33278.47MiB/00:11:27 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:04) INFO:    [Legendary]:        Progress for Boga: 51.68%/33329.46MiB/00:11:25 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:05) INFO:    [Legendary]:        Progress for Boga: 51.75%/33376.46MiB/00:11:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:06) INFO:    [Legendary]:        Progress for Boga: 51.83%/33426.46MiB/00:11:23 Down: 49.94MiB/s / Disk: 0MiB/s
+(19:58:07) INFO:    [Legendary]:        Progress for Boga: 51.91%/33474.46MiB/00:11:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:08) INFO:    [Legendary]:        Progress for Boga: 51.98%/33523.45MiB/00:11:21 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:09) INFO:    [Legendary]:        Progress for Boga: 52.06%/33570.45MiB/00:11:20 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:10) INFO:    [Legendary]:        Progress for Boga: 52.13%/33621.45MiB/00:11:18 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:11) INFO:    [Legendary]:        Progress for Boga: 52.21%/33668.45MiB/00:11:18 Down: 46.94MiB/s / Disk: 0MiB/s
+(19:58:12) INFO:    [Legendary]:        Progress for Boga: 52.29%/33720.45MiB/00:11:17 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:13) INFO:    [Legendary]:        Progress for Boga: 52.37%/33770.45MiB/00:11:15 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:14) INFO:    [Legendary]:        Progress for Boga: 52.44%/33820.45MiB/00:11:14 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:15) INFO:    [Legendary]:        Progress for Boga: 52.52%/33870.45MiB/00:11:13 Down: 49.94MiB/s / Disk: 0MiB/s
+(19:58:16) INFO:    [Legendary]:        Progress for Boga: 52.6%/33920.45MiB/00:11:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:17) INFO:    [Legendary]:        Progress for Boga: 52.68%/33970.44MiB/00:11:10 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:18) INFO:    [Legendary]:        Progress for Boga: 52.75%/34019.44MiB/00:11:09 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:19) INFO:    [Legendary]:        Progress for Boga: 52.83%/34069.44MiB/00:11:08 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:20) INFO:    [Legendary]:        Progress for Boga: 52.9%/34117.44MiB/00:11:07 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:21) INFO:    [Legendary]:        Progress for Boga: 52.98%/34168.44MiB/00:11:06 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:22) INFO:    [Legendary]:        Progress for Boga: 53.05%/34213.44MiB/00:11:05 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:23) INFO:    [Legendary]:        Progress for Boga: 53.13%/34263.44MiB/00:11:04 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:24) INFO:    [Legendary]:        Progress for Boga: 53.21%/34314.44MiB/00:11:02 Down: 50.93MiB/s / Disk: 0MiB/s
+(19:58:25) INFO:    [Legendary]:        Progress for Boga: 53.29%/34366.44MiB/00:11:01 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:26) INFO:    [Legendary]:        Progress for Boga: 53.36%/34412.44MiB/00:11:00 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:27) INFO:    [Legendary]:        Progress for Boga: 53.44%/34462.44MiB/00:10:59 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:28) INFO:    [Legendary]:        Progress for Boga: 53.51%/34510.44MiB/00:10:58 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:29) INFO:    [Legendary]:        Progress for Boga: 53.6%/34563.43MiB/00:10:57 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:30) INFO:    [Legendary]:        Progress for Boga: 53.67%/34612.43MiB/00:10:55 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:31) INFO:    [Legendary]:        Progress for Boga: 53.74%/34659.43MiB/00:10:54 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:32) INFO:    [Legendary]:        Progress for Boga: 53.82%/34710.43MiB/00:10:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:33) INFO:    [Legendary]:        Progress for Boga: 53.86%/34732.43MiB/00:10:53 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:34) INFO:    [Legendary]:        Progress for Boga: 53.93%/34779.42MiB/00:10:52 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:35) INFO:    [Legendary]:        Progress for Boga: 54.01%/34829.41MiB/00:10:51 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:36) INFO:    [Legendary]:        Progress for Boga: 54.08%/34878.41MiB/00:10:50 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:37) INFO:    [Legendary]:        Progress for Boga: 54.16%/34930.41MiB/00:10:48 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:38) INFO:    [Legendary]:        Progress for Boga: 54.24%/34981.41MiB/00:10:47 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:40) INFO:    [Legendary]:        Progress for Boga: 54.39%/35075.41MiB/00:10:45 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:41) INFO:    [Legendary]:        Progress for Boga: 54.47%/35124.41MiB/00:10:44 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:42) INFO:    [Legendary]:        Progress for Boga: 54.55%/35176.41MiB/00:10:43 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:43) INFO:    [Legendary]:        Progress for Boga: 54.62%/35221.41MiB/00:10:42 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:44) INFO:    [Legendary]:        Progress for Boga: 54.69%/35267.41MiB/00:10:41 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:45) INFO:    [Legendary]:        Progress for Boga: 54.77%/35318.41MiB/00:10:39 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:47) INFO:    [Legendary]:        Progress for Boga: 54.9%/35405.41MiB/00:10:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:48) INFO:    [Legendary]:        Progress for Boga: 54.97%/35452.40MiB/00:10:37 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:50) INFO:    [Legendary]:        Progress for Boga: 55.13%/35553.38MiB/00:10:34 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:52) INFO:    [Legendary]:        Progress for Boga: 55.28%/35651.37MiB/00:10:32 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:53) INFO:    [Legendary]:        Progress for Boga: 55.36%/35699.37MiB/00:10:31 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:54) INFO:    [Legendary]:        Progress for Boga: 55.43%/35749.37MiB/00:10:30 Down: 0MiB/s / Disk: 0MiB/s
+(19:58:55) INFO:    [Legendary]:        Progress for Boga: 55.51%/35797.35MiB/00:10:29 Down: 47.91MiB/s / Disk: 0MiB/s
+(19:58:57) INFO:    [Legendary]:        Progress for Boga: 55.66%/35896.34MiB/00:10:26 Down: 48.94MiB/s / Disk: 0MiB/s
+(19:58:58) INFO:    [Legendary]:        Progress for Boga: 55.74%/35945.33MiB/00:10:25 Down: 48.93MiB/s / Disk: 0MiB/s
+(19:58:59) INFO:    [Legendary]:        Progress for Boga: 55.81%/35994.33MiB/00:10:24 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:00) INFO:    [Legendary]:        Progress for Boga: 55.89%/36042.33MiB/00:10:23 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:01) INFO:    [Legendary]:        Progress for Boga: 55.96%/36089.33MiB/00:10:22 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:02) INFO:    [Legendary]:        Progress for Boga: 56.04%/36137.32MiB/00:10:21 Down: 47.93MiB/s / Disk: 0MiB/s
+(19:59:03) INFO:    [Legendary]:        Progress for Boga: 56.11%/36184.32MiB/00:10:20 Down: 46.94MiB/s / Disk: 0MiB/s
+(19:59:06) INFO:    [Legendary]:        Progress for Boga: 56.33%/36328.31MiB/00:10:17 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:07) INFO:    [Legendary]:        Progress for Boga: 56.41%/36376.31MiB/00:10:16 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:09) INFO:    [Legendary]:        Progress for Boga: 56.56%/36476.31MiB/00:10:14 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:10) INFO:    [Legendary]:        Progress for Boga: 56.64%/36525.27MiB/00:10:13 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:11) INFO:    [Legendary]:        Progress for Boga: 56.71%/36574.26MiB/00:10:12 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:12) INFO:    [Legendary]:        Progress for Boga: 56.77%/36609.24MiB/00:10:11 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:13) INFO:    [Legendary]:        Progress for Boga: 56.82%/36646.24MiB/00:10:10 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:14) INFO:    [Legendary]:        Progress for Boga: 56.9%/36694.24MiB/00:10:09 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:15) INFO:    [Legendary]:        Progress for Boga: 56.95%/36728.23MiB/00:10:08 Down: 33.95MiB/s / Disk: 0MiB/s
+(19:59:16) INFO:    [Legendary]:        Progress for Boga: 57%/36762.24MiB/00:10:07 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:17) INFO:    [Legendary]:        Progress for Boga: 57.04%/36787.24MiB/00:10:07 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:19) INFO:    [Legendary]:        Progress for Boga: 57.16%/36861.23MiB/00:10:06 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:20) INFO:    [Legendary]:        Progress for Boga: 57.2%/36891.23MiB/00:10:06 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:21) INFO:    [Legendary]:        Progress for Boga: 57.26%/36929.23MiB/00:10:05 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:22) INFO:    [Legendary]:        Progress for Boga: 57.32%/36965.23MiB/00:10:04 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:23) INFO:    [Legendary]:        Progress for Boga: 57.37%/36998.23MiB/00:10:04 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:24) INFO:    [Legendary]:        Progress for Boga: 57.44%/37042.22MiB/00:10:03 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:26) INFO:    [Legendary]:        Progress for Boga: 57.59%/37142.21MiB/00:10:01 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:27) INFO:    [Legendary]:        Progress for Boga: 57.67%/37191.21MiB/00:10:00 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:28) INFO:    [Legendary]:        Progress for Boga: 57.74%/37238.21MiB/00:09:59 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:30) INFO:    [Legendary]:        Progress for Boga: 57.89%/37336.18MiB/00:09:56 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:31) INFO:    [Legendary]:        Progress for Boga: 57.95%/37373.18MiB/00:09:56 Down: 36.95MiB/s / Disk: 0MiB/s
+(19:59:32) INFO:    [Legendary]:        Progress for Boga: 57.99%/37398.18MiB/00:09:55 Down: 24.97MiB/s / Disk: 0MiB/s
+(19:59:33) INFO:    [Legendary]:        Progress for Boga: 58.05%/37437.18MiB/00:09:54 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:35) INFO:    [Legendary]:        Progress for Boga: 58.21%/37537.18MiB/00:09:52 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:36) INFO:    [Legendary]:        Progress for Boga: 58.28%/37586.18MiB/00:09:51 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:37) INFO:    [Legendary]:        Progress for Boga: 58.35%/37628.17MiB/00:09:50 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:39) INFO:    [Legendary]:        Progress for Boga: 58.5%/37724.17MiB/00:09:48 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:41) INFO:    [Legendary]:        Progress for Boga: 58.62%/37804.16MiB/00:09:47 Down: 35.95MiB/s / Disk: 0MiB/s
+(19:59:46) INFO:    [Legendary]:        Progress for Boga: 58.99%/38042.14MiB/00:09:41 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:47) INFO:    [Legendary]:        Progress for Boga: 59.07%/38094.13MiB/00:09:41 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:48) INFO:    [Legendary]:        Progress for Boga: 59.15%/38144.13MiB/00:09:39 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:49) INFO:    [Legendary]:        Progress for Boga: 59.22%/38193.11MiB/00:09:38 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:51) INFO:    [Legendary]:        Progress for Boga: 59.37%/38290.10MiB/00:09:36 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:52) INFO:    [Legendary]:        Progress for Boga: 59.45%/38342.09MiB/00:09:35 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:53) INFO:    [Legendary]:        Progress for Boga: 59.53%/38389.08MiB/00:09:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:54) INFO:    [Legendary]:        Progress for Boga: 59.59%/38431.08MiB/00:09:33 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:55) INFO:    [Legendary]:        Progress for Boga: 59.67%/38481.07MiB/00:09:31 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:57) INFO:    [Legendary]:        Progress for Boga: 59.82%/38576.06MiB/00:09:29 Down: 0MiB/s / Disk: 0MiB/s
+(19:59:59) INFO:    [Legendary]:        Progress for Boga: 59.97%/38673.05MiB/00:09:27 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:01) INFO:    [Legendary]:        Progress for Boga: 60.12%/38768.04MiB/00:09:25 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:02) INFO:    [Legendary]:        Progress for Boga: 60.19%/38815.04MiB/00:09:24 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:03) INFO:    [Legendary]:        Progress for Boga: 60.26%/38862.03MiB/00:09:23 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:04) INFO:    [Legendary]:        Progress for Boga: 60.33%/38908.03MiB/00:09:22 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:06) INFO:    [Legendary]:        Progress for Boga: 60.48%/39004.02MiB/00:09:20 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:09) INFO:    [Legendary]:        Progress for Boga: 60.71%/39151.00MiB/00:09:16 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:10) INFO:    [Legendary]:        Progress for Boga: 60.78%/39200.00MiB/00:09:15 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:11) INFO:    [Legendary]:        Progress for Boga: 60.86%/39246.01MiB/00:09:14 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:12) INFO:    [Legendary]:        Progress for Boga: 60.92%/39289.00MiB/00:09:13 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:13) INFO:    [Legendary]:        Progress for Boga: 60.99%/39334.01MiB/00:09:12 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:14) INFO:    [Legendary]:        Progress for Boga: 61.07%/39382.00MiB/00:09:11 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:15) INFO:    [Legendary]:        Progress for Boga: 61.14%/39428.98MiB/00:09:10 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:16) INFO:    [Legendary]:        Progress for Boga: 61.21%/39475.98MiB/00:09:09 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:17) INFO:    [Legendary]:        Progress for Boga: 61.29%/39523.98MiB/00:09:08 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:18) INFO:    [Legendary]:        Progress for Boga: 61.36%/39570.98MiB/00:09:07 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:20) INFO:    [Legendary]:        Progress for Boga: 61.51%/39668.97MiB/00:09:05 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:21) INFO:    [Legendary]:        Progress for Boga: 61.58%/39715.97MiB/00:09:04 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:23) INFO:    [Legendary]:        Progress for Boga: 61.74%/39813.96MiB/00:09:01 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:24) INFO:    [Legendary]:        Progress for Boga: 61.82%/39865.96MiB/00:09:00 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:25) INFO:    [Legendary]:        Progress for Boga: 61.89%/39913.95MiB/00:08:59 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:27) INFO:    [Legendary]:        Progress for Boga: 62.04%/40010.95MiB/00:08:57 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:28) INFO:    [Legendary]:        Progress for Boga: 62.12%/40058.94MiB/00:08:57 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:29) INFO:    [Legendary]:        Progress for Boga: 62.2%/40110.94MiB/00:08:55 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:30) INFO:    [Legendary]:        Progress for Boga: 62.27%/40154.93MiB/00:08:54 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:31) INFO:    [Legendary]:        Progress for Boga: 62.34%/40203.93MiB/00:08:53 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:32) INFO:    [Legendary]:        Progress for Boga: 62.42%/40252.93MiB/00:08:51 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:33) INFO:    [Connection]:       Connectivity: offline
+(20:00:34) INFO:    [Legendary]:        Progress for Boga: 62.49%/40299.92MiB/00:08:51 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:35) INFO:    [Legendary]:        Progress for Boga: 62.49%/40299.92MiB/00:08:52 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:36) INFO:    [Legendary]:        Progress for Boga: 62.49%/40299.92MiB/00:08:52 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:37) INFO:    [Legendary]:        Progress for Boga: 62.49%/40299.92MiB/00:08:53 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:38) INFO:    [Legendary]:        Progress for Boga: 62.49%/40299.92MiB/00:08:53 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:38) INFO:    [Connection]:       Connectivity: check-online
+(20:00:38) INFO:    [Connection]:       Pinging external endpoints
+(20:00:39) INFO:    [Connection]:       Connectivity: online
+(20:00:39) INFO:    [Legendary]:        Progress for Boga: 62.49%/40299.92MiB/00:08:54 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:40) INFO:    [Legendary]:        Progress for Boga: 62.49%/40299.92MiB/00:08:55 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:41) INFO:    [Legendary]:        Progress for Boga: 62.49%/40299.92MiB/00:08:55 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:42) INFO:    [Legendary]:        Progress for Boga: 62.51%/40312.92MiB/00:08:56 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:43) INFO:    [Legendary]:        Progress for Boga: 62.57%/40348.92MiB/00:08:56 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:44) INFO:    [Legendary]:        Progress for Boga: 62.58%/40360.92MiB/00:08:57 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:45) INFO:    [Legendary]:        Progress for Boga: 62.63%/40391.92MiB/00:08:54 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:46) INFO:    [Legendary]:        Progress for Boga: 62.71%/40441.92MiB/00:08:54 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:47) INFO:    [Legendary]:        Progress for Boga: 62.79%/40489.93MiB/00:08:52 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:48) INFO:    [Legendary]:        Progress for Boga: 62.85%/40532.93MiB/00:08:51 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:49) INFO:    [Legendary]:        Progress for Boga: 62.92%/40578.93MiB/00:08:50 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:50) INFO:    [Legendary]:        Progress for Boga: 62.98%/40614.93MiB/00:08:50 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:51) INFO:    [Legendary]:        Progress for Boga: 63.01%/40635.93MiB/00:08:49 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:52) INFO:    [Legendary]:        Progress for Boga: 63.04%/40654.93MiB/00:08:49 Down: 18.97MiB/s / Disk: 0MiB/s
+(20:00:53) INFO:    [Legendary]:        Progress for Boga: 63.06%/40668.93MiB/00:08:50 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:54) INFO:    [Legendary]:        Progress for Boga: 63.08%/40682.93MiB/00:08:49 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:55) INFO:    [Legendary]:        Progress for Boga: 63.11%/40697.93MiB/00:08:50 Down: 14.98MiB/s / Disk: 0MiB/s
+(20:00:56) INFO:    [Legendary]:        Progress for Boga: 63.15%/40726.94MiB/00:08:49 Down: 28.96MiB/s / Disk: 0MiB/s
+(20:00:57) INFO:    [Legendary]:        Progress for Boga: 63.21%/40760.94MiB/00:08:49 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:58) INFO:    [Legendary]:        Progress for Boga: 63.27%/40799.94MiB/00:08:48 Down: 0MiB/s / Disk: 0MiB/s
+(20:00:59) INFO:    [Legendary]:        Progress for Boga: 63.34%/40847.94MiB/00:08:47 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:00) INFO:    [Legendary]:        Progress for Boga: 63.4%/40886.95MiB/00:08:46 Down: 38.95MiB/s / Disk: 0MiB/s
+(20:01:01) INFO:    [Legendary]:        Progress for Boga: 63.43%/40906.95MiB/00:08:46 Down: 19.97MiB/s / Disk: 0MiB/s
+(20:01:02) INFO:    [Legendary]:        Progress for Boga: 63.49%/40945.95MiB/00:08:45 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:03) INFO:    [Legendary]:        Progress for Boga: 63.55%/40983.95MiB/00:08:44 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:04) INFO:    [Legendary]:        Progress for Boga: 63.61%/41020.95MiB/00:08:43 Down: 36.95MiB/s / Disk: 0MiB/s
+(20:01:05) INFO:    [Legendary]:        Progress for Boga: 63.66%/41051.95MiB/00:08:43 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:06) INFO:    [Legendary]:        Progress for Boga: 63.72%/41091.95MiB/00:08:42 Down: 39.95MiB/s / Disk: 0MiB/s
+(20:01:07) INFO:    [Legendary]:        Progress for Boga: 63.79%/41140.96MiB/00:08:41 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:09) INFO:    [Legendary]:        Progress for Boga: 63.93%/41230.96MiB/00:08:39 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:10) INFO:    [Legendary]:        Progress for Boga: 63.98%/41257.97MiB/00:08:39 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:12) INFO:    [Legendary]:        Progress for Boga: 64.09%/41329.97MiB/00:08:37 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:13) INFO:    [Legendary]:        Progress for Boga: 64.14%/41360.97MiB/00:08:37 Down: 30.96MiB/s / Disk: 0MiB/s
+(20:01:14) INFO:    [Legendary]:        Progress for Boga: 64.17%/41383.97MiB/00:08:37 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:15) INFO:    [Legendary]:        Progress for Boga: 64.19%/41398.97MiB/00:08:36 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:16) INFO:    [Legendary]:        Progress for Boga: 64.25%/41435.97MiB/00:08:36 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:17) INFO:    [Legendary]:        Progress for Boga: 64.33%/41483.97MiB/00:08:35 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:18) INFO:    [Legendary]:        Progress for Boga: 64.4%/41533.98MiB/00:08:33 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:19) INFO:    [Legendary]:        Progress for Boga: 64.48%/41581.98MiB/00:08:33 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:20) INFO:    [Legendary]:        Progress for Boga: 64.55%/41630.98MiB/00:08:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:21) INFO:    [Legendary]:        Progress for Boga: 64.63%/41676.98MiB/00:08:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:22) INFO:    [Legendary]:        Progress for Boga: 64.7%/41726.98MiB/00:08:29 Down: 49.94MiB/s / Disk: 0MiB/s
+(20:01:23) INFO:    [Legendary]:        Progress for Boga: 64.78%/41774.99MiB/00:08:28 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:24) INFO:    [Legendary]:        Progress for Boga: 64.85%/41819.99MiB/00:08:27 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:25) INFO:    [Legendary]:        Progress for Boga: 64.91%/41858.99MiB/00:08:26 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:26) INFO:    [Legendary]:        Progress for Boga: 64.97%/41901.99MiB/00:08:25 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:28) INFO:    [Legendary]:        Progress for Boga: 65.07%/41961.99MiB/00:08:24 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:29) INFO:    [Legendary]:        Progress for Boga: 65.1%/41983.99MiB/00:08:24 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:30) INFO:    [Legendary]:        Progress for Boga: 65.15%/42017.00MiB/00:08:23 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:31) INFO:    [Legendary]:        Progress for Boga: 65.2%/42046.00MiB/00:08:23 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:32) INFO:    [Legendary]:        Progress for Boga: 65.24%/42072.00MiB/00:08:22 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:33) INFO:    [Legendary]:        Progress for Boga: 65.3%/42113.00MiB/00:08:22 Down: 40.95MiB/s / Disk: 0MiB/s
+(20:01:34) INFO:    [Legendary]:        Progress for Boga: 65.36%/42153.00MiB/00:08:21 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:36) INFO:    [Legendary]:        Progress for Boga: 65.48%/42229.01MiB/00:08:19 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:37) INFO:    [Legendary]:        Progress for Boga: 65.56%/42278.01MiB/00:08:18 Down: 48.94MiB/s / Disk: 52.93MiB/s
+(20:01:38) INFO:    [Legendary]:        Progress for Boga: 65.64%/42328.01MiB/00:08:17 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:39) INFO:    [Legendary]:        Progress for Boga: 65.7%/42369.01MiB/00:08:16 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:40) INFO:    [Legendary]:        Progress for Boga: 65.74%/42396.02MiB/00:08:15 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:41) INFO:    [Legendary]:        Progress for Boga: 65.81%/42440.02MiB/00:08:15 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:42) INFO:    [Legendary]:        Progress for Boga: 65.88%/42488.02MiB/00:08:14 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:44) INFO:    [Legendary]:        Progress for Boga: 66.04%/42589.03MiB/00:08:11 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:45) INFO:    [Legendary]:        Progress for Boga: 66.12%/42638.03MiB/00:08:10 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:50) INFO:    [Legendary]:        Progress for Boga: 66.49%/42882.04MiB/00:08:04 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:51) INFO:    [Legendary]:        Progress for Boga: 66.57%/42932.04MiB/00:08:03 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:52) INFO:    [Legendary]:        Progress for Boga: 66.64%/42979.05MiB/00:08:02 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:53) INFO:    [Legendary]:        Progress for Boga: 66.72%/43030.05MiB/00:08:01 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:54) INFO:    [Legendary]:        Progress for Boga: 66.81%/43083.05MiB/00:08:00 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:55) INFO:    [Legendary]:        Progress for Boga: 66.88%/43129.05MiB/00:07:58 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:56) INFO:    [Legendary]:        Progress for Boga: 66.96%/43180.06MiB/00:07:57 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:57) INFO:    [Legendary]:        Progress for Boga: 67.02%/43221.06MiB/00:07:56 Down: 0MiB/s / Disk: 0MiB/s
+(20:01:59) INFO:    [Legendary]:        Progress for Boga: 67.16%/43310.06MiB/00:07:55 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:01) INFO:    [Legendary]:        Progress for Boga: 67.31%/43407.07MiB/00:07:53 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:02) INFO:    [Legendary]:        Progress for Boga: 67.38%/43451.07MiB/00:07:51 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:03) INFO:    [Legendary]:        Progress for Boga: 67.43%/43484.07MiB/00:07:51 Down: 32.96MiB/s / Disk: 0MiB/s
+(20:02:05) INFO:    [Legendary]:        Progress for Boga: 67.55%/43560.05MiB/00:07:49 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:06) INFO:    [Legendary]:        Progress for Boga: 67.62%/43609.06MiB/00:07:48 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:07) INFO:    [Legendary]:        Progress for Boga: 67.7%/43661.05MiB/00:07:46 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:08) INFO:    [Legendary]:        Progress for Boga: 67.78%/43708.05MiB/00:07:46 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:09) INFO:    [Legendary]:        Progress for Boga: 67.85%/43757.06MiB/00:07:44 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:10) INFO:    [Legendary]:        Progress for Boga: 67.93%/43807.06MiB/00:07:43 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:14) INFO:    [Legendary]:        Progress for Boga: 68.24%/44005.06MiB/00:07:39 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:15) INFO:    [Legendary]:        Progress for Boga: 68.31%/44052.06MiB/00:07:37 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:16) INFO:    [Legendary]:        Progress for Boga: 68.39%/44102.06MiB/00:07:37 Down: 49.93MiB/s / Disk: 41.94MiB/s
+(20:02:17) INFO:    [Legendary]:        Progress for Boga: 68.46%/44150.05MiB/00:07:35 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:18) INFO:    [Legendary]:        Progress for Boga: 68.54%/44202.05MiB/00:07:34 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:19) INFO:    [Legendary]:        Progress for Boga: 68.62%/44252.04MiB/00:07:33 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:21) INFO:    [Legendary]:        Progress for Boga: 68.77%/44349.95MiB/00:07:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:22) INFO:    [Legendary]:        Progress for Boga: 68.84%/44395.94MiB/00:07:29 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:23) INFO:    [Legendary]:        Progress for Boga: 68.92%/44448.91MiB/00:07:28 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:28) INFO:    [Legendary]:        Progress for Boga: 69.31%/44695.81MiB/00:07:23 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:29) INFO:    [Legendary]:        Progress for Boga: 69.38%/44743.80MiB/00:07:22 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:30) INFO:    [Legendary]:        Progress for Boga: 69.46%/44796.78MiB/00:07:20 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:31) INFO:    [Legendary]:        Progress for Boga: 69.53%/44842.77MiB/00:07:19 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:32) INFO:    [Legendary]:        Progress for Boga: 69.61%/44893.76MiB/00:07:18 Down: 50.93MiB/s / Disk: 0MiB/s
+(20:02:33) INFO:    [Legendary]:        Progress for Boga: 69.69%/44942.73MiB/00:07:17 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:34) INFO:    [Legendary]:        Progress for Boga: 69.77%/44991.70MiB/00:07:16 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:35) INFO:    [Legendary]:        Progress for Boga: 69.85%/45045.67MiB/00:07:15 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:36) INFO:    [Legendary]:        Progress for Boga: 69.92%/45090.64MiB/00:07:14 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:37) INFO:    [Legendary]:        Progress for Boga: 70%/45140.62MiB/00:07:12 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:38) INFO:    [Legendary]:        Progress for Boga: 70.07%/45190.60MiB/00:07:11 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:39) INFO:    [Legendary]:        Progress for Boga: 70.15%/45238.60MiB/00:07:10 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:41) INFO:    [Legendary]:        Progress for Boga: 70.3%/45338.58MiB/00:07:08 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:42) INFO:    [Legendary]:        Progress for Boga: 70.38%/45386.58MiB/00:07:07 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:43) INFO:    [Legendary]:        Progress for Boga: 70.45%/45435.58MiB/00:07:06 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:47) INFO:    [Legendary]:        Progress for Boga: 70.7%/45595.59MiB/00:07:02 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:48) INFO:    [Legendary]:        Progress for Boga: 70.74%/45617.59MiB/00:07:02 Down: 21.97MiB/s / Disk: 11.98MiB/s
+(20:02:49) INFO:    [Legendary]:        Progress for Boga: 70.77%/45638.59MiB/00:07:01 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:50) INFO:    [Legendary]:        Progress for Boga: 70.8%/45660.59MiB/00:07:01 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:51) INFO:    [Legendary]:        Progress for Boga: 70.85%/45692.59MiB/00:07:01 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:52) INFO:    [Legendary]:        Progress for Boga: 70.93%/45740.59MiB/00:06:59 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:53) INFO:    [Legendary]:        Progress for Boga: 71%/45789.59MiB/00:06:58 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:54) INFO:    [Legendary]:        Progress for Boga: 71.08%/45840.60MiB/00:06:57 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:55) INFO:    [Legendary]:        Progress for Boga: 71.16%/45889.60MiB/00:06:56 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:56) INFO:    [Legendary]:        Progress for Boga: 71.23%/45936.60MiB/00:06:55 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:57) INFO:    [Legendary]:        Progress for Boga: 71.3%/45983.60MiB/00:06:54 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:58) INFO:    [Legendary]:        Progress for Boga: 71.38%/46034.60MiB/00:06:53 Down: 0MiB/s / Disk: 0MiB/s
+(20:02:59) INFO:    [Legendary]:        Progress for Boga: 71.46%/46081.60MiB/00:06:52 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:00) INFO:    [Legendary]:        Progress for Boga: 71.53%/46132.61MiB/00:06:51 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:01) INFO:    [Legendary]:        Progress for Boga: 71.61%/46179.61MiB/00:06:50 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:02) INFO:    [Legendary]:        Progress for Boga: 71.68%/46227.61MiB/00:06:48 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:03) INFO:    [Legendary]:        Progress for Boga: 71.76%/46279.61MiB/00:06:47 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:04) INFO:    [Legendary]:        Progress for Boga: 71.84%/46328.62MiB/00:06:46 Down: 48.97MiB/s / Disk: 0MiB/s
+(20:03:05) INFO:    [Legendary]:        Progress for Boga: 71.91%/46377.62MiB/00:06:45 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:08) INFO:    [Legendary]:        Progress for Boga: 72.15%/46527.63MiB/00:06:41 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:11) INFO:    [Legendary]:        Progress for Boga: 72.38%/46675.63MiB/00:06:38 Down: 50.94MiB/s / Disk: 0MiB/s
+(20:03:13) INFO:    [Legendary]:        Progress for Boga: 72.53%/46774.64MiB/00:06:36 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:14) INFO:    [Legendary]:        Progress for Boga: 72.61%/46824.64MiB/00:06:35 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:15) INFO:    [Legendary]:        Progress for Boga: 72.69%/46875.64MiB/00:06:33 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:17) INFO:    [Legendary]:        Progress for Boga: 72.83%/46970.65MiB/00:06:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:18) INFO:    [Legendary]:        Progress for Boga: 72.91%/47020.65MiB/00:06:30 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:19) INFO:    [Legendary]:        Progress for Boga: 72.99%/47071.65MiB/00:06:29 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:21) INFO:    [Legendary]:        Progress for Boga: 73.14%/47169.66MiB/00:06:26 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:23) INFO:    [Legendary]:        Progress for Boga: 73.3%/47268.66MiB/00:06:24 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:24) INFO:    [Legendary]:        Progress for Boga: 73.37%/47313.67MiB/00:06:23 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:25) INFO:    [Legendary]:        Progress for Boga: 73.44%/47362.67MiB/00:06:22 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:27) INFO:    [Legendary]:        Progress for Boga: 73.6%/47461.67MiB/00:06:20 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:29) INFO:    [Legendary]:        Progress for Boga: 73.75%/47561.68MiB/00:06:17 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:30) INFO:    [Legendary]:        Progress for Boga: 73.83%/47610.68MiB/00:06:16 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:31) INFO:    [Legendary]:        Progress for Boga: 73.91%/47662.68MiB/00:06:15 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:32) INFO:    [Legendary]:        Progress for Boga: 73.98%/47708.68MiB/00:06:14 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:33) INFO:    [Legendary]:        Progress for Boga: 74.06%/47760.69MiB/00:06:13 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:34) INFO:    [Legendary]:        Progress for Boga: 74.13%/47808.69MiB/00:06:12 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:35) INFO:    [Legendary]:        Progress for Boga: 74.21%/47860.69MiB/00:06:11 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:39) INFO:    [Legendary]:        Progress for Boga: 74.52%/48055.70MiB/00:06:06 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:42) INFO:    [Legendary]:        Progress for Boga: 74.75%/48207.71MiB/00:06:03 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:43) INFO:    [Legendary]:        Progress for Boga: 74.83%/48255.71MiB/00:06:02 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:44) INFO:    [Legendary]:        Progress for Boga: 74.9%/48304.72MiB/00:06:00 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:45) INFO:    [Legendary]:        Progress for Boga: 74.99%/48357.72MiB/00:05:59 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:47) INFO:    [Legendary]:        Progress for Boga: 75.13%/48451.72MiB/00:05:57 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:48) INFO:    [Legendary]:        Progress for Boga: 75.21%/48502.72MiB/00:05:56 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:50) INFO:    [Legendary]:        Progress for Boga: 75.34%/48589.73MiB/00:05:54 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:51) INFO:    [Legendary]:        Progress for Boga: 75.37%/48608.73MiB/00:05:54 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:52) INFO:    [Legendary]:        Progress for Boga: 75.45%/48656.73MiB/00:05:53 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:53) INFO:    [Legendary]:        Progress for Boga: 75.53%/48706.73MiB/00:05:52 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:54) INFO:    [Legendary]:        Progress for Boga: 75.6%/48752.73MiB/00:05:50 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:55) INFO:    [Legendary]:        Progress for Boga: 75.68%/48808.73MiB/00:05:49 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:56) INFO:    [Legendary]:        Progress for Boga: 75.76%/48856.74MiB/00:05:48 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:57) INFO:    [Legendary]:        Progress for Boga: 75.83%/48904.74MiB/00:05:47 Down: 0MiB/s / Disk: 0MiB/s
+(20:03:58) INFO:    [Legendary]:        Progress for Boga: 75.91%/48954.74MiB/00:05:46 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:00) INFO:    [Legendary]:        Progress for Boga: 76.07%/49054.73MiB/00:05:44 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:02) INFO:    [Legendary]:        Progress for Boga: 76.22%/49153.72MiB/00:05:42 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:03) INFO:    [Legendary]:        Progress for Boga: 76.3%/49202.71MiB/00:05:40 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:04) INFO:    [Legendary]:        Progress for Boga: 76.37%/49250.70MiB/00:05:39 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:09) INFO:    [Legendary]:        Progress for Boga: 76.75%/49497.68MiB/00:05:33 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:10) INFO:    [Legendary]:        Progress for Boga: 76.83%/49548.65MiB/00:05:33 Down: 50.95MiB/s / Disk: 0MiB/s
+(20:04:11) INFO:    [Legendary]:        Progress for Boga: 76.91%/49596.62MiB/00:05:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:13) INFO:    [Legendary]:        Progress for Boga: 77.06%/49692.60MiB/00:05:29 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:14) INFO:    [Legendary]:        Progress for Boga: 77.13%/49742.60MiB/00:05:28 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:15) INFO:    [Legendary]:        Progress for Boga: 77.21%/49793.60MiB/00:05:27 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:16) INFO:    [Legendary]:        Progress for Boga: 77.28%/49839.58MiB/00:05:26 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:17) INFO:    [Legendary]:        Progress for Boga: 77.36%/49888.58MiB/00:05:25 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:18) INFO:    [Legendary]:        Progress for Boga: 77.44%/49939.58MiB/00:05:23 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:19) INFO:    [Legendary]:        Progress for Boga: 77.51%/49986.59MiB/00:05:22 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:20) INFO:    [Legendary]:        Progress for Boga: 77.59%/50036.56MiB/00:05:22 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:21) INFO:    [Legendary]:        Progress for Boga: 77.67%/50086.56MiB/00:05:20 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:22) INFO:    [Legendary]:        Progress for Boga: 77.74%/50134.56MiB/00:05:19 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:25) INFO:    [Legendary]:        Progress for Boga: 77.96%/50273.55MiB/00:05:16 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:26) INFO:    [Legendary]:        Progress for Boga: 78.02%/50314.55MiB/00:05:15 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:27) INFO:    [Legendary]:        Progress for Boga: 78.1%/50363.55MiB/00:05:14 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:28) INFO:    [Legendary]:        Progress for Boga: 78.18%/50416.55MiB/00:05:13 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:29) INFO:    [Legendary]:        Progress for Boga: 78.25%/50464.55MiB/00:05:12 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:31) INFO:    [Legendary]:        Progress for Boga: 78.4%/50561.85MiB/00:05:07 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:32) INFO:    [Legendary]:        Progress for Boga: 78.47%/50606.95MiB/00:05:07 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:33) INFO:    [Legendary]:        Progress for Boga: 78.52%/50634.95MiB/00:05:06 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:34) INFO:    [Legendary]:        Progress for Boga: 78.57%/50671.95MiB/00:05:05 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:36) INFO:    [Legendary]:        Progress for Boga: 78.72%/50768.95MiB/00:05:03 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:39) INFO:    [Legendary]:        Progress for Boga: 78.95%/50916.96MiB/00:05:00 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:40) INFO:    [Legendary]:        Progress for Boga: 79.02%/50961.96MiB/00:04:59 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:41) INFO:    [Legendary]:        Progress for Boga: 79.1%/51011.96MiB/00:04:57 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:42) INFO:    [Legendary]:        Progress for Boga: 79.18%/51061.97MiB/00:04:56 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:43) INFO:    [Legendary]:        Progress for Boga: 79.25%/51107.97MiB/00:04:56 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:44) INFO:    [Legendary]:        Progress for Boga: 79.33%/51156.97MiB/00:04:54 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:45) INFO:    [Legendary]:        Progress for Boga: 79.4%/51206.97MiB/00:04:53 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:46) INFO:    [Legendary]:        Progress for Boga: 79.45%/51238.97MiB/00:04:52 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:47) INFO:    [Legendary]:        Progress for Boga: 79.51%/51273.98MiB/00:04:52 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:48) INFO:    [Legendary]:        Progress for Boga: 79.58%/51321.98MiB/00:04:51 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:49) INFO:    [Legendary]:        Progress for Boga: 79.66%/51372.98MiB/00:04:49 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:50) INFO:    [Legendary]:        Progress for Boga: 79.73%/51418.99MiB/00:04:49 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:51) INFO:    [Legendary]:        Progress for Boga: 79.81%/51466.99MiB/00:04:47 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:52) INFO:    [Legendary]:        Progress for Boga: 79.89%/51518.86MiB/00:04:46 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:53) INFO:    [Legendary]:        Progress for Boga: 79.96%/51567.86MiB/00:04:45 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:54) INFO:    [Legendary]:        Progress for Boga: 80.04%/51614.87MiB/00:04:44 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:55) INFO:    [Legendary]:        Progress for Boga: 80.11%/51665.87MiB/00:04:43 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:56) INFO:    [Legendary]:        Progress for Boga: 80.19%/51714.87MiB/00:04:42 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:57) INFO:    [Legendary]:        Progress for Boga: 80.27%/51764.87MiB/00:04:41 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:58) INFO:    [Legendary]:        Progress for Boga: 80.34%/51812.88MiB/00:04:40 Down: 0MiB/s / Disk: 0MiB/s
+(20:04:59) INFO:    [Legendary]:        Progress for Boga: 80.42%/51864.88MiB/00:04:39 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:00) INFO:    [Legendary]:        Progress for Boga: 80.5%/51913.88MiB/00:04:37 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:01) INFO:    [Legendary]:        Progress for Boga: 80.57%/51961.89MiB/00:04:36 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:02) INFO:    [Legendary]:        Progress for Boga: 80.65%/52009.89MiB/00:04:35 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:03) INFO:    [Legendary]:        Progress for Boga: 80.73%/52060.89MiB/00:04:34 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:04) INFO:    [Legendary]:        Progress for Boga: 80.8%/52104.89MiB/00:04:33 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:05) INFO:    [Legendary]:        Progress for Boga: 80.86%/52144.90MiB/00:04:32 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:06) INFO:    [Legendary]:        Progress for Boga: 80.92%/52184.90MiB/00:04:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:07) INFO:    [Legendary]:        Progress for Boga: 80.98%/52221.90MiB/00:04:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:08) INFO:    [Legendary]:        Progress for Boga: 81.03%/52253.90MiB/00:04:30 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:09) INFO:    [Legendary]:        Progress for Boga: 81.07%/52279.90MiB/00:04:29 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:10) INFO:    [Legendary]:        Progress for Boga: 81.11%/52304.91MiB/00:04:29 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:12) INFO:    [Legendary]:        Progress for Boga: 81.2%/52368.91MiB/00:04:28 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:13) INFO:    [Legendary]:        Progress for Boga: 81.28%/52418.91MiB/00:04:27 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:14) INFO:    [Legendary]:        Progress for Boga: 81.36%/52469.91MiB/00:04:26 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:15) INFO:    [Legendary]:        Progress for Boga: 81.43%/52515.73MiB/00:04:25 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:16) INFO:    [Legendary]:        Progress for Boga: 81.51%/52564.60MiB/00:04:23 Down: 48.81MiB/s / Disk: 0MiB/s
+(20:05:17) INFO:    [Legendary]:        Progress for Boga: 81.58%/52611.84MiB/00:04:22 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:18) INFO:    [Legendary]:        Progress for Boga: 81.66%/52662.63MiB/00:04:21 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:19) INFO:    [Legendary]:        Progress for Boga: 81.73%/52708.63MiB/00:04:20 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:20) INFO:    [Legendary]:        Progress for Boga: 81.81%/52760.64MiB/00:04:19 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:21) INFO:    [Legendary]:        Progress for Boga: 81.89%/52811.64MiB/00:04:18 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:22) INFO:    [Legendary]:        Progress for Boga: 81.96%/52857.64MiB/00:04:17 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:23) INFO:    [Legendary]:        Progress for Boga: 82.05%/52910.64MiB/00:04:16 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:24) INFO:    [Legendary]:        Progress for Boga: 82.12%/52959.65MiB/00:04:15 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:26) INFO:    [Legendary]:        Progress for Boga: 82.22%/53020.44MiB/00:04:13 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:28) INFO:    [Legendary]:        Progress for Boga: 82.35%/53107.15MiB/00:04:11 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:29) INFO:    [Legendary]:        Progress for Boga: 82.43%/53157.15MiB/00:04:10 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:31) INFO:    [Legendary]:        Progress for Boga: 82.58%/53257.09MiB/00:04:10 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:32) INFO:    [Legendary]:        Progress for Boga: 82.66%/53306.09MiB/00:04:09 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:35) INFO:    [Legendary]:        Progress for Boga: 82.88%/53450.10MiB/00:04:05 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:36) INFO:    [Legendary]:        Progress for Boga: 82.96%/53500.11MiB/00:04:05 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:37) INFO:    [Legendary]:        Progress for Boga: 83.03%/53548.11MiB/00:04:02 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:38) INFO:    [Legendary]:        Progress for Boga: 83.1%/53594.11MiB/00:04:02 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:39) INFO:    [Legendary]:        Progress for Boga: 83.18%/53645.11MiB/00:04:00 Down: 50.93MiB/s / Disk: 0MiB/s
+(20:05:40) INFO:    [Legendary]:        Progress for Boga: 83.26%/53694.12MiB/00:03:59 Down: 48.95MiB/s / Disk: 0MiB/s
+(20:05:41) INFO:    [Legendary]:        Progress for Boga: 83.33%/53741.12MiB/00:03:58 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:42) INFO:    [Legendary]:        Progress for Boga: 83.41%/53789.12MiB/00:03:56 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:43) INFO:    [Legendary]:        Progress for Boga: 83.48%/53835.12MiB/00:03:55 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:46) INFO:    [Legendary]:        Progress for Boga: 83.71%/53985.13MiB/00:03:52 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:48) INFO:    [Legendary]:        Progress for Boga: 83.85%/54074.14MiB/00:03:50 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:49) INFO:    [Legendary]:        Progress for Boga: 83.93%/54123.14MiB/00:03:49 Down: 48.94MiB/s / Disk: 0MiB/s
+(20:05:51) INFO:    [Legendary]:        Progress for Boga: 84.08%/54224.15MiB/00:03:47 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:52) INFO:    [Legendary]:        Progress for Boga: 84.16%/54274.15MiB/00:03:45 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:53) INFO:    [Legendary]:        Progress for Boga: 84.23%/54322.15MiB/00:03:44 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:54) INFO:    [Legendary]:        Progress for Boga: 84.32%/54376.16MiB/00:03:43 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:55) INFO:    [Legendary]:        Progress for Boga: 84.39%/54425.16MiB/00:03:42 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:56) INFO:    [Legendary]:        Progress for Boga: 84.47%/54476.05MiB/00:03:41 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:57) INFO:    [Legendary]:        Progress for Boga: 84.55%/54527.99MiB/00:03:39 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:58) INFO:    [Legendary]:        Progress for Boga: 84.63%/54575.96MiB/00:03:39 Down: 0MiB/s / Disk: 0MiB/s
+(20:05:59) INFO:    [Legendary]:        Progress for Boga: 84.7%/54623.90MiB/00:03:37 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:00) INFO:    [Legendary]:        Progress for Boga: 84.77%/54669.81MiB/00:03:36 Down: 45.85MiB/s / Disk: 0MiB/s
+(20:06:02) INFO:    [Legendary]:        Progress for Boga: 84.93%/54771.46MiB/00:03:34 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:03) INFO:    [Legendary]:        Progress for Boga: 85.01%/54822.30MiB/00:03:33 Down: 50.77MiB/s / Disk: 0MiB/s
+(20:06:04) INFO:    [Legendary]:        Progress for Boga: 85.09%/54872.30MiB/00:03:32 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:06) INFO:    [Legendary]:        Progress for Boga: 85.24%/54972.31MiB/00:03:30 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:07) INFO:    [Legendary]:        Progress for Boga: 85.32%/55021.31MiB/00:03:29 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:08) INFO:    [Legendary]:        Progress for Boga: 85.39%/55069.31MiB/00:03:27 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:11) INFO:    [Legendary]:        Progress for Boga: 85.62%/55215.32MiB/00:03:24 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:12) INFO:    [Legendary]:        Progress for Boga: 85.7%/55269.29MiB/00:03:23 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:14) INFO:    [Legendary]:        Progress for Boga: 85.85%/55367.00MiB/00:03:21 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:15) INFO:    [Legendary]:        Progress for Boga: 85.92%/55412.00MiB/00:03:20 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:16) INFO:    [Legendary]:        Progress for Boga: 86%/55461.00MiB/00:03:19 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:17) INFO:    [Legendary]:        Progress for Boga: 86.08%/55514.79MiB/00:03:18 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:19) INFO:    [Legendary]:        Progress for Boga: 86.23%/55612.55MiB/00:03:15 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:20) INFO:    [Legendary]:        Progress for Boga: 86.3%/55655.55MiB/00:03:14 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:21) INFO:    [Legendary]:        Progress for Boga: 86.37%/55699.56MiB/00:03:13 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:24) INFO:    [Legendary]:        Progress for Boga: 86.59%/55839.11MiB/00:03:10 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:25) INFO:    [Legendary]:        Progress for Boga: 86.66%/55888.07MiB/00:03:09 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:26) INFO:    [Legendary]:        Progress for Boga: 86.74%/55938.93MiB/00:03:08 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:27) INFO:    [Legendary]:        Progress for Boga: 86.81%/55985.93MiB/00:03:07 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:29) INFO:    [Legendary]:        Progress for Boga: 86.96%/56081.94MiB/00:03:05 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:31) INFO:    [Legendary]:        Progress for Boga: 87.11%/56179.94MiB/00:03:03 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:34) INFO:    [Legendary]:        Progress for Boga: 87.35%/56329.67MiB/00:03:00 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:35) INFO:    [Legendary]:        Progress for Boga: 87.42%/56376.61MiB/00:02:59 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:36) INFO:    [Legendary]:        Progress for Boga: 87.5%/56429.35MiB/00:02:58 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:37) INFO:    [Legendary]:        Progress for Boga: 87.58%/56477.21MiB/00:02:56 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:38) INFO:    [Legendary]:        Progress for Boga: 87.65%/56522.85MiB/00:02:55 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:39) INFO:    [Legendary]:        Progress for Boga: 87.73%/56575.79MiB/00:02:54 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:42) INFO:    [Legendary]:        Progress for Boga: 87.95%/56716.48MiB/00:02:51 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:43) INFO:    [Legendary]:        Progress for Boga: 88.03%/56768.19MiB/00:02:50 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:44) INFO:    [Legendary]:        Progress for Boga: 88.1%/56815.13MiB/00:02:49 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:45) INFO:    [Legendary]:        Progress for Boga: 88.18%/56865.94MiB/00:02:48 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:47) INFO:    [Legendary]:        Progress for Boga: 88.34%/56967.71MiB/00:02:45 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:48) INFO:    [Legendary]:        Progress for Boga: 88.41%/57014.72MiB/00:02:44 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:49) INFO:    [Legendary]:        Progress for Boga: 88.49%/57065.72MiB/00:02:43 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:50) INFO:    [Legendary]:        Progress for Boga: 88.56%/57114.72MiB/00:02:42 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:51) INFO:    [Legendary]:        Progress for Boga: 88.64%/57162.73MiB/00:02:41 Down: 47.94MiB/s / Disk: 0MiB/s
+(20:06:53) INFO:    [Legendary]:        Progress for Boga: 88.79%/57259.73MiB/00:02:39 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:54) INFO:    [Legendary]:        Progress for Boga: 88.87%/57309.73MiB/00:02:38 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:55) INFO:    [Legendary]:        Progress for Boga: 88.94%/57359.73MiB/00:02:37 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:57) INFO:    [Legendary]:        Progress for Boga: 89.09%/57456.67MiB/00:02:35 Down: 0MiB/s / Disk: 0MiB/s
+(20:06:59) INFO:    [Legendary]:        Progress for Boga: 89.25%/57555.68MiB/00:02:32 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:00) INFO:    [Legendary]:        Progress for Boga: 89.32%/57604.68MiB/00:02:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:01) INFO:    [Legendary]:        Progress for Boga: 89.4%/57652.69MiB/00:02:30 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:03) INFO:    [Legendary]:        Progress for Boga: 89.55%/57747.69MiB/00:02:28 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:04) INFO:    [Legendary]:        Progress for Boga: 89.62%/57796.70MiB/00:02:27 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:09) INFO:    [Legendary]:        Progress for Boga: 90.01%/58045.05MiB/00:02:21 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:10) INFO:    [Legendary]:        Progress for Boga: 90.08%/58094.87MiB/00:02:20 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:11) INFO:    [Legendary]:        Progress for Boga: 90.16%/58143.87MiB/00:02:19 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:12) INFO:    [Legendary]:        Progress for Boga: 90.24%/58193.88MiB/00:02:18 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:14) INFO:    [Legendary]:        Progress for Boga: 90.39%/58291.87MiB/00:02:16 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:15) INFO:    [Legendary]:        Progress for Boga: 90.47%/58341.87MiB/00:02:15 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:17) INFO:    [Legendary]:        Progress for Boga: 90.62%/58437.67MiB/00:02:13 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:18) INFO:    [Legendary]:        Progress for Boga: 90.69%/58486.59MiB/00:02:12 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:19) INFO:    [Legendary]:        Progress for Boga: 90.77%/58536.55MiB/00:02:11 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:20) INFO:    [Legendary]:        Progress for Boga: 90.84%/58585.51MiB/00:02:09 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:22) INFO:    [Legendary]:        Progress for Boga: 90.99%/58682.18MiB/00:02:07 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:23) INFO:    [Legendary]:        Progress for Boga: 91.07%/58733.82MiB/00:02:06 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:24) INFO:    [Legendary]:        Progress for Boga: 91.15%/58781.74MiB/00:02:05 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:26) INFO:    [Connection]:       Connectivity: offline
+(20:07:27) INFO:    [Connection]:       Connectivity: check-online
+(20:07:27) INFO:    [Connection]:       Pinging external endpoints
+(20:07:27) INFO:    [Connection]:       Connectivity: online
+(20:07:27) INFO:    [Legendary]:        Progress for Boga: 91.26%/58851.64MiB/00:02:04 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:29) INFO:    [Legendary]:        Progress for Boga: 91.28%/58868.64MiB/00:02:04 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:30) INFO:    [Connection]:       Connectivity: offline
+(20:07:30) INFO:    [Legendary]:        Progress for Boga: 91.29%/58871.64MiB/00:02:04 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:31) INFO:    [Connection]:       Connectivity: check-online
+(20:07:31) INFO:    [Connection]:       Pinging external endpoints
+(20:07:31) INFO:    [Connection]:       Connectivity: online
+(20:07:31) INFO:    [Legendary]:        Progress for Boga: 91.29%/58871.64MiB/00:02:04 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:32) INFO:    [Legendary]:        Progress for Boga: 91.31%/58882.62MiB/00:02:03 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:34) INFO:    [Legendary]:        Progress for Boga: 91.36%/58919.59MiB/00:02:03 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:35) INFO:    [Legendary]:        Progress for Boga: 91.4%/58945.59MiB/00:02:02 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:36) INFO:    [Legendary]:        Progress for Boga: 91.43%/58964.59MiB/00:02:02 Down: 18.98MiB/s / Disk: 0MiB/s
+(20:07:39) INFO:    [Legendary]:        Progress for Boga: 91.64%/59099.55MiB/00:01:59 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:40) INFO:    [Legendary]:        Progress for Boga: 91.72%/59150.55MiB/00:01:58 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:42) INFO:    [Legendary]:        Progress for Boga: 91.87%/59248.43MiB/00:01:55 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:43) INFO:    [Legendary]:        Progress for Boga: 91.94%/59291.33MiB/00:01:55 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:44) INFO:    [Legendary]:        Progress for Boga: 92%/59330.94MiB/00:01:54 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:45) INFO:    [Legendary]:        Progress for Boga: 92.05%/59361.88MiB/00:01:53 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:46) INFO:    [Legendary]:        Progress for Boga: 92.12%/59405.87MiB/00:01:52 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:49) INFO:    [Legendary]:        Progress for Boga: 92.35%/59557.81MiB/00:01:49 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:50) INFO:    [Legendary]:        Progress for Boga: 92.43%/59607.34MiB/00:01:48 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:51) INFO:    [Legendary]:        Progress for Boga: 92.51%/59658.25MiB/00:01:46 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:53) INFO:    [Legendary]:        Progress for Boga: 92.59%/59713.16MiB/00:01:46 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:54) INFO:    [Legendary]:        Progress for Boga: 92.68%/59765.99MiB/00:01:44 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:55) INFO:    [Legendary]:        Progress for Boga: 92.75%/59813.90MiB/00:01:43 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:56) INFO:    [Legendary]:        Progress for Boga: 92.83%/59863.52MiB/00:01:42 Down: 49.56MiB/s / Disk: 47.94MiB/s
+(20:07:57) INFO:    [Legendary]:        Progress for Boga: 92.9%/59913.52MiB/00:01:41 Down: 0MiB/s / Disk: 0MiB/s
+(20:07:58) INFO:    [Legendary]:        Progress for Boga: 92.98%/59961.53MiB/00:01:40 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:01) INFO:    [Legendary]:        Progress for Boga: 93.21%/60112.36MiB/00:01:36 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:02) INFO:    [Legendary]:        Progress for Boga: 93.29%/60163.36MiB/00:01:35 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:03) INFO:    [Legendary]:        Progress for Boga: 93.37%/60212.36MiB/00:01:34 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:05) INFO:    [Legendary]:        Progress for Boga: 93.52%/60311.37MiB/00:01:32 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:06) INFO:    [Legendary]:        Progress for Boga: 93.56%/60339.37MiB/00:01:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:07) INFO:    [Legendary]:        Progress for Boga: 93.6%/60362.35MiB/00:01:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:08) INFO:    [Legendary]:        Progress for Boga: 93.63%/60383.34MiB/00:01:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:11) INFO:    [Legendary]:        Progress for Boga: 93.76%/60466.31MiB/00:01:29 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:12) INFO:    [Legendary]:        Progress for Boga: 93.83%/60512.31MiB/00:01:28 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:13) INFO:    [Legendary]:        Progress for Boga: 93.88%/60543.31MiB/00:01:27 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:14) INFO:    [Legendary]:        Progress for Boga: 93.93%/60578.32MiB/00:01:26 Down: 34.96MiB/s / Disk: 0MiB/s
+(20:08:16) INFO:    [Legendary]:        Progress for Boga: 94.09%/60678.32MiB/00:01:24 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:17) INFO:    [Legendary]:        Progress for Boga: 94.17%/60727.33MiB/00:01:23 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:18) INFO:    [Legendary]:        Progress for Boga: 94.24%/60777.33MiB/00:01:22 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:20) INFO:    [Legendary]:        Progress for Boga: 94.4%/60875.33MiB/00:01:20 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:21) INFO:    [Legendary]:        Progress for Boga: 94.46%/60916.33MiB/00:01:19 Down: 40.94MiB/s / Disk: 0MiB/s
+(20:08:22) INFO:    [Legendary]:        Progress for Boga: 94.54%/60966.32MiB/00:01:18 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:23) INFO:    [Legendary]:        Progress for Boga: 94.61%/61014.31MiB/00:01:17 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:25) INFO:    [Legendary]:        Progress for Boga: 94.76%/61113.32MiB/00:01:15 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:26) INFO:    [Legendary]:        Progress for Boga: 94.8%/61134.23MiB/00:01:14 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:28) INFO:    [Legendary]:        Progress for Boga: 94.95%/61232.14MiB/00:01:12 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:29) INFO:    [Legendary]:        Progress for Boga: 95.01%/61271.11MiB/00:01:11 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:30) INFO:    [Legendary]:        Progress for Boga: 95.09%/61322.09MiB/00:01:10 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:31) INFO:    [Legendary]:        Progress for Boga: 95.16%/61368.07MiB/00:01:09 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:32) INFO:    [Legendary]:        Progress for Boga: 95.24%/61417.05MiB/00:01:08 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:33) INFO:    [Legendary]:        Progress for Boga: 95.31%/61466.02MiB/00:01:07 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:34) INFO:    [Legendary]:        Progress for Boga: 95.39%/61514.96MiB/00:01:05 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:35) INFO:    [Legendary]:        Progress for Boga: 95.47%/61565.54MiB/00:01:04 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:37) INFO:    [Legendary]:        Progress for Boga: 95.62%/61665.55MiB/00:01:02 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:39) INFO:    [Legendary]:        Progress for Boga: 95.78%/61765.09MiB/00:01:00 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:40) INFO:    [Legendary]:        Progress for Boga: 95.85%/61813.02MiB/00:00:59 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:41) INFO:    [Legendary]:        Progress for Boga: 95.93%/61866.91MiB/00:00:58 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:42) INFO:    [Legendary]:        Progress for Boga: 96.01%/61914.87MiB/00:00:57 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:43) INFO:    [Legendary]:        Progress for Boga: 96.08%/61962.84MiB/00:00:56 Down: 47.88MiB/s / Disk: 0MiB/s
+(20:08:45) INFO:    [Legendary]:        Progress for Boga: 96.22%/62052.55MiB/00:00:54 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:48) INFO:    [Legendary]:        Progress for Boga: 96.45%/62199.39MiB/00:00:50 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:49) INFO:    [Legendary]:        Progress for Boga: 96.53%/62251.33MiB/00:00:49 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:50) INFO:    [Legendary]:        Progress for Boga: 96.6%/62299.30MiB/00:00:48 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:51) INFO:    [Legendary]:        Progress for Boga: 96.68%/62348.30MiB/00:00:47 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:53) INFO:    [Legendary]:        Progress for Boga: 96.82%/62437.02MiB/00:00:45 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:54) INFO:    [Legendary]:        Progress for Boga: 96.89%/62484.99MiB/00:00:44 Down: 47.91MiB/s / Disk: 0MiB/s
+(20:08:55) INFO:    [Legendary]:        Progress for Boga: 96.93%/62509.97MiB/00:00:44 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:56) INFO:    [Legendary]:        Progress for Boga: 96.97%/62538.95MiB/00:00:43 Down: 0MiB/s / Disk: 0MiB/s
+(20:08:59) INFO:    [Legendary]:        Progress for Boga: 97.2%/62685.65MiB/00:00:40 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:00) INFO:    [Legendary]:        Progress for Boga: 97.28%/62737.54MiB/00:00:39 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:01) INFO:    [Legendary]:        Progress for Boga: 97.36%/62787.49MiB/00:00:37 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:02) INFO:    [Legendary]:        Progress for Boga: 97.43%/62834.46MiB/00:00:36 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:03) INFO:    [Legendary]:        Progress for Boga: 97.51%/62883.46MiB/00:00:35 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:05) INFO:    [Legendary]:        Progress for Boga: 97.67%/62985.10MiB/00:00:33 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:06) INFO:    [Legendary]:        Progress for Boga: 97.74%/63033.00MiB/00:00:32 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:07) INFO:    [Legendary]:        Progress for Boga: 97.82%/63081.85MiB/00:00:31 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:08) INFO:    [Legendary]:        Progress for Boga: 97.89%/63129.84MiB/00:00:30 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:10) INFO:    [Legendary]:        Progress for Boga: 98.04%/63227.79MiB/00:00:28 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:11) INFO:    [Legendary]:        Progress for Boga: 98.12%/63278.76MiB/00:00:27 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:13) INFO:    [Legendary]:        Progress for Boga: 98.27%/63376.71MiB/00:00:25 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:14) INFO:    [Legendary]:        Progress for Boga: 98.35%/63423.67MiB/00:00:24 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:15) INFO:    [Legendary]:        Progress for Boga: 98.43%/63475.64MiB/00:00:22 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:16) INFO:    [Legendary]:        Progress for Boga: 98.5%/63523.45MiB/00:00:21 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:19) INFO:    [Legendary]:        Progress for Boga: 98.73%/63669.28MiB/00:00:18 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:21) INFO:    [Legendary]:        Progress for Boga: 98.88%/63766.20MiB/00:00:16 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:23) INFO:    [Legendary]:        Progress for Boga: 99.03%/63863.12MiB/00:00:14 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:26) INFO:    [Legendary]:        Progress for Boga: 99.26%/64013.70MiB/00:00:11 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:27) INFO:    [Legendary]:        Progress for Boga: 99.34%/64062.66MiB/00:00:09 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:28) INFO:    [Legendary]:        Progress for Boga: 99.41%/64111.66MiB/00:00:08 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:29) INFO:    [Legendary]:        Progress for Boga: 99.49%/64159.58MiB/00:00:07 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:31) INFO:    [Legendary]:        Progress for Boga: 99.64%/64254.50MiB/00:00:05 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:32) INFO:    [Legendary]:        Progress for Boga: 99.69%/64289.41MiB/00:00:04 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:33) INFO:    [Legendary]:        Progress for Boga: 99.77%/64343.39MiB/00:00:03 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:34) INFO:    [Legendary]:        Progress for Boga: 99.84%/64388.30MiB/00:00:02 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:35) INFO:    [Legendary]:        Progress for Boga: 99.92%/64440.22MiB/00:00:01 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:36) INFO:    [Legendary]:        Progress for Boga: 100%/64489.77MiB/00:00:00 Down: 0MiB/s / Disk: 0MiB/s
+(20:09:38) INFO:    [Backend]:          Adding shortcuts for Death Stranding
+(20:09:38) INFO:    [DownloadManager]:  Finished installing of Boga
+(20:09:38) INFO:    [DownloadManager]:  Boga added to download manager finished.
+(20:09:38) INFO:    [DownloadManager]:  Boga removed from download manager.
+(20:09:38) INFO:    [Frontend]:         Refreshing Library
+(20:09:38) INFO:    [Legendary]:        Refreshing library...
+(20:09:38) INFO:    [Legendary]:        Game list updated, got 25 games & DLCs
+(20:09:38) DEBUG:   [Legendary]:        Using cached install info
+(20:09:38) DEBUG:   [Legendary]:        Using cached install info
+(20:09:38) INFO:    [Legendary]:        Checking if EOS Overlay is enabled: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary eos-overlay info --prefix "/home/chad/Games/Heroic/Prefixes/Death Stranding"
+(20:09:38) DEBUG:   [Legendary]:        Using cached install info
+(20:09:38) DEBUG:   [Legendary]:        Using cached install info
+(20:09:38) DEBUG:   [Legendary]:        Using cached install info
+(20:11:28) INFO:    [Backend]:          Writing config for Boga
+(20:11:28) INFO:    [Backend]:          Changed config: showFps from false to true
+(20:11:39) INFO:    [Legendary]:        Checking if EOS Overlay is enabled: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary eos-overlay info --prefix "/home/chad/Games/Heroic/Prefixes/Death Stranding"
+(20:11:39) INFO:    [Backend]:          Using cached HowLongToBeat data for Death Stranding 
+(20:11:39) DEBUG:   [Legendary]:        Using cached install info
+(20:11:39) DEBUG:   [Legendary]:        Using cached install info
+(20:11:41) INFO:    [Backend]:          Launching Death Stranding (Boga)
+(20:11:41) INFO:    [Backend]:          Preventing display from sleep
+(20:11:41) INFO:    [Backend]:          Stopping Display Power Saver Blocker
+(20:12:00) INFO:    [Legendary]:        Checking if EOS Overlay is enabled: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary eos-overlay info --prefix "/home/chad/Games/Heroic/Prefixes/Death Stranding"
+(20:12:00) INFO:    [Backend]:          Using cached HowLongToBeat data for Death Stranding 
+(20:12:00) DEBUG:   [Legendary]:        Using cached install info
+(20:12:00) DEBUG:   [Legendary]:        Using cached install info
+(20:12:01) INFO:    [Backend]:          Launching Death Stranding (Boga)
+(20:12:01) INFO:    [Backend]:          Stopping Display Power Saver Blocker
+(20:12:08) INFO:    [Backend]:          Writing config for Boga
+(20:12:08) INFO:    [Backend]:          Changed config: wineVersion from {"bin":"","name":"Default Wine - Not Found","type":"wine"} to {"bin":"/home/chad/.local/share/Steam/steamapps/common/Proton - Experimental/proton","name":"Proton - Proton - Experimental","type":"proton"}
+(20:12:10) INFO:    [Legendary]:        Checking if EOS Overlay is enabled: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary eos-overlay info --prefix "/home/chad/Games/Heroic/Prefixes/Death Stranding/pfx"
+(20:12:10) INFO:    [Backend]:          Using cached HowLongToBeat data for Death Stranding 
+(20:12:10) DEBUG:   [Legendary]:        Using cached install info
+(20:12:10) DEBUG:   [Legendary]:        Using cached install info
+(20:12:11) INFO:    [Backend]:          Launching Death Stranding (Boga)
+(20:12:11) WARNING: [Backend]:          You are using Proton, this can lead to some bugs. Please do not open issues with bugs related to games
+(20:12:11) DEBUG:   [Backend]:          Running Wine command: run wineboot --init
+(20:12:12) INFO:    [Backend]:          Launching Death Stranding (Boga)
+(20:12:12) WARNING: [Backend]:          You are using Proton, this can lead to some bugs. Please do not open issues with bugs related to games
+(20:12:12) DEBUG:   [Backend]:          Running Wine command: run wineboot --init
+(20:12:13) INFO:    [Backend]:          Created/Updated Wineprefix at /home/chad/Games/Heroic/Prefixes/Death Stranding
+(20:12:13) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch Boga --json --offline
+(20:12:14) INFO:    [Legendary]:        Launching Death Stranding: LD_PRELOAD= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/chad/.steam/steam STEAM_COMPAT_DATA_PATH="/home/chad/Games/Heroic/Prefixes/Death Stranding" DXVK_HUD=fps PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-DeathStranding PROTON_LOG_DIR=/home/chad /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch Boga --language en --no-wine --wrapper "'/home/chad/.local/share/Steam/steamapps/common/Proton - Experimental/proton' run"
+(20:12:14) INFO:    [Backend]:          Created/Updated Wineprefix at /home/chad/Games/Heroic/Prefixes/Death Stranding
+(20:12:14) INFO:    [Legendary]:        Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch Boga --json --offline
+(20:12:14) INFO:    [Legendary]:        Launching Death Stranding: LD_PRELOAD= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/chad/.steam/steam STEAM_COMPAT_DATA_PATH="/home/chad/Games/Heroic/Prefixes/Death Stranding" DXVK_HUD=fps PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-DeathStranding PROTON_LOG_DIR=/home/chad /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch Boga --language en --no-wine --wrapper "'/home/chad/.local/share/Steam/steamapps/common/Proton - Experimental/proton' run"
+(20:12:17) INFO:    [Backend]:          Launching Death Stranding (Boga)
+(20:12:18) WARNING: [Backend]:          You are using Proton, this can lead to some bugs. Please do not open issues with bugs related to games
+(20:12:18) DEBUG:   [Backend]:          Running Wine command: run wineboot --init
