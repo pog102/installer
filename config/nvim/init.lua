@@ -7,6 +7,8 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
   vim.cmd [[packadd packer.nvim]]
 end
 
+
+require("luasnip.loaders.from_vscode").lazy_load()
 require('packer').startup(function(use)
   -- Package manager
   use 'wbthomason/packer.nvim'
@@ -34,6 +36,7 @@ use { 'CRAG666/code_runner.nvim' }
 		size = 23,
 	},
 })
+  use 'jiangmiao/auto-pairs'
   use { -- Autocompletion
     'hrsh7th/nvim-cmp',
     requires = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
@@ -57,13 +60,26 @@ use({
     run = function() vim.fn["mkdp#util#install"]() end,
 })
 
-use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
   -- Git related plugins
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
   use 'lewis6991/gitsigns.nvim'
   use 'cranberry-clockworks/knife.nvim'
-  
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'rafamadriz/friendly-snippets'
+
+-- Lua
+use {
+  "folke/zen-mode.nvim",
+  config = function()
+    require("zen-mode").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+}
+
   use {
   "startup-nvim/startup.nvim",
   requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
@@ -257,7 +273,7 @@ vim.keymap.set('n', 'cp', '"+y')
 -- See `:help nvim-treesitter`
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
-  ensure_installed = { 'lua', 'python', 'bash', 'c_sharp' },
+  ensure_installed = { 'lua', 'python', 'bash', 'c_sharp', 'markdown' },
   highlight = { enable = true },
   indent = { enable = true },
   incremental_selection = {
@@ -375,7 +391,7 @@ require('mason').setup()
 
 -- Enable the following language servers
 -- Feel free to add/remove any LSPs that you want here. They will automatically be installed
-local servers = { 'pyright', 'omnisharp', 'bashls' }
+local servers = { 'pyright', 'omnisharp', 'bashls', 'marksman' }
 -- Ensure the servers above are installed
 require('mason-lspconfig').setup {
   ensure_installed = servers,

@@ -24,6 +24,9 @@ list=(
 'https://music.youtube.com/watch?v=X4UGPCR3zEQ&feature=share'
 'https://youtu.be/txEbcmDKrYE'
 'https://youtu.be/3BsJ7Zgr9_k'
+'https://youtu.be/QFKHScAStsU'
+'https://youtu.be/IWmapG_rAQ8'
+'https://youtu.be/hL75gQUcu0A'
  )
 
 for song in "${list[@]}"

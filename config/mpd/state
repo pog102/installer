@@ -1,8 +1,8 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 state: pause
-current: 18
-time: 141.007000
+current: 24
+time: 18.359000
 random: 1
 repeat: 1
 single: 0
@@ -20,18 +20,21 @@ playlist_begin
 6:Gorillaz - Cracker Island ft. Thundercat (Official Video).flac
 7:Gorillaz - The Pink Phantom ft. Elton John & 6LACK (Official Lyric Video).flac
 8:GRANDit 2： Fly Version.flac
-9:Imagine Dragons & JID - Enemy (Lyrics) oh the misery everybody wants to be my enemy.flac
-10:Jecht - FFX  Extreme Battle Theme.flac
-11:Ken Ashcorp - Absolute Territory.flac
-12:Luvoratorrrrry!.flac
-13:Necromancin Dancin.flac
-14:[REMASTERED] Devil May Cry 3 - Devils Never Cry (Special Edit).flac
-15:Rhinestone Eyes.flac
-16:Scanty & Kneesocks' Absolute Territory.flac
-17:SHADOW.flac
-18:SIAMÉS ＂The Wolf＂ [Official Animated Music Video].flac
-19:Slayer's Paradise (Gangsta's Paradise Cover) 100k subscribers special.flac
-20:Sporty - o - Let Me Hit It ( Audiostalkers Original Mix)  BEST QUALITY !!!.flac
-21:The Bomb (These Sounds Fall Into My Mind).flac
-22:YUNO GASAI - Mirai Nikki -「My Crazy Yandere Girlfriend」-Official Video- Neotokio3 █▀█ ▀█▀ █ █ █.flac
+9:Imagine Dragons - Bleeding Out (Lyric Video).flac
+10:Imagine Dragons & JID - Enemy (Lyrics) oh the misery everybody wants to be my enemy.flac
+11:Jecht - FFX  Extreme Battle Theme.flac
+12:Ken Ashcorp - Absolute Territory.flac
+13:Kikuo - カラカラカラのカラ (Remastered).flac
+14:Luvoratorrrrry!.flac
+15:Necromancin Dancin.flac
+16:[REMASTERED] Devil May Cry 3 - Devils Never Cry (Special Edit).flac
+17:Rhinestone Eyes.flac
+18:Scanty & Kneesocks' Absolute Territory.flac
+19:SHADOW.flac
+20:SIAMÉS ＂The Wolf＂ [Official Animated Music Video].flac
+21:Slayer's Paradise (Gangsta's Paradise Cover) 100k subscribers special.flac
+22:Sporty - o - Let Me Hit It ( Audiostalkers Original Mix)  BEST QUALITY !!!.flac
+23:The Bomb (These Sounds Fall Into My Mind).flac
+24:Undefeatable - Sonic Frontiers OST (High Quality).flac
+25:YUNO GASAI - Mirai Nikki -「My Crazy Yandere Girlfriend」-Official Video- Neotokio3 █▀█ ▀█▀ █ █ █.flac
 playlist_end

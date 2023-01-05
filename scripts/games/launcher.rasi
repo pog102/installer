@@ -2,11 +2,11 @@
 window {
     height:                         240;
     width:                          100%;
-    location:                       south;
-    anchor:                         south;
+    location:                       center;
+    anchor:                         center;
     transparency:                   "real";
     background-color:               @background-transparent;
-    border:                         5px 0px 0px 0px;
+    border:                         5px 0px 5px 0px;
     border-color:                   @primary;
 }
 
@@ -79,7 +79,3 @@ element-icon {
     size:                           96;
 }
 
-element-text {
-    horizontal-align:               0;
-    width:                          200px;
-}

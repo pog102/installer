@@ -1,6 +1,5 @@
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-colored-man-pages/colored-man-pages.plugin.zsh
 # Luke's config for the Zoomer Shell
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 export PATH=$HOME/.bin:$PATH
@@ -13,6 +12,8 @@ PS1="%B%{$fg[red]%}[%{$fg[blue]%} %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_col
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
+setopt HIST_IGNORE_ALL_DUPS
+# setopt HIST_FIND_NO_DUPS
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -70,10 +71,23 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Load aliases and shortcuts if existent.
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+source "$HOME/.config/zsh/aliasrc"
+source "$HOME/.config/zsh/functions.zsh"
 
 # Load zsh-syntax-highlighting; should be last.
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+
+## Color man pagesexport 
+LESS_TERMCAP_mb=$'\E[01;32m'export 
+LESS_TERMCAP_md=$'\E[01;32m'export 
+LESS_TERMCAP_me=$'\E[0m'export 
+LESS_TERMCAP_se=$'\E[0m'export 
+LESS_TERMCAP_so=$'\E[01;47;34m'export 
+LESS_TERMCAP_ue=$'\E[0m'export 
+LESS_TERMCAP_us=$'\E[01;36m'export 
+LESS=-R
+
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down

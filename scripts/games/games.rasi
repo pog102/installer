@@ -4,8 +4,9 @@ configuration {
     drun-match-fields:              "name";
 }
 
-@import "launcher"
+/* @import "launcher" */
 @import "~/.cache/wal/game.rasi"
+@import "~/scripts/games/launcher.rasi"
 
 window {
     height:                         360;

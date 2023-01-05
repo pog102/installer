@@ -30,6 +30,8 @@ bindsym Control+Left exec  ~/.bin/upbright U
 bindsym $Mod+p exec  ~/.bin/pdfs
 
 bindsym $Mod+g exec ~/scripts/games/wrapper.sh
+for_window [ class="Nsxiv" ] floating enable
+for_window [ title="paru" ] move scratchpad; scratchpad show
 #bindsym $Mod+r exec ~/.bin/rssreader
 bindsym $Mod+n exec nsxiv -t ~/Pictures/
 bindsym --whole-window --border $Mod+button1 exec ~/.bin/menu
