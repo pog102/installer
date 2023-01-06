@@ -5,7 +5,7 @@
         "folders": [],
         "emptyWindows": [
             {
-                "backupFolder": "1671959842290"
+                "backupFolder": "1672945239960"
             }
         ]
     },
@@ -99,6 +99,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/chad/DISPLAY%3D%3A0",
+                                        "path": "/home/chad/DISPLAY=:0",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/DISPLAY=:0"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -1641,13 +1652,13 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/chad/.config/Code - OSS/Backups/1671959842290",
+            "backupPath": "/home/chad/.config/Code - OSS/Backups/1672945239960",
             "uiState": {
                 "mode": 1,
-                "x": 16,
-                "y": 46,
-                "width": 1888,
-                "height": 1018
+                "x": 966,
+                "y": 48,
+                "width": 936,
+                "height": 1014
             }
         },
         "openedWindows": []

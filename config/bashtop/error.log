@@ -182,3 +182,39 @@ New instance of bashtop version: 0.9.25 Pid: 49148
 New instance of bashtop version: 0.9.25 Pid: 13888
  
 New instance of bashtop version: 0.9.25 Pid: 27104
+ 
+New instance of bashtop version: 0.9.25 Pid: 35128
+error: list of process IDs must follow -p
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+error: list of process IDs must follow -p
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+ 
+New instance of bashtop version: 0.9.25 Pid: 36960
+error: list of process IDs must follow -p
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+ 
+New instance of bashtop version: 0.9.25 Pid: 37475

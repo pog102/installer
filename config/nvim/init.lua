@@ -68,6 +68,26 @@ use({
   use 'saadparwaiz1/cmp_luasnip'
   use 'rafamadriz/friendly-snippets'
 
+  -- Lua
+use {
+  "folke/twilight.nvim",
+  config = function()
+    require("twilight").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+       dimming = {
+    alpha = 0.45, -- amount of dimming
+    -- we try to get the foreground from the highlight groups or fallback color
+    color = { "Normal", "#ffffff" },
+    term_bg = "#000000", -- if guibg=NONE, this will be used to calculate text color
+    inactive = false, -- when true, other windows will be fully dimmed (unless they contain the same buffer)
+  },
+  context = 13, -- amount of lines we will try to show around the current line
+  treesitter = true
+    }
+  end
+}
 -- Lua
 use {
   "folke/zen-mode.nvim",

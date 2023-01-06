@@ -37,7 +37,7 @@ do
       do
         next_ep=$(($current_ep+$i))
         [ "$next_ep" -lt "10" ] && next_ep="0$next_ep" #makes one digit into two digits
-        mag=$(curl -s "https://nyaa.si/?page=rss&q=$query2+$next_ep+1080p&c=1_2&f=0" | grep -Po '<nyaa:infoHash>.*?</nyaa:infoHash>' |
+        mag=$(curl -s "https://nyaa.si/?page=rss&q=$query2+$next_ep+1080p&s=seeders&o=desc" | grep -Po '<nyaa:infoHash>.*?</nyaa:infoHash>' |
         sed 's#<nyaa:infoHash>##g; s#<\/nyaa:infoHash>##g;' | tail -1) #finds torrent info hash
         [ ! -z $mag ] && transmission-remote -U -w "$download_dir$ani_folder_clean" --add "magnet:?xt=urn:btih:$mag" &>/dev/null && #adds magnet link to transmission
         echo -e "found episode $next_ep" || break

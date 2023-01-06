@@ -205,6 +205,12 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["twilight.nvim"] = {
+    config = { "\27LJ\2\n²\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\fdimming\1\0\2\fcontext\3\r\15treesitter\2\ncolor\1\3\0\0\vNormal\f#ffffff\1\0\3\nalpha\4Í™³æ\fÌ™óþ\3\fterm_bg\f#000000\rinactive\1\nsetup\rtwilight\frequire\0" },
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/twilight.nvim",
+    url = "https://github.com/folke/twilight.nvim"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -237,6 +243,10 @@ time([[Config for zen-mode.nvim]], false)
 time([[Config for startup.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fstartup\frequire\0", "config", "startup.nvim")
 time([[Config for startup.nvim]], false)
+-- Config for: twilight.nvim
+time([[Config for twilight.nvim]], true)
+try_loadstring("\27LJ\2\n²\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\fdimming\1\0\2\fcontext\3\r\15treesitter\2\ncolor\1\3\0\0\vNormal\f#ffffff\1\0\3\nalpha\4Í™³æ\fÌ™óþ\3\fterm_bg\f#000000\rinactive\1\nsetup\rtwilight\frequire\0", "config", "twilight.nvim")
+time([[Config for twilight.nvim]], false)
 -- Conditional loads
 time([[Conditional loading of telescope-fzf-native.nvim]], true)
   require("packer.load")({"telescope-fzf-native.nvim"}, {}, _G.packer_plugins)

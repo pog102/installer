@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# Check that a file has been specified
+if [ -z "$1" ]
+then
+    echo "Error: No file specified"
+    exit 1
+fi
+
+# Check that the file exists
+if [ ! -f "$1" ]
+then
+    echo "Error: File not found"
+    exit 1
+fi
+
+# SAVEIFS=$IFS #for string values whith whitespaces
+# IFS=$(echo -en "\n\b")
+# Extract the summary and date fields
+summary=($(grep '^SUMMARY' "$1" | cut -d ' ' -f 2- | sed 's/\(.*\)\r/"\1"/g'))
+date=$(grep '^DTSTART' "$1" | cut -d ':' -f 2- | tail +3)
+
+# Print the extracted fields
+
+
+# aly=$(awk -F: '/DTSTART|SUMMARY/"{print $2}"' ~/Downloads/tv_rprt2.ics  | tail +3)
+#
+for i in $date
+do
+let k++
+YY=$(echo $i | cut -c1-4)
+MM=$(echo $i | cut -c5-6)
+DD=$(echo $i | cut -c7-8)
+echo "${summary[k-1]},asd"
+done
+#
+# IFS=$SAVEIFS
+
