@@ -20,7 +20,7 @@ i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanam
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
 mpv feh fzf yt-dlp unclutter nvidia-open-dkms neovim zip unzip zathura-pdf-poppler \
 xorg-server xorg-xinit \
-lua-language-server npm \
+lua-language-server npm shellcheck \
 lib32-libglvnd lib32-nvidia-utils lib32-sdl12-compat \
 xclip maim isync polybar networkmanager rclone papirus-icon-theme \
 zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search
