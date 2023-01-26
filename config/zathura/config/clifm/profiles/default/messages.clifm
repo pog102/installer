@@ -1,0 +1,2 @@
+[2022-8-7T21:2:36] [1mNOTE[0m: clifm created a new MIME list file (~/.config/clifm/profiles/default/mimelist.cfm). It is recommended to edit this file (entering 'mm edit' or pressing F6) to add the programs you use and remove those you don't. This will make the process of opening files faster and smoother
+[2022-8-19T12:56:19] clifm: chdir: '/home/chad/.cache/mutt/imaps_erndam1_ktu.lt_imap-mail.outlook.com_993/_hotmail_': Not a directory

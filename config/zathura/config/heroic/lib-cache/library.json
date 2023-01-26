@@ -1,0 +1,733 @@
+{
+	"library": [
+		{
+			"app_name": "01f1e8046e9e433db190a611a0411579",
+			"art_cover": "https://cdn1.epicgames.com/item/66ce501aea0a424cb80cfe5f31f80f03/EGS_RogueLegacy_CellarDoorGames_S1_2560x1440-d135ac25ec63d39ffbc35415712c385a_2560x1440-d135ac25ec63d39ffbc35415712c385a",
+			"art_square": "https://cdn1.epicgames.com/item/66ce501aea0a424cb80cfe5f31f80f03/EGS_RogueLegacy_CellarDoorGames_S2_1200x1600-0c21e16789c61834252b65db0847585a_1200x1600-0c21e16789c61834252b65db0847585a",
+			"cloud_save_enabled": false,
+			"developer": "Cellar Door Games",
+			"extra": {
+				"about": {
+					"description": "Rogue Legacy",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "RogueLegacy",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "66ce501aea0a424cb80cfe5f31f80f03",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Rogue Legacy",
+			"canRunOffline": false,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/rogue-legacy"
+		},
+		{
+			"app_name": "130285de16cc429abc603eaf95b8787b",
+			"art_cover": "https://cdn1.epicgames.com/item/b9c7474c6bdf4e9ab8ca5a5da60059d4/EGS_RingofPain_SimonBoxerTwiceDifferent_S1_2560x1440-a913b4a4f4ad707131f0d3a681847afa_2560x1440-a913b4a4f4ad707131f0d3a681847afa",
+			"art_square": "https://cdn1.epicgames.com/item/b9c7474c6bdf4e9ab8ca5a5da60059d4/EGS_RingofPain_SimonBoxerTwiceDifferent_S2_1200x1600-a7b3fcd988ed93dd2aeaca552abc11ce_1200x1600-a7b3fcd988ed93dd2aeaca552abc11ce",
+			"cloud_save_enabled": true,
+			"developer": "Humble Bundle",
+			"extra": {
+				"about": {
+					"description": "Ring of Pain",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "RingofPain",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "b9c7474c6bdf4e9ab8ca5a5da60059d4",
+			"is_mac_native": false,
+			"save_folder": "{AppData}/../LocalLow/Twice Different/Ring Of Pain/Epic/",
+			"title": "Ring of Pain",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/ring-of-pain"
+		},
+		{
+			"app_name": "2fb0eae795104757977dfe8f93b5e593",
+			"art_cover": "https://cdn1.epicgames.com/spt-assets/5409bde4ade34d51a33baabe6ad10234/submerged-hidden-depths-offer-1ysy0.jpg",
+			"art_square": "https://cdn1.epicgames.com/spt-assets/5409bde4ade34d51a33baabe6ad10234/download-submerged-hidden-depths-offer-10nz8.jpg",
+			"cloud_save_enabled": true,
+			"developer": "Uppercut Games",
+			"extra": {
+				"about": {
+					"description": "Submerged Hidden Depths",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "SubmergedHiddenDepths",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "6006c7c9d8534b0ca4605ea3a759f3e1",
+			"is_mac_native": false,
+			"save_folder": "{AppData}/SubmergedHiddenDepths/EGS/",
+			"title": "Submerged Hidden Depths",
+			"canRunOffline": false,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/submerged-hidden-depths"
+		},
+		{
+			"app_name": "4c30fe9841264abfb120b581d061a8fd",
+			"art_cover": "https://cdn1.epicgames.com/spt-assets/e488839155be4d05bb14f6e05129daef/wonder-boy-the-dragons-trap-offer-ff7to.jpg",
+			"art_square": "https://cdn1.epicgames.com/spt-assets/e488839155be4d05bb14f6e05129daef/download-wonder-boy-the-dragons-trap-offer-9xjmv.jpg",
+			"cloud_save_enabled": false,
+			"developer": "Dotemu",
+			"extra": {
+				"about": {
+					"description": "Boasting beautiful, hand-drawn animations and a re-orchestrated soundtrack, the cult classic returns with a unique blend of exploration, action, and adventure!",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "WonderBoyTheDragonsTFUa87",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "e1e92771f6774072bb1b8d0a0a6197f7",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Wonder Boy The Dragons Trap",
+			"canRunOffline": false,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/wonder-boy-the-dragons-trap"
+		},
+		{
+			"app_name": "530f09c9ac834a7bbc98056c69b44471",
+			"art_cover": "https://cdn1.epicgames.com/spt-assets/aafde465b31e4bd5a169ff1c8a164a17/evoland-legendary-edition-casqq.png",
+			"art_square": "https://cdn1.epicgames.com/spt-assets/aafde465b31e4bd5a169ff1c8a164a17/evoland-legendary-edition-3x125.png",
+			"cloud_save_enabled": false,
+			"developer": "Shiro Games SAS",
+			"extra": {
+				"about": {
+					"description": "Evoland Legendary Edition brings you two great and unique RPGs, with their graphic style and gameplay changing as you progress through the game!",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "EvolandLegendaryEditdWwMI",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "3f7bd21610f743e598fa8e955500f5b7",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Evoland Legendary Edition",
+			"canRunOffline": false,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/evoland-legendary-edition"
+		},
+		{
+			"app_name": "5b60142e120c4f2d88027595c21d4a04",
+			"art_cover": "https://cdn1.epicgames.com/item/0ea70edafcc54b3191e262bbb6971981/EGS_DOOM64_idSoftwareNightdiveStudios_S1_2560x1440-ad0080b34010d3c86254227a14e96494",
+			"art_square": "https://cdn1.epicgames.com/item/0ea70edafcc54b3191e262bbb6971981/EGS_DOOM64_idSoftwareNightdiveStudios_S2_1200x1600-3572e6321f521e4003f476ae4088f190",
+			"cloud_save_enabled": true,
+			"developer": "Bethesda Softworks LLC",
+			"extra": {
+				"about": {
+					"description": "DOOM 64",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "DOOM64",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "0ea70edafcc54b3191e262bbb6971981",
+			"is_mac_native": false,
+			"save_folder": "{UserSavedGames}/Nightdive Studios/DOOM 64/saves/",
+			"title": "DOOM 64",
+			"canRunOffline": false,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/doom-64"
+		},
+		{
+			"app_name": "5bf67f3153364181b54cb9e40ca7fa82",
+			"art_cover": "https://cdn1.epicgames.com/f4a904fcef2447439c35c4e6457f3027/item/EGS_KojimaProductions_DeathStranding_S1-2560x1440-e56d3a322a94fd7dd18b9c93ee080d01.jpg",
+			"art_square": "https://cdn1.epicgames.com/f4a904fcef2447439c35c4e6457f3027/item/DeathStranding_Tall-1280x1440-5a96ed93665756b28f6d70e65266e64c.jpg",
+			"cloud_save_enabled": false,
+			"developer": "505 Games",
+			"extra": {
+				"about": {
+					"description": "Death Stranding Content",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "DeathStrandingContent",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "f4a904fcef2447439c35c4e6457f3027",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Death Stranding Content",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/death-stranding-content"
+		},
+		{
+			"app_name": "76233c0af0a441c7bd541e7d7ab3cde1",
+			"art_cover": "https://cdn1.epicgames.com/spt-assets/dc57439aac3c481aaa52ccb443a4d01a/unrailed-offer-1hr8q.jpg",
+			"art_square": "https://cdn1.epicgames.com/spt-assets/dc57439aac3c481aaa52ccb443a4d01a/download-unrailed-offer-ghq3r.jpg",
+			"cloud_save_enabled": false,
+			"developer": "Daedalic Entertainment",
+			"extra": {
+				"about": {
+					"description": "Unrailed",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "Unrailed",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "5a6d34ba28bc45d081d9311c3885feef",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Unrailed",
+			"canRunOffline": false,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/unrailed"
+		},
+		{
+			"app_name": "7786b355a13b47a6b3915335117cd0b2",
+			"art_cover": "https://cdn1.epicgames.com/spt-assets/764b2d57552c436590f50318bd7587f9/bloons-td-6-offer-rh3dk.jpg",
+			"art_square": "https://cdn1.epicgames.com/spt-assets/764b2d57552c436590f50318bd7587f9/download-bloons-td-6-offer-rlhb8.jpg",
+			"cloud_save_enabled": false,
+			"developer": "Ninja Kiwi",
+			"extra": {
+				"about": {
+					"description": "The Bloons are back and better than ever! Get ready for a massive 3D tower defense game designed to give you hours and hours of the best strategy gaming available.",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "BloonsTD6",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "6a8dfa6e441e4f2f9048a98776c6077d",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Bloons TD 6",
+			"canRunOffline": false,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/bloons-td-6"
+		},
+		{
+			"app_name": "818447bb519b46d48d365d5753362796",
+			"art_cover": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_SonicMania_Lab42_S5-1360x765-31b5379f91e2451e57e0273339bf68b8_1360x765-31b5379f91e2451e57e0273339bf68b8",
+			"art_square": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_SonicMania_Lab42_S6-510x680-b83646998d6a711b6997e076e091c015_510x680-b83646998d6a711b6997e076e091c015",
+			"cloud_save_enabled": false,
+			"developer": "Sega of America",
+			"extra": {
+				"about": {
+					"description": "Sonic Mania",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "SonicMania",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "45e7cf3c49054f2fb20b673d9b0ae69e",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Sonic Mania",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/sonic-mania"
+		},
+		{
+			"app_name": "84067e3ec8f149b2bbf2342d7a136065",
+			"art_cover": "https://cdn1.epicgames.com/f4a904fcef2447439c35c4e6457f3027/item/EGS_KojimaProductions_DeathStranding_S1-2560x1440-e56d3a322a94fd7dd18b9c93ee080d01.jpg",
+			"art_square": "https://cdn1.epicgames.com/f4a904fcef2447439c35c4e6457f3027/item/DeathStranding_Tall-1280x1440-5a96ed93665756b28f6d70e65266e64c.jpg",
+			"cloud_save_enabled": false,
+			"developer": "505 Games",
+			"extra": {
+				"about": {
+					"description": "DEATH STRANDING DIGITAL SOUNDTRACK",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "DeathStrandingSound",
+			"install": {
+				"install_size": "0",
+				"is_dlc": true
+			},
+			"is_installed": false,
+			"namespace": "f4a904fcef2447439c35c4e6457f3027",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "DEATH STRANDING DIGITAL SOUNDTRACK",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/death-stranding-digital-soundtrack"
+		},
+		{
+			"app_name": "890d9cf396d04922a1559333df419fed",
+			"art_cover": "https://cdn1.epicgames.com/item/4b5461ca8d1c488787b5200b420de066/egs-shadowofthetombraiderdefinitiveedition-eidosmontralcrystaldynamicsnixxessoftware-s1-2560x1440-eca6506e95a1_2560x1440-193582a5fd76a593804e0171d6395cf4",
+			"art_square": "https://cdn1.epicgames.com/item/4b5461ca8d1c488787b5200b420de066/egs-shadowofthetombraiderdefinitiveedition-eidosmontralcrystaldynamicsnixxessoftware-s4-1200x1600-7ee40d6fa744_1200x1600-950cdb624cc75d04fe3c8c0b62ce98de",
+			"cloud_save_enabled": false,
+			"developer": "Square Enix",
+			"extra": {
+				"about": {
+					"description": "Shadow of the Tomb Raider: Definitive Edition",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "ShadowoftheTombRaider",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "4b5461ca8d1c488787b5200b420de066",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Shadow of the Tomb Raider: Definitive Edition",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/shadow-of-the-tomb-raider-definitive-edition"
+		},
+		{
+			"app_name": "Boga",
+			"art_cover": "https://cdn1.epicgames.com/f4a904fcef2447439c35c4e6457f3027/item/EGS_KojimaProductions_DeathStranding_S1-2560x1440-e56d3a322a94fd7dd18b9c93ee080d01.jpg",
+			"art_square": "https://cdn1.epicgames.com/f4a904fcef2447439c35c4e6457f3027/item/DeathStranding_Tall-1280x1440-5a96ed93665756b28f6d70e65266e64c.jpg",
+			"cloud_save_enabled": true,
+			"developer": "505 Games",
+			"extra": {
+				"about": {
+					"description": "Death Stranding",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "DeathStranding",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "f4a904fcef2447439c35c4e6457f3027",
+			"is_mac_native": false,
+			"save_folder": "{appdata}/../locallow/KojimaProductions/DeathStranding/{EpicID}/",
+			"title": "Death Stranding",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/death-stranding"
+		},
+		{
+			"app_name": "Calluna",
+			"art_cover": "https://cdn1.epicgames.com/item/calluna/Control_Landscape_Image_2560X1440_2560x1440-ec7b2eb03bb70f61d17ed01fa76d95a6",
+			"art_square": "https://cdn1.epicgames.com/item/calluna/Control_Portrait_Storefront_1200X1600_1200x1600-456c920cae7a0aa9b36670cd5e1237a1",
+			"cloud_save_enabled": true,
+			"developer": "505 Games",
+			"extra": {
+				"about": {
+					"description": "Control",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "Control",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "calluna",
+			"is_mac_native": false,
+			"save_folder": "{AppData}/Remedy/Control/Default-Epic-User/",
+			"title": "Control",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/control"
+		},
+		{
+			"app_name": "Turtle",
+			"art_cover": "https://cdn1.epicgames.com/turtle/item/Maneater_EGS_Landscape-2560x1440-cf27e86a8daeeb2915a49a8b4c954dbd.png",
+			"art_square": "https://cdn1.epicgames.com/item/turtle/Maneater_EGS_1200x1600_1200x1600-64753fed67a14f055ee4e7150fe34daf",
+			"cloud_save_enabled": true,
+			"developer": "Tripwire Interactive",
+			"extra": {
+				"about": {
+					"description": "Maneater",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "Maneater",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "turtle",
+			"is_mac_native": false,
+			"save_folder": "{AppData}/Maneater/Saved/SaveGames/",
+			"title": "Maneater",
+			"canRunOffline": false,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/maneater"
+		},
+		{
+			"app_name": "adeae8bbfc94427db57c7dfecce3f1d4",
+			"art_cover": "https://cdn1.epicgames.com/item/fa702d34a37248ba98fb17f680c085e3/EGS_Fallout3GameoftheYearEdition_BethesdaGameStudios_S1_2560x1440-073f5b4cf358f437a052a3c29806efa0",
+			"art_square": "https://cdn1.epicgames.com/item/fa702d34a37248ba98fb17f680c085e3/EGS_Fallout3GameoftheYearEdition_BethesdaGameStudios_S2_1200x1600-e2ba392652a1f57c4feb65d6bbd1f963",
+			"cloud_save_enabled": true,
+			"developer": "Bethesda Softworks LLC",
+			"extra": {
+				"about": {
+					"description": "Fallout 3: Game of the Year Edition",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "fallout3",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "fa702d34a37248ba98fb17f680c085e3",
+			"is_mac_native": false,
+			"save_folder": "{UserDir}/My Games/Fallout3/Saves/",
+			"title": "Fallout 3: Game of the Year Edition",
+			"canRunOffline": false,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/fallout-3-game-of-the-year-edition"
+		},
+		{
+			"app_name": "b5e42b0dc2f544a5bbb4080a433b8b71",
+			"art_cover": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_NiohTheCompleteEdition_KOEITECMOGAMESCOLTD_S1_2560x1440-2a6124e6033545b37abd715282f8ba98",
+			"art_square": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_NiohTheCompleteEdition_KOEITECMOGAMESCOLTD_S2_1200x1600-4723c89d30b680dafa5cf9f279a6cfb7",
+			"cloud_save_enabled": true,
+			"developer": "Koei Tecmo",
+			"extra": {
+				"about": {
+					"description": "Nioh: The Complete Edition",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "Nioh",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "3622b6ddc5c849b1826085d5fe492eae",
+			"is_mac_native": false,
+			"save_folder": "{UserDir}/KoeiTecmo/NIOH/Savedata/{EpicID}/",
+			"title": "Nioh: The Complete Edition",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/nioh-the-complete-edition"
+		},
+		{
+			"app_name": "b7c6482e93cb4cd3a31d8e758c394e19",
+			"art_cover": "https://cdn1.epicgames.com/spt-assets/8f7e0537b57d4a14bdd11a3e719973a1/rising-hell-offer-gk6u6.jpg",
+			"art_square": "https://cdn1.epicgames.com/spt-assets/8f7e0537b57d4a14bdd11a3e719973a1/download-rising-hell-offer-wzrb8.jpg",
+			"cloud_save_enabled": false,
+			"developer": "Toge Productions",
+			"extra": {
+				"about": {
+					"description": "Rising Hell is a vertical platformer rogue-lite filled with adrenaline-pumping action and tons of heavy gothic metal shreds. Climb out from the ever-changing hell while you fight hordes of blood-lusting demons.",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "RisingHellxpIn4",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "8d123dcc4b5c4d168f7de7b3e1ed7d47",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Rising Hell",
+			"canRunOffline": false,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/rising-hell"
+		},
+		{
+			"app_name": "bobcat",
+			"art_cover": "https://cdn1.epicgames.com/bc2b0372eaa448469cb9a769f27acea1/item/MAV_EPIC_LANDSCAPE-Product-Image_2560x1440-2560x1440-f09b204b4eb17f85e997a247901b8d81-2560x1440-f09b204b4eb17f85e997a247901b8d81.jpg",
+			"art_square": "https://cdn1.epicgames.com/bc2b0372eaa448469cb9a769f27acea1/item/MAV_EPIC_PORTRAIT-Product-Image_1200x1600-1200x1600-6a837e2b6a5b216a2d994b4ad6661a33-1200x1600-6a837e2b6a5b216a2d994b4ad6661a33.jpg",
+			"cloud_save_enabled": false,
+			"developer": "Electronic Arts",
+			"extra": {
+				"about": {
+					"description": "Star Wars Squadrons",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "StarWarsSquadrons",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "bc2b0372eaa448469cb9a769f27acea1",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Star Wars Squadrons",
+			"canRunOffline": true,
+			"thirdPartyManagedApp": "Origin",
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/star-wars-squadrons"
+		},
+		{
+			"app_name": "c311b22f878749449886949eeb588999",
+			"art_cover": "https://cdn1.epicgames.com/f4a904fcef2447439c35c4e6457f3027/item/EGS_KojimaProductions_DeathStranding_S1-2560x1440-e56d3a322a94fd7dd18b9c93ee080d01.jpg",
+			"art_square": "https://cdn1.epicgames.com/f4a904fcef2447439c35c4e6457f3027/item/DeathStranding_Tall-1280x1440-5a96ed93665756b28f6d70e65266e64c.jpg",
+			"cloud_save_enabled": false,
+			"developer": "505 Games",
+			"extra": {
+				"about": {
+					"description": "SELECTIONS OF TITAN ART BOOK",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "DeathStrandingArt",
+			"install": {
+				"install_size": "0",
+				"is_dlc": true
+			},
+			"is_installed": false,
+			"namespace": "f4a904fcef2447439c35c4e6457f3027",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "SELECTIONS OF TITAN ART BOOK",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/selections-of-titan-art-book"
+		},
+		{
+			"app_name": "d2d941e5c1ec44ae9e87e9e7cdddf1dd",
+			"art_cover": "https://cdn1.epicgames.com/spt-assets/177dc72233934ac487abd83b01587086/spirit-of-the-north-offer-wih1t.jpg",
+			"art_square": "https://cdn1.epicgames.com/spt-assets/177dc72233934ac487abd83b01587086/download-spirit-of-the-north-offer-1kjkn.jpg",
+			"cloud_save_enabled": false,
+			"developer": "Merge Games",
+			"extra": {
+				"about": {
+					"description": "Spirit of the North",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "SpiritoftheNorth1sjns",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "6098a8c7375c43458a22163a637c0c2f",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Spirit of the North",
+			"canRunOffline": false,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/spirit-of-the-north"
+		},
+		{
+			"app_name": "d6264d56f5ba434e91d4b0a0b056c83a",
+			"art_cover": "https://cdn1.epicgames.com/item/caca23a0954f4c1aba1fdd7e277b81e2/EGS_TombRaiderGAMEOFTHEYEAREDITION_CrystalDynamics_S1_2560x1440-0c41fcc8db62992e8d098d304b2277f8_2560x1440-0c41fcc8db62992e8d098d304b2277f8",
+			"art_square": "https://cdn1.epicgames.com/item/caca23a0954f4c1aba1fdd7e277b81e2/EGS_TombRaiderGAMEOFTHEYEAREDITION_CrystalDynamics_S2_1200x1600-a700eac197c57b46cfc99a08b1d62589_1200x1600-a700eac197c57b46cfc99a08b1d62589",
+			"cloud_save_enabled": false,
+			"developer": "Square Enix",
+			"extra": {
+				"about": {
+					"description": "Tomb Raider GAME OF THE YEAR EDITION",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "TombRaiderGOTYE",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "caca23a0954f4c1aba1fdd7e277b81e2",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "Tomb Raider GAME OF THE YEAR EDITION",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/tomb-raider-game-of-the-year-edition"
+		},
+		{
+			"app_name": "f00b5acabb0f49a7b49e8350d1cd0de0",
+			"art_cover": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_TheCaptain_Sysiacgames_S1_2560x1440-b58c40c02e67f0e2317a62c4b51d5c9f",
+			"art_square": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_TheCaptain_Sysiacgames_S2_1200x1600-9cd565d837478e8e9015ccdd86f56f33",
+			"cloud_save_enabled": false,
+			"developer": "Tomorrow Corporation",
+			"extra": {
+				"about": {
+					"description": "The Captain",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "TheCaptain",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "301980d060324bb29202677f468c6c44",
+			"is_mac_native": true,
+			"save_folder": "",
+			"title": "The Captain",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/the-captain"
+		},
+		{
+			"app_name": "f4f0d39fbb4640e0be62aa91d9eca87d",
+			"art_cover": "https://cdn1.epicgames.com/offer/0dc18227b3f14162968d8e7969e454ef/EGS_DAEMONXMACHINA_MarvelousInc_S1_2560x1440-13963d321550a716af2ebdf13806c891",
+			"art_square": "https://cdn1.epicgames.com/offer/0dc18227b3f14162968d8e7969e454ef/EGS_DAEMONXMACHINA_MarvelousInc_S2_1200x1600-11d198187c5cc2f494f6473515866556",
+			"cloud_save_enabled": true,
+			"developer": "Marvelous Inc.",
+			"extra": {
+				"about": {
+					"description": "DAEMON X MACHINA",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "DaemonxMachina",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "0dc18227b3f14162968d8e7969e454ef",
+			"is_mac_native": false,
+			"save_folder": "{AppData}/DXMEOS/Saved/SaveGames/",
+			"title": "DAEMON X MACHINA",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/daemon-x-machina"
+		},
+		{
+			"app_name": "f7cc1c999ac146f39b356f53e3489514",
+			"art_cover": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_RiseoftheTombRaider20YearCelebration_CrystalDynamics_S1_2560x1440-3bd5b3c4c11d46cc2dcb06bdf2f77627",
+			"art_square": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_RiseoftheTombRaider20YearCelebration_CrystalDynamics_S2_1200x1600-a73f93bb560142e08d56db4c2bfdb03c",
+			"cloud_save_enabled": true,
+			"developer": "Square Enix",
+			"extra": {
+				"about": {
+					"description": "Rise of the Tomb Raider: 20 Year Celebration",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "RiseoftheTombRaider",
+			"install": {
+				"install_size": "0",
+				"is_dlc": false
+			},
+			"is_installed": false,
+			"namespace": "48ffecf4a89f4fd496817b0451384f39",
+			"is_mac_native": false,
+			"save_folder": "{UserDir}/Rise of the Tomb Raider/{EpicID}/",
+			"title": "Rise of the Tomb Raider: 20 Year Celebration",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/rise-of-the-tomb-raider-20-year-celebration"
+		},
+		{
+			"app_name": "f8bf1e29bbef480a9b28115ad0d644a0",
+			"art_cover": "https://cdn1.epicgames.com/f4a904fcef2447439c35c4e6457f3027/item/EGS_KojimaProductions_DeathStranding_S1-2560x1440-e56d3a322a94fd7dd18b9c93ee080d01.jpg",
+			"art_square": "https://cdn1.epicgames.com/f4a904fcef2447439c35c4e6457f3027/item/DeathStranding_Tall-1280x1440-5a96ed93665756b28f6d70e65266e64c.jpg",
+			"cloud_save_enabled": false,
+			"developer": "505 Games",
+			"extra": {
+				"about": {
+					"description": "HD Wallpaper",
+					"longDescription": ""
+				},
+				"reqs": []
+			},
+			"folder_name": "DeathStrandingWallpaper",
+			"install": {
+				"install_size": "0",
+				"is_dlc": true
+			},
+			"is_installed": false,
+			"namespace": "f4a904fcef2447439c35c4e6457f3027",
+			"is_mac_native": false,
+			"save_folder": "",
+			"title": "HD Wallpaper",
+			"canRunOffline": true,
+			"is_linux_native": false,
+			"runner": "legendary",
+			"store_url": "https://www.epicgames.com/store/product/hd-wallpaper"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+2022-11-09 19:19:11.271 [info] Starting worker process with pid 3403 (type: fileWatcher, window: 1).
+2022-11-09 19:19:49.505 [info] Worker process with pid 3403 terminated normally (type: fileWatcher, window: 1).
+2022-11-09 19:19:50.641 [info] Starting worker process with pid 3471 (type: fileWatcher, window: 1).
+2022-11-09 19:29:22.587 [info] Getting Manifest... asvetliakov.vscode-neovim
+2022-11-09 19:29:22.755 [info] Installing extension: asvetliakov.vscode-neovim
+2022-11-09 19:30:09.745 [error] RequestService#request (browser) - error https://open-vsx.org/vscode/asset/asvetliakov/vscode-neovim/0.0.94/Microsoft.VisualStudio.Services.VSIXPackage?redirect=true&targetPlatform=universal&install=true {}
+2022-11-09 19:30:24.264 [info] Extracted extension to /home/chad/.vscode-oss/extensions/.be5afc87-d6bc-4437-bf6e-d41c146fbe0a: asvetliakov.vscode-neovim
+2022-11-09 19:30:24.268 [info] Renamed to /home/chad/.vscode-oss/extensions/asvetliakov.vscode-neovim-0.0.94-universal
+2022-11-09 19:30:24.270 [info] Extracting completed. asvetliakov.vscode-neovim
+2022-11-09 19:30:24.272 [info] Extension installed successfully: asvetliakov.vscode-neovim

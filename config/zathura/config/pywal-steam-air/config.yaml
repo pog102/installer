@@ -1,0 +1,8 @@
+air_path: air-for-steam/Resource/themes/
+config_file: config.yaml
+config_path: /home/chad/.config/pywal-steam-air/
+first_run: false
+steam_skins_path: /home/chad/.steam/steam/skins/
+wal_cache_path: /home/chad/.cache/wal/
+wal_template_file: _pywal.styles
+wal_template_path: /home/chad/.config/wal/templates/

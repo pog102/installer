@@ -1,0 +1,12 @@
+2023/01/24-17:13:07.425 c70 Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/24-17:13:07.426 c70 Recovering log #12
+2023/01/24-17:13:07.439 c70 Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000012.log 
+2023/01/24-17:13:10.441 ea3 Level-0 table #17: started
+2023/01/24-17:13:10.450 ea3 Level-0 table #17: 1134253 bytes OK
+2023/01/24-17:13:10.451 ea3 Delete type=0 #12
+2023/01/24-17:13:26.311 ddf Compacting 1@1 + 1@2 files
+2023/01/24-17:13:26.315 ddf Generated table #18@1: 370 keys, 53552 bytes
+2023/01/24-17:13:26.315 ddf Compacted 1@1 + 1@2 files => 53552 bytes
+2023/01/24-17:13:26.316 ddf compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/01/24-17:13:26.316 ddf Delete type=2 #17
+2023/01/24-17:13:26.316 ddf Delete type=2 #14

@@ -165,6 +165,7 @@ bindsym $mod+Shift+slash	kill
 bindsym $mod+backslash		workspace back_and_forth
 bindsym XF86AudioRaiseVolume exec ~/.bin/upvol i
 bindsym XF86AudioLowerVolume exec ~/.bin/upvol d
+for_window [instance="steam_app_405900"] floating enable
 
 workspace 1 output $fm
 workspace 2 output $fm

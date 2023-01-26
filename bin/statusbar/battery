@@ -1,5 +1,4 @@
 #!/bin/sh
-source color
 battery="/sys/class/power_supply/BAT1"
 
 percent=$(cat "$battery/capacity")  # battery percentage

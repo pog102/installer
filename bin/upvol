@@ -6,7 +6,8 @@
 #
 # 	dunstify -a "changevolume" -u low -r "2" -h int:value:"$volume" -i "volume$1" "${volume}%" -t 1100
 #
-pamixer -${1} 1
+pamixer -"${1}" 1
 volume=$(pamixer --get-volume)
 dunstify -a "changevolume" -u low -r "2" -h int:value:"$volume" -i "volume$1" "${volume}%" -t 1100
+# dunstify -a "changevolume" -u low -r "2" -h int:value:"$volume" -i "volume$1" "a"-t 1100
 

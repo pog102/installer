@@ -1,0 +1,14 @@
+configuration {{
+    font:                           "JetBrains Mono";
+}}
+
+* {{
+    background-color:               transparent;
+    background:                     {background};
+    /* background-transparent:         {background}A0; */
+    background-transparent:         {background};
+    text-color:                     {foreground};
+    primary:                        {color1};
+    secondary:                      {color2};
+    urgent:                         #BF616A;
+}}

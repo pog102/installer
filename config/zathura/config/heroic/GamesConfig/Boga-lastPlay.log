@@ -1,0 +1,145 @@
+System Info:
+Heroic Version: 2.5.2 Yamato
+Legendary Version:  0.20.31 Dark Energy (hotfix #5)
+GOGdl Version: 0.5
+OS: Arch KERNEL: 6.0.15-273-tkg-pds ARCH: x64
+CPU: Intel Core™ i5-10300H @2.5 GOVERNOR: ondemand
+RAM: Total: 7.6 GiB Available: 6.18 GiB
+GRAPHICS: GPU0: CometLake-H GT2 [UHD Graphics]  VRAM: 256MB  GPU1: NVIDIA GeForce GTX 1650 VRAM: 4096MB DRIVER: 525.60.11 
+PROTOCOL: tty
+
+Game Settings: {
+	"autoInstallDxvk": true,
+	"autoInstallVkd3d": true,
+	"preferSystemLibs": false,
+	"nvidiaPrime": false,
+	"enviromentOptions": [],
+	"wrapperOptions": [],
+	"showFps": true,
+	"useGameMode": false,
+	"useSteamRuntime": true,
+	"language": "",
+	"wineVersion": {
+		"bin": "/home/chad/.local/share/Steam/steamapps/common/Proton 7.0/proton",
+		"name": "Proton - Proton 7.0",
+		"type": "proton"
+	},
+	"winePrefix": "/home/chad/Games/Heroic/Prefixes/Death Stranding"
+}
+
+Game launched at: Sun Dec 25 2022 20:34:22 GMT+0200 (GMT+02:00)
+
+Legendary's config from config.ini (before Heroic's settings):
+{
+  "game_parameters": [],
+  "game_executable": "DeathStranding.exe",
+  "game_directory": "/home/chad/Games/Heroic/DeathStranding",
+  "launch_command": [
+    "wine"
+  ],
+  "working_directory": "/home/chad/Games/Heroic/DeathStranding",
+  "user_parameters": [],
+  "environment": {},
+  "pre_launch_command": "",
+  "pre_launch_wait": false
+}
+
+Launch Command: LD_PRELOAD= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/chad/.steam/steam STEAM_COMPAT_DATA_PATH="/home/chad/Games/Heroic/Prefixes/Death Stranding" DXVK_HUD=fps PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-DeathStranding PROTON_LOG_DIR=/home/chad /home/chad/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier/run --filesystem=/home/chad/Games/Heroic/DeathStranding -- /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch Boga --language en --no-wine --wrapper "'/home/chad/.local/share/Steam/steamapps/common/Proton 7.0/proton' run" 
+
+Game Log:
+[cli] INFO: Logging in...
+[Core] INFO: Trying to re-use existing login session...
+[cli] INFO: Checking for updates...
+[Core] INFO: Getting authentication token...
+[Core] INFO: Getting ownership token.
+[cli] INFO: Launching Boga...
+wineserver: using server-side synchronization.
+wine: Using setpriority to control niceness in the [-10,10] range
+[S_API] SteamAPI_Init(): SteamAPI_IsSteamRunning() did not locate a running instance of Steam.
+[S_API FAIL] SteamAPI_Init() failed
+**************************************************************************** BuildID = dso 206/2742586 17:50 - Thu Aug 04 2022
+* Executable Configuration = Submission
+* SaveGame Version = 58, flags = 0
+* SessionID = 'ec3dd649-b195-461d-a235-01eb3780693d'
+***************************************************************************Allocator AssetMemory: Creating new region at [0x00000003c0000000:0x0000000400000000]
+SaveData: Update cached slot info in 0.000 seconds
+SaveData: Update cached slot info in 0.000 seconds
+SaveData: Update cached slot info in 0.000 seconds
+SaveData: Update cached slot info in 0.000 seconds
+SaveData: Update cached slot info in 0.000 seconds
+SaveData: Update cached slot info in 0.000 seconds
+SaveData: Update cached slot info in 0.000 seconds
+SaveData: Update cached slot info in 0.000 seconds
+SaveData: Update cached slot info in 0.000 seconds
+SaveData: Update cached slot info in 0.000 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.001 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.002 seconds
+SaveData: Update cached slot info in 0.003 seconds
+SaveData: Update cached slot info in 0.003 seconds
+SaveData: Update cached slot info in 0.003 seconds
+SaveData: Update cached slot info in 0.003 seconds
+SaveData: Update cached slot info in 0.003 seconds
+SaveData: Update cached slot info in 0.003 seconds
+SaveData: Update cached slot info in 0.003 seconds
+SaveData: Update cached slot info in 0.003 seconds
+movies:mono/SQ_CS00_S00000.bk2 took 16.27019080 ms to start
+movies:movies.mpk took 4.13314906 ms to open
+ took 21.54930221 ms to release
+movies:mono/SQ_CS00_S00100.bk2 took 13.27861225 ms to start
+movies:movies.mpk took 1.38629087 ms to open
+ took 24.65710350 ms to release
+SaveData: Update cached slot info in 0.008 seconds
+SaveData: sSaveDataAsynCallback finished in 0.020 seconds
+SaveData: Update cached slot info in 0.000 seconds
+SaveData: sSaveDataAsynCallback finished in 0.010 seconds
+Allocator AssetMemory: Creating new region at [0x0000000400000000:0x0000000440000000]
+Suspend show(0) center(1)

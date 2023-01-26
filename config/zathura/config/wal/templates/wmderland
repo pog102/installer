@@ -1,0 +1,2 @@
+set focused_color = {color2}
+set unfocused_color = {color4.strip}

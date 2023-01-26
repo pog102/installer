@@ -1,0 +1,2 @@
+2022-12-20 15:05:07.436 [info] [perf] Render performance baseline is 35ms
+2022-12-20 15:05:14.483 [error] Error while registering log channel file:///home/chad/.config/Code%20-%20OSS/logs/20221220T150502/userDataSync.log Timed out while waiting for file to be created

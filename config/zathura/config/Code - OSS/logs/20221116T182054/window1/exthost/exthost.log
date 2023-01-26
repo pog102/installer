@@ -1,0 +1,14 @@
+2022-11-16 18:20:56.734 [info] Extension host with pid 3267 started
+2022-11-16 18:20:56.948 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2022-11-16 18:20:56.949 [info] ExtensionService#_doActivateExtension asvetliakov.vscode-neovim, startup: true, activationEvent: '*'
+2022-11-16 18:20:56.949 [info] ExtensionService#_doActivateExtension dlasagno.wal-theme, startup: true, activationEvent: '*'
+2022-11-16 18:20:56.949 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: true, activationEvent: '*'
+2022-11-16 18:20:57.068 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2022-11-16 18:20:57.069 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2022-11-16 18:20:57.384 [info] Eager extensions activated
+2022-11-16 18:20:57.418 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2022-11-16 18:20:57.418 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2022-11-16 18:20:57.418 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2022-11-16 18:20:57.418 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2022-11-16 18:21:21.534 [info] Extension host terminating: received terminate message from renderer
+2022-11-16 18:21:21.544 [info] Extension host with pid 3267 exiting with code 0

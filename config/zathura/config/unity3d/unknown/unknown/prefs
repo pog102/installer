@@ -1,0 +1,25 @@
+<unity_prefs version_major="1" version_minor="1">
+	<pref name="BlockLoginScreenPopUp" type="int">1</pref>
+	<pref name="LocalChecksum" type="string">eyJkYXRhIjpbeyJGaWxlTmFtZSI6Imdsb2JhbC12MzUiLCJNRDVDaGVja3N1bSI6IlwiMjQxZWE1NmQxNmJlMWM1MzY2ZmM5NzIzMGIxNzFhMTdcIiIsIkVUYWdDaGVja3N1bSI6IlwiMHg4REE5Q0QwRUYxMDQ4RjFcIiJ9LHsiRmlsZU5hbWUiOiJpc2xhbmQtdjM1LWMwLWwwIiwiTUQ1Q2hlY2tzdW0iOiJcIjg1YTg3MzVlY2FlZWMzMTk4OWMyYzEzMzc4MjU5NTQ4XCIiLCJFVGFnQ2hlY2tzdW0iOiJcIjB4OERBOUNEMDE0RDQ1NTA2XCIifSx7IkZpbGVOYW1lIjoiaXNsYW5kLXYzNS1jMC1sMSIsIk1ENUNoZWNrc3VtIjoiXCJiYjhiMGQ4NDIwZmZlMGMxNDI4Mjc5Mjc1MGJmOGI0MlwiIiwiRVRhZ0NoZWNrc3VtIjoiXCIweDhEQTlDRDAxNEQ5Rjk3OFwiIn0seyJGaWxlTmFtZSI6ImlzbGFuZC12MzUtYzAtbDIiLCJNRDVDaGVja3N1bSI6IlwiZjI2NzNlNGZhY2EzNzg0NGYwNzY3ZGI4ZTA1ZGFmMTVcIiIsIkVUYWdDaGVja3N1bSI6IlwiMHg4REE5Q0QwMTRFMDM5RkVcIiJ9LHsiRmlsZU5hbWUiOiJpc2xhbmQtdjM1LWMwLWwzIiwiTUQ1Q2hlY2tzdW0iOiJcIjJhNTI3NzAxNTcxYWZmYTUxNGE2NjFiYmQyZTAzNGZjXCIiLCJFVGFnQ2hlY2tzdW0iOiJcIjB4OERBOUNEMDE0RTYyQzg3XCIifSx7IkZpbGVOYW1lIjoiaXNsYW5kLXYzNS1jMC1sNCIsIk1ENUNoZWNrc3VtIjoiXCI3MDI4NzJjZTMyMDhlMjUwODBkYmJiZTQxYTlhMWQ3MlwiIiwiRVRhZ0NoZWNrc3VtIjoiXCIweDhEQTlDRDA0RTFGNEQ2OVwiIn0seyJGaWxlTmFtZSI6ImlzbGFuZC12MzUtYzEtbDAiLCJNRDVDaGVja3N1bSI6IlwiZjAyODhlOTI0NTQ4MjY5OTc2MjIyNGViZjc2ZWUzMTFcIiIsIkVUYWdDaGVja3N1bSI6IlwiMHg4REE5Q0QwRUYwQTdEODBcIiJ9XX0=</pref>
+	<pref name="PlayfabLoginHide" type="int">3</pref>
+	<pref name="PlayfabLoginShow" type="int">3</pref>
+	<pref name="PlayfabPersistentLogin1" type="int">1</pref>
+	<pref name="PlayfabPersistentLogin2" type="string">Y1FlWnVmVXpqbWgxWTBha2pkbHozdz09</pref>
+	<pref name="PlayfabPersistentLogin3" type="string">TENGcDBNT2pqQkNwVDFxUlU2Tjh0QjV6dkRmWm1QcWRMVmRYb2FIaFJ3ND0=</pref>
+	<pref name="PlayfabPersistentLogin4" type="string">UGppdVJKdUtrTW9kdytpOHpYRElOZz09</pref>
+	<pref name="PlayfabPersistentType" type="string">SWVLNWFueUxNMzFsT0wzRTJmdThEQT09</pref>
+	<pref name="PlayfabUserLicense" type="int">0</pref>
+	<pref name="SaveTimeStamp" type="string">MjAyMi0wOS0yMlQxOTozMDozNw==</pref>
+	<pref name="Screenmanager Fullscreen mode" type="int">1</pref>
+	<pref name="Screenmanager Fullscreen mode Default" type="int">1</pref>
+	<pref name="Screenmanager Resolution Height" type="int">1080</pref>
+	<pref name="Screenmanager Resolution Height Default" type="int">1080</pref>
+	<pref name="Screenmanager Resolution Use Native" type="int">1</pref>
+	<pref name="Screenmanager Resolution Use Native Default" type="int">1</pref>
+	<pref name="Screenmanager Resolution Width" type="int">1920</pref>
+	<pref name="Screenmanager Resolution Width Default" type="int">1920</pref>
+	<pref name="UnitySelectMonitor" type="int">0</pref>
+	<pref name="unity.cloud_userid" type="string">ZWQ2MjJhOWM5M2M3ODMxZTZiMjEzNWUwNTM0MmQ4Yzk=</pref>
+	<pref name="unity.player_session_count" type="string">MQ==</pref>
+	<pref name="unity.player_sessionid" type="string">NTg4Njk2MjY0NTA4MzU5MzIxOQ==</pref>
+</unity_prefs>

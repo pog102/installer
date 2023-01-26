@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+rsync --progress -r ~/.bin/* ~/installer/bin/
+rsync --progress -r ~/.config/* ~/installer/config/
+
+rsync --progress -r ~/scripts/* ~/installer/scripts/
+
+rsync --progress -r ~/Pictures/* ~/installer/Pictures/
+
+rsync --progress -r  ~/.local/share/icons/custom/* ~/installer/icons/
+cp ~/.zprofile ~/installer/zprofile
+cp ~/.xinitrc ~/installer/xinitrc
+cp ~/.xprofile ~/installer/xprofile
+
+

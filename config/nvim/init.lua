@@ -26,6 +26,7 @@ require('packer').startup(function(use)
   }
   use { 'AlphaTechnolog/pywal.nvim'}
 use { 'CRAG666/code_runner.nvim' }
+  use 'tpope/vim-surround'
   require('code_runner').setup({
   -- put here the commands by filetype
   filetype = {
@@ -48,7 +49,30 @@ use { 'CRAG666/code_runner.nvim' }
       pcall(require('nvim-treesitter.install').update { with_sync = true })
     end,
   }
+use { 'otavioschwanck/cool-substitute.nvim'}
 
+require'cool-substitute'.setup({
+  setup_keybindings = true,
+  -- mappings = {
+  --   start = 'gm', -- Mark word / region
+  --   start_and_edit = 'gM', -- Mark word / region and also edit
+  --   start_and_edit_word = 'g!M', -- Mark word / region and also edit.  Edit only full word.
+  --   start_word = 'g!m', -- Mark word / region. Edit only full word
+  --   apply_substitute_and_next = 'M', -- Start substitution / Go to next substitution
+  --   apply_substitute_and_prev = '<C-b>', -- same as M but backwards
+  --   apply_substitute_all = 'ga', -- Substitute all
+  --   force_terminate_substitute = 'g!!', -- Terminate macro (if some bug happens)
+  --   terminate_substitute = '<esc>', -- Terminate macro
+  --   skip_substitute = '<cr>', -- Skip this occurrence
+  --   goto_next = '<C-j>', -- Go to next occurence
+  --   goto_previous = '<C-k>', -- Go to previous occurrence
+  -- },
+  -- reg_char = 'o', -- letter to save macro (Dont use number or uppercase here)
+  -- mark_char = 't', -- mark the position at start of macro
+  -- writing_substitution_color = "#ECBE7B", -- for status line
+  -- applying_substitution_color = "#98be65", -- for status line
+  -- edit_word_when_starting_with_substitute_key = true -- (press M to mark and edit when not executing anything anything)
+})
   use { -- Additional text objects via treesitter
     'nvim-treesitter/nvim-treesitter-textobjects',
     after = 'nvim-treesitter',
@@ -203,7 +227,7 @@ vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = tr
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 
-vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
+-- vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
 vim.keymap.set('n', 'r', ':RunFile<CR>', { noremap = true, silent = false })
 vim.keymap.set('n', '<leader>rp', ':RunProject<CR>', { noremap = true, silent = false })
 vim.keymap.set('n', 'c', ':RunClose<CR>', { noremap = true, silent = false })
@@ -222,6 +246,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 -- Set lualine as statusline
 -- See `:help lualine.txt`
+
 require('lualine').setup {
   options = {
     icons_enabled = true,
@@ -230,6 +255,11 @@ require('lualine').setup {
     section_separators = '',
   },
 }
+
+-- {
+--   require('cool-substitute.status').status_with_icons,
+--   color = function() return { fg = require('cool-substitute.status').status_color() } end
+-- }
 
 -- Enable Comment.nvim
 require('Comment').setup()
@@ -282,6 +312,7 @@ vim.keymap.set('n', '<leader>/', function()
 end, { desc = '[/] Fuzzily search in current buffer]' })
 
 vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
+-- vim.keymap.set('n', '<C-k>', 'yss)')
 vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc = '[S]earch [H]elp' })
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })

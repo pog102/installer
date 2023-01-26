@@ -1,0 +1,9 @@
+2022-11-16 18:22:01.308 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/chad/Downloads/gradiento_paaiskinimas(1).py","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2022-11-16 18:22:04.758 [info] [perf] Render performance baseline is 31ms
+2022-11-16 18:22:11.937 [error] Error while registering log channel file:///home/chad/.config/Code%20-%20OSS/logs/20221116T182200/userDataSync.log Timed out while waiting for file to be created
+2022-11-16 19:38:32.926 [error] Unable to read file '/home/chad/Downloads/uni.py' (Error: File not modified since): Error: Unable to read file '/home/chad/Downloads/uni.py' (Error: File not modified since)
+    at d.doReadFileStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:609:20492)
+    at async v.doRead (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2785:42856)
+    at async v.readStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2785:42531)
+    at async Ar.resolveFromFile (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2774:68196)
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2785:37035

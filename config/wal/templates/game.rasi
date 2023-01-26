@@ -5,8 +5,8 @@ configuration {{
 * {{
     background-color:               transparent;
     background:                     {background};
-    /* background-transparent:         {background}A0; */
-    background-transparent:         {background};
+    background-transparent:         {background}D9;
+    /* background-transparent:         {background}; */
     text-color:                     {foreground};
     primary:                        {color1};
     secondary:                      {color2};

@@ -1,0 +1,58 @@
+[12/27/2022, 5:13:34 PM] /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary --version
+legendary version "0.20.31", codename "Dark Energy (hotfix #5)"
+[12/27/2022, 5:13:35 PM] /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+[cli] INFO: Logging in...
+[Core] INFO: Logging in...
+[cli] INFO: Getting game list... (this may take a while)
+[Core] INFO: Fetching metadata for 1 app(s).
+[12/27/2022, 5:13:37 PM] /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary eos-overlay info --prefix "/home/chad/Games/Heroic/Prefixes/Death Stranding/pfx"
+[cli] INFO: Using prefix "/home/chad/Games/Heroic/Prefixes/Death Stranding/pfx"
+[cli] INFO: No Legendary-managed installation found.
+[cli] INFO: Found available Overlay installations in:
+[cli] INFO: Overlay enabled: No
+[cli] INFO: Enabled Overlay path: None
+[cli] INFO: No enabled Vulkan layers.
+
+Available games:
+ * Bloons TD 6 (App name: 7786b355a13b47a6b3915335117cd0b2 | Version: 34.3.6116)
+ * Control (App name: Calluna | Version: 01.13)
+ * DAEMON X MACHINA (App name: f4f0d39fbb4640e0be62aa91d9eca87d | Version: 1.0.6)
+ * Death Stranding (App name: Boga | Version: 2742586.206.1)
+ * Death Stranding Content (App name: 5bf67f3153364181b54cb9e40ca7fa82 | Version: 1.01)
+  + DEATH STRANDING DIGITAL SOUNDTRACK (App name: 84067e3ec8f149b2bbf2342d7a136065 | Version: 1.02)
+  + HD Wallpaper (App name: f8bf1e29bbef480a9b28115ad0d644a0 | Version: 1.02)
+  + SELECTIONS OF TITAN ART BOOK (App name: c311b22f878749449886949eeb588999 | Version: 1.01)
+ * DOOM 64 (App name: 5b60142e120c4f2d88027595c21d4a04 | Version: 2124)
+ * Evoland Legendary Edition (App name: 530f09c9ac834a7bbc98056c69b44471 | Version: 1.0.0)
+ * Fallout 3: Game of the Year Edition (App name: adeae8bbfc94427db57c7dfecce3f1d4 | Version: 1.11)
+ * Maneater (App name: Turtle | Version: 43151315)
+ * Nioh: The Complete Edition (App name: b5e42b0dc2f544a5bbb4080a433b8b71 | Version: Ver1.24.08.57450)
+ * Ring of Pain (App name: 130285de16cc429abc603eaf95b8787b | Version: v1.5.03)
+ * Rise of the Tomb Raider: 20 Year Celebration (App name: f7cc1c999ac146f39b356f53e3489514 | Version: TR2_30112021_1027.0_1224023_303770_132827583431143041_)
+ * Rising Hell (App name: b7c6482e93cb4cd3a31d8e758c394e19 | Version: 1.2.0d)
+ * Rogue Legacy (App name: 01f1e8046e9e433db190a611a0411579 | Version: 1.4.1e_0)
+ * Shadow of the Tomb Raider: Definitive Edition (App name: 890d9cf396d04922a1559333df419fed | Version: TR11_30092022_488.0_1226981_740629_133090413724944985_)
+ * Sonic Mania (App name: 818447bb519b46d48d365d5753362796 | Version: 1.07.0035)
+ * Spirit of the North (App name: d2d941e5c1ec44ae9e87e9e7cdddf1dd | Version: 4.00.0)
+ * Star Wars Squadrons (App name: bobcat | Version: None)
+  - This game has to be activated, installed, and launched via Origin, use "legendary launch --origin bobcat" to activate and/or run the game.
+ * Submerged Hidden Depths (App name: 2fb0eae795104757977dfe8f93b5e593 | Version: 1.0.0.3)
+ * The Captain (App name: f00b5acabb0f49a7b49e8350d1cd0de0 | Version: 1.1.2_win)
+ * Tomb Raider GAME OF THE YEAR EDITION (App name: d6264d56f5ba434e91d4b0a0b056c83a | Version: TRAS_15112021_838.0_1224060,275025(132814434654404397))
+ * Unrailed (App name: 76233c0af0a441c7bd541e7d7ab3cde1 | Version: 2.0-2142376e6_2)
+ * Wonder Boy The Dragons Trap (App name: 4c30fe9841264abfb120b581d061a8fd | Version: sub0624-20220216-1.03g)
+
+Total: 23
+[12/27/2022, 5:14:10 PM] STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/chad/.steam/steam STEAM_COMPAT_DATA_PATH="/home/chad/Games/Heroic/Prefixes/Death Stranding" DXVK_HUD=fps PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-0 PROTON_LOG_DIR=/home/chad /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary sync-saves Boga --skip-upload --skip-download --accept-path
+[Core] INFO: Trying to re-use existing login session...
+[cli] INFO: Got 2 remote save game(s)
+[cli] INFO: Checking "Death Stranding" (Boga)
+[cli] INFO: Computed save path: "/home/chad/Games/Heroic/Prefixes/Death Stranding/pfx/drive_c/users/steamuser/AppData/LocalLow/KojimaProductions/DeathStranding/e474a8f921154164b1944f213a994b24"
+[cli] INFO: Local save for "Death Stranding" is newer
+[cli] INFO: - Cloud save date: N/A
+[cli] INFO: - Local save date: 2022-12-25 19:00:30
+[cli] INFO: Save game uploading is disabled, skipping...
+[12/27/2022, 5:14:33 PM] /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary uninstall Boga -y
+[cli] INFO: Removing "Death Stranding" from "/home/chad/Games/Heroic/DeathStranding"...
+[LFS Utils] ERROR: Removing game directory failed with OSError(39, 'Directory not empty')
+[cli] INFO: Game has been uninstalled.

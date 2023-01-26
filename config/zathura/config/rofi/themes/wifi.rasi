@@ -1,0 +1,101 @@
+/*******************************************************************************
+ * ROFI SQUARED THEME USING THE EVERFOREST PALETTE
+ * User                 : LR-Tech
+ * Theme Repo           : https://github.com/lr-tech/rofi-themes-collection
+ *******************************************************************************/
+ configuration {
+         modi:                           "drun";
+         drun-display-format:            "{name}";
+         sidebar-mode:                   false;
+ }
+
+@theme "~/.cache/wal/color.rasi"
+* {
+    font:   "Roboto 9";
+   display-dmenu:                   "Song";
+        dmenu-display-format:            "{name}";
+
+
+    accent-color:     @bg5;
+    urgent-color:     @trans;
+
+    background-color:   @bg5;
+    text-color:         @fg;
+
+}
+
+window {
+    width:      150;
+    x-offset:   230;
+    y-offset:   32;
+    background-color:   @trans;
+location:	 northwest;
+anchor:		 northwest;
+//height:		 50%;
+//width:		 18%;
+orientation:     horizontal;
+
+}
+
+inputbar {
+    spacing:    8px;
+    padding:    8px;
+
+    background-color:   @bg5;
+}
+
+prompt, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+prompt {
+    text-color: @bg15;
+}
+
+textbox {
+    padding:            8px;
+    //background-color:   @bg14;
+    background-color:   @bg14;
+}
+
+listview {
+    padding:    1px 0;
+    lines:      8;
+    columns:    1;
+
+    fixed-height:   false;
+}
+
+element {
+    padding:    7px;
+    spacing:    7px;
+}
+
+element normal normal {
+    text-color: @fg;
+}
+
+element normal urgent {
+    text-color: @urgent-color;
+}
+
+element normal active {
+    text-color: @accent-color;
+}
+
+element selected {
+    text-color: @trans;
+}
+
+element selected normal, element selected active {
+    background-color:   @accent-color;
+}
+
+element selected urgent {
+    background-color:   @urgent-color;
+}
+
+
+element-text {
+    text-color: inherit;
+}

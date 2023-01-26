@@ -1,0 +1,31 @@
+# vim: filetype=muttrc
+
+source ~/.config/neomutt/settings
+source ~/.config/neomutt/style
+source ~/.config/neomutt/mappings
+#source ~/.config/neomutt/mailcap
+
+# Accounts
+set ssl_starttls=yes
+
+set ssl_force_tls=yes
+
+set imap_user = 'erndam1@ktu.lt'
+set imap_pass = 'ernest.D18'
+set from= $imap_user
+set use_from=yes
+set realname='Ernestas'
+set folder = imaps://imap-mail.outlook.com:993
+set folder = "~/Mail/ernesto"
+set mail_check = 100
+set header_cache = ~/.cache/mutt
+set message_cachedir = ~/.cache/mutt
+set certificate_file = "~/.mutt/certificates"
+set smtp_url = "smtp://$imap_user@smtp-mail.outlook.com:587"
+set smtp_pass = $imap_pass
+set move = no
+set imap_keepalive = 900
+set spoolfile = "+INBOX"
+set record="+Sent"
+set postponed="+[hotmail]/Drafts"
+set sort = 'reverse-date'

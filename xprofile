@@ -1,5 +1,5 @@
 wal -R
-mpd &
+~/.bin/mpd &
 #transmission-daemon &
 unclutter &
 ~/.bin/autom

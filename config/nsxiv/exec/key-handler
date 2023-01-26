@@ -7,7 +7,9 @@ do
 
     color=$(sed '5!d' ~/.cache/wal/colors)
     for i in $HOME/.local/share/icons/custom/*; do
-    convert $i -fill "$color" -colorize 100 $i
+    # convert $i -fill "$color" -colorize 100 $i
+    #
+    sed -i "s/fill=\".*\"/fill=\"$color\"/g" "$i"
     done
     pkill dunst && dunst &
         ;;

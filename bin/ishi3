@@ -1,6 +1,6 @@
 #!/bin/sh
 pgrep -x transmission-daemon > /dev/null || transmission-daemon
-[ -d "/run/media/$USER/4C99-6202/" ] && download_dir="/run/media/$USER/4C99-6202/" || download_dir="/home/chad/anime/" #download directory
+download_dir="$HOME/anime" #download directory
 ani_folder=$HOME/.config/nyaa #folder ##change here
 
 ani_list="$ani_folder/config2" #anime list
@@ -50,7 +50,6 @@ do
       else
         echo -e "$anime_entry #$next_ep" >> $progress #adds a new anime entry to progress
       fi
-      [ "$(($next_ep - $current_ep))" -ne "0" ] && notify-send -t 1900 "$anime_entry" "$(($next_ep-$current_ep)) episodes found" #notifies new episodes
       [ "$total_ep" -eq "$next_ep" ] && sed -i "s/$anime_entry.*//g; /^$/d" "$ani_list" #removes anime entry from the list
     fi
 done

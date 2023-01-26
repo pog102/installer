@@ -1,10 +1,13 @@
 
 [global]
-     font = Monospace 13
-     corner_radius = 0
+     font = Fira Code 11
+     corner_radius = 16
     # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
-    geometry = "0x0-30+20"
+    #geometry = "0x0-30+20"
     shrink = yes
+    width = 320
+    #width = 0
+    #scale = 0
     # Show multiple notifications in the same box
     separator_height = 1
     # Sort messages by urgency.
@@ -19,25 +22,34 @@
 
     # The frame color and width of the notification
     frame_color = "{color4}"
-    frame_width = 2
+    frame_width = 0
 
     # How long a user needs to be idle for sticky notifications
     idle_threshold = 120
 
+    browser = /usr/bin/xdg-open
+    mouse_left_click = open_url, close_current
     # Font and typography settings
     alignment = left
     icons_position = Left
-    min_icon = 0
-    max_icon = 32
+    max_icon_size = 77
+    #icon_size = 33
     icon_path = /home/chad/.local/share/icons/custom/
     word_wrap = yes
+    ellipsize = end
     origin = top-center
-    highlight="{color4}"
     # Markup is allowed
     format = "<b>%s</b>\n%b"
+    #format = "%i%s %b"
     # Allow some HTML tags like <i> and <u> in notifications
     markup = full
+	#bar 
+    progress_bar_frame_width = 1
+    #frame_color = "{color4}"
 
+    highlight="{color4}"
+    progress_bar_corner_radius = 20
+    progress_bar_max_corner_radius = 40
    # transparency = 30
 [shortcuts]
     close = ctrl+space
@@ -45,10 +57,12 @@
     history = ctrl+grave
 [urgency_low]
     background ="{background}"
-    foreground ="{color4}"
+    #foreground ="{color4}"
+    foreground ="{foreground}"
 [urgency_normal]
     background = "{background}"
-    foreground = "{color4}"
+    #foreground ="{color4}"
+    foreground = "{foreground}"
 
 [urgency_critical]
     background = "{background}"

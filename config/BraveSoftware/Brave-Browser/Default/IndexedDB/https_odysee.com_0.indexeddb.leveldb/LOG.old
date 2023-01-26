@@ -1,0 +1,6 @@
+2023/01/23-14:54:48.051 52cf Creating DB /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_odysee.com_0.indexeddb.leveldb since it was missing.
+2023/01/23-14:54:48.053 52cf Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_odysee.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/23-14:54:48.075 5777 Level-0 table #5: started
+2023/01/23-14:54:48.076 5777 Level-0 table #5: 685 bytes OK
+2023/01/23-14:54:48.077 5777 Delete type=0 #3
+2023/01/23-14:54:48.077 5777 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

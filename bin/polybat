@@ -7,7 +7,7 @@ percent=$(cat "$battery/capacity")  # battery percentage
     status="$(cat "$battery/status")"   # battery status
     if  [ "$percent" -eq 100 ]; then
         icon_battery=" "
-        dunstify "  Full chage" -t 5100 -r 6
+        notify-send -i battery "Battery Charged" "Battery is fully charged" -t 5100 -r 6
     elif [ "$percent" -ge 90 ]; then
         icon_battery=" "
     elif [ "$percent" -ge 40 ]; then
@@ -16,7 +16,8 @@ percent=$(cat "$battery/capacity")  # battery percentage
         icon_battery=" "
     else
         icon_battery=" "
-	[ "$status" != "Charging" ] && dunstify " Battery is getting low" -t 5100 -r 6 && sleep 1 && dunstify " Battery is getting low" -t 5100 -r 6
+	# [ "$status" != "Charging" ] && dunstify " Battery is getting low" -t 5100 -r 6 && sleep 1 && dunstify " Battery is getting low" -t 5100 -r 6
+	[ "$status" != "Charging" ] && notify-send -i battery-a "Low Battery" "$percent% of battery remaining" -t 5100 -r 6
     fi
     [ "$status" = "Charging" ] && stat=""
 echo "$stat$icon_battery $percent% "

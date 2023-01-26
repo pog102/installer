@@ -1,0 +1,94 @@
+/*******************************************************************************
+ * ROFI SQUARED THEME USING THE EVERFOREST PALETTE
+ * User                 : LR-Tech
+ * Theme Repo           : https://github.com/lr-tech/rofi-themes-collection
+ *******************************************************************************/
+ configuration {
+         modi:                           "drun";
+         drun-display-format:            "{name}";
+         sidebar-mode:                   false;
+ }
+
+@theme "~/.cache/wal/game.rasi"
+* {
+    font:   "Roboto 12";
+   display-dmenu:                   "Song";
+        dmenu-display-format:            "{name}";
+
+
+    accent-color:     @bg4;
+    urgent-color:     @trans;
+
+    background-color:   transparent;
+    text-color:         @fg;
+
+}
+
+window {
+    width:      750;
+    y-offset:   -20;
+    background-color:   @trans;
+
+}
+
+inputbar {
+    spacing:    8px;
+    padding:    8px;
+
+    background-color:   @bg0;
+}
+
+prompt, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+prompt {
+    text-color: @accent-color;
+}
+
+textbox {
+    padding:            8px;
+    background-color:   @bg0;
+}
+
+listview {
+    padding:    1px 0;
+    lines:      8;
+    columns:    1;
+
+    fixed-height:   false;
+}
+
+element {
+    padding:    7px;
+    spacing:    7px;
+}
+
+element normal normal {
+    text-color: @fg;
+}
+
+element normal urgent {
+    text-color: @urgent-color;
+}
+
+element normal active {
+    text-color: @accent-color;
+}
+
+element selected {
+    text-color: @trans;
+}
+
+element selected normal, element selected active {
+    background-color:   @accent-color;
+}
+
+element selected urgent {
+    background-color:   @urgent-color;
+}
+
+
+element-text {
+    text-color: inherit;
+}

@@ -1,0 +1,778 @@
+Starting OmniSharp server at 11/9/2022, 8:17:07 PM
+    Target: /home/chad/Csharp/U4/lab
+
+OmniSharp server started with .NET 6.0.110
+.
+    Path: /home/chad/.vscode-oss/extensions/muhammad-sammy.csharp-1.25.0-universal/.omnisharp/1.39.0-net6.0/OmniSharp.dll
+    PID: 6005
+
+[info]: OmniSharp.Stdio.Host
+        Starting OmniSharp on Unknown 0.0 (Unknown)
+[info]: OmniSharp.Services.DotNetCliService
+        Checking the 'DOTNET_ROOT' environment variable to find a .NET SDK
+[info]: OmniSharp.Services.DotNetCliService
+        DotNetPath set to /usr/share/dotnet/dotnet
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Located 1 MSBuild instance(s)
+            1: .NET Core SDK 6.0.110 17.0.1 - "/usr/share/dotnet/sdk/6.0.110/"
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Registered MSBuild instance: .NET Core SDK 6.0.110 17.0.1 - "/usr/share/dotnet/sdk/6.0.110/"
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.CSharpFormattingWorkspaceOptionsProvider, Order: 0
+[info]: OmniSharp.MSBuild.ProjectSystem
+        No solution files found in '/home/chad/Csharp/U4/lab'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/chad/Csharp/U4/lab/lab.csproj'
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Detecting CSX files in '/home/chad/Csharp/U4/lab'.
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Did not find any CSX files
+[info]: OmniSharp.WorkspaceInitializer
+        Configuration finished.
+[info]: OmniSharp.Stdio.Host
+        Omnisharp server running using Stdio at location '/home/chad/Csharp/U4/lab' on host 5879.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/chad/Csharp/U4/lab/lab.csproj
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No document found. File: /home/chad/Csharp/U4/lab/Program.cs.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/chad/Csharp/U4/lab/lab.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/chad/Csharp/U4/lab/lab.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: lab
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 29, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 30, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 31, Column: 16.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 43, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 31, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 30, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 29, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 19, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 18, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 17, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 17, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 18, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 19, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 29, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 30, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 31, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 43, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 44, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 45, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 46, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 47, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 48, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 49, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 50, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 51, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 52, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 52, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 51, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 50, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 49, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 48, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 47, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 46, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 45, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 44, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 43, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 43, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 44, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 45, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 46, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 47, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 48, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 49, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 50, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 51, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 52, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 64, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 65, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 66, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 67, Column: 16.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 67, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 66, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 65, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 64, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 64, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 65, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 66, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 67, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 74, Column: 16.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 74, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 74, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 79, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 83, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 83, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 79, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 52, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 51, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 50, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 49, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 48, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 47, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 46, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 45, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 44, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 43, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 31, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 30, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 29, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 19, Column: 17.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 18, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 17, Column: 16.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 18, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 19, Column: 17.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 43.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 48.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 49.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 50.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 49.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 48.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 49.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 48.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 43.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 43.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 23, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 22, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 23, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 43.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 43.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 48.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 49.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 50.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 51.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 52.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 53.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 54.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 55.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 56.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 57.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 58.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 59.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 60.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 59.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 58.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 57.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 57.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 57.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 57.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 57.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 56.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 55.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 54.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 53.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 52.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 51.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 50.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 49.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 48.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 43.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 43.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 48.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 49.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 50.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 51.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 52.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 53.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 54.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 55.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 56.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 57.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 58.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 59.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 60.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 61.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 62.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 63.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 64.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 65.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 66.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 67.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 68.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 69.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 70.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 71.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 39, Column: 31.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 43, Column: 20.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 44, Column: 36.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 45, Column: 21.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 46, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 47, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 50, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 64, Column: 20.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 65, Column: 31.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 66, Column: 21.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 67, Column: 30.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 77, Column: 20.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 79, Column: 21.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 80, Column: 30.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 80, Column: 30.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 79, Column: 21.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 77, Column: 20.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 67, Column: 30.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 66, Column: 21.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 67, Column: 30.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 77, Column: 20.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 79, Column: 21.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 80, Column: 30.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 80, Column: 30.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 79, Column: 21.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 77, Column: 20.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 52.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 51.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 50.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 49.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 48.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 43.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 80, Column: 30.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 27.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 77, Column: 20.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 27.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 80, Column: 27.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 89, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 89, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 93, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 93, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 97, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 97, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 89, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 81, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 81, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 12.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 20.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 24.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 32.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 96, Column: 52.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 105, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 107, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 105, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 96, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 65, Column: 32.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 50, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 47, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 46, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 44, Column: 37.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 30, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 27, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 26, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 25, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 24, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 23, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 22, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 18, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 8, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 7, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 6, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 5, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 4, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 3, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 2, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 1, Column: 10.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 11, Column: 0.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 13, Column: 0.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 15, Column: 0.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 48, Column: 13.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 48, Column: 19.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 65, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 67, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 80, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 80, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 67, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 65, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 44, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 44, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 44, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 44, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 44, Column: 29.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 46, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 47, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 49, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 50, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 51, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 65, Column: 32.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 71, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 96, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 96, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 55.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 78, Column: 55.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 87, Column: 52.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 96, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 105, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 105, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 105, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 109, Column: 53.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/chad/Csharp/U4/lab/Program.cs, Line: 119, Column: 42.

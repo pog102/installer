@@ -1,0 +1,158 @@
+{
+	"5b60142e120c4f2d88027595c21d4a04": {
+		"game": {
+			"app_name": "5b60142e120c4f2d88027595c21d4a04",
+			"title": "DOOM 64",
+			"version": "2124",
+			"platform_versions": {
+				"Windows": "2124"
+			},
+			"cloud_saves_supported": true,
+			"cloud_save_folder": "{UserSavedGames}/Nightdive Studios/DOOM 64/saves/",
+			"cloud_save_folder_mac": null,
+			"is_dlc": false,
+			"external_activation": null,
+			"launch_options": [],
+			"owned_dlc": []
+		},
+		"install": null,
+		"manifest": {
+			"size": 6901,
+			"type": "binary",
+			"version": 17,
+			"feature_level": 17,
+			"app_name": "ed6f37e497f6469183526b9735e909b7",
+			"launch_exe": "DOOM64_x64.exe",
+			"launch_command": "",
+			"build_version": "2124",
+			"build_id": "aMaveKw8UEZYSsgW2L2rT_DICZY",
+			"prerequisites": null,
+			"install_tags": [
+				""
+			],
+			"num_files": 13,
+			"num_chunks": 115,
+			"disk_size": 120291379,
+			"download_size": 95346616,
+			"tag_disk_size": [],
+			"tag_download_size": []
+		}
+	},
+	"Boga": {
+		"game": {
+			"app_name": "Boga",
+			"title": "Death Stranding",
+			"version": "2742586.206.1",
+			"platform_versions": {
+				"Windows": "2742586.206.1"
+			},
+			"cloud_saves_supported": true,
+			"cloud_save_folder": "{appdata}/../locallow/KojimaProductions/DeathStranding/{EpicID}/",
+			"cloud_save_folder_mac": null,
+			"is_dlc": false,
+			"external_activation": null,
+			"launch_options": [],
+			"owned_dlc": []
+		},
+		"install": null,
+		"manifest": {
+			"size": 4078820,
+			"type": "binary",
+			"version": 17,
+			"feature_level": 17,
+			"app_name": "BogaStaging",
+			"launch_exe": "DeathStranding.exe",
+			"launch_command": "",
+			"build_version": "2742586.206.1",
+			"build_id": "x-liw6wi1TclbwnjFc6eowFXl-c",
+			"prerequisites": null,
+			"install_tags": [
+				""
+			],
+			"num_files": 139,
+			"num_chunks": 64579,
+			"disk_size": 67714328673,
+			"download_size": 67622423084,
+			"tag_disk_size": [],
+			"tag_download_size": []
+		}
+	},
+	"4c30fe9841264abfb120b581d061a8fd": {
+		"game": {
+			"app_name": "4c30fe9841264abfb120b581d061a8fd",
+			"title": "Wonder Boy The Dragons Trap",
+			"version": "sub0624-20220216-1.03g",
+			"platform_versions": {
+				"Windows": "sub0624-20220216-1.03g"
+			},
+			"cloud_saves_supported": false,
+			"cloud_save_folder": null,
+			"cloud_save_folder_mac": null,
+			"is_dlc": false,
+			"external_activation": null,
+			"launch_options": [],
+			"owned_dlc": []
+		},
+		"install": null,
+		"manifest": {
+			"size": 140837,
+			"type": "binary",
+			"version": 17,
+			"feature_level": 17,
+			"app_name": "4c30fe9841264abfb120b581d061a8fd",
+			"launch_exe": "wonderboy.cmd",
+			"launch_command": "",
+			"build_version": "sub0624-20220216-1.03g",
+			"build_id": "W1MEU0x83r_bt4-8huvel0fgqUo",
+			"prerequisites": null,
+			"install_tags": [
+				""
+			],
+			"num_files": 2017,
+			"num_chunks": 1016,
+			"disk_size": 1065152066,
+			"download_size": 1001019601,
+			"tag_disk_size": [],
+			"tag_download_size": []
+		}
+	},
+	"b5e42b0dc2f544a5bbb4080a433b8b71": {
+		"game": {
+			"app_name": "b5e42b0dc2f544a5bbb4080a433b8b71",
+			"title": "Nioh: The Complete Edition",
+			"version": "Ver1.24.08.57450",
+			"platform_versions": {
+				"Windows": "Ver1.24.08.57450"
+			},
+			"cloud_saves_supported": true,
+			"cloud_save_folder": "{UserDir}/KoeiTecmo/NIOH/Savedata/{EpicID}/",
+			"cloud_save_folder_mac": null,
+			"is_dlc": false,
+			"external_activation": null,
+			"launch_options": [],
+			"owned_dlc": []
+		},
+		"install": null,
+		"manifest": {
+			"size": 4823582,
+			"type": "binary",
+			"version": 17,
+			"feature_level": 17,
+			"app_name": "9b6429d812dd4300abd63b5ed72e99f8",
+			"launch_exe": "nioh_launcher.exe",
+			"launch_command": " ",
+			"build_version": "Ver1.24.08.57450",
+			"build_id": "5eL1rE56GJiFmuUk81Nw0ey5Fhk",
+			"prerequisites": null,
+			"install_tags": [
+				""
+			],
+			"num_files": 413,
+			"num_chunks": 72855,
+			"disk_size": 79132005373,
+			"download_size": 47107753536,
+			"tag_disk_size": [],
+			"tag_download_size": []
+		}
+	}
+}
