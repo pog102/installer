@@ -18,6 +18,7 @@ sudo pacman --needed --noconfirm -S paru libva gnu-free-fonts \
 i3-gaps ttf-roboto-mono ttf-fira-code ttf-nerd-fonts-symbols-2048-em ttf-sazanami ttf-liberation \
 	rofi dunst python-pywal firefox git lsd rsync ncurses fftw cmake \
 bluez bluez-utils unclutter redshift udiskie udisks2 transmission-cli mpd mpc neovim redshift zsh \
+spotdl \
 mpv feh fzf yt-dlp unclutter nvidia-open-dkms neovim zip unzip zathura-pdf-poppler \
 xorg-server xorg-xinit \
 lua-language-server npm shellcheck \
@@ -59,6 +60,7 @@ mkdir -p $HOME/.local/share/icons/custom/
 mkdir -p $HOME/.local/share/applications/
 mkdir -p $HOME/.themes/wal/gtk-2.0
 sudo mv bin/transadd /usr/local/bin
+sudo mv pacman.conf /etc/
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
 mv moziila/* $HOME/.mozilla
