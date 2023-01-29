@@ -1,3 +1,20 @@
-2023/01/26-17:02:29.349 3 Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
-2023/01/26-17:02:29.350 3 Recovering log #175
-2023/01/26-17:02:29.351 3 Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000175.log 
+2023/01/29-17:06:57.372 3 Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2023/01/29-17:06:57.373 3 Recovering log #248
+2023/01/29-17:06:57.373 3 Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000248.log 
+2023/01/29-18:20:52.110 1d Level-0 table #252: started
+2023/01/29-18:20:52.150 1d Level-0 table #252: 18674 bytes OK
+2023/01/29-18:20:52.152 1d Delete type=0 #248
+2023/01/29-18:31:10.198 1d Level-0 table #254: started
+2023/01/29-18:31:10.211 1d Level-0 table #254: 17015 bytes OK
+2023/01/29-18:31:10.213 1d Delete type=0 #251
+2023/01/29-18:31:10.213 1d Compacting 4@0 + 2@1 files
+2023/01/29-18:31:10.238 1d Generated table #255@0: 542 keys, 2242268 bytes
+2023/01/29-18:31:10.251 1d Generated table #256@0: 678 keys, 1290265 bytes
+2023/01/29-18:31:10.252 1d Compacted 4@0 + 2@1 files => 3532533 bytes
+2023/01/29-18:31:10.253 1d compacted to: files[ 0 2 1 0 0 0 0 ]
+2023/01/29-18:31:10.253 1d Delete type=2 #244
+2023/01/29-18:31:10.253 1d Delete type=2 #243
+2023/01/29-18:31:10.253 1d Delete type=2 #254
+2023/01/29-18:31:10.253 1d Delete type=2 #252
+2023/01/29-18:31:10.253 1d Delete type=2 #247
+2023/01/29-18:31:10.253 1d Delete type=2 #249

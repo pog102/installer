@@ -1,8 +1,8 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 state: pause
-current: 110
-time: 246.071
+current: 120
+time: 251.99200000000002
 random: 0
 repeat: 0
 single: 0
@@ -162,4 +162,22 @@ playlist_begin
 148:System Of A Down - Psycho.mp3
 149:System Of A Down - Aerials.mp3
 150:System Of A Down - Arto.mp3
+151:TOOL - Stinkfist.mp3
+152:TOOL - Eulogy.mp3
+153:TOOL - H..mp3
+154:TOOL - Useful Idiot.mp3
+155:TOOL - Forty Six & 2.mp3
+156:TOOL - Message To Harry Manback.mp3
+157:TOOL - Hooker With A Penis.mp3
+158:TOOL - Intermission.mp3
+159:TOOL - Jimmy.mp3
+160:TOOL - Die Eier von Satan.mp3
+161:TOOL - Pushit.mp3
+162:TOOL - Cesaro Summability.mp3
+163:TOOL - Ænema.mp3
+164:TOOL - (-) Ions.mp3
+165:TOOL - Third Eye.mp3
+166:Celldweller - Good L_ck (Yo_'re F_cked).mp3
+167:Hollywood Undead - Another Way Out.mp3
+168:Mystery Skulls - Ghost.mp3
 playlist_end

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 rsync --progress -r ~/.bin/* ~/installer/bin/
 rsync --progress -r ~/.config/* ~/installer/config/
 

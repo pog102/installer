@@ -74,6 +74,12 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["ChatGPT.nvim"] = {
+    config = { "\27LJ\2\nÍ\a\0\0\6\0 \0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\4\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\0025\3\r\0005\4\n\0005\5\v\0=\5\f\4=\4\14\3=\3\15\0025\3\16\0005\4\17\0005\5\18\0=\5\f\4=\4\14\3=\3\19\0025\3\20\0005\4\21\0005\5\22\0=\5\f\4=\4\14\3=\3\23\0025\3\24\0=\3\25\0025\3\26\0=\3\27\0025\3\29\0005\4\28\0=\4\30\3=\3\31\2B\0\2\1K\0\1\0\fkeymaps\nclose\1\0\6\14scroll_up\n<C-u>\16new_session\n<C-n>\14yank_last\n<C-y>\18cycle_windows\n<Tab>\20toggle_settings\n<C-o>\16scroll_down\n<C-d>\1\3\0\0\n<C-c>\n<Esc>\23openai_edit_params\1\0\4\6n\3\1\ntop_p\3\1\16temperature\3\0\nmodel\26code-davinci-edit-001\18openai_params\1\0\a\6n\3\1\ntop_p\3\1\16temperature\3\0\15max_tokens\3¬\2\21presence_penalty\3\0\22frequency_penalty\3\0\nmodel\21text-davinci-003\15chat_input\1\0\2\btop\r Prompt \14top_align\vcenter\1\0\2\14highlight\16FloatBorder\nstyle\frounded\1\0\1\vprompt\n ï†’ \16chat_window\1\0\1\btop\14 ChatGPT \1\0\2\14highlight\16FloatBorder\nstyle\frounded\1\0\1\rfiletype\fchatgpt\20settings_window\vborder\1\0\0\ttext\1\0\1\btop\15 Settings \1\0\1\nstyle\frounded\16chat_layout\tsize\1\0\2\nwidth\b80%\vheight\b80%\1\0\2\rrelative\veditor\rposition\b50%\20welcome_message\20WELCOME_MESSAGE\1\0\5\18yank_register\6+\20max_line_length\3x\16answer_sign\bï®§\18question_sign\bï€‡\17loading_text\floading\nsetup\fchatgpt\frequire\0" },
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/ChatGPT.nvim",
+    url = "https://github.com/jackMort/ChatGPT.nvim"
+  },
   ["Comment.nvim"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/Comment.nvim",
@@ -99,10 +105,10 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["code_runner.nvim"] = {
+  ["cool-substitute.nvim"] = {
     loaded = true,
-    path = "/home/chad/.local/share/nvim/site/pack/packer/start/code_runner.nvim",
-    url = "https://github.com/CRAG666/code_runner.nvim"
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/cool-substitute.nvim",
+    url = "https://github.com/otavioschwanck/cool-substitute.nvim"
   },
   ["fidget.nvim"] = {
     loaded = true,
@@ -129,6 +135,11 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/knife.nvim",
     url = "https://github.com/cranberry-clockworks/knife.nvim"
   },
+  ["lspkind.nvim"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
+    url = "https://github.com/onsails/lspkind.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -148,6 +159,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -244,6 +260,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for twilight.nvim]], true)
 try_loadstring("\27LJ\2\n²\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\fdimming\1\0\2\fcontext\3\r\15treesitter\2\ncolor\1\3\0\0\vNormal\f#ffffff\1\0\3\nalpha\4Í™³æ\fÌ™óþ\3\fterm_bg\f#000000\rinactive\1\nsetup\rtwilight\frequire\0", "config", "twilight.nvim")
 time([[Config for twilight.nvim]], false)
+-- Config for: ChatGPT.nvim
+time([[Config for ChatGPT.nvim]], true)
+try_loadstring("\27LJ\2\nÍ\a\0\0\6\0 \0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\4\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\0025\3\r\0005\4\n\0005\5\v\0=\5\f\4=\4\14\3=\3\15\0025\3\16\0005\4\17\0005\5\18\0=\5\f\4=\4\14\3=\3\19\0025\3\20\0005\4\21\0005\5\22\0=\5\f\4=\4\14\3=\3\23\0025\3\24\0=\3\25\0025\3\26\0=\3\27\0025\3\29\0005\4\28\0=\4\30\3=\3\31\2B\0\2\1K\0\1\0\fkeymaps\nclose\1\0\6\14scroll_up\n<C-u>\16new_session\n<C-n>\14yank_last\n<C-y>\18cycle_windows\n<Tab>\20toggle_settings\n<C-o>\16scroll_down\n<C-d>\1\3\0\0\n<C-c>\n<Esc>\23openai_edit_params\1\0\4\6n\3\1\ntop_p\3\1\16temperature\3\0\nmodel\26code-davinci-edit-001\18openai_params\1\0\a\6n\3\1\ntop_p\3\1\16temperature\3\0\15max_tokens\3¬\2\21presence_penalty\3\0\22frequency_penalty\3\0\nmodel\21text-davinci-003\15chat_input\1\0\2\btop\r Prompt \14top_align\vcenter\1\0\2\14highlight\16FloatBorder\nstyle\frounded\1\0\1\vprompt\n ï†’ \16chat_window\1\0\1\btop\14 ChatGPT \1\0\2\14highlight\16FloatBorder\nstyle\frounded\1\0\1\rfiletype\fchatgpt\20settings_window\vborder\1\0\0\ttext\1\0\1\btop\15 Settings \1\0\1\nstyle\frounded\16chat_layout\tsize\1\0\2\nwidth\b80%\vheight\b80%\1\0\2\rrelative\veditor\rposition\b50%\20welcome_message\20WELCOME_MESSAGE\1\0\5\18yank_register\6+\20max_line_length\3x\16answer_sign\bï®§\18question_sign\bï€‡\17loading_text\floading\nsetup\fchatgpt\frequire\0", "config", "ChatGPT.nvim")
+time([[Config for ChatGPT.nvim]], false)
 -- Config for: startup.nvim
 time([[Config for startup.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fstartup\frequire\0", "config", "startup.nvim")

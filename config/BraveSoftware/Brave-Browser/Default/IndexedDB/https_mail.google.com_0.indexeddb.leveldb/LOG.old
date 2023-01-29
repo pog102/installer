@@ -1,7 +1,6 @@
-2023/01/25-14:44:20.327 2ac3 Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/01/25-14:44:20.327 2ac3 Recovering log #50
-2023/01/25-14:44:20.328 2ac3 Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000050.log 
-2023/01/25-14:44:33.632 2ac6 Compacting 1@1 + 1@2 files
-2023/01/25-14:44:33.645 2ac6 Generated table #53@1: 181 keys, 278004 bytes
-2023/01/25-14:44:33.645 2ac6 Compacted 1@1 + 1@2 files => 278004 bytes
-2023/01/25-14:44:33.645 2ac6 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/01/29-13:39:42.829 ec8 Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/29-13:39:42.829 ec8 Recovering log #59
+2023/01/29-13:39:42.833 ec8 Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000059.log 
+2023/01/29-13:49:45.140 f70 Level-0 table #64: started
+2023/01/29-13:49:45.152 f70 Level-0 table #64: 2214088 bytes OK
+2023/01/29-13:49:45.154 f70 Delete type=0 #59

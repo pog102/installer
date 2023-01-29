@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+spotdl --m3u mylist download 'https://open.spotify.com/playlist/1vxrCesVqAa1Qoxgi1FCQI?si=fe48907b2aff4329'

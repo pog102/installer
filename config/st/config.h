@@ -7,7 +7,8 @@
  */
 static char *font ="Fira Code:pixelsize=18:antialias=true:autohint=true";
 static char *font2[] = {
-"FontAwesome:pixelsize=16:antialias=true:autohint=true",
+	"codicon:pixelsize=16:antialias=true:autohint=true",
+	"FontAwesome:pixelsize=16:antialias=true:autohint=true",
 	"Tinos Bold Nerd Font Complete:pixelsize=16:antialias=true:autohint=true",
 	"Sazanami :pixelsize=16:antialias=true:autohint=true",
 	"JetBrainsMono:pixelsize=18:antialias=true:autohint=true"};

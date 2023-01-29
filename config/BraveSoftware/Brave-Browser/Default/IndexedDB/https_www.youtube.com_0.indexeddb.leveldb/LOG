@@ -1,12 +1,39 @@
-2023/01/24-17:13:07.425 c70 Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/01/24-17:13:07.426 c70 Recovering log #12
-2023/01/24-17:13:07.439 c70 Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000012.log 
-2023/01/24-17:13:10.441 ea3 Level-0 table #17: started
-2023/01/24-17:13:10.450 ea3 Level-0 table #17: 1134253 bytes OK
-2023/01/24-17:13:10.451 ea3 Delete type=0 #12
-2023/01/24-17:13:26.311 ddf Compacting 1@1 + 1@2 files
-2023/01/24-17:13:26.315 ddf Generated table #18@1: 370 keys, 53552 bytes
-2023/01/24-17:13:26.315 ddf Compacted 1@1 + 1@2 files => 53552 bytes
-2023/01/24-17:13:26.316 ddf compacted to: files[ 0 0 1 0 0 0 0 ]
-2023/01/24-17:13:26.316 ddf Delete type=2 #17
-2023/01/24-17:13:26.316 ddf Delete type=2 #14
+2023/01/29-17:07:03.210 497 Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/29-17:07:03.210 497 Recovering log #39
+2023/01/29-17:07:03.218 497 Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000039.log 
+2023/01/29-17:29:33.573 28c6 Level-0 table #44: started
+2023/01/29-17:29:33.584 28c6 Level-0 table #44: 1200938 bytes OK
+2023/01/29-17:29:33.585 28c6 Delete type=0 #39
+2023/01/29-17:29:54.846 29f3 Compacting 1@1 + 1@2 files
+2023/01/29-17:29:54.857 29f3 Generated table #45@1: 475 keys, 36392 bytes
+2023/01/29-17:29:54.857 29f3 Compacted 1@1 + 1@2 files => 36392 bytes
+2023/01/29-17:29:54.858 29f3 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/01/29-17:29:54.858 29f3 Delete type=2 #41
+2023/01/29-17:29:54.858 29f3 Delete type=2 #44
+2023/01/29-17:45:58.412 2fe8 Level-0 table #47: started
+2023/01/29-17:45:58.423 2fe8 Level-0 table #47: 1033208 bytes OK
+2023/01/29-17:45:58.424 2fe8 Delete type=0 #43
+2023/01/29-17:46:07.782 2c0c Compacting 1@1 + 1@2 files
+2023/01/29-17:46:07.786 2c0c Generated table #48@1: 571 keys, 46836 bytes
+2023/01/29-17:46:07.786 2c0c Compacted 1@1 + 1@2 files => 46836 bytes
+2023/01/29-17:46:07.787 2c0c compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/01/29-17:46:07.787 2c0c Delete type=2 #45
+2023/01/29-17:46:07.787 2c0c Delete type=2 #47
+2023/01/29-17:53:14.058 2eb2 Level-0 table #50: started
+2023/01/29-17:53:14.065 2eb2 Level-0 table #50: 991521 bytes OK
+2023/01/29-17:53:14.066 2eb2 Delete type=0 #46
+2023/01/29-17:53:39.920 30b0 Compacting 1@1 + 1@2 files
+2023/01/29-17:53:39.923 30b0 Generated table #51@1: 636 keys, 46337 bytes
+2023/01/29-17:53:39.923 30b0 Compacted 1@1 + 1@2 files => 46337 bytes
+2023/01/29-17:53:39.924 30b0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/01/29-17:53:39.924 30b0 Delete type=2 #50
+2023/01/29-17:53:39.924 30b0 Delete type=2 #48
+2023/01/29-18:08:59.606 30b0 Level-0 table #53: started
+2023/01/29-18:08:59.614 30b0 Level-0 table #53: 1006595 bytes OK
+2023/01/29-18:08:59.615 30b0 Delete type=0 #49
+2023/01/29-18:10:40.123 3783 Compacting 1@1 + 1@2 files
+2023/01/29-18:10:40.127 3783 Generated table #54@1: 711 keys, 48037 bytes
+2023/01/29-18:10:40.127 3783 Compacted 1@1 + 1@2 files => 48037 bytes
+2023/01/29-18:10:40.132 3783 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/01/29-18:10:40.132 3783 Delete type=2 #53
+2023/01/29-18:10:40.132 3783 Delete type=2 #51

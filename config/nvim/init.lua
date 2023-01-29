@@ -6,13 +6,15 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
   vim.fn.execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
   vim.cmd [[packadd packer.nvim]]
 end
-
-
-require("luasnip.loaders.from_vscode").lazy_load()
+vim.keymap.set('n', ';', ':lua Tog()<CR>', { silent = true })
 require('packer').startup(function(use)
   -- Package manager
-  use 'wbthomason/packer.nvim'
+vim.opt.spell = true
+vim.opt.spelllang = { 'en_us', 'lt' }
+-- vim.opt.spellsuggest=best
 
+
+  use 'wbthomason/packer.nvim'
   use { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     requires = {
@@ -24,19 +26,9 @@ require('packer').startup(function(use)
       'j-hui/fidget.nvim',
     },
   }
+  use 'onsails/lspkind.nvim'
   use { 'AlphaTechnolog/pywal.nvim'}
-use { 'CRAG666/code_runner.nvim' }
   use 'tpope/vim-surround'
-  require('code_runner').setup({
-  -- put here the commands by filetype
-  filetype = {
-		python = "python3 -u",
-		cs = "dotnet run"
-	},
-    term = {
-		size = 23,
-	},
-})
   use 'jiangmiao/auto-pairs'
   use { -- Autocompletion
     'hrsh7th/nvim-cmp',
@@ -51,6 +43,129 @@ use { 'CRAG666/code_runner.nvim' }
   }
 use { 'otavioschwanck/cool-substitute.nvim'}
 
+-- Packer
+use ({
+  "jackMort/ChatGPT.nvim",
+    config = function()
+      require("chatgpt").setup({
+
+        -- optional configuration
+welcome_message = WELCOME_MESSAGE, -- set to "" if you don't like the fancy godot robot
+  loading_text = "loading",
+  question_sign = "", -- you can use emoji if you want e.g. 🙂
+  answer_sign = "ﮧ", -- 🤖
+  max_line_length = 120,
+  yank_register = "+",
+  chat_layout = {
+    relative = "editor",
+    position = "50%",
+    size = {
+      height = "80%",
+      width = "80%",
+    },
+  },
+  settings_window = {
+    border = {
+      style = "rounded",
+      text = {
+        top = " Settings ",
+      },
+    },
+  },
+  chat_window = {
+    filetype = "chatgpt",
+    border = {
+      highlight = "FloatBorder",
+      style = "rounded",
+      text = {
+        top = " ChatGPT ",
+      },
+    },
+  },
+  chat_input = {
+    prompt = "  ",
+    border = {
+      highlight = "FloatBorder",
+      style = "rounded",
+      text = {
+        top_align = "center",
+        top = " Prompt ",
+      },
+    },
+  },
+  openai_params = {
+    model = "text-davinci-003",
+    frequency_penalty = 0,
+    presence_penalty = 0,
+    max_tokens = 300,
+    temperature = 0,
+    top_p = 1,
+    n = 1,
+  },
+  openai_edit_params = {
+    model = "code-davinci-edit-001",
+    temperature = 0,
+    top_p = 1,
+    n = 1,
+  },
+  keymaps = {
+    close = { "<C-c>", "<Esc>" },
+    yank_last = "<C-y>",
+    scroll_up = "<C-u>",
+    scroll_down = "<C-d>",
+    toggle_settings = "<C-o>",
+    new_session = "<C-n>",
+    cycle_windows = "<Tab>",
+  },
+      })
+    end,
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+    }
+})
+require("semi")
+require("code_reun")
+vim.keymap.set('n', 'r', ':lua Run()<CR>', { silent = true })
+require("luasnip.loaders.from_vscode").lazy_load()
+  ---------------------------
+--   local Input = require("nui.input")
+-- local event = require("nui.utils.autocmd").event
+--
+-- local input = Input({
+--   position = "50%",
+--   size = {
+--     width = 20,
+--   },
+--   border = {
+--     style = "single",
+--     text = {
+--       top = "[Howdy?]",
+--       top_align = "center",
+--     },
+--   },
+--   win_options = {
+--     winhighlight = "Normal:Normal,FloatBorder:Normal",
+--   },
+-- }, {
+--   prompt = "> ",
+--   default_value = "Hello",
+--   on_close = function()
+--     print("Input Closed!")
+--   end,
+--   on_submit = function(value)
+--     print("Input Submitted: " .. value)
+--   end,
+-- })
+--
+-- -- mount/open the component
+-- input:mount()
+--
+-- -- unmount component when cursor leaves buffer
+-- input:on(event.BufLeave, function()
+--   input:unmount()
+-- end)
+  ----------------------------
 require'cool-substitute'.setup({
   setup_keybindings = true,
   -- mappings = {
@@ -202,6 +317,8 @@ vim.o.smartcase = true
 -- Decrease update time
 vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
+-- vim.o.cmdwin_hide=1
+-- vim.cmd("set cmdwin_hide=1")
 vim.api.nvim_set_option('clipboard','unnamedplus')
 
 -- Set colorscheme
@@ -228,11 +345,11 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 
 
 -- vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
-vim.keymap.set('n', 'r', ':RunFile<CR>', { noremap = true, silent = false })
-vim.keymap.set('n', '<leader>rp', ':RunProject<CR>', { noremap = true, silent = false })
-vim.keymap.set('n', 'c', ':RunClose<CR>', { noremap = true, silent = false })
-vim.keymap.set('n', '<leader>crf', ':CRFiletype<CR>', { noremap = true, silent = false })
-vim.keymap.set('n', '<leader>crp', ':CRProjects<CR>', { noremap = true, silent = false })
+-- vim.keymap.set('n', 'r', ':RunFile<CR>', { noremap = true, silent = false })
+-- vim.keymap.set('n', '<leader>rp', ':RunProject<CR>', { noremap = true, silent = false })
+-- vim.keymap.set('n', 'c', ':RunClose<CR>', { noremap = true, silent = false })
+-- vim.keymap.set('n', '<leader>crf', ':CRFiletype<CR>', { noremap = true, silent = false })
+-- vim.keymap.set('n', '<leader>crp', ':CRProjects<CR>', { noremap = true, silent = false })
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
@@ -298,11 +415,19 @@ require('telescope').setup {
 
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
-
+-- require("spell")
 -- See `:help telescope.builtin`
+-- vim.keymap.set("nnoremap r :lua run_current_buffer()<CR>")
 -- vim.keymap.set('n', '<leader>lb', require('knife').generate_xml_doc_under_cursor(), { desc = 'Find recently opened files' })
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
+-- vim.keymap.set("n", "s", ":lua Spelly()<CR>", {noremap = true})
+-- vim.keymap.set("n", "s", ":set spell!", {noremap = true})
+vim.keymap.set("n", "s", function()
+    -- vim.o.spell = not vim.o.spell
+    vim.opt_local.spell = not(vim.opt_local.spell:get())
+    print("spell: " .. tostring(vim.o.spell));
+end)
 vim.keymap.set('n', '<leader>/', function()
   -- You can pass additional configuration to telescope to change theme, layout, etc.
   require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
@@ -320,12 +445,19 @@ vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { de
 
 vim.keymap.set('n', 'cp', '"+y')
 
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
   ensure_installed = { 'lua', 'python', 'bash', 'c_sharp', 'markdown' },
-  highlight = { enable = true },
+  highlight = { enable = true
+
+  },
   indent = { enable = true },
   incremental_selection = {
     enable = true,
@@ -442,7 +574,7 @@ require('mason').setup()
 
 -- Enable the following language servers
 -- Feel free to add/remove any LSPs that you want here. They will automatically be installed
-local servers = { 'pyright', 'omnisharp', 'bashls', 'marksman' }
+local servers = { 'pyright', 'csharp_ls', 'bashls', 'marksman' }
 -- Ensure the servers above are installed
 require('mason-lspconfig').setup {
   ensure_installed = servers,
@@ -495,6 +627,57 @@ require('lspconfig').sumneko_lua.setup {
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
 
+
+
+local ts_utils = require("nvim-treesitter.ts_utils")
+-- cmp.setup({
+-- {sources = cmp.config.sources({
+--       name = "nvim_lsp",
+--       enty_filter = function (entry, context)
+--         local kind = entry:get_kind()
+--         local node = ts_utils.get_node_at_cursor():type()
+--         if node == 6 "arguments" then
+--           if kind == 6 then
+--             return true
+--       else
+--       return false
+--           end
+--         end
+--         return true
+--       end,
+--     },
+--     })
+--   })
+
+-- local kind_icons = {
+--   Text = "",
+--   Method = "",
+--   Function = "",
+--   Constructor = "",
+--   Field = "",
+--   Variable = "",
+--   Class = "ﴯ",
+--   Interface = "",
+--   Module = "",
+--   Property = "ﰠ",
+--   Unit = "",
+--   Value = "",
+--   Enum = "",
+--   Keyword = "",
+--   Snippet = "",
+--   Color = "",
+--   File = "",
+--   Reference = "",
+--   Folder = "",
+--   EnumMember = "",
+--   Constant = "",
+--   Struct = "",
+--   Event = "",
+--   Operator = "",
+--   TypeParameter = ""
+-- }
+-- local lspkind = require('lspkind')
+-- probds do pywal sypport
 cmp.setup {
   snippet = {
     expand = function(args)
@@ -502,6 +685,21 @@ cmp.setup {
     end,
   },
   mapping = cmp.mapping.preset.insert {
+    -- ['<C-k>'] = cmp.mapping(function (fallback)
+    --   if vim.fn.pumvisible() == 1 then
+    --     cmp.select_prev_item()
+    --   elseif has_words_before() then
+    --     cmp.setu.buffer {
+    --       sources = {
+    --         name = 'look'
+    --       }
+    --     }
+    --     cmp.complete()
+    --   else
+    --     fallback()
+    --   end
+    -- end,{"i", "s"}
+    -- ),
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
@@ -528,9 +726,70 @@ cmp.setup {
       end
     end, { 'i', 's' }),
   },
+  window = {
+    completion = cmp.config.window.bordered({
+      -- border = "shadow",
+      border = 'rounded',
+    winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None"}),
+    documentation = { -- no border; native-style scrollbar
+      border = 'rounded',
+      scrollbar = '',
+      -- other options
+    },
+  },
+  formatting = {
+    fields = { "kind", "abbr", "menu" },
+    format = function(entry, vim_item)
+      local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
+      local strings = vim.split(kind.kind, "%s", { trimempty = true })
+      kind.kind = " " .. (strings[1] or "") .. " "
+      kind.menu = "    (" .. (strings[2] or "") .. ")"
+
+      return kind
+    end,
+  },
+  sorting = {
+     sorting = {
+    comparators = {
+      cmp.config.compare.exact,
+      cmp.config.compare.recently_used,
+    },
+  },
+  },
   sources = {
-    { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    { name = 'nvim_lsp',
+      entry_filter = function (entry, context)
+        local kind = entry:get_kind()
+        local node = ts_utils.get_node_at_cursor():type()
+        ---
+        local line = context.cursor_line
+        local col = context.cursor.col
+        local char_before_cursor = string.sub(line, col - 1,col - 1)
+        if char_before_cursor == "." then
+          if kind == 2 or kind == 5 then
+            return true
+          else
+          return false
+        end
+        elseif string.match(line, "^%s*%w*$") then
+          if kind == 3 or kind == 6 then
+            return true
+          else
+          return false
+        end
+        end
+        --
+        if node == "arguments" then
+          if kind ==6 then
+            return true
+          else
+            return false
+          end
+        end
+
+        return true
+      end,
+    },
   },
 }
-

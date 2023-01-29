@@ -7,3 +7,10 @@ title=$(echo "$s" | cut -d';' -f2)
 ffmpeg -i "$HOME/Music/$(mpc current -f %file%)" "${COVER}" -y &> /dev/null
 notify-send -i $COVER "$song" "$title" -t 5000 -r 4
 # fi
+for
+while [[ as ]]; do
+    
+done
+hah=2
+hah:x
+
