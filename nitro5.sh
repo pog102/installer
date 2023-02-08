@@ -4,11 +4,12 @@ sudo mv bluetooth /var/lib
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key FBA220DFC880C036
 sudo pacman --noconfirm -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
-echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
-echo "[multilib]" | sudo tee -a /etc/pacman.conf
-echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
-echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
+# echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
+# echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
+# echo "[multilib]" | sudo tee -a /etc/pacman.conf
+# echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
+# echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
+sudo mv pacman.conf /etc/
 sudo pacman --noconfirm -Syu
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -60,7 +61,6 @@ mkdir -p $HOME/.local/share/icons/custom/
 mkdir -p $HOME/.local/share/applications/
 mkdir -p $HOME/.themes/wal/gtk-2.0
 sudo mv bin/transadd /usr/local/bin
-sudo mv pacman.conf /etc/
 #cp -r .config/ $HOME/
 mv zshrc $HOME/.zshrc
 mv moziila/* $HOME/.mozilla
