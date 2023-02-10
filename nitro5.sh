@@ -10,6 +10,8 @@ sudo pacman --noconfirm -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-ke
 # echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
 # echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
 sudo mv pacman.conf /etc/
+sudo mkdir /etc/NetworkManager
+sudo mv NetworkManager.conf /etc/NetworkManager/
 sudo pacman --noconfirm -Syu
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
