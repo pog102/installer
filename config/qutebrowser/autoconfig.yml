@@ -7,4 +7,4 @@
 config_version: 2
 settings:
   url.start_pages:
-    global: file:///home/chad/.config/firefox/new/index.html
+    global: file:///home/chad/.config/firefox/rice/index.html

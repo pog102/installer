@@ -1,0 +1,9 @@
+2023-02-08 20:00:11.363 [info] Starting worker process with pid 7702 (type: fileWatcher, window: 1).
+2023-02-08 20:00:17.981 [info] Worker process with pid 7702 terminated normally (type: fileWatcher, window: 1).
+2023-02-08 20:00:18.348 [info] Starting worker process with pid 7736 (type: fileWatcher, window: 1).
+2023-02-08 20:00:44.471 [info] Getting Manifest... k--kato.docomment
+2023-02-08 20:00:44.575 [info] Installing extension: k--kato.docomment
+2023-02-08 20:00:45.748 [info] Extracted extension to /home/chad/.vscode-oss/extensions/.e0157568-11f0-46bc-9c8d-098bdce48906: k--kato.docomment
+2023-02-08 20:00:45.750 [info] Renamed to /home/chad/.vscode-oss/extensions/k--kato.docomment-0.1.32-universal
+2023-02-08 20:00:45.750 [info] Extracting completed. k--kato.docomment
+2023-02-08 20:00:45.755 [info] Extension installed successfully: k--kato.docomment

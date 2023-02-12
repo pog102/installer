@@ -30,6 +30,7 @@ bindsym Control+Left exec  ~/.bin/upbright U
 bindsym $Mod+p exec  ~/.bin/pdfs
 
 bindsym $Mod+g exec ~/scripts/games/wrapper.sh
+bindsym XF86LaunchA exec ~/scripts/games/wrapper.sh
 for_window [ class="Nsxiv" ] floating enable
 for_window [ title="paru" ] move scratchpad; scratchpad show
 #bindsym $Mod+r exec ~/.bin/rssreader
@@ -66,6 +67,7 @@ bindsym $mod+Return		exec st
 bindsym $mod+m		exec ~/.bin/rofi-mpd
 bindsym $mod+a		exec ~/.bin/ani_usb
 bindsym $mod2+Up		exec mpc toggle
+bindsym $mod2+Down		exec ~/.bin/likes_songs.sh
 bindsym $mod2+Left		exec mpc prev
 bindsym $mod2+Right		exec mpc next
 bindsym Mod1+Return		exec st

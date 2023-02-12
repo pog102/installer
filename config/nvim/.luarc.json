@@ -35,5 +35,6 @@
         "/home/chad/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after",
         "/usr/share/vim/vimfiles",
         "${3rd}/luassert/library"
-    ]
+    ],
+    "workspace.checkThirdParty": false
 }

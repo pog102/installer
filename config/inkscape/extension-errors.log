@@ -1,8 +1,8 @@
-Extension "EPS Input" failed to load because a dependency was not met.
+Extension "Formula (pdflatex)" failed to load because a dependency was not met.
 Dependency:
 	type: executable
 	location: path
-	string: ps2pdf
+	string: pdflatex
 
 Extension "XFIG Input" failed to load because a dependency was not met.
 Dependency:
@@ -15,18 +15,6 @@ Dependency:
 	type: executable
 	location: path
 	string: gimp
-
-Extension "Formula (pdflatex)" failed to load because a dependency was not met.
-Dependency:
-	type: executable
-	location: path
-	string: pdflatex
-
-Extension "PostScript Input" failed to load because a dependency was not met.
-Dependency:
-	type: executable
-	location: path
-	string: ps2pdf
 
 Extension "Optimized PNG" failed to load because a dependency was not met.
 Dependency:

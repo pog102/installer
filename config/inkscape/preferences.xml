@@ -117,7 +117,9 @@
       <eventcontext
          id="rect"
          style="fill:blue;"
-         usecurrent="1" />
+         usecurrent="1"
+         width="3.32047629356384"
+         height="3.86537194252014" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -152,7 +154,9 @@
          style="fill:red;"
          end="0"
          start="0"
-         usecurrent="1" />
+         usecurrent="1"
+         rx="3.98401165008545"
+         ry="3.98401165008545" />
       <eventcontext
          id="star"
          magnitude="5"
@@ -302,7 +306,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="mm"
+       unit="px"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -386,7 +390,8 @@
     <eventcontext
        id="connector"
        style="fill:none;fill-rule:evenodd;stroke:black;stroke-opacity:1;stroke-linejoin:miter;stroke-width:1px;stroke-linecap:butt;"
-       selcue="1" />
+       selcue="1"
+       curvature="0" />
     <eventcontext
        id="paintbucket"
        style="fill:#a0a0a0;stroke:none;"
@@ -588,7 +593,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="" />
+       path="/home/chad" />
     <group
        id="import"
        enable_preview="1"
@@ -821,7 +826,8 @@
     <group
        id="maskobject"
        topmost="1"
-       remove="1" />
+       remove="1"
+       grouping="0" />
     <group
        id="blurquality"
        value="0" />
@@ -916,7 +922,8 @@
        theme="colorful">
       <group
          id="shown"
-         ver1.2.1="1" />
+         ver1.2.1="1"
+         ver1.2.2="1" />
     </group>
     <group
        id="kbshortcuts"
@@ -931,7 +938,7 @@
      org.inkscape.output.png.inkscape.png_antialias="2" />
   <group
      id="desktop"
-     style="fill:#000000">
+     style="fill:#800000">
     <group
        width="640"
        height="480"
@@ -1057,7 +1064,7 @@
      id="theme"
      defaultPreferDarkTheme="0"
      defaultIconTheme="Adwaita"
-     defaultGtkTheme="Adwaita"
+     defaultGtkTheme="wal"
      narrowSpinButton="1"
      preferDarkTheme="1"
      darkTheme="1"

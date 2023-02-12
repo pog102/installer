@@ -75,7 +75,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["ChatGPT.nvim"] = {
-    config = { "\27LJ\2\nÍ\a\0\0\6\0 \0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\4\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\0025\3\r\0005\4\n\0005\5\v\0=\5\f\4=\4\14\3=\3\15\0025\3\16\0005\4\17\0005\5\18\0=\5\f\4=\4\14\3=\3\19\0025\3\20\0005\4\21\0005\5\22\0=\5\f\4=\4\14\3=\3\23\0025\3\24\0=\3\25\0025\3\26\0=\3\27\0025\3\29\0005\4\28\0=\4\30\3=\3\31\2B\0\2\1K\0\1\0\fkeymaps\nclose\1\0\6\14scroll_up\n<C-u>\16new_session\n<C-n>\14yank_last\n<C-y>\18cycle_windows\n<Tab>\20toggle_settings\n<C-o>\16scroll_down\n<C-d>\1\3\0\0\n<C-c>\n<Esc>\23openai_edit_params\1\0\4\6n\3\1\ntop_p\3\1\16temperature\3\0\nmodel\26code-davinci-edit-001\18openai_params\1\0\a\6n\3\1\ntop_p\3\1\16temperature\3\0\15max_tokens\3¬\2\21presence_penalty\3\0\22frequency_penalty\3\0\nmodel\21text-davinci-003\15chat_input\1\0\2\btop\r Prompt \14top_align\vcenter\1\0\2\14highlight\16FloatBorder\nstyle\frounded\1\0\1\vprompt\n ï†’ \16chat_window\1\0\1\btop\14 ChatGPT \1\0\2\14highlight\16FloatBorder\nstyle\frounded\1\0\1\rfiletype\fchatgpt\20settings_window\vborder\1\0\0\ttext\1\0\1\btop\15 Settings \1\0\1\nstyle\frounded\16chat_layout\tsize\1\0\2\nwidth\b80%\vheight\b80%\1\0\2\rrelative\veditor\rposition\b50%\20welcome_message\20WELCOME_MESSAGE\1\0\5\18yank_register\6+\20max_line_length\3x\16answer_sign\bï®§\18question_sign\bï€‡\17loading_text\floading\nsetup\fchatgpt\frequire\0" },
+    config = { "\27LJ\2\nÍ\a\0\0\6\0 \0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\4\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\0025\3\r\0005\4\n\0005\5\v\0=\5\f\4=\4\14\3=\3\15\0025\3\16\0005\4\17\0005\5\18\0=\5\f\4=\4\14\3=\3\19\0025\3\20\0005\4\21\0005\5\22\0=\5\f\4=\4\14\3=\3\23\0025\3\24\0=\3\25\0025\3\26\0=\3\27\0025\3\29\0005\4\28\0=\4\30\3=\3\31\2B\0\2\1K\0\1\0\fkeymaps\nclose\1\0\6\16scroll_down\n<C-d>\16new_session\n<C-n>\14scroll_up\n<C-u>\18cycle_windows\n<Tab>\14yank_last\n<C-y>\20toggle_settings\n<C-o>\1\3\0\0\n<C-c>\n<Esc>\23openai_edit_params\1\0\4\nmodel\26code-davinci-edit-001\6n\3\1\ntop_p\3\1\16temperature\3\0\18openai_params\1\0\a\nmodel\21text-davinci-003\6n\3\1\ntop_p\3\1\16temperature\3\0\15max_tokens\3¬\2\21presence_penalty\3\0\22frequency_penalty\3\0\15chat_input\1\0\2\14top_align\vcenter\btop\r Prompt \1\0\2\nstyle\frounded\14highlight\16FloatBorder\1\0\1\vprompt\n ï†’ \16chat_window\1\0\1\btop\14 ChatGPT \1\0\2\nstyle\frounded\14highlight\16FloatBorder\1\0\1\rfiletype\fchatgpt\20settings_window\vborder\1\0\0\ttext\1\0\1\btop\15 Settings \1\0\1\nstyle\frounded\16chat_layout\tsize\1\0\2\vheight\b80%\nwidth\b80%\1\0\2\rrelative\veditor\rposition\b50%\20welcome_message\20WELCOME_MESSAGE\1\0\5\18yank_register\6+\20max_line_length\3x\16answer_sign\bï®§\18question_sign\bï€‡\17loading_text\floading\nsetup\fchatgpt\frequire\0" },
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/ChatGPT.nvim",
     url = "https://github.com/jackMort/ChatGPT.nvim"
@@ -90,10 +90,30 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["align.nvim"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/align.nvim",
+    url = "https://github.com/Vonr/align.nvim"
+  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
+  },
+  ["barbecue.nvim"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/barbecue.nvim",
+    url = "https://github.com/utilyre/barbecue.nvim"
+  },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
+  ["ccc.nvim"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/ccc.nvim",
+    url = "https://github.com/uga-rosa/ccc.nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -110,6 +130,20 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/cool-substitute.nvim",
     url = "https://github.com/otavioschwanck/cool-substitute.nvim"
   },
+  ["dashboard-nvim"] = {
+    config = { "\27LJ\2\nª\3\0\0\6\0\r\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\5\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\4=\4\v\3=\3\f\2B\0\2\1K\0\1\0\vconfig\rshortcut\1\0\4\ngroup\vNumber\tdesc\17î¬© dotfiles\vaction\23Telescope dotfiles\bkey\6d\1\0\4\ngroup\19DiagnosticHint\tdesc\rï€• Apps\vaction\18Telescope app\bkey\6a\1\0\4\ngroup\nLabel\tdesc\14îˆ• Files\vaction\25Telescope find_files\bkey\6f\1\0\4\ngroup\14@property\tdesc\15ïž² Update\vaction\15PackerSync\bkey\6u\16week_header\1\0\0\1\0\1\venable\2\1\0\1\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
+  ["debugprint.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15debugprint\frequire\0" },
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/debugprint.nvim",
+    url = "https://github.com/andrewferrier/debugprint.nvim"
+  },
   ["fidget.nvim"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/fidget.nvim",
@@ -125,6 +159,12 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["hover.nvim"] = {
+    config = { "\27LJ\2\nZ\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0016\0\0\0'\2\2\0B\0\2\1K\0\1\0\31hover.providers.dictionary\24hover.providers.lsp\frequire°\2\1\0\a\0\17\0!6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\f\0006\4\0\0'\6\1\0B\4\2\0029\4\1\0045\5\r\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\14\0006\4\0\0'\6\1\0B\4\2\0029\4\15\0045\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\24hover.nvim (select)\17hover_select\agK\1\0\1\tdesc\15hover.nvim\6K\6n\bset\vkeymap\bvim\17preview_opts\1\0\1\vborder\frounded\tinit\1\0\2\19preview_window\1\ntitle\2\0\nsetup\nhover\frequire\0" },
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/hover.nvim",
+    url = "https://github.com/lewis6991/hover.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -134,6 +174,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/knife.nvim",
     url = "https://github.com/cranberry-clockworks/knife.nvim"
+  },
+  ["line-notes.nvim"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/line-notes.nvim",
+    url = "https://github.com/kristijanhusak/line-notes.nvim"
   },
   ["lspkind.nvim"] = {
     loaded = true,
@@ -160,6 +205,12 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["noice.nvim"] = {
+    config = { "\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nnoice\frequire\0" },
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/nui.nvim",
@@ -170,10 +221,25 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-navic"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/nvim-navic",
+    url = "https://github.com/SmiteshP/nvim-navic"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -187,6 +253,16 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/opt/nvim-treesitter-textobjects",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
+  ["nvim-ufo"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/nvim-ufo",
+    url = "https://github.com/kevinhwang91/nvim-ufo"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -197,16 +273,20 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["promise-async"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/promise-async",
+    url = "https://github.com/kevinhwang91/promise-async"
+  },
   ["pywal.nvim"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/pywal.nvim",
     url = "https://github.com/AlphaTechnolog/pywal.nvim"
   },
-  ["startup.nvim"] = {
-    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fstartup\frequire\0" },
+  ["symbols-outline.nvim"] = {
     loaded = true,
-    path = "/home/chad/.local/share/nvim/site/pack/packer/start/startup.nvim",
-    url = "https://github.com/startup-nvim/startup.nvim"
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     cond = { true },
@@ -222,7 +302,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["twilight.nvim"] = {
-    config = { "\27LJ\2\n²\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\fdimming\1\0\2\fcontext\3\r\15treesitter\2\ncolor\1\3\0\0\vNormal\f#ffffff\1\0\3\nalpha\4Í™³æ\fÌ™óþ\3\fterm_bg\f#000000\rinactive\1\nsetup\rtwilight\frequire\0" },
+    config = { "\27LJ\2\n²\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\fdimming\1\0\2\15treesitter\2\fcontext\3\r\ncolor\1\3\0\0\vNormal\f#ffffff\1\0\3\fterm_bg\f#000000\rinactive\1\nalpha\4Í™³æ\fÌ™óþ\3\nsetup\rtwilight\frequire\0" },
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/twilight.nvim",
     url = "https://github.com/folke/twilight.nvim"
@@ -248,7 +328,7 @@ _G.packer_plugins = {
     url = "https://github.com/tpope/vim-surround"
   },
   ["zen-mode.nvim"] = {
-    config = { "\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0" },
+    config = { "\27LJ\2\nM\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\fplugins\1\0\0\nsetup\rzen-mode\frequire\0" },
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
     url = "https://github.com/folke/zen-mode.nvim"
@@ -258,20 +338,28 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: twilight.nvim
 time([[Config for twilight.nvim]], true)
-try_loadstring("\27LJ\2\n²\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\fdimming\1\0\2\fcontext\3\r\15treesitter\2\ncolor\1\3\0\0\vNormal\f#ffffff\1\0\3\nalpha\4Í™³æ\fÌ™óþ\3\fterm_bg\f#000000\rinactive\1\nsetup\rtwilight\frequire\0", "config", "twilight.nvim")
+try_loadstring("\27LJ\2\n²\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\fdimming\1\0\2\15treesitter\2\fcontext\3\r\ncolor\1\3\0\0\vNormal\f#ffffff\1\0\3\fterm_bg\f#000000\rinactive\1\nalpha\4Í™³æ\fÌ™óþ\3\nsetup\rtwilight\frequire\0", "config", "twilight.nvim")
 time([[Config for twilight.nvim]], false)
+-- Config for: debugprint.nvim
+time([[Config for debugprint.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15debugprint\frequire\0", "config", "debugprint.nvim")
+time([[Config for debugprint.nvim]], false)
 -- Config for: ChatGPT.nvim
 time([[Config for ChatGPT.nvim]], true)
-try_loadstring("\27LJ\2\nÍ\a\0\0\6\0 \0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\4\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\0025\3\r\0005\4\n\0005\5\v\0=\5\f\4=\4\14\3=\3\15\0025\3\16\0005\4\17\0005\5\18\0=\5\f\4=\4\14\3=\3\19\0025\3\20\0005\4\21\0005\5\22\0=\5\f\4=\4\14\3=\3\23\0025\3\24\0=\3\25\0025\3\26\0=\3\27\0025\3\29\0005\4\28\0=\4\30\3=\3\31\2B\0\2\1K\0\1\0\fkeymaps\nclose\1\0\6\14scroll_up\n<C-u>\16new_session\n<C-n>\14yank_last\n<C-y>\18cycle_windows\n<Tab>\20toggle_settings\n<C-o>\16scroll_down\n<C-d>\1\3\0\0\n<C-c>\n<Esc>\23openai_edit_params\1\0\4\6n\3\1\ntop_p\3\1\16temperature\3\0\nmodel\26code-davinci-edit-001\18openai_params\1\0\a\6n\3\1\ntop_p\3\1\16temperature\3\0\15max_tokens\3¬\2\21presence_penalty\3\0\22frequency_penalty\3\0\nmodel\21text-davinci-003\15chat_input\1\0\2\btop\r Prompt \14top_align\vcenter\1\0\2\14highlight\16FloatBorder\nstyle\frounded\1\0\1\vprompt\n ï†’ \16chat_window\1\0\1\btop\14 ChatGPT \1\0\2\14highlight\16FloatBorder\nstyle\frounded\1\0\1\rfiletype\fchatgpt\20settings_window\vborder\1\0\0\ttext\1\0\1\btop\15 Settings \1\0\1\nstyle\frounded\16chat_layout\tsize\1\0\2\nwidth\b80%\vheight\b80%\1\0\2\rrelative\veditor\rposition\b50%\20welcome_message\20WELCOME_MESSAGE\1\0\5\18yank_register\6+\20max_line_length\3x\16answer_sign\bï®§\18question_sign\bï€‡\17loading_text\floading\nsetup\fchatgpt\frequire\0", "config", "ChatGPT.nvim")
+try_loadstring("\27LJ\2\nÍ\a\0\0\6\0 \0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\4\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\0025\3\r\0005\4\n\0005\5\v\0=\5\f\4=\4\14\3=\3\15\0025\3\16\0005\4\17\0005\5\18\0=\5\f\4=\4\14\3=\3\19\0025\3\20\0005\4\21\0005\5\22\0=\5\f\4=\4\14\3=\3\23\0025\3\24\0=\3\25\0025\3\26\0=\3\27\0025\3\29\0005\4\28\0=\4\30\3=\3\31\2B\0\2\1K\0\1\0\fkeymaps\nclose\1\0\6\16scroll_down\n<C-d>\16new_session\n<C-n>\14scroll_up\n<C-u>\18cycle_windows\n<Tab>\14yank_last\n<C-y>\20toggle_settings\n<C-o>\1\3\0\0\n<C-c>\n<Esc>\23openai_edit_params\1\0\4\nmodel\26code-davinci-edit-001\6n\3\1\ntop_p\3\1\16temperature\3\0\18openai_params\1\0\a\nmodel\21text-davinci-003\6n\3\1\ntop_p\3\1\16temperature\3\0\15max_tokens\3¬\2\21presence_penalty\3\0\22frequency_penalty\3\0\15chat_input\1\0\2\14top_align\vcenter\btop\r Prompt \1\0\2\nstyle\frounded\14highlight\16FloatBorder\1\0\1\vprompt\n ï†’ \16chat_window\1\0\1\btop\14 ChatGPT \1\0\2\nstyle\frounded\14highlight\16FloatBorder\1\0\1\rfiletype\fchatgpt\20settings_window\vborder\1\0\0\ttext\1\0\1\btop\15 Settings \1\0\1\nstyle\frounded\16chat_layout\tsize\1\0\2\vheight\b80%\nwidth\b80%\1\0\2\rrelative\veditor\rposition\b50%\20welcome_message\20WELCOME_MESSAGE\1\0\5\18yank_register\6+\20max_line_length\3x\16answer_sign\bï®§\18question_sign\bï€‡\17loading_text\floading\nsetup\fchatgpt\frequire\0", "config", "ChatGPT.nvim")
 time([[Config for ChatGPT.nvim]], false)
--- Config for: startup.nvim
-time([[Config for startup.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fstartup\frequire\0", "config", "startup.nvim")
-time([[Config for startup.nvim]], false)
 -- Config for: zen-mode.nvim
 time([[Config for zen-mode.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
+try_loadstring("\27LJ\2\nM\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\fplugins\1\0\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
 time([[Config for zen-mode.nvim]], false)
+-- Config for: noice.nvim
+time([[Config for noice.nvim]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nnoice\frequire\0", "config", "noice.nvim")
+time([[Config for noice.nvim]], false)
+-- Config for: hover.nvim
+time([[Config for hover.nvim]], true)
+try_loadstring("\27LJ\2\nZ\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0016\0\0\0'\2\2\0B\0\2\1K\0\1\0\31hover.providers.dictionary\24hover.providers.lsp\frequire°\2\1\0\a\0\17\0!6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\f\0006\4\0\0'\6\1\0B\4\2\0029\4\1\0045\5\r\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\14\0006\4\0\0'\6\1\0B\4\2\0029\4\15\0045\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\24hover.nvim (select)\17hover_select\agK\1\0\1\tdesc\15hover.nvim\6K\6n\bset\vkeymap\bvim\17preview_opts\1\0\1\vborder\frounded\tinit\1\0\2\19preview_window\1\ntitle\2\0\nsetup\nhover\frequire\0", "config", "hover.nvim")
+time([[Config for hover.nvim]], false)
 -- Conditional loads
 time([[Conditional loading of telescope-fzf-native.nvim]], true)
   require("packer.load")({"telescope-fzf-native.nvim"}, {}, _G.packer_plugins)
@@ -281,6 +369,13 @@ time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
 vim.cmd [[ packadd nvim-treesitter-textobjects ]]
 time([[Sequenced loading]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Event lazy-loads
+time([[Defining lazy-load event autocommands]], true)
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'dashboard-nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+time([[Defining lazy-load event autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

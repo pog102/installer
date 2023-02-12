@@ -1,3 +1,4 @@
+
 -- Install packer
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
 local is_bootstrap = false
@@ -6,14 +7,307 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
   vim.fn.execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
   vim.cmd [[packadd packer.nvim]]
 end
-vim.keymap.set('n', ';', ':lua Tog()<CR>', { silent = true })
+vim.keymap.set('n', 'w', ':lua Tog()<CR>', { silent = true })
 require('packer').startup(function(use)
+use({
+        "andrewferrier/debugprint.nvim",
+        config = function()
+            require("debugprint").setup()
+        end,
+    })
   -- Package manager
+  --
+-- Enable true color
+use 'uga-rosa/ccc.nvim'
+-- use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+-- require("dapui").setup()
+
+    --sass 
+
+    local dap = require('dap')
+    dap.configurations.python = {
+      {
+        type = 'python';
+        request = 'launch';
+        name = "launch file";
+        program = "${file}";
+        pythonpath = function()
+          return '/usr/bin/python'
+        end;
+      },
+    }
+use 'mfussenegger/nvim-dap'
+vim.opt.termguicolors = true
+use 'Vonr/align.nvim'
+require("code")
+-- align_to_char(length, reverse, preview, marks)
+-- align_to_string(is_pattern, reverse, preview, marks)
+-- align(str, reverse, marks)
+-- operator(fn, opts)
+-- Where:
+--      length: integer
+--      reverse: boolean
+--      preview: boolean
+--      marks: table (e.g. {1, 0, 23, 15})
+--      str: string (can be plaintext or Lua pattern if is_pattern is true)
+
+local NS = { noremap = true, silent = true }
+
+vim.keymap.set('x' , 'aa', function() require'align'.align_to_char(1, true)             end, NS) -- Aligns to 1 character, looking left
+vim.keymap.set('x' , 'as', function() require'align'.align_to_char(2, true, true)       end, NS) -- Aligns to 2 characters, looking left and with previews
+vim.keymap.set('x' , 'aw', function() require'align'.align_to_string(false, true, true) end, NS) -- Aligns to a string, looking left and with previews
+vim.keymap.set('x' , 'ar', function() require'align'.align_to_string(true, true, true)  end, NS) -- Aligns to a Lua pattern, looking left and with previews
+
+-- Example gawip to align a paragraph to a string, looking left and with previews
+
+vim.keymap.set(
+    'n',
+    'gaw',
+    function()
+        local a = require'align'
+        a.operator(
+            a.align_to_string,
+            { is_pattern = false, reverse = true, preview = true }
+        )
+    end,
+    NS
+)
+
+-- use {
+--   "kevinhwang91/nvim-ufo",
+--   opt = true,
+--   event = { "BufReadPre" },
+--   wants = { "promise-async" },
+--   requires = "kevinhwang91/promise-async",
+--   config = function()
+--     require("ufo").setup {
+--       provider_selector = function(bufnr, filetype)
+--         return { "lsp", "treesitter", "indent" }
+--       end,
+--     }
+--     vim.keymap.set("n", "zR", require("ufo").openAllFolds)
+--     vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
+--   end,
+-- }
+use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+-- use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+-- require('ufo').setup({
+--     provider_selector = function(bufnr, filetype, buftype)
+--         return {'treesitter', 'indent'}
+--     end
+  --
+-- })
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.foldingRange = {
+    dynamicRegistration = false,
+    lineFoldingOnly = true
+}
+local language_servers = require("lspconfig").util.available_servers() -- or list servers manually like {'gopls', 'clangd'}
+for _, ls in ipairs(language_servers) do
+    require('lspconfig')[ls].setup({
+        capabilities = capabilities
+        -- you can add other fields for setting up lsp server in this table
+    })
+end
+vim.o.foldcolumn = '0' -- '0' is not bad
+vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+vim.o.foldlevelstart = -1
+vim.o.foldenable = true
+vim.keymap.set('n', 'zR', require('ufo').openAllFolds)
+vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)
+-- Using ufo provider need remap `zR` and `zM`. If Neovim is 0.6.1, remap yourself
+
+local handler = function(virtText, lnum, endLnum, width, truncate)
+    local newVirtText = {}
+    local suffix = ('  %d '):format(endLnum - lnum)
+    local sufWidth = vim.fn.strdisplaywidth(suffix)
+    local targetWidth = width - sufWidth
+    local curWidth = 0
+    for _, chunk in ipairs(virtText) do
+        local chunkText = chunk[1]
+        local chunkWidth = vim.fn.strdisplaywidth(chunkText)
+        if targetWidth > curWidth + chunkWidth then
+            table.insert(newVirtText, chunk)
+        else
+            chunkText = truncate(chunkText, targetWidth - curWidth)
+            local hlGroup = chunk[2]
+            table.insert(newVirtText, {chunkText, hlGroup})
+            chunkWidth = vim.fn.strdisplaywidth(chunkText)
+            -- str width returned from truncate() may less than 2nd argument, need padding
+            if curWidth + chunkWidth < targetWidth then
+                suffix = suffix .. (' '):rep(targetWidth - curWidth - chunkWidth)
+            end
+            break
+        end
+        curWidth = curWidth + chunkWidth
+    end
+    table.insert(newVirtText, {suffix, 'MoreMsg'})
+    return newVirtText
+end
+
+require('ufo').setup({
+    fold_virt_text_handler = handler
+})
+-- global handler
+-- `handler` is the 2nd parameter of `setFoldVirtTextHandler`,
+-- check out `./lua/ufo.lua` and search `setFoldVirtTextHandler` for detail.
+
+-- buffer scope handler
+-- will override global handler if it is existed
+-- local bufnr = vim.api.nvim_get_current_buf()
+-- require('ufo').setFoldVirtTextHandler(bufnr, handler)
+
+
+
+-- Example gaaip to aling a paragraph to 1 character, looking left
+vim.keymap.set(
+    'n',
+    'gaa',
+    function()
+        local a = require'align'
+        a.operator(
+            a.align_to_char,
+            { length = 1, reverse = true }
+        )
+    end,
+    NS
+)
+local ccc = require("ccc")
+local mapping = ccc.mapping
+ccc.setup({
+    -- Your favorite settings
+    highlighter = {
+    ---@type boolean
+    auto_enable = true,
+  },
+})
+use 'nvim-tree/nvim-web-devicons'
+-- use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+use {
+    "lewis6991/hover.nvim",
+    config = function()
+        require("hover").setup {
+            init = function()
+                -- Require providers
+                require("hover.providers.lsp")
+                -- require('hover.providers.gh')
+                -- require('hover.providers.gh_user')
+                -- require('hover.providers.jira')
+                -- require('hover.providers.man')
+                require('hover.providers.dictionary')
+            end,
+            preview_opts = {
+                border = "rounded"
+            },
+            -- Whether the contents of a currently open hover window should be moved
+            -- to a :h preview-window when pressing the hover keymap.
+            preview_window = false,
+            title = true
+        }
+
+        -- Setup keymaps
+        vim.keymap.set("n", "K", require("hover").hover,         {desc = "hover.nvim"})
+        vim.keymap.set("n", "gK", require("hover").hover_select, {desc = "hover.nvim (select)"})
+    end
+}
+-- packer.nvim
+use {'kristijanhusak/line-notes.nvim'}
+require("line-notes").setup()
+use 'simrat39/symbols-outline.nvim'
+require("symbols-outline").setup()
 vim.opt.spell = true
 vim.opt.spelllang = { 'en_us', 'lt' }
+-- using packer.nvim
+use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  require("bufferline").setup{
+highlights = {
+            -- indicator_selected = {
+            --     fg = '#99b300',
+            --     bg = '#99b300'
+            -- },
+            -- pick_selected = {
+            --     fg = '#99b300',
+            --     bg = '#99b300',
+            --     bold = true,
+            --     italic = true,
+      
+    -- }
+    },
+    options ={
+
+            diagnostics = "nvim_lsp",
+            diagnostics_update_in_insert = false,
+            -- separator_style = "slant" | "thick" | "thin" | { 'any', 'any' },
+            -- separator_style = "thin",
+            always_show_bufferline = false,
+        hover = {
+            enabled = true,
+            delay = 200,
+            reveal = {'close'}
+        },
+
+            indicator = {
+                -- style = 'underline',
+                style = 'none',
+            },
+
+diagnostics_indicator = function(count, level, diagnostics_dict, context)
+  local icon = level:match("error") and " " or " "
+  return " " .. icon .. count
+end
+  }
+
+  }
+
 -- vim.opt.spellsuggest=best
-
-
+-- Packer
+-- use 'NvRose/tabline'
+-- use({
+--   "utilyre/barbecue.nvim",
+--   tag = "*",
+--   requires = {
+--     "SmiteshP/nvim-navic",
+--     "nvim-tree/nvim-web-devicons", -- optional dependency
+--   },
+--   after = "nvim-web-devicons", -- keep this if you're using NvChad
+--   config = function()
+--     require("barbecue").setup()
+--   end,
+-- })
+-- require("barbecue").setup()
+use {
+    "SmiteshP/nvim-navic",
+    requires = "neovim/nvim-lspconfig"
+}
+  use({
+  "utilyre/barbecue.nvim",
+  tag = "*",
+  requires = {
+    "SmiteshP/nvim-navic",
+    "nvim-tree/nvim-web-devicons", -- optional dependency
+  },
+})
+    require("barbecue").setup()
+-- use "vvvvv/yfix"
+-- require("yfix").setup()
+require("noice").setup({
+  lsp = {
+    -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
+    override = {
+      ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+      ["vim.lsp.util.stylize_markdown"] = true,
+      ["cmp.entry.get_documentation"] = true,
+    },
+  },
+  -- you can enable a preset for easier configuration
+  presets = {
+    bottom_search = true, -- use a classic bottom cmdline for search
+    command_palette = true, -- position the cmdline and popupmenu together
+    long_message_to_split = true, -- long messages will be sent to a split
+    inc_rename = false, -- enables an input dialog for inc-rename.nvim
+    lsp_doc_border = false, -- add a border to hover docs and signature help
+  },
+})
   use 'wbthomason/packer.nvim'
   use { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
@@ -126,7 +420,25 @@ welcome_message = WELCOME_MESSAGE, -- set to "" if you don't like the fancy godo
 })
 require("semi")
 require("code_reun")
+use({
+  "folke/noice.nvim",
+  config = function()
+    require("noice").setup({
+        -- add any options here
+    })
+  end,
+  requires = {
+    -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+    "MunifTanjim/nui.nvim",
+    -- OPTIONAL:
+    --   `nvim-notify` is only needed, if you want to use the notification view.
+    --   If not available, we use `mini` as the fallback
+    "rcarriga/nvim-notify",
+    }
+})
+  -- require("comm")
 vim.keymap.set('n', 'r', ':lua Run()<CR>', { silent = true })
+-- vim.keymap.set('n', 'l', ':lua Commy()<CR>', { silent = true })
 require("luasnip.loaders.from_vscode").lazy_load()
   ---------------------------
 --   local Input = require("nui.input")
@@ -232,6 +544,10 @@ use {
   "folke/zen-mode.nvim",
   config = function()
     require("zen-mode").setup {
+            plugins = {
+    -- disable some global vim options (vim.o...)
+    -- comment the lines to not apply the options
+                    }
       -- your configuration comes here
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
@@ -239,18 +555,51 @@ use {
   end
 }
 
-  use {
-  "startup-nvim/startup.nvim",
-  requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+use {
+  'glepnir/dashboard-nvim',
+  event = 'VimEnter',
   config = function()
-    require"startup".setup()
-  end
+    require('dashboard').setup {
+      -- config
+       theme = 'hyper',
+    config = {
+      week_header = {
+       enable = true,
+      },
+      shortcut = {
+        { desc = ' Update', group = '@property', action = 'PackerSync', key = 'u' },
+        {
+          desc = ' Files',
+          group = 'Label',
+          action = 'Telescope find_files',
+          key = 'f',
+        },
+        {
+          desc = ' Apps',
+          group = 'DiagnosticHint',
+          action = 'Telescope app',
+          key = 'a',
+        },
+        {
+          desc = ' dotfiles',
+          group = 'Number',
+          action = 'Telescope dotfiles',
+          key = 'd',
+        },
+      },
+    },
+    }
+  end,
+  requires = {'nvim-tree/nvim-web-devicons'}
 }
-  require("startup").setup({theme = "dashboard"}) -- put theme name here
-
   -- use 'navarasu/onedark.nvim' -- Theme inspired by Atom
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
+    require("indent_blankline").setup {
+    space_char_blankline = " ",
+    show_current_context = true,
+    show_current_context_start = true,
+}
   use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
   use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
 
@@ -344,6 +693,7 @@ vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = tr
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 
+vim.keymap.set('n' , '<Tab>', ':BufferLineCycleNext <CR>', {silent = true})
 -- vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
 -- vim.keymap.set('n', 'r', ':RunFile<CR>', { noremap = true, silent = false })
 -- vim.keymap.set('n', '<leader>rp', ':RunProject<CR>', { noremap = true, silent = false })
@@ -420,6 +770,7 @@ pcall(require('telescope').load_extension, 'fzf')
 -- vim.keymap.set("nnoremap r :lua run_current_buffer()<CR>")
 -- vim.keymap.set('n', '<leader>lb', require('knife').generate_xml_doc_under_cursor(), { desc = 'Find recently opened files' })
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
+vim.keymap.set('n', '<leader>k', require('telescope.builtin').keymaps, { desc = '[k] find keymaps' })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
 -- vim.keymap.set("n", "s", ":lua Spelly()<CR>", {noremap = true})
 -- vim.keymap.set("n", "s", ":set spell!", {noremap = true})
@@ -439,9 +790,9 @@ end, { desc = '[/] Fuzzily search in current buffer]' })
 vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
 -- vim.keymap.set('n', '<C-k>', 'yss)')
 vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc = '[S]earch [H]elp' })
-vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
+vim.keymap.set('n', '<leader>w', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
-vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
+vim.keymap.set('n', '<leader>d', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 
 vim.keymap.set('n', 'cp', '"+y')
 

@@ -1,0 +1,3 @@
+2023/02/10-16:07:30.595 d1b Creating DB /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.messenger.com_0.indexeddb.leveldb since it was missing.
+2023/02/10-16:07:30.597 d1b Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.messenger.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/02/10-16:07:33.494 d1e Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,10 +1,23 @@
-2022/12/13-12:14:13.393 1867 Reusing MANIFEST /home/chad/.config/Microsoft/Microsoft Teams/Local Storage/leveldb/MANIFEST-000001
-2022/12/13-12:15:35.730 1a24 Level-0 table #5: started
-2022/12/13-12:15:35.736 1a24 Level-0 table #5: 388938 bytes OK
-2022/12/13-12:15:35.737 1a24 Delete type=0 #3
-2022/12/13-12:15:52.763 1a24 Level-0 table #7: started
-2022/12/13-12:15:52.775 1a24 Level-0 table #7: 85615 bytes OK
-2022/12/13-12:15:52.776 1a24 Delete type=0 #4
-2022/12/13-12:18:07.746 1a24 Level-0 table #9: started
-2022/12/13-12:18:07.786 1a24 Level-0 table #9: 179729 bytes OK
-2022/12/13-12:18:07.787 1a24 Delete type=0 #6
+2023/02/09-13:28:59.968 475 Reusing MANIFEST /home/chad/.config/Microsoft/Microsoft Teams/Local Storage/leveldb/MANIFEST-000001
+2023/02/09-13:28:59.968 475 Recovering log #21
+2023/02/09-13:28:59.968 475 Level-0 table #24: started
+2023/02/09-13:28:59.971 475 Level-0 table #24: 35364 bytes OK
+2023/02/09-13:28:59.972 475 Delete type=0 #21
+2023/02/09-13:29:08.083 52b Level-0 table #27: started
+2023/02/09-13:29:08.085 52b Level-0 table #27: 73212 bytes OK
+2023/02/09-13:29:08.087 52b Delete type=0 #25
+2023/02/09-13:29:08.087 52b Compacting 4@0 + 1@1 files
+2023/02/09-13:29:08.097 52b Generated table #28@0: 198 keys, 649470 bytes
+2023/02/09-13:29:08.097 52b Compacted 4@0 + 1@1 files => 649470 bytes
+2023/02/09-13:29:08.098 52b compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/02/09-13:29:08.098 52b Delete type=2 #19
+2023/02/09-13:29:08.098 52b Delete type=2 #22
+2023/02/09-13:29:08.098 52b Delete type=2 #27
+2023/02/09-13:29:08.098 52b Delete type=2 #17
+2023/02/09-13:29:08.098 52b Delete type=2 #24
+2023/02/09-13:30:01.838 52b Level-0 table #30: started
+2023/02/09-13:30:01.854 52b Level-0 table #30: 348432 bytes OK
+2023/02/09-13:30:01.855 52b Delete type=0 #26
+2023/02/09-13:31:01.838 52b Level-0 table #32: started
+2023/02/09-13:31:01.850 52b Level-0 table #32: 107179 bytes OK
+2023/02/09-13:31:01.851 52b Delete type=0 #29

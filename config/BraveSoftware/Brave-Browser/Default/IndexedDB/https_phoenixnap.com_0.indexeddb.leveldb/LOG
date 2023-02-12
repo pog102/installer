@@ -1,3 +1,7 @@
-2023/01/24-22:28:07.318 4f78 Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_phoenixnap.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/01/24-22:28:07.318 4f78 Recovering log #3
-2023/01/24-22:28:07.318 4f78 Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_phoenixnap.com_0.indexeddb.leveldb/000003.log 
+2023/01/30-13:33:09.006 17ac Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_phoenixnap.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/30-13:33:09.006 17ac Recovering log #3
+2023/01/30-13:33:09.007 17ac Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_phoenixnap.com_0.indexeddb.leveldb/000003.log 
+2023/01/30-13:33:40.717 17ac Level-0 table #5: started
+2023/01/30-13:33:40.719 17ac Level-0 table #5: 54022 bytes OK
+2023/01/30-13:33:40.720 17ac Delete type=0 #3
+2023/01/30-13:33:40.720 17ac Manual compaction at level-0 from (begin) .. (end); will stop at (end)

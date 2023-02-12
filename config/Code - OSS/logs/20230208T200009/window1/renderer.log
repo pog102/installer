@@ -1,0 +1,13 @@
+2023-02-08 20:00:10.743 [error] Error: The editor could not be opened because the file was not found.
+    at f.bc (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2302:89224)
+    at async f.setInput (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2302:88256)
+    at async r.M (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2300:23027)
+    at async r.D (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2300:21622)
+    at async r.openEditor (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2300:20488)
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2487:13441
+2023-02-08 20:00:10.815 [info] Started initializing default profile extensions in extensions installation folder. file:///home/chad/.vscode-oss/extensions
+2023-02-08 20:00:11.091 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/chad/.vscode-oss/extensions
+2023-02-08 20:00:13.832 [info] [perf] Render performance baseline is 29ms
+2023-02-08 20:00:21.039 [info] [perf] Render performance baseline is 34ms
+2023-02-08 20:00:36.924 [error] RequestService#request (browser) - error https://open-vsx.org/vscode/gallery/extensionquery {"name":"Canceled"}
+2023-02-08 20:00:37.229 [error] RequestService#request (browser) - error https://open-vsx.org/vscode/gallery/extensionquery {"name":"Canceled"}

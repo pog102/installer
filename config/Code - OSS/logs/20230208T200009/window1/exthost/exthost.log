@@ -1,0 +1,22 @@
+2023-02-08 20:00:11.263 [info] Extension host with pid 7649 started
+2023-02-08 20:00:11.302 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-02-08 20:00:11.303 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-02-08 20:00:11.330 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-02-08 20:00:11.330 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-02-08 20:00:11.425 [info] Eager extensions activated
+2023-02-08 20:00:11.434 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-02-08 20:00:11.435 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-02-08 20:00:17.962 [info] Extension host terminating: received terminate message from renderer
+2023-02-08 20:00:17.969 [info] Extension host with pid 7649 exiting with code 0
+2023-02-08 20:00:18.754 [info] Extension host with pid 7737 started
+2023-02-08 20:00:18.754 [info] Skipping acquiring lock for /home/chad/.config/Code - OSS/User/workspaceStorage/757cb194f1cb3382c2fdb3a58fa48af2.
+2023-02-08 20:00:18.786 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-02-08 20:00:18.787 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-02-08 20:00:18.814 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-02-08 20:00:18.814 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-02-08 20:00:18.902 [info] Eager extensions activated
+2023-02-08 20:00:18.911 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-02-08 20:00:18.911 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-02-08 20:00:45.829 [info] ExtensionService#_doActivateExtension k--kato.docomment, startup: false, activationEvent: 'onLanguage:csharp'
+2023-02-08 20:29:18.445 [info] Extension host terminating: received terminate message from renderer
+2023-02-08 20:29:18.451 [info] Extension host with pid 7737 exiting with code 0

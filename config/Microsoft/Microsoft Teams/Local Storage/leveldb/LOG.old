@@ -1,0 +1,6 @@
+2023/02/08-18:31:48.646 736 Reusing MANIFEST /home/chad/.config/Microsoft/Microsoft Teams/Local Storage/leveldb/MANIFEST-000001
+2023/02/08-18:31:48.648 736 Recovering log #18
+2023/02/08-18:31:48.648 736 Reusing old log /home/chad/.config/Microsoft/Microsoft Teams/Local Storage/leveldb/000018.log 
+2023/02/08-18:32:50.178 858 Level-0 table #22: started
+2023/02/08-18:32:50.189 858 Level-0 table #22: 80952 bytes OK
+2023/02/08-18:32:50.190 858 Delete type=0 #18
