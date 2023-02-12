@@ -77,14 +77,19 @@ c.statusbar.padding['top'] = 10
 c.statusbar.show = "in-mode"
 c.tabs.indicator.width = 0
 c.tabs.max_width = -1
-c.tabs.padding['bottom'] = 20
+c.tabs.padding['bottom'] = 6
 c.tabs.padding['left'] = 15
 c.tabs.padding['right'] = 15
-c.tabs.padding['top'] = 20
+c.tabs.padding['top'] = 6
 c.tabs.position = "top"
 c.tabs.show = "always"
 c.tabs.title.alignment = "center"
-c.tabs.title.format = "{current_title}"
+c.downloads.location.directory = '~/Downloads'
+# c.editor.command = ['st', '-e', 'nvim', '{file}'].tabs.title.format = "{current_title}"
+c.editor.command = ['st',  'nvim',  '-f', '{file}']
+config.bind('<Ctrl-E>', 'open-editor', mode='insert')
+config.bind(',p', 'spawn --userscript qute-pass --dmenu-invocation "rofi -d" --username-target secret --username-pattern "[Uu]sername: (.+)"')
+config.bind(',P', 'spawn --userscript qute-pass --dmenu-invocation "rofi -d" --username-target secret --username-pattern "[Uu]sername: (.+)" --password-only')
 # c.url.default_page = "https://gs.is-a.dev/startpage/"
 # c.url.start_pages = "https://gs.is-a.dev/startpage/"
 c.url.default_page = "file:///home/chad/.config/firefox/rice/index.html"
