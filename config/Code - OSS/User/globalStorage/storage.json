@@ -4,14 +4,10 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/chad/obj2"
+                "folderUri": "file:///home/chad/onj2_lan"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1672945239960"
-            }
-        ]
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -56,6 +52,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/chad/onj2_lan",
+                                        "path": "/home/chad/onj2_lan",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/onj2_lan"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -1705,14 +1712,14 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/chad/obj2",
-            "backupPath": "/home/chad/.config/Code - OSS/Backups/41a0cc8cb68f8012eaf0fd0e4a02031a",
+            "folder": "file:///home/chad/onj2_lan",
+            "backupPath": "/home/chad/.config/Code - OSS/Backups/a2190db526867ab1e64998f5d1f248a5",
             "uiState": {
                 "mode": 1,
-                "x": 18,
-                "y": 48,
-                "width": 936,
-                "height": 1014
+                "x": 16,
+                "y": 46,
+                "width": 1888,
+                "height": 1018
             }
         },
         "openedWindows": []
@@ -1745,7 +1752,8 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/chad/obj2": "__default__profile__"
+            "file:///home/chad/obj2": "__default__profile__",
+            "file:///home/chad/onj2_lan": "__default__profile__"
         },
         "emptyWindows": {}
     },

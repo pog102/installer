@@ -1,4 +1,4 @@
 #!/bin/bash
 
-/usr/bin/rclone sync  "google-drive:C#" "/home/chad/Csharp"
+# /usr/bin/rclone sync  "google-drive:C#" "/home/chad/Csharp"
 /usr/bin/rclone sync  "ms:C#" "/home/chad/Csharp"

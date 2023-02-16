@@ -13,6 +13,10 @@
     {
       "name": "paru lattice-diamond",
       "done": true
+    },
+    {
+      "name": "idea: install arch on usb",
+      "done": false
     }
   ],
   "disable_line": false,
