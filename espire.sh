@@ -6,9 +6,10 @@ sudo pacman --noconfirm -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-ke
 sudo mv pacman.conf /etc/
 sudo pacman --noconfirm -Syu
 
-# Instaling packages
+# Instaling packagess
 sudo pacman --needed --noconfirm -S - < native.txt
 paru --needed --noconfirm -S - < paru.txt
+
 # Disabeling random MAC
 sudo mkdir /etc/NetworkManager
 sudo mv NetworkManager.conf /etc/NetworkManager/
