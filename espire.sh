@@ -7,8 +7,8 @@ sudo mv pacman.conf /etc/
 sudo pacman --noconfirm -Syu
 
 # Instaling packages
-sudo pacman --needed --noconfirm -S - < pkglist.txt
-
+sudo pacman --needed --noconfirm -S - < native.txt
+paru --needed --noconfirm -S - < paru.txt
 # Disabeling random MAC
 sudo mkdir /etc/NetworkManager
 sudo mv NetworkManager.conf /etc/NetworkManager/
