@@ -36,6 +36,51 @@ use 'uga-rosa/ccc.nvim'
         end;
       },
     }
+
+  use 'nvim-lualine/lualine.nvim' -- Fancier statusline
+  use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
+use({
+  "folke/noice.nvim",
+  config = function()
+    require("noice").setup({
+        -- add any options here
+    })
+  end,
+  requires = {
+    -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+    "MunifTanjim/nui.nvim",
+    -- OPTIONAL:
+    --   `nvim-notify` is only needed, if you want to use the notification view.
+    --   If not available, we use `mini` as the fallback
+    "rcarriga/nvim-notify",
+    }
+})
+
+  use { -- Autocompletion
+    'hrsh7th/nvim-cmp',
+    requires = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
+  }
+  use({
+  "utilyre/barbecue.nvim",
+  tag = "*",
+  requires = {
+    "SmiteshP/nvim-navic",
+    "nvim-tree/nvim-web-devicons", -- optional dependency
+  },
+})
+use 'simrat39/symbols-outline.nvim'
+use {'kristijanhusak/line-notes.nvim'}
+  use { -- LSP Configuration & Plugins
+    'neovim/nvim-lspconfig',
+    requires = {
+      -- Automatically install LSPs to stdpath for neovim
+      'williamboman/mason.nvim',
+      'williamboman/mason-lspconfig.nvim',
+
+      -- Useful status updates for LSP
+      'j-hui/fidget.nvim',
+    },
+  }
 use 'mfussenegger/nvim-dap'
 vim.opt.termguicolors = true
 use 'Vonr/align.nvim'
@@ -211,9 +256,7 @@ use {
     end
 }
 -- packer.nvim
-use {'kristijanhusak/line-notes.nvim'}
 require("line-notes").setup()
-use 'simrat39/symbols-outline.nvim'
 require("symbols-outline").setup()
 vim.opt.spell = true
 vim.opt.spelllang = { 'en_us', 'lt' }
@@ -279,14 +322,6 @@ use {
     "SmiteshP/nvim-navic",
     requires = "neovim/nvim-lspconfig"
 }
-  use({
-  "utilyre/barbecue.nvim",
-  tag = "*",
-  requires = {
-    "SmiteshP/nvim-navic",
-    "nvim-tree/nvim-web-devicons", -- optional dependency
-  },
-})
     require("barbecue").setup()
 -- use "vvvvv/yfix"
 -- require("yfix").setup()
@@ -309,25 +344,10 @@ require("noice").setup({
   },
 })
   use 'wbthomason/packer.nvim'
-  use { -- LSP Configuration & Plugins
-    'neovim/nvim-lspconfig',
-    requires = {
-      -- Automatically install LSPs to stdpath for neovim
-      'williamboman/mason.nvim',
-      'williamboman/mason-lspconfig.nvim',
-
-      -- Useful status updates for LSP
-      'j-hui/fidget.nvim',
-    },
-  }
   use 'onsails/lspkind.nvim'
   use { 'AlphaTechnolog/pywal.nvim'}
   use 'tpope/vim-surround'
   use 'jiangmiao/auto-pairs'
-  use { -- Autocompletion
-    'hrsh7th/nvim-cmp',
-    requires = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
-  }
 
   use { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
@@ -420,26 +440,9 @@ welcome_message = WELCOME_MESSAGE, -- set to "" if you don't like the fancy godo
 })
 require("semi")
 require("code_reun")
-use({
-  "folke/noice.nvim",
-  config = function()
-    require("noice").setup({
-        -- add any options here
-    })
-  end,
-  requires = {
-    -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-    "MunifTanjim/nui.nvim",
-    -- OPTIONAL:
-    --   `nvim-notify` is only needed, if you want to use the notification view.
-    --   If not available, we use `mini` as the fallback
-    "rcarriga/nvim-notify",
-    }
-})
   -- require("comm")
 vim.keymap.set('n', 'r', ':lua Run()<CR>', { silent = true })
 -- vim.keymap.set('n', 'l', ':lua Commy()<CR>', { silent = true })
-require("luasnip.loaders.from_vscode").lazy_load()
   ---------------------------
 --   local Input = require("nui.input")
 -- local event = require("nui.utils.autocmd").event
@@ -478,6 +481,7 @@ require("luasnip.loaders.from_vscode").lazy_load()
 --   input:unmount()
 -- end)
   ----------------------------
+require("luasnip.loaders.from_vscode").lazy_load()
 require'cool-substitute'.setup({
   setup_keybindings = true,
   -- mappings = {
@@ -593,8 +597,6 @@ use {
   requires = {'nvim-tree/nvim-web-devicons'}
 }
   -- use 'navarasu/onedark.nvim' -- Theme inspired by Atom
-  use 'nvim-lualine/lualine.nvim' -- Fancier statusline
-  use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
     require("indent_blankline").setup {
     space_char_blankline = " ",
     show_current_context = true,
