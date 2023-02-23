@@ -2,7 +2,7 @@ brillo
 cli-visualizer
 cmake
 dunst
-firefox
+qutebrowser
 foot
 fzf
 gcc
