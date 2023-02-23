@@ -4,7 +4,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 export PATH=$HOME/.bin:$PATH
 # Enable colors and change rompt:
-# cat ~/.cache/wal/sequences
+cat ~/.cache/wal/sequences
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[blue]%} %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
@@ -72,7 +72,7 @@ bindkey '^e' edit-command-line
 
 # Load aliases and shortcuts if existent.
 source "$HOME/.config/zsh/aliasrc"
-source "$HOME/.config/zsh/functions.zsh"
+#source "$HOME/.config/zsh/functions.zsh"
 
 # Load zsh-syntax-highlighting; should be last.
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
