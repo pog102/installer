@@ -44,3 +44,4 @@ zsh-autosuggestions
 zsh-history-substring-search
 zsh-syntax-highlighting
 rofi-lbonn-wayland-git
+libnotify
