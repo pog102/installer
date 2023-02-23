@@ -2,7 +2,7 @@
   "layer": "top",
     "modules-left": ["custom/arch", "wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["backlight", "custom/sound", "network", "battery"],
+    "modules-right": ["backlight", "pulseaudio", "network", "battery"],
     "custom/arch": {{
       "format": "  ",
       "on-click": "sh $HOME/.config/rofi/bin/powermenu"
@@ -20,10 +20,24 @@
       "format": "<span color='{color3}'>{{icon}}</span> {{percent}}%",
       "format-icons": ["", "", "", "", "", "", "", "", ""]
     }},
-    "custom/sound": {{
-      "format": "<span color='{color3}'> </span>{{}}",
-      "exec": "custom-alsa.sh",
-    }},
+    "pulseaudio": {{
+	"format": "<span color='{color3}'>{{icon}}</span> {{volume}}",
+	"format-bluetooth": "{{volume}}% {{icon}}",
+	"format-muted": "",
+	"format-icons": {{
+		"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+		"headphones": "",
+		"handsfree": "",
+		"headset": "",
+		"phone": "",
+		"portable": "",
+		"car": "",
+		"default": ["", ""]
+	}},
+	"scroll-step": 1,
+	"on-click": "pavucontrol"
+}},
+
     "network": {{
       "interface": "wlan0",
       "format": "{{ifname}}",
