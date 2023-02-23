@@ -26,7 +26,6 @@ tree
 unclutter
 unzip
 wl-clipboard
-xf86-video-vesa
 zsh-autosuggestions
 zsh-history-substring-search
 zsh-syntax-highlighting

@@ -7,7 +7,9 @@ sudo mv pacman.conf /etc/
 sudo pacman --noconfirm -Syu
 
 # Instaling packagess
-sudo pacman --needed --noconfirm -S - < native.txt
+sudo pacman --needed --noconfirm -S - < native.txt xf86-video-vesa libva-intel-driver
+
+
 paru --needed --noconfirm -S - < paru.txt
 
 # Disabeling random MAC
