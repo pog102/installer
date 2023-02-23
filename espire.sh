@@ -62,6 +62,7 @@ wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
 
 # setup for links
 ln -fs $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
+ln -fs $HOME/.cache/wal/config_waybar $HOME/.config/waybar/config
 ln -fs $HOME/.cache/wal/zathurarc $HOME/.config/zathura/zathurarc
 ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.css
 
