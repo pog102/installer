@@ -1,3 +1,4 @@
+
 {
   "layer": "top",
     "modules-left": ["custom/arch", "wlr/workspaces"],
@@ -13,27 +14,27 @@
       "all-outputs": true
     },
     "clock": {
-      "format": "<span color='#8D6731'> </span>{:%H:%M}",
+      "format": "<span color='#cba6f7'> </span>{:%H:%M}",
     },
     "backlight": {
       "device": "intel_backlight",
-      "format": "<span color='#8D6731'>{icon}</span> {percent}%",
+      "format": "<span color='blue'>{icon}</span> {percent}%",
       "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "custom/sound": {
-      "format": "<span color='#8D6731'> </span>{}",
+      "format": "<span color='#cba6f7'> </span>{}",
       "exec": "custom-alsa.sh",
     },
     "network": {
       "interface": "wlan0",
       "format": "{ifname}",
-      "format-wifi": "<span color='#8D6731'> </span>{essid}",
+      "format-wifi": "<span color='#cba6f7'> </span>{essid}",
       "format-ethernet": "{ipaddr}/{cidr} ",
-      "format-disconnected": "<span color='#8D6731'>󰖪 </span>No Network"
+      "format-disconnected": "<span color='#cba6f7'>󰖪 </span>No Network"
     },
     "battery": {
-      "format": "<span color='#8D6731'>{icon}</span> {capacity}%",
+      "format": "<span color='#cba6f7'>{icon}</span> {capacity}%",
       "format-icons": ["", "", "", "", "", "", "", "", "", ""],
-      "format-charging": "<span color='#8D6731'></span> {capacity}%"
+      "format-charging": "<span color='#cba6f7'></span> {capacity}%"
     },
 }

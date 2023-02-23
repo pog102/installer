@@ -3,9 +3,9 @@
      font = Fira Code 11
      corner_radius = 16
     # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
-    #geometry = "0x0-30+20"
+    geometry = "0x0-520+520"
     shrink = yes
-    width = 320
+    #width = 320
     #width = 0
     #scale = 0
     # Show multiple notifications in the same box
