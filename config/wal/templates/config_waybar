@@ -21,7 +21,7 @@
       "format-icons": ["", "", "", "", "", "", "", "", ""]
     }},
     "pulseaudio": {{
-	"format": "<span color='{color3}'>{{icon}}</span> {{volume}}",
+	"format": "<span color='{color3}'>{{icon}}</span> {{volume}}%",
 	"format-bluetooth": "{{volume}}% {{icon}}",
 	"format-muted": "",
 	"format-icons": {{
