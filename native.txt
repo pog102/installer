@@ -16,7 +16,6 @@ pamixer
 papirus-icon-theme
 paru
 python-pywal
-redshift
 ripgrep
 rsync
 sed
