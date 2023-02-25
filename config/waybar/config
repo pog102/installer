@@ -13,15 +13,15 @@
       "all-outputs": true
     },
     "clock": {
-      "format": "<span color='#655D5A'> </span>{:%H:%M}",
+      "format": "<span color='#1A6750'> </span>{:%H:%M}",
     },
     "backlight": {
       "device": "intel_backlight",
-      "format": "<span color='#655D5A'>{icon}</span> {percent}%",
+      "format": "<span color='#1A6750'>{icon}</span> {percent}%",
       "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "pulseaudio": {
-	"format": "<span color='#655D5A'>{icon}</span> {volume}",
+	"format": "<span color='#1A6750'>{icon}</span> {volume}%",
 	"format-bluetooth": "{volume}% {icon}",
 	"format-muted": "",
 	"format-icons": {
@@ -41,13 +41,13 @@
     "network": {
       "interface": "wlan0",
       "format": "{ifname}",
-      "format-wifi": "<span color='#655D5A'> </span>{essid}",
+      "format-wifi": "<span color='#1A6750'> </span>{essid}",
       "format-ethernet": "{ipaddr}/{cidr} ",
-      "format-disconnected": "<span color='#655D5A'>󰖪 </span>No Network"
+      "format-disconnected": "<span color='#1A6750'>󰖪 </span>No Network"
     },
     "battery": {
-      "format": "<span color='#655D5A'>{icon}</span> {capacity}%",
+      "format": "<span color='#1A6750'>{icon}</span> {capacity}%",
       "format-icons": ["", "", "", "", "", "", "", "", "", ""],
-      "format-charging": "<span color='#655D5A'></span> {capacity}%"
+      "format-charging": "<span color='#1A6750'></span> {capacity}%"
     },
 }
