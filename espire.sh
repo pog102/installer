@@ -19,7 +19,8 @@ sudo mv NetworkManager.conf /etc/NetworkManager/
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 sudo systemctl enable NetworkManager
-# sudo systemctl enable bluetooth.service
+sudo systemctl enable NetworkManager
+sudo systemctl enable bluetooth.service
 
 sudo usermod -aG video $USER
 brillo -c -S 1
