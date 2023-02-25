@@ -1,5 +1,6 @@
 wlsunset
 dunst
+bluez
 foot
 fzf
 gcc
