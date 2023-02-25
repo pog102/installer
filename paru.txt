@@ -17,3 +17,4 @@ zathura-pdf-poppler
 zsh
 rofi-lbonn-wayland-git
 libnotify
+batify-git

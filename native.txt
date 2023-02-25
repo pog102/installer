@@ -31,3 +31,4 @@ zsh-history-substring-search
 zsh-syntax-highlighting
 qt5-wayland
 grim
+udiskie
