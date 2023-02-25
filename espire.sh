@@ -10,7 +10,7 @@ sudo pacman --noconfirm -Syu
 sudo pacman --needed --noconfirm -S - < native.txt xf86-video-vesa libva-intel-driver
 
 
-paru --needed --noconfirm -S - < paru.txt
+paru --needed --noconfirm -S - < paru.txt grub-silent
 
 # Disabeling random MAC
 sudo mkdir /etc/NetworkManager
