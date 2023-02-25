@@ -60,11 +60,14 @@
     background ="{background}"
     #foreground ="{color4}"
     foreground ="{foreground}"
+    timeout=2
 [urgency_normal]
     background = "{background}"
-    #foreground ="{color4}"
+    #foreground ="{color8}"
     foreground = "{foreground}"
+    timeout=2
 
 [urgency_critical]
     background = "{background}"
-    foreground = "{color4}"
+    foreground = "{color12}"
+    timeout=4
