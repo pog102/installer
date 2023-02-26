@@ -69,5 +69,5 @@
 
 [urgency_critical]
     background = "{background}"
-    foreground = "{color12}"
+    foreground = "{foreground}"
     timeout=4

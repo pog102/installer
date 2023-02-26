@@ -30,11 +30,11 @@ window#waybar {
 
 #workspaces button {
   background: @color0;
-  color: @foreground;
+  color: @color8;
 }
 
 #workspaces button.active {
-  color: @color3;
+  color: @foreground;
 }
 
 #clock, #backlight, #pulseaudio, #network, #battery{
