@@ -8,8 +8,8 @@ if [ "$brightness" -gt 70 ]; then
 	icon="sun"
 elif [ "$brightness" -gt 45 ]; then
 	icon="sun_half"
-elif [  "$brightness" -gt 25  ]; then
-	icon="sun_low"
+#elif [  "$brightness" -gt 25  ]; then
+#	icon="sun_low"
 else
 	icon="sun_emp"
 fi

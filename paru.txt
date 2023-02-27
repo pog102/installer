@@ -19,3 +19,4 @@ rofi-lbonn-wayland-git
 libnotify
 batify-git
 bluetuith-bin
+xpub

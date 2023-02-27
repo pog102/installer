@@ -34,3 +34,5 @@ zsh-syntax-highlighting
 qt5-wayland
 grim
 udiskie
+npm
+dotnet-sdk-6.0

@@ -1,7 +1,0 @@
-2023/01/24-21:43:08.531 30e6 Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_linuxhint.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/01/24-21:43:08.531 30e6 Recovering log #3
-2023/01/24-21:43:08.531 30e6 Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_linuxhint.com_0.indexeddb.leveldb/000003.log 
-2023/01/24-21:43:12.572 340c Level-0 table #5: started
-2023/01/24-21:43:12.573 340c Level-0 table #5: 7265 bytes OK
-2023/01/24-21:43:12.575 340c Delete type=0 #3
-2023/01/24-21:43:12.575 340c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

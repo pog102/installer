@@ -1,7 +1,0 @@
-2023/01/30-13:11:10.434 fe0 Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_anilist.co_0.indexeddb.leveldb/MANIFEST-000001
-2023/01/30-13:11:10.434 fe0 Recovering log #3
-2023/01/30-13:11:10.434 fe0 Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_anilist.co_0.indexeddb.leveldb/000003.log 
-2023/01/30-13:51:35.933 1910 Level-0 table #5: started
-2023/01/30-13:51:35.935 1910 Level-0 table #5: 9699 bytes OK
-2023/01/30-13:51:35.936 1910 Delete type=0 #3
-2023/01/30-13:51:35.936 1910 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

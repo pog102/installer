@@ -1,7 +1,0 @@
-2023/01/23-15:17:43.776 49f Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_odysee.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/01/23-15:17:43.776 49f Recovering log #4
-2023/01/23-15:17:43.777 49f Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_odysee.com_0.indexeddb.leveldb/000004.log 
-2023/01/23-15:17:43.839 48c Level-0 table #8: started
-2023/01/23-15:17:43.842 48c Level-0 table #8: 344120 bytes OK
-2023/01/23-15:17:43.842 48c Delete type=0 #4
-2023/01/23-15:17:43.843 48c Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)

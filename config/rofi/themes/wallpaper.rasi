@@ -10,6 +10,7 @@
 @import "~/.cache/wal/colors.rasi"
 /*****----- Configuration -----*****/
 configuration {
+    font: "Roboto Mono 22";
 	modi:                       "drun,filebrowser,window";
 	icon-theme: 					"Papirus";
     show-icons:                 true;

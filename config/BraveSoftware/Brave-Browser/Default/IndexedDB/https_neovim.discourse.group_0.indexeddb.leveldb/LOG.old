@@ -1,7 +1,0 @@
-2023/01/29-18:23:21.875 3d55 Reusing MANIFEST /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_neovim.discourse.group_0.indexeddb.leveldb/MANIFEST-000001
-2023/01/29-18:23:21.875 3d55 Recovering log #3
-2023/01/29-18:23:21.875 3d55 Reusing old log /home/chad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_neovim.discourse.group_0.indexeddb.leveldb/000003.log 
-2023/01/29-18:23:54.868 3d55 Level-0 table #5: started
-2023/01/29-18:23:54.869 3d55 Level-0 table #5: 6740 bytes OK
-2023/01/29-18:23:54.870 3d55 Delete type=0 #3
-2023/01/29-18:23:54.870 3d55 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

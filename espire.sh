@@ -1,4 +1,7 @@
 #!/bin/bash
+
+autologin=true
+
 # Installing Chaotic AUR
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key FBA220DFC880C036
@@ -10,7 +13,7 @@ sudo pacman --noconfirm -Syu
 sudo pacman --needed --noconfirm -S - < native.txt xf86-video-vesa libva-intel-driver
 
 
-paru --needed --noconfirm -S - < paru.txt grub-silent
+paru --needed --noconfirm -S - < paru.txt 
 
 # Disabeling random MAC
 sudo mkdir /etc/NetworkManager
@@ -26,15 +29,23 @@ sudo usermod -aG video $USER
 brillo -c -S 1
 chsh -s /usr/bin/zsh
 ##autologin
+if [ $autologin ]
+then
 sudo mkdir /etc/systemd/system/getty@tty1.service.d/
 sudo touch /etc/systemd/system/getty@tty1.service.d/autologin.conf
 # echo "ATTRS{idVendor}==\"152d\", ATTRS{idProduct}==\"2329\", RUN+=\"$HOME/.bin/nyaupdate\"" | sudo tee -a /etc/udev/rules.d/test.rules
 echo "[Service]" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "ExecStart="  | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
 echo "ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin $USER - \$TERM" | sudo tee -a /etc/systemd/system/getty@tty1.service.d/autologin.conf
+fi
 
+if [ -d "/boot/grub" ]
+then
+
+else
 # For systemd short timer
 echo "timeout 1" | sudo tee /boot/loader/loader.conf
+fi
 
 ##.dots
 mkdir $HOME/.config/
@@ -48,6 +59,7 @@ mkdir $HOME/.config/dunst/
 mkdir $HOME/.config/zathura/
 
 sudo mv bin/transadd /usr/local/bin
+sudo mv 99-batify.rules /etc/udev/rules.d
 mv zshrc $HOME/.zshrc
 mv scripts $HOME/
 mv Pictures $HOME/
@@ -63,14 +75,14 @@ my_array=($HOME/Pictures/*)
 
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
 
-# setup for links
+# setup for symlinks
 ln -fs $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
 ln -fs $HOME/.cache/wal/config_waybar $HOME/.config/waybar/config
 ln -fs $HOME/.cache/wal/zathurarc $HOME/.config/zathura/zathurarc
 ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.css
 
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
-sed -i 's/background.*//g' ~/.local/share/nvim/site/pack/packer/start/pywal.nvim/lua/pywal/core.lua
+sed -i 's/background.*//g' ~/.local/share/nvim/lazy/pywal.nvim/lua/pywal/core.lua
 color=$(sed '5!d' ~/.cache/wal/colors)
 for i in $HOME/.local/share/icons/custom/*; do
 sed -i "s/fill=\".*\"/fill=\"$color\"/g" "$i"

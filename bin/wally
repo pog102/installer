@@ -1,9 +1,10 @@
 #!/bin/bash
 wal -i $PWD/$1
-#dir=/home/chad/.cache/wal/multi_intensity
-#sed -i 's/,/ /g' $dir
+killall swaybg
+swaybg -m fill -i "$PWD/$1" &
 color=$(sed '5!d' ~/.cache/wal/colors)
 for i in $HOME/.local/share/icons/custom/*; do
-convert $i -fill "$color" -colorize 100 $i
+sed -i "s/fill=\".*\"/fill=\"$color\"/g" "$i"
 done
 pkill dunst && dunst &
+killall waybar && waybar &
