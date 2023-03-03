@@ -59,7 +59,7 @@ mkdir $HOME/.config/dunst/
 mkdir $HOME/.config/zathura/
 
 sudo mv bin/transadd /usr/local/bin
-sudo mv 99-batify.rules /etc/udev/rules.d
+sudo mv rules/* /etc/udev/rules.d/
 mv zshrc $HOME/.zshrc
 mv scripts $HOME/
 mv Pictures $HOME/

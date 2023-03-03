@@ -306,7 +306,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="px"
+       unit="pt"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -593,7 +593,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/chad" />
+       path="/home/chad/Downloads" />
     <group
        id="import"
        enable_preview="1"
@@ -940,8 +940,8 @@
      id="desktop"
      style="fill:#800000">
     <group
-       width="640"
-       height="480"
+       width="931"
+       height="477"
        x="0"
        y="0"
        maximized="1"
@@ -1064,7 +1064,7 @@
      id="theme"
      defaultPreferDarkTheme="0"
      defaultIconTheme="Adwaita"
-     defaultGtkTheme="wal"
+     defaultGtkTheme="Adwaita"
      narrowSpinButton="1"
      preferDarkTheme="1"
      darkTheme="1"

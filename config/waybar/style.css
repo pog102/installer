@@ -37,7 +37,7 @@ window#waybar {
   color: @foreground;
 }
 
-#clock, #backlight, #pulseaudio, #network, #battery{
+#clock, #custom-updates, #backlight, #pulseaudio, #network, #battery{
   border-radius: 10px;
   background-color: @color0;
   color: @foreground;

@@ -1,0 +1,18 @@
+SUBSYSTEM=="hid", ACTION=="bind", \
+IMPORT{program}="/usr/bin/xpub", \
+RUN+="/bin/su $env{XUSER} -c '/home/chad/.bin/blue_notify \"$env{HID_NAME}\" \"$env{ACTION}\"'"
+
+
+SUBSYSTEM=="hid", ACTION=="remove", \
+IMPORT{program}="/usr/bin/xpub", \
+RUN+="/bin/su $env{XUSER} -c '/home/chad/.bin/blue_notify \"$env{HID_NAME}\" \"$env{ACTION}\"'"
+
+
+ACTION=="change", KERNEL != "BAT[0-9]", \
+SUBSYSTEM=="power_supply", \
+ATTR{status}=="Discharging", \
+ATTR{capacity}=="[0-9]", \
+IMPORT{program}="/usr/bin/xpub", \
+RUN+="/bin/su $env{XUSER} -c 'notify-send -u critical -i play \"Controller Battery status\" \"Battery level is CRITICAL at $attr{capacity}%\"'"
+
+

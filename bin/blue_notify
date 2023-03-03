@@ -1,0 +1,20 @@
+#!/bin/sh
+status=$2
+Bind_f()
+{
+  if [ "$status" == "bind" ]; then
+notify-send -u low -r 12 -i $2 "$1" "Connected"
+else
+notify-send -u low -r 12 -i $2 "$1" "Disconnected"
+  fi
+}
+
+
+case "$1" in
+ "Sony Interactive Entertainment Wireless Controller"|"Wireless Controller") Bind_f "$1" "play"
+  ;;
+  "Corsair CORSAIR KATAR PRO Wireless Gaming Dongle") Bind_f "$1" "cor"
+  ;;
+  *) echo default
+  ;;
+esac
