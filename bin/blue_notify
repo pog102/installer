@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 status=$2
 Bind_f()
 {
@@ -9,12 +9,14 @@ notify-send -u low -r 12 -i $2 "$1" "Disconnected"
   fi
 }
 
-
+shopt -s nocasematch
 case "$1" in
- "Sony Interactive Entertainment Wireless Controller"|"Wireless Controller") Bind_f "$1" "play"
+ *"Sony"* | "Wireless Controller") Bind_f "$1" "play"
   ;;
-  "Corsair CORSAIR KATAR PRO Wireless Gaming Dongle") Bind_f "$1" "cor"
+  *"Corsair"*) Bind_f "$1" "cor"
   ;;
-  *) echo default
+  *"Keyboard"*) Bind_f "$1" "board"
+  ;;
+  *) Bind_f "$1" "a"
   ;;
 esac

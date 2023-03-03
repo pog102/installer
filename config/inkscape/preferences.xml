@@ -306,7 +306,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="pt"
+       unit="px"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -941,11 +941,11 @@
      style="fill:#800000">
     <group
        width="931"
-       height="477"
+       height="969"
        x="0"
        y="0"
        maximized="1"
-       fullscreen="0"
+       fullscreen="1"
        id="geometry" />
     <group
        id="XYfront" />

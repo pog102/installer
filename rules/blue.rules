@@ -11,6 +11,6 @@ RUN+="/bin/su $env{XUSER} -c '/home/chad/.bin/blue_notify \"$env{HID_NAME}\" \"$
 ACTION=="change", KERNEL != "BAT[0-9]", \
 SUBSYSTEM=="power_supply", \
 ATTR{status}=="Discharging", \
-ATTR{capacity}=="[0-9]", \
+ATTR{capacity}=="[0-3]", \
 IMPORT{program}="/usr/bin/xpub", \
 RUN+="/bin/su $env{XUSER} -c '/home/chad/.bin/discharge \"$env{POWER_SUPPLY_NAME}\" \"$attr{capacity}\"'"
