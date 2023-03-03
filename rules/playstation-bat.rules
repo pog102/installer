@@ -1,8 +1,0 @@
-ACTION=="change", KERNEL=="event*", \
-SUBSYSTEM=="power_supply", \
-KERNEL=="event*", \
-ENV{POWER_SUPPLY_NAME}=="ps-controller-battery-4c:b9:9b:33:02:fe", \
-ATTR{status}=="Discharging", \
-ATTR{capacity}=="[0-9]", \
-IMPORT{program}="/usr/bin/xpub", \
-RUN+="/bin/su $env{XUSER} -c 'notify-send -u critical -i battery-empty \"Battery status playstation\" \"Battery level is CRITICAL at $attr{capacity}%\"'"

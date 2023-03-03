@@ -13,6 +13,4 @@ SUBSYSTEM=="power_supply", \
 ATTR{status}=="Discharging", \
 ATTR{capacity}=="[0-9]", \
 IMPORT{program}="/usr/bin/xpub", \
-RUN+="/bin/su $env{XUSER} -c 'notify-send -u critical -i play \"Controller Battery status\" \"Battery level is CRITICAL at $attr{capacity}%\"'"
-
-
+RUN+="/bin/su $env{XUSER} -c '/home/chad/.bin/discharge \"$env{POWER_SUPPLY_NAME}\" \"$attr{capacity}\"'"
