@@ -41,7 +41,7 @@ fi
 
 if [ -d "/boot/grub" ]
 then
-
+  echo "no grub"
 else
 # For systemd short timer
 echo "timeout 1" | sudo tee /boot/loader/loader.conf
