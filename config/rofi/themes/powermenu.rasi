@@ -1,0 +1,73 @@
+configuration {
+    location: 0;
+    font: "Font Awesome 6 Free:style=regular";
+}
+ 
+@theme "~/.cache/wal/color.rasi"
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+
+window {
+    background-color:               @bg0;
+    border:                         2px;
+    border-color:                   @bg4;
+    border-radius:                  50px;
+    width:                          490px;   
+    height:                         130px;          
+    x-offset:                       -4;
+    y-offset:                       0;
+}
+ 
+listview {
+    background-color:               @bg0;
+    columns:                        1;
+    lines:                          5;
+    spacing:                        50px;
+    layout:                         horizontal;
+}
+ 
+mainbox {
+    background-color:               @bg0;
+    children:                       [ listview ];
+    padding:                        40px;
+}
+ 
+element {
+    background-color:               @bg0;
+    text-color:                     @bg4;
+    orientation:                    horizontal;
+    /*border-radius:                  100%;*/
+    /* padding:                        8px 32px 8px 32px; */
+    padding:                        0px 8px 0px 0px;
+}
+ 
+element-text {
+    background-color:               inherit;
+    text-color:                     inherit;
+    font:                           "Font Awesome 6 Free 29";
+    expand:                         false;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0px;
+}
+ 
+element selected {
+    background-color:               @bg0;
+    text-color:                     @fg;
+    border:                         0px;
+    /*border-radius:                  100%;*/
+    border-color:                   @selected;
+}
+
+
+
+
+
+
+

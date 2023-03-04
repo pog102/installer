@@ -1,0 +1,12 @@
+@theme "~/.cache/wal/color.rasi"
+* {
+bgAlt: @bg3;
+button: #252931;
+background-color: @bg;
+text-color: @fg;
+}
+
+configuration {
+  font: "FiraCode Nerd Font 13";
+}
+
