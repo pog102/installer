@@ -36,4 +36,4 @@ grim
 udiskie
 mpv
 npm
-dotnet-sdk-6.0
+transmission-cli
