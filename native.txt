@@ -23,9 +23,7 @@ rsync
 sed
 shellcheck
 swaybg
-transmission-cli
 tree
-unclutter
 unzip
 wl-clipboard
 zsh-autosuggestions
