@@ -27,6 +27,10 @@ window#waybar {
   font-size: 20px;
 	margin-left: 15px;
 }
+tooltip {
+     border-radius: 10px;
+     background-color: @background;
+}
 
 #workspaces button {
   background: @color0;

@@ -3,21 +3,20 @@ status=$2
 Bind_f()
 {
   if [ "$status" == "bind" ]; then
-notify-send -u low -r 12 -i $2 "$1" "Connected"
+notify-send -u low -r $3 -i $2 "$1" "Connected"
 else
-notify-send -u low -r 12 -i $2 "$1" "Disconnected"
+notify-send -u low -r $3 -i $2 "$1" "Disconnected"
   fi
 }
 
 shopt -s nocasematch
 case "$1" in
- *"Sony"* | "Wireless Controller") Bind_f "$1" "play"
-    steam -nochatui -nofriendsui -silent &
+ *"Sony"* | "Wireless Controller") Bind_f "$1" "play" 5
   ;;
-  *"Katar"*) Bind_f "$1" "cor"
+  *"Katar"*) Bind_f "$1" "cor" 6
   ;;
-  *"Keyboard"*) Bind_f "$1" "board"
+  *"Keyboard"*) Bind_f "$1" "board" 7
   ;;
-  *) Bind_f "$1" "a"
+  *) Bind_f "$1" "a" 8
   ;;
 esac
