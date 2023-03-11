@@ -57,7 +57,9 @@ mkdir -p $HOME/.local/share/icons/custom/
 mkdir -p $HOME/.local/share/applications/
 mkdir $HOME/.config/dunst/
 mkdir $HOME/.config/zathura/
+mkdir $HOME/.mozilla/
 
+sudo mv mozilla/* $HOME/.mozilla/
 sudo mv bin/transadd /usr/local/bin
 sudo mv rules/* /etc/udev/rules.d/
 mv zshrc $HOME/.zshrc
@@ -80,7 +82,7 @@ ln -fs $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
 ln -fs $HOME/.cache/wal/config_waybar $HOME/.config/waybar/config
 ln -fs $HOME/.cache/wal/zathurarc $HOME/.config/zathura/zathurarc
 ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.css
-
+sudo pywalfox install
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
 sed -i 's/background.*//g' ~/.local/share/nvim/lazy/pywal.nvim/lua/pywal/core.lua
 color=$(sed '5!d' ~/.cache/wal/colors)

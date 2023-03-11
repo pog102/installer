@@ -35,3 +35,4 @@ udiskie
 mpv
 npm
 transmission-cli
+pywalfox

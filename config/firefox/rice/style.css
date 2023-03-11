@@ -14,7 +14,7 @@ html {
 body {
   display: flex;
   color: var(--color1);
-  background: var(--background);
+  background-color: var(--background);
   margin-right: 9em;
   padding: 1em;
   font-family: Font;
