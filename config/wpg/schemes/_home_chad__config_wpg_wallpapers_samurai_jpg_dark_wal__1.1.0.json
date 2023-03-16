@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/chad/.config/wpg/wallpapers/samurai.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0e0102",
+        "foreground": "#f5baa7",
+        "cursor": "#f5baa7"
+    },
+    "colors": {
+        "color0": "#0e0102",
+        "color1": "#D12D31",
+        "color2": "#E53638",
+        "color3": "#C24841",
+        "color4": "#F14D4D",
+        "color5": "#E05452",
+        "color6": "#FF6565",
+        "color7": "#f5baa7",
+        "color8": "#ab8274",
+        "color9": "#D12D31",
+        "color10": "#E53638",
+        "color11": "#C24841",
+        "color12": "#F14D4D",
+        "color13": "#E05452",
+        "color14": "#FF6565",
+        "color15": "#f5baa7"
+    }
+}

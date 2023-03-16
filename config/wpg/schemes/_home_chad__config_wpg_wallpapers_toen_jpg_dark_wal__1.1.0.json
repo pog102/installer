@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/chad/.config/wpg/wallpapers/toen.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#030B17",
+        "foreground": "#a4a29f",
+        "cursor": "#a4a29f"
+    },
+    "colors": {
+        "color0": "#030B17",
+        "color1": "#534837",
+        "color2": "#142D45",
+        "color3": "#233B52",
+        "color4": "#1F425F",
+        "color5": "#28435A",
+        "color6": "#2C4862",
+        "color7": "#a4a29f",
+        "color8": "#72716f",
+        "color9": "#534837",
+        "color10": "#142D45",
+        "color11": "#233B52",
+        "color12": "#1F425F",
+        "color13": "#28435A",
+        "color14": "#2C4862",
+        "color15": "#a4a29f"
+    }
+}

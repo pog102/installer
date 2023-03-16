@@ -11,16 +11,14 @@ sudo pacman --noconfirm -Syu
 
 # Instaling packagess
 sudo pacman --needed --noconfirm -S - < native.txt xf86-video-vesa libva-intel-driver
-
-
 paru --needed --noconfirm -S - < paru.txt 
 
 # Disabeling random MAC
 sudo mkdir /etc/NetworkManager
 sudo mv NetworkManager.conf /etc/NetworkManager/
 # Instaling packer
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+# git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+#  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 sudo systemctl enable NetworkManager
 sudo systemctl enable NetworkManager
 sudo systemctl enable bluetooth.service
@@ -44,7 +42,7 @@ then
   echo "no grub"
 else
 # For systemd short timer
-echo "timeout 1" | sudo tee /boot/loader/loader.conf
+echo "timeout 0" | sudo tee /boot/loader/loader.conf
 fi
 
 ##.dots
@@ -60,6 +58,7 @@ mkdir $HOME/.config/zathura/
 mkdir $HOME/.mozilla/
 
 sudo mv mozilla/* $HOME/.mozilla/
+sudo mv paru.conf /etc/
 sudo mv bin/transadd /usr/local/bin
 sudo mv rules/* /etc/udev/rules.d/
 mv zshrc $HOME/.zshrc
@@ -83,7 +82,7 @@ ln -fs $HOME/.cache/wal/config_waybar $HOME/.config/waybar/config
 ln -fs $HOME/.cache/wal/zathurarc $HOME/.config/zathura/zathurarc
 ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.css
 sudo pywalfox install
-nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
+# nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
 sed -i 's/background.*//g' ~/.local/share/nvim/lazy/pywal.nvim/lua/pywal/core.lua
 color=$(sed '5!d' ~/.cache/wal/colors)
 for i in $HOME/.local/share/icons/custom/*; do

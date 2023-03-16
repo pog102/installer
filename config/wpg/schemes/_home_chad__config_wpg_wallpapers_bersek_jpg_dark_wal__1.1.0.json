@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/chad/.config/wpg/wallpapers/bersek.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0A1770",
+        "foreground": "#cfdde7",
+        "cursor": "#cfdde7"
+    },
+    "colors": {
+        "color0": "#0A1770",
+        "color1": "#2D53A8",
+        "color2": "#3159A6",
+        "color3": "#4A4A99",
+        "color4": "#515BA4",
+        "color5": "#89669C",
+        "color6": "#64A3D2",
+        "color7": "#cfdde7",
+        "color8": "#909aa1",
+        "color9": "#2D53A8",
+        "color10": "#3159A6",
+        "color11": "#4A4A99",
+        "color12": "#515BA4",
+        "color13": "#89669C",
+        "color14": "#64A3D2",
+        "color15": "#cfdde7"
+    }
+}

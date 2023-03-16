@@ -17,4 +17,4 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 export $(dbus-launch)
 
 
-exec Hyprland
+exec Hyprland > /dev/null
