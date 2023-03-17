@@ -57,7 +57,7 @@ mkdir $HOME/.config/dunst/
 mkdir $HOME/.config/zathura/
 mkdir $HOME/.mozilla/
 
-sudo mv mozilla/* $HOME/.mozilla/
+sudo mv moziila/* $HOME/.mozilla/
 sudo mv paru.conf /etc/
 sudo mv bin/transadd /usr/local/bin
 sudo mv rules/* /etc/udev/rules.d/
