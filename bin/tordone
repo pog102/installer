@@ -6,5 +6,5 @@ season=$(echo "$TR_TORRENT_DIR" | grep -Eo "[0-9]$")
 # echo "$TR_TORRENT_DIR" >> /tmp/torrents.log
 # echo "$TR_TORRENT_NAME" >> /tmp/torrents.log
 mv "$TR_TORRENT_DIR/$TR_TORRENT_NAME"  "$TR_TORRENT_DIR/S0${season}E${file}.mkv" 
-notify-send "Transmission-daemon" "$TR_TORRENT_NAME has completely downloaded" && polybar-msg action "#torrents.hook.0"  #&& pkill -SIGRTMIN+2 i3blocks
+notify-send -i trans "Transmission" "$TR_TORRENT_NAME has completely downloaded" && polybar-msg action "#torrents.hook.0"  #&& pkill -SIGRTMIN+2 i3blocks
 transmission-remote -l | awk '$2 == "100%"{ system("transmission-remote -t " $1 " --remove") }'
