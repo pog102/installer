@@ -20,4 +20,5 @@ libnotify
 bluetuith-bin
 xpub
 waybar-module-pacman-updates-git
-transg-tui
+transg-tui-git
+python-pywalfox
