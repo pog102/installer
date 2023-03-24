@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Path to the directory containing the images
+dir="~/Pictures/green"
+
+# Loop through all the image files in the directory
+for file in "$dir"/*
+do
+  # Check if the file is an image file
+    # Check if the image is already 1920x1080
+    if [ "$(identify -format '%w %h' "$file")" != "1920 1080" ]
+    then
+      # Change the resolution of the image using the convert command
+      convert "$file" -resize 1920x1080\! "$file"
+      echo "Resized $file"
+    else
+      echo "$file is already 1920x1080"
+    fi
+done
+

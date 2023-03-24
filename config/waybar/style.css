@@ -2,7 +2,7 @@
 
 * {
   border: none;
-  font-family: 'Fira Code', 'Symbols Nerd Font Mono';
+  font-family: 'Fira Code', 'Symbols Nerd Font Mono', 'Twemoji';
   font-size: 16px;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
   min-height: 43px;
@@ -41,7 +41,7 @@ tooltip {
   color: @foreground;
 }
 
-#clock, #custom-updates, #backlight, #pulseaudio, #network, #battery{
+#clock, #custom-weather, #bluetooth, #backlight, #pulseaudio, #network, #battery{
   border-radius: 10px;
   background-color: @color0;
   color: @foreground;

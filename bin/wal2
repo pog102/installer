@@ -1,0 +1,53 @@
+#!/bin/bash
+dir=~/Pictures/$1
+# case "$1" in
+#   green) dir="$dir/$1" 
+#   ;;
+#   red) dir="$dir/$1" 
+#   ;;
+#   *) echo default
+#   ;;
+# esac
+my_array=($dir/*)
+paper=${my_array[$(( $RANDOM % ${#my_array[@]}))]}
+wal -i $paper
+file=""
+land=""
+i=1
+for k in "${my_array[@]}"
+do
+  file="${file}preload=$k\n"
+  land="${land}\$w$i = hyprctl hyprpaper wallpaper \"eDP-1,$k\"\n"
+  # echo "preload=$k"
+  let i++
+  [ i -eq 11 ] && break
+
+done
+file="${file}wallpaper=eDP-1,contain:$paper"
+echo -e $land > ~/.config/hypr/wallpapers
+echo -e $file > ~/.config/hypr/hyprpaper.conf
+# echo "wallpaper=eDP-1,contain:$dir/$paper"
+# echo "$file"
+# Preloads() {
+# cat <<EOF
+# [Desktop Entry]
+# Name=$2
+# Exec=steam steam://rungameid/$1
+# Icon=$3
+# Terminal=false
+# Type=Application
+# Categories=SteamLibrary;
+# EOF
+# }
+#
+# "
+# # killall swaybg
+# # swaybg -m fill -i "$PWD/$1" &
+killall hyprpaper
+hyprpaper&
+color=$(sed '4!d' ~/.cache/wal/colors)
+for i in $HOME/.local/share/icons/custom/*; do
+sed -i "s/fill=\"#.*\"/fill=\"$color\"/g" "$i"
+done
+pkill dunst && dunst &
+killall waybar && waybar &

@@ -1,4 +1,5 @@
 wlsunset
+bat
 slurp
 dunst
 bluez

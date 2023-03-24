@@ -1,0 +1,4 @@
+preload={wallpaper}
+preload=~/Pictures/pur.png
+preload=~/Pictures/nat.png
+wallpaper=eDP-1,contain:{wallpaper}

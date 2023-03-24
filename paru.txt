@@ -1,4 +1,6 @@
 brillo
+python-spotdl
+hyprpaper-git
 cli-visualizer
 cmake
 qutebrowser

@@ -1,0 +1,10 @@
+$w1 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/green/wallhaven-0pje1m.jpg"
+$w2 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/green/wallhaven-47ydxo.jpg"
+$w3 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/green/wallhaven-4gp957.jpg"
+$w4 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/green/wallhaven-4oe850.jpg"
+$w5 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/green/wallhaven-4ypvk4.jpg"
+$w6 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/green/wallhaven-72v3q9.jpg"
+$w7 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/green/wallhaven-kwokvd.jpg"
+$w8 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/green/wallhaven-nkzk1q.jpg"
+$w9 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/green/wallhaven-v9yq35.jpg"
+

@@ -2,7 +2,7 @@
   "layer": "top",
     "modules-left": ["custom/arch", "wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/updates", "backlight", "pulseaudio", "network", "battery"],
+    "modules-right": ["custom/weather", "bluetooth", "backlight", "pulseaudio", "network", "battery"],
     "custom/arch": {{
       "format": "  ",
       "on-click": "sh $HOME/.bin/power"
@@ -36,6 +36,17 @@
       "format": "<span color='{color3}'>{{icon}}</span> {{percent}}%",
       "format-icons": ["", "", "", "", "", "", "", "", ""]
     }},
+
+
+ "custom/weather" : {{
+        //shows the current weather and forecast
+        "tooltip" : true,
+        "format" : "{{}}",
+        "interval" : 30,
+        "exec" : "~/.bin/waybar-wttr.py",
+        "return-type" : "json"
+    }},
+
        "custom/updates": {{
        "format": "{{icon}} {{}}",
        "return-type": "json",
@@ -47,6 +58,20 @@
        "exec": "waybar-module-pacman-updates",
 	      "on-click": "foot -e sudo pacman -Syu"
    }},
+
+"bluetooth": {{
+	"format-on": "<span color='{color3}'>  </span>",
+	"format-off": "",
+	"format-connected": "<span color='{color3}'> {{device_alias}}</span>",
+	"format-connected-battery": " {{device_alias}} {{device_battery_percentage}}%",
+	// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+	"tooltip-format": "{{controller_alias}}\t{{controller_address}}\n\n{{num_connections}} connected",
+	"tooltip-format-connected": "{{controller_alias}}\t{{controller_address}}\n\n{{num_connections}} connected\n\n{{device_enumerate}}",
+	"tooltip-format-enumerate-connected": "{{device_alias}}\t{{device_address}}",
+	"tooltip-format-enumerate-connected-battery": "{{device_alias}}\t{{device_address}}\t{{device_battery_percentage}}%"
+}},
+
+
     "pulseaudio": {{
 	"format": "<span color='{color3}'>{{icon}}</span> {{volume}}%",
 	"format-bluetooth": "{{volume}}% {{icon}}",

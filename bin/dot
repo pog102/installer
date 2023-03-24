@@ -1,15 +1,16 @@
 #!/usr/bin/bash
-rsync --progress -r ~/.bin/* ~/new_insta/bin/
-rsync --progress -r ~/.config/* ~/new_insta/config/
+dir=installer
+rsync --progress -r ~/.bin/* ~/$dir/bin/
+rsync --progress -r ~/.config/* ~/$dir/config/
 
-rsync --progress -r ~/scripts/* ~/new_insta/scripts/
+rsync --progress -r ~/scripts/* ~/$dir/scripts/
 
-rsync --progress -r ~/Pictures/* ~/new_insta/Pictures/
+rsync --progress -r ~/Pictures/* ~/$dir/Pictures/
 
-rsync --progress -r  ~/.local/share/icons/custom/* ~/new_insta/icons/
-rsync --progress -r  /etc/udev/rules.d/* ~/new_insta/rules/
-cp ~/.zprofile ~/new_insta/zprofile
-cp ~/.xinitrc ~/new_insta/xinitrc
-cp ~/.xprofile ~/new_insta/xprofile
+rsync --progress -r  ~/.local/share/icons/custom/* ~/$dir/icons/
+rsync --progress -r  /etc/udev/rules.d/* ~/$dir/rules/
+cp ~/.zprofile ~/$dir/zprofile
+cp ~/.xinitrc ~/$dir/xinitrc
+cp ~/.xprofile ~/$dir/xprofile
 
 
