@@ -1,6 +1,5 @@
 wlsunset
 bat
-slurp
 dunst
 bluez
 foot
@@ -30,7 +29,6 @@ zsh-autosuggestions
 zsh-history-substring-search
 zsh-syntax-highlighting
 qt5-wayland
-grim
 udiskie
 mpv
 npm

@@ -20,7 +20,7 @@ alias trans="transmission-daemon&"
 alias delt="rm -f ~/.config/transmission-daemon/torrents/* ~/.config/transmission-daemon/resume/*"
 alias ns="nsxiv"
 alias ls="lsd -t"
-#alias music="yt-dlp -x --add-metadata --output '~/Music/%(title)s.%(ext)s' --audio-quality 0 -i --audio-format flac "
+alias song="yt-dlp -x --add-metadata --output '~/Music/%(title)s.%(ext)s' --audio-quality 0 -i --audio-format flac "
 acer(){
 scp -r $1 jellyfin@192.168.1.85:/home/jellyfin/$2
 }

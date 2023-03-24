@@ -1,6 +1,7 @@
 #!/bin/bash
 
 autologin=true
+music_install=false
 
 # Installing Chaotic AUR
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
@@ -76,6 +77,12 @@ my_array=($HOME/Pictures/*)
 
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
 
+if [[ $music_install ]]; then
+  cd ~/Music/
+  sh ~/.bin/music
+  
+fi
+
 # setup for symlinks
 ln -fs $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
 ln -fs $HOME/.cache/wal/config_waybar $HOME/.config/waybar/config
@@ -88,5 +95,5 @@ sudo pywalfox install
 # for i in $HOME/.local/share/icons/custom/*; do
 # sed -i "s/fill=\".*\"/fill=\"$color\"/g" "$i"
 # done
-sh ~/.bin/wal2 ha
+sh ~/.bin/wal2 ignore
 reboot

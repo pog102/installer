@@ -25,3 +25,4 @@ bluetuith-bin
 xpub
 transg-tui-git
 python-pywalfox
+grimblast-git 
