@@ -11,7 +11,7 @@ intel-ucode
 yt-dlp-git
 ttf-fira-code
 ttf-liberation
-ttf-nerd-fonts-symbols-2048-em
+ttf-nerd-fonts-symbols-common
 ttf-roboto-mono
 ttf-sazanami
 waybar-hyprland
