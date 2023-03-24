@@ -43,11 +43,12 @@ echo -e $file > ~/.config/hypr/hyprpaper.conf
 # "
 # # killall swaybg
 # # swaybg -m fill -i "$PWD/$1" &
-killall hyprpaper
-hyprpaper&
 color=$(sed '4!d' ~/.cache/wal/colors)
 for i in $HOME/.local/share/icons/custom/*; do
 sed -i "s/fill=\"#.*\"/fill=\"$color\"/g" "$i"
 done
+if [ "$1" == "ha" ]
+killall hyprpaper
+hyprpaper&
 pkill dunst && dunst &
 killall waybar && waybar &

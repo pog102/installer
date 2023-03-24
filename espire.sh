@@ -83,9 +83,10 @@ ln -fs $HOME/.cache/wal/zathurarc $HOME/.config/zathura/zathurarc
 ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.css
 sudo pywalfox install
 # nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
-sed -i 's/background.*//g' ~/.local/share/nvim/lazy/pywal.nvim/lua/pywal/core.lua
-color=$(sed '5!d' ~/.cache/wal/colors)
-for i in $HOME/.local/share/icons/custom/*; do
-sed -i "s/fill=\".*\"/fill=\"$color\"/g" "$i"
-done
+# sed -i 's/background.*//g' ~/.local/share/nvim/lazy/pywal.nvim/lua/pywal/core.lua
+# color=$(sed '5!d' ~/.cache/wal/colors)
+# for i in $HOME/.local/share/icons/custom/*; do
+# sed -i "s/fill=\".*\"/fill=\"$color\"/g" "$i"
+# done
+sh ~/.bin/wal2 ha
 reboot

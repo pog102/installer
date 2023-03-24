@@ -8,6 +8,7 @@ git
 hyprland
 hyprpaper-git
 intel-ucode
+yt-dlp-git
 ttf-fira-code
 ttf-liberation
 ttf-nerd-fonts-symbols-2048-em
@@ -21,6 +22,5 @@ rofi-lbonn-wayland-git
 libnotify
 bluetuith-bin
 xpub
-waybar-module-pacman-updates-git
 transg-tui-git
 python-pywalfox
