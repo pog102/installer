@@ -1,22 +1,32 @@
- 
-
 configuration {
-    location: 0;
+    location:                       0;
+    font:                           "Symbols Nerd Font Mono 1:style=regular";
 }
-@theme "~/.cache/wal/color.rasi"
+ 
+ 
 * {
   border: 0;
-    font: "Symbols Nerd Font Mono 28";
   margin: 0;
   padding: 0;
   spacing: 0;
+  background: #1B1B27;
+  background-alt: #282a36;  
+  line: #44475a; 
+  foreground: #f8f8f2;  
+  foreground-alt: #f8f8f2;  
+  Comment: #6272a4; 
+  selected: #ffb86c;
+  Pink: #ff79c6;    
+  Purple: #bd93f9;
+  background-color: @background;
+  text-color: @purple;
 }
-
-
+ 
+ 
 window {
-    background-color:               @bg0;
+    background-color:               @background;
     border:                         2px;
-    border-color:                   @bg4;
+    border-color:                   @line;
     border-radius:                  50px;
     width:                          490px;   
     height:                         130px;          
@@ -25,7 +35,7 @@ window {
 }
  
 listview {
-    background-color:               @bg0;
+    background-color:               @background;
     columns:                        1;
     lines:                          5;
     spacing:                        50px;
@@ -33,23 +43,23 @@ listview {
 }
  
 mainbox {
-    background-color:               @bg0;
+    background-color:               @background;
     children:                       [ listview ];
     padding:                        40px;
 }
  
 element {
-    background-color:               @bg0;
-    text-color:                     @bg4;
+    background-color:               @background;
+    text-color:                     @line;
     orientation:                    horizontal;
     /*border-radius:                  100%;*/
-    /* padding:                        8px 32px 8px 32px; */
-    padding:                        0px 9px 0px 0px;
+    /*padding:                        8px 32px 8px 32px;*/
 }
  
 element-text {
     background-color:               inherit;
     text-color:                     inherit;
+    font:                           "Font Awesome 6 Free 30";
     expand:                         false;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
@@ -57,16 +67,9 @@ element-text {
 }
  
 element selected {
-    background-color:               @bg0;
-    text-color:                     @fg;
+    background-color:               @background;
+    text-color:                     @purple;
     border:                         0px;
     /*border-radius:                  100%;*/
     border-color:                   @selected;
 }
-
-
-
-
-
-
-

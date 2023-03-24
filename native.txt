@@ -23,7 +23,6 @@ ripgrep
 rsync
 sed
 shellcheck
-swaybg
 tree
 unzip
 wl-clipboard

@@ -1,5 +1,0 @@
-2022-11-09 19:19:09.475 [info] update#ctor - updates are disabled as there is no update URL
-2022-11-09 19:19:10.669 [info] Starting extension host with pid 3364 (fork() took 9 ms).
-2022-11-09 19:19:49.515 [info] Extension host with pid 3364 exited with code: 0, signal: null.
-2022-11-09 19:19:50.634 [info] Starting extension host with pid 3470 (fork() took 6 ms).
-2022-11-09 20:15:07.665 [info] Extension host with pid 3470 exited with code: 0, signal: null.
