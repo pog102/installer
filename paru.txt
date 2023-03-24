@@ -11,6 +11,7 @@ intel-ucode
 yt-dlp-git
 ttf-fira-code
 ttf-liberation
+ttf-twemoji
 ttf-nerd-fonts-symbols-common
 ttf-roboto-mono
 ttf-sazanami
