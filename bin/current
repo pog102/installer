@@ -1,0 +1,12 @@
+#!/bin/sh
+num=$(hyprctl activewindow | grep "workspace: " | cut -d' ' -f2)
+paper=$(sed "$num!d" ~/.config/hypr/hyprpaper.conf | cut -d'=' -f2)
+wal -n -q -i $paper
+# notify-send "Generated paperschme"
+color=$(sed '4!d' ~/.cache/wal/colors)
+for i in $HOME/.local/share/icons/custom/*; do
+sed -i "s/fill=\"#.*\"/fill=\"$color\"/g" "$i"
+done
+killall dunst
+killall -SIGUSR2 waybar
+# killall -SIGUSR2 dunst

@@ -1,5 +1,5 @@
 #!/bin/bash
-wal -i $PWD/$1
+wal -i -n -q $PWD/$1
 # killall swaybg
 # swaybg -m fill -i "$PWD/$1" &
 killall hyprpaper
@@ -8,5 +8,5 @@ color=$(sed '4!d' ~/.cache/wal/colors)
 for i in $HOME/.local/share/icons/custom/*; do
 sed -i "s/fill=\"#.*\"/fill=\"$color\"/g" "$i"
 done
-pkill dunst && dunst &
-killall waybar && waybar &
+pkill dunst
+killall -SIGUSR2 waybar

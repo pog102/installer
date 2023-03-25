@@ -10,23 +10,28 @@ dir=~/Pictures/$1
 # esac
 my_array=($dir/*)
 paper=${my_array[$(( $RANDOM % ${#my_array[@]}))]}
-# wal -i $paper
-wal -i ${my_array[0]}
+wal -i $paper
+# wal -i ${my_array[0]}
 file=""
 land=""
 i=1
 for k in "${my_array[@]}"
 do
   file="${file}preload=$k\n"
+  # if [[ $i -gt 5 ]]; then
+  # land="${land}\$w$i = hyprctl hyprpaper wallpaper \"HDMI-A-1,$k\"\n"
+  # else
   land="${land}\$w$i = hyprctl hyprpaper wallpaper \"eDP-1,$k\"\n"
+  # fi
   # echo "preload=$k"
   let i++
   [ "$i" -eq "11" ] && break
 
 done
-file="${file}wallpaper=eDP-1,contain:$paper"
+file="${file}wallpaper=eDP-1,contain:$paper\nwallpaper=HDMI-A-1,contain:$paper"
 echo -e $land > ~/.config/hypr/wallpapers
 echo -e $file > ~/.config/hypr/hyprpaper.conf
+[ "$2" == "off" ] && echo "ipc = off" >> ~/.config/hypr/hyprpaper.conf
 # echo "wallpaper=eDP-1,contain:$dir/$paper"
 # echo "$file"
 # Preloads() {
@@ -52,6 +57,6 @@ if [ "$1" != "ignore" ]
 then
 killall hyprpaper
 hyprpaper&
-pkill dunst && dunst &
-killall waybar && waybar &
+killal dunst
+killall -SIGUSR2 waybar
 fi
