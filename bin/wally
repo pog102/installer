@@ -1,12 +1,16 @@
 #!/bin/bash
-wal -i -n -q $PWD/$1
+wal -n -q -i $PWD/$1
 # killall swaybg
 # swaybg -m fill -i "$PWD/$1" &
-killall hyprpaper
-hyprpaper&
 color=$(sed '4!d' ~/.cache/wal/colors)
 for i in $HOME/.local/share/icons/custom/*; do
 sed -i "s/fill=\"#.*\"/fill=\"$color\"/g" "$i"
 done
-pkill dunst
+
+echo -e "preload=$PWD/$1" > ~/.config/hypr/hyprpaper.conf
+echo -e "wallpaper=eDP-1,contain:$PWD/$1\nwallpaper=HDMI-A-1,contain:$PWD/$1" >> ~/.config/hypr/hyprpaper.conf
+echo -e "ipc=off" >> ~/.config/hypr/hyprpaper.conf
+killall hyprpaper
+hyprpaper&
+killall dunst
 killall -SIGUSR2 waybar

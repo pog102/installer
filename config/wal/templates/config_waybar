@@ -2,15 +2,26 @@
   "layer": "top",
     "modules-left": ["custom/arch", "wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/weather", "bluetooth", "backlight", "pulseaudio", "network", "battery"],
+    "modules-right": ["custom/weather", "backlight", "pulseaudio", "network", "battery"],
     "custom/arch": {{
       "format": "  ",
       "on-click": "sh $HOME/.bin/power"
     }},
     "wlr/workspaces": {{
-      "format": "{{name}}",
+      "format": "{{icon}}",
       "on-click": "activate",
-      "all-outputs": true
+        "format-icons": {{
+"1":"-", 
+"2":"二",
+"3":"三",
+"4":"四",
+"5":"五",
+"6":"六",
+"7":"七",
+"8":"八",
+"9":"九",
+"10":"十"
+        }},
     }},
     "clock": {{
       "format": "<span color='{color3}'> </span>{{:%H:%M}}",
