@@ -1,0 +1,118 @@
+@import "/home/chad/.cache/wal/colors-waybar.css";
+
+* {
+  border: none;
+  font-family: 'Fira Code', 'Symbols Nerd Font Mono', 'Twemoji', 'Sazanami Gothic';
+  font-size: 16px;
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+  min-height: 43px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#custom-arch, #workspaces {
+  border-radius: 10px;
+  background-color: @color0;
+  color: @color3;
+  margin-top: 15px;
+	margin-right: 15px;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#custom-arch {
+  font-size: 20px;
+	margin-left: 15px;
+}
+tooltip {
+     border-radius: 10px;
+     background-color: @background;
+}
+
+#workspaces button {
+  background: @color0;
+  color: @color8;
+}
+
+#workspaces button.active {
+  color: @foreground;
+}
+
+#clock{
+  border-radius: 10px;
+  background-color: @color0;
+  color: @color1;
+  margin-top: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 15px;
+}
+
+#backlight{
+  border-radius: 10px;
+  background-color: @color0;
+  color: @color2;
+  margin-top: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 15px;
+}
+#pulseaudio{
+  border-radius: 10px;
+  background-color: @color0;
+  color: @color3;
+  margin-top: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 15px;
+}
+#battery{
+  border-radius: 10px;
+  background-color: @color0;
+  color: @color4;
+  margin-top: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 15px;
+}
+#network{
+  border-radius: 10px;
+  background-color: @color0;
+  color: @color5;
+  margin-top: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 15px;
+}
+#custom-weather{
+  border-radius: 10px;
+  background-color: @color0;
+  color: @color6;
+  margin-top: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 15px;
+}
+#clock {
+  margin-right: 0;
+}
+
+@keyframes blink {
+  to {
+    background-color: @color5;
+    color: black;
+  }
+}
+
+#battery.warning:not(.charging) {
+  background: #f38ba8;
+  color: white;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

@@ -1,0 +1,123 @@
+{{
+  "layer": "top",
+    "modules-left": ["custom/arch", "wlr/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/weather", "backlight", "pulseaudio", "network", "battery"],
+    "custom/arch": {{
+      "format": "  ",
+      "on-click": "sh $HOME/.bin/power"
+    }},
+    "wlr/workspaces": {{
+      "format": "{{icon}}",
+      "on-click": "activate",
+        "format-icons": {{
+"1":"-", 
+"2":"二",
+"3":"三",
+"4":"四",
+"5":"五",
+"6":"六",
+"7":"七",
+"8":"八",
+"9":"九",
+"10":"十"
+        }},
+    }},
+    "clock": {{
+      "format": " {{:%H:%M}}",
+      "format-alt": "{{:%A, %B %d, %Y (%R)}}  ",
+	"tooltip-format": "<big>{{:%Y %B}}</big>\n<tt><big>{{calendar}}</big></tt>",
+        "calendar": {{
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "on-click-right": "mode",
+                    "format": {{
+                              "months":     "<b>{{}}</b>",
+                              "days":       "<b>{{}}</b>",
+                              "weeks":      "<b>W{{}}</b>",
+                              "weekdays":   "<b>{{}}</b>",
+                              "today":      "<b><u>{{}}</u></b>"
+                              }}
+                    }}
+    }},
+    "backlight": {{
+      "device": "intel_backlight",
+      "format": "{{icon}} {{percent}}%",
+      "format-icons": ["", "", "", "", "", "", "", "", ""]
+    }},
+
+
+ "custom/weather" : {{
+        //shows the current weather and forecast
+        "tooltip" : true,
+        "format" : "{{}}",
+        "interval" : 30,
+        "exec" : "~/.bin/waybar-wttr.py",
+        "return-type" : "json"
+    }},
+
+       "custom/updates": {{
+       "format": "{{icon}} {{}}",
+       "return-type": "json",
+       "format-icons": {{
+           "has-updates": " 󱍷",
+           "updated": " 󰂪"
+       }},
+       "exec-if": "which waybar-module-pacman-updates",
+       "exec": "waybar-module-pacman-updates",
+	      "on-click": "foot -e sudo pacman -Syu"
+   }},
+
+"bluetooth": {{
+	"format-on": "  ",
+	"format-off": "",
+	"format-connected": " {{device_alias}}",
+	"format-connected-battery": " {{device_alias}} {{device_battery_percentage}}%",
+	// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+	"tooltip-format": "{{controller_alias}}\t{{controller_address}}\n\n{{num_connections}} connected",
+	"tooltip-format-connected": "{{controller_alias}}\t{{controller_address}}\n\n{{num_connections}} connected\n\n{{device_enumerate}}",
+	"tooltip-format-enumerate-connected": "{{device_alias}}\t{{device_address}}",
+	"tooltip-format-enumerate-connected-battery": "{{device_alias}}\t{{device_address}}\t{{device_battery_percentage}}%"
+}},
+
+
+    "pulseaudio": {{
+	"format": "{{icon}} {{volume}}%",
+	"format-bluetooth": "{{volume}}% {{icon}}",
+	"format-muted": "",
+	"format-icons": {{
+		"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+		"headphones": "",
+		"handsfree": "",
+		"headset": "",
+		"phone": "",
+		"portable": "",
+		"car": "",
+		"default": ["", ""]
+	}},
+	"scroll-step": 1,
+	"on-click": "pavucontrol"
+}},
+
+"network": {{
+    "interface": "wlan0",
+    "format": "{{ifname}}",
+    "format-wifi": " {{essid}} ({{signalStrength}}%)",
+    "format-ethernet": "{{ipaddr}}/{{cidr}} ",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format": "{{ifname}} via {{gwaddr}} ",
+    "tooltip-format-wifi": "{{ipaddr}}\n{{bandwidthUpBits}}\n{{bandwidthDownBits}}",
+    "tooltip-format-ethernet": "{{ifname}} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+}},
+
+
+    "battery": {{
+      "format": "{{icon}} {{capacity}}%",
+      "format-icons": ["", "", "", "", "", "", "", "", "", ""],
+      "format-charging": " {{capacity}}%"
+    }},
+}}

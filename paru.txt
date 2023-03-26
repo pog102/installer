@@ -26,3 +26,4 @@ xpub
 transg-tui-git
 python-pywalfox
 grimblast-git 
+phinger-cursors
