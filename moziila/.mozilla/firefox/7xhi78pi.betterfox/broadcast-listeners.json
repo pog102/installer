@@ -1,1 +1,1 @@
-{"version":1,"listeners":{"remote-settings/monitor_changes":{"version":"\"1680203867219\"","sourceInfo":{"moduleURI":"resource://services-settings/remote-settings.js","symbolName":"remoteSettingsBroadcastHandler"}}}}
+{"version":1,"listeners":{"remote-settings/monitor_changes":{"version":"\"1680211589275\"","sourceInfo":{"moduleURI":"resource://services-settings/remote-settings.js","symbolName":"remoteSettingsBroadcastHandler"}}}}
