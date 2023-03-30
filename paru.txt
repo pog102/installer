@@ -3,7 +3,7 @@ python-spotdl
 hyprpaper-git
 cli-visualizer
 cmake
-qutebrowser
+firefox-nightly
 git
 hyprland
 hyprpaper-git
