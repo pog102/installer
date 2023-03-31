@@ -13,4 +13,5 @@ echo -e "ipc=off" >> ~/.config/hypr/hyprpaper.conf
 killall hyprpaper
 hyprpaper&
 killall dunst
-killall -SIGUSR2 waybar
+# killall -SIGUSR2 waybar
+killall waybar && waybar &
