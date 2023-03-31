@@ -1,4 +1,5 @@
 wlsunset
+firefox
 bat
 dunst
 bluez

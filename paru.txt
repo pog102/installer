@@ -3,7 +3,6 @@ python-spotdl
 hyprpaper-git
 cli-visualizer
 cmake
-firefox-nightly
 git
 hyprland
 hyprpaper-git
