@@ -7,7 +7,7 @@ COVER="/tmp/.music_cover.png"
 # ffmpeg -i "$HOME/Music/$(mpc current -f %file%)" "${COVER}" -y &> /dev/null
 file="$(mpc current -f %file%)"
 song="$(mpc current -f %title%)"
-playlist="$HOME/Music/liked.m3u"
+playlist="$HOME/playlist/liked.m3u"
 # if [[ grep "$file" "~/Music/liked.m3u" ]]; then
 if grep -q "$file" "$playlist"
 then

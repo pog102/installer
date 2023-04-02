@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ "$(rfkill | awk '/0 wlan/ {print $4}')" = "unblocked" ]
+then
+  rfkill block wlan
+else
+  rfkill unblock wlan
+fi

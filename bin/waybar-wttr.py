@@ -1,8 +1,16 @@
 #!/usr/bin/env python
 
 import json
+import os.path
+import sys
 import requests
 from datetime import datetime
+path='/tmp/wet.txt'
+place=""
+if os.path.isfile(path):
+    with open(path) as f:
+        place = f.read().strip()
+
 
 WEATHER_CODES = {
     '113': '☀️ ',
@@ -56,9 +64,11 @@ WEATHER_CODES = {
 }
 
 data = {}
-
-
-weather = requests.get("https://wttr.in/?format=j1").json()
+# place=""
+# if len(sys.argv) > 1:
+#     place=sys.argv[1]
+# weather = requests.get("https://wttr.in/"+sys.argv[1]+"?format=j1").json()
+weather = requests.get("https://wttr.in/"+place+"?format=j1").json()
 
 
 def format_time(time):
@@ -96,7 +106,7 @@ if tempint > 0 and tempint < 10:
 data['text'] = ' '+WEATHER_CODES[weather['current_condition'][0]['weatherCode']] + \
     " "+extrachar+weather['current_condition'][0]['FeelsLikeC']+"°"
 # print(data)
-data['tooltip'] = f"<b>{weather['current_condition'][0]['weatherDesc'][0]['value']} {weather['current_condition'][0]['temp_C']}°</b>\n"
+data['tooltip'] = f"<b>{weather['nearest_area'][0]['areaName'][0]['value']}, {weather['current_condition'][0]['weatherDesc'][0]['value']} {weather['current_condition'][0]['temp_C']}°</b>\n"
 data['tooltip'] += f"Feels like: {weather['current_condition'][0]['FeelsLikeC']}°\n"
 data['tooltip'] += f"Wind: {weather['current_condition'][0]['windspeedKmph']}Km/h\n"
 data['tooltip'] += f"Humidity: {weather['current_condition'][0]['humidity']}%\n"

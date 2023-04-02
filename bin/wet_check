@@ -1,0 +1,17 @@
+#!/bin/sh
+path="/tmp/wet.txt"
+
+location=$(cat $path)
+
+case "$location" in
+  "Kaunas") echo "" > $path
+  ;;
+  "") echo "Kaunas" > $path
+  ;;
+  *) echo default
+  ;;
+esac
+pkill -SIGRTMIN+8 "waybar"
+
+
+

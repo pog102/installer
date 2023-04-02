@@ -21,6 +21,7 @@ zsh
 rofi-lbonn-wayland-git
 libnotify
 bluetuith-bin
+mpvpaper
 xpub
 transg-tui-git
 python-pywalfox

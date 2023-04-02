@@ -1,0 +1,71 @@
+#!/bin/bash
+
+#when set to exit, mpd_control will exit if you press escape
+#when set to break, mpd_control will go the upper level if possible
+ESC_ACTION="break"
+# source configuration file for rofi if exists
+
+ROFI="rofi -dmenu -p 'Search:'"
+
+		ALBUM=$1
+		if [ "$ALBUM" = "" ]; then $ESC_ACTION;
+		fi
+		
+		while true; do
+			
+			TITLES=$(mpc  list title album "$ALBUM")
+    if [ $( echo -e "$TITLES" | wc -l ) -gt "2" ]
+    then
+			TITLE=$(echo -e "replace all\nadd all\n--------------------------\n$TITLES" | $ROFI);
+			if [ "$TITLE" = "" ]; then $ESC_ACTION
+			elif [ "$TITLE" = "replace all" ]; then
+				CUR_SONG=$(mpc  current)
+				mpc  clear;
+				mpc  find album "$ALBUM" | mpc  add 
+				if [ -n "$CUR_SONG" ]; then mpc  play; fi
+				$ESC_ACTION
+			elif [ "$TITLE" = "add all" ]; then
+				mpc  find album "$ALBUM" | mpc  add 
+				$ESC_ACTION
+			
+			fi
+			# while true; do
+			# 	DEC=$(echo -e "add after current and play\nadd after current\nreplace\nadd at the end" | $ROFI);
+			# 	case $DEC in 
+			#
+			# 		"")
+			# 		$ESC_ACTION
+			# 		;;
+			#
+			# 		"add after current and play")
+			# 		addaftercurrentandplay "$(mpc  find album "$ALBUM" title "$TITLE" | head -1 )"
+			# 		;;
+			#
+			# 		"add after current")
+			# 		addaftercurrent "$(mpc  find album "$ALBUM" title "$TITLE" | head -1 )"
+			# 		;;
+			#
+			# 		"replace")
+					# CUR_SONG=$(mpc  current)
+					mpc  clear
+					mpc  find album "$ALBUM" title "$TITLE" | head -1 | mpc  add
+          mpc play
+					# if [ -n "$CUR_SONG" ]; then mpc  play; fi
+			# 		;;
+			# 		
+			# 		"add at the end")
+			# 		mpc  find album "$ALBUM" title "$TITLE" | head -1 | mpc  add
+			# 		;;
+			#
+			# 	esac
+			# 	$ESC_ACTION
+			# done
+    else 
+    # mpc add $TITLES
+    mpc clear
+		mpc  find album "$ALBUM" | mpc  add 
+    mpc play
+				$ESC_ACTION
+    fi
+		done
+    wrap_music
