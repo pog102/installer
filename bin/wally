@@ -1,17 +1,19 @@
 #!/bin/bash
-wal -n -q -i $PWD/$1
+wal -n -q -i $HOME/Pictures/$1
 # killall swaybg
-# swaybg -m fill -i "$PWD/$1" &
+# swaybg -m fill -i "$HOME/Pictures/$1" &
 color=$(sed '4!d' ~/.cache/wal/colors)
 for i in $HOME/.local/share/icons/custom/*; do
 sed -i "s/fill=\"#.*\"/fill=\"$color\"/g" "$i"
 done
 
-echo -e "preload=$PWD/$1" > ~/.config/hypr/hyprpaper.conf
-echo -e "wallpaper=eDP-1,contain:$PWD/$1\nwallpaper=HDMI-A-1,contain:$PWD/$1" >> ~/.config/hypr/hyprpaper.conf
+echo -e "preload=$HOME/Pictures/$1" > ~/.config/hypr/hyprpaper.conf
+echo -e "wallpaper=eDP-1,contain:$HOME/Pictures/$1\nwallpaper=HDMI-A-1,contain:$HOME/Pictures/$1" >> ~/.config/hypr/hyprpaper.conf
 echo -e "ipc=off" >> ~/.config/hypr/hyprpaper.conf
-killall hyprpaper
-hyprpaper&
-killall dunst
+killall hyprpaper > /dev/null 2>&1
+hyprpaper > /dev/null 2>&1 &
+killall dunst> /dev/null 2>&1
 # killall -SIGUSR2 waybar
-killall waybar && waybar &
+killall waybar
+waybar > /dev/null 2>&1 &
+killall wally

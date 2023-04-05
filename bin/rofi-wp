@@ -1,0 +1,21 @@
+#!/bin/sh
+
+wp_dir="$HOME/Pictures"
+
+list_wps() {
+  find "$wp_dir" -type f -regex '.*\(jpg\|jpeg\|png\)' -printf "%P\n" |
+    while read wp; do
+      echo -en "$wp\x00icon\x1f$wp_dir/$wp\n";
+    done
+}
+
+rofi_dmenu() {
+  # handwriting fonts: caveat #1 swankyandmoomoo #2 longcang #3
+  rofi -dmenu -show-icons \
+    -theme-str '#entry { placeholder: "Wallpaper to apply.."; }' \
+    -theme ~/scripts/wallpaper/wall.rasi
+}
+
+wp=$( list_wps | rofi_dmenu )
+[ ! -z $wp ] && ~/.bin/wally "$wp" 
+# [ ! -z $wp ] && rm "$wp_dir/$wp" 

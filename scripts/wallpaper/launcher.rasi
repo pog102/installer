@@ -38,7 +38,7 @@ textbox-prompt {
 entry {
     expand:                         false;
     padding:                        4px;
-    margin:                         6px;
+    margin:                         -6px;
     horizontal-align:               0;
     width:                          300;
     background-color:               @background;
@@ -54,20 +54,10 @@ element {
     border:                         0;
     border-color:                   transparent;
 }
+
 element-box {
-    children:                       [element-icon, element-text];
+    children:                       [element-icon];
     orientation:                    vertical;
     expand:                         false;
 }
 
-element-text {
-    horizontal-align:               0;
-    width:                          10px;
-}
-element-icon {
-    padding:                        8px;
-    border:                         4px;
-    border-color:                   transparent;
-    border-radius:                  8;
-    size:                           16;
-}

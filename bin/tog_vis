@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if pgrep -x vis >/dev/null
+then
+  # echo running
+  killall vis
+else
+  # echo "not running"
+  $(foot -o colors.alpha=0 -w 1920x270 --title="vis" -e vis ) &
+fi
+# [ -z "$(pgrep vis)" ] && $(foot -o colors.alpha=0 -w 1920x270 --title="vis" -e vis ) || killall vis

@@ -41,7 +41,7 @@ tooltip {
   color: @foreground;
 }
 
-#clock, #custom-weather, #bluetooth, #backlight, #pulseaudio, #network, #battery{
+#clock, #custom-pacman, #custom-weather, #bluetooth, #backlight, #pulseaudio, #network, #battery{
   border-radius: 10px;
   background-color: @color0;
   color: @foreground;

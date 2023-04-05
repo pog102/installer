@@ -5,18 +5,29 @@ pics=$HOME/.cache/music
 cd ~/Music/
 num=$(command ls -1q ~/Music | wc -l) 
 
-desktop_entry() {
-cat <<EOF
-[Desktop Entry]
-Name=$1
-Exec=$HOME/.bin/list_album "$1"
-Icon=$2
-Terminal=false
-Type=Application
-Categories=MPD;
-EOF
-}
-
+# desktop_entry() {
+# cat <<EOF
+# [Desktop Entry]
+# Name=$1
+# Exec=$HOME/.bin/list_album "$1"
+# Icon=$2
+# Terminal=false
+# Type=Application
+# Categories=MPD;
+# EOF
+# }
+#
+# desktop_all() {
+# cat <<EOF
+# [Desktop Entry]
+# Name=Play All
+# Exec=sh -c "mpc clear; mpc ls | mpc add; mpc play"
+# Icon=""
+# Terminal=false
+# Type=Application
+# Categories=MPD;
+# EOF
+# }
 if [ ! -f "$HOME/.cache/songs" ] || [ "$num" -ne "$(cat $HOME/.cache/songs)" ]
 then
 for file in *.mp3; do
@@ -28,13 +39,14 @@ for file in *.mp3; do
       #create a .desktop
       ##################
       #
-            desktop_entry "$album" "$pics/$album.png" > "$pics/applications/$album.desktop"
+            # desktop_entry "$album" "$pics/$album.png" > "$pics/applications/$album.desktop"
       #
       echo "$pics/$album.png"
     ffmpeg -i "$HOME/Music/$file" "$pics/$album.png" -y &> /dev/null
     fi
-   echo "$file" >> "$loads/$album.m3u"
+   # echo "$file" >> "$loads/$album.m3u"
 done
+            # desktop_all > "$pics/applications/all.desktop"
     echo $num > $HOME/.cache/songs
 fi
 

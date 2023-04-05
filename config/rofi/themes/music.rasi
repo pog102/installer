@@ -1,94 +1,202 @@
-/*******************************************************************************
- * ROFI SQUARED THEME USING THE EVERFOREST PALETTE
- * User                 : LR-Tech
- * Theme Repo           : https://github.com/lr-tech/rofi-themes-collection
- *******************************************************************************/
- configuration {
-         modi:                           "drun";
-         drun-display-format:            "{name}";
-         sidebar-mode:                   false;
- }
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Rofi Theme File
+ * Rofi Version: 1.7.3
+ **/
 
-@theme "~/.cache/wal/game.rasi"
-* {
-    font:   "Roboto 12";
-   display-dmenu:                   "Song";
-        dmenu-display-format:            "{name}";
+@import "~/.cache/wal/color.rasi"
+/*****----- Configuration -----*****/
+configuration {
+    font: "Roboto Mono 11";
+	modi:                       "drun,filebrowser,window";
+	icon-theme: 					"Papirus";
+    show-icons:                 true;
+    display-drun:               "";
+    display-run:                "";
+    display-filebrowser:        "";
+    display-window:             "";
+	drun-display-format:        "{name}";
+	window-format:              "{w} · {c} · {t}";
+}
 
-
-    accent-color:     @bg4;
-    urgent-color:     @trans;
-
-    background-color:   transparent;
-    text-color:         @fg;
-
+imagebox {
+    padding:                     20px;
+    background-color:            transparent;
+    background-image:            url("/tmp/mus_cover.png", width);
+    orientation:                 vertical;
+    children:                    [ "dummy", "mode-switcher" ];
 }
 
 window {
-    width:      750;
-    y-offset:   -20;
-    background-color:   @trans;
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       1000px;
+    height: 500px;
+    x-offset:                    0px;
+    y-offset:                    0px;
 
+    /* properties for all widgets */
+    enabled:                     true;
+    border-radius:               15px;
+    cursor:                      "default";
+    background-color:            @bg;
 }
 
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            transparent;
+    orientation:                 horizontal;
+    children:                    [ "imagebox", "listbox" ];
+}
+
+
+listbox {
+    spacing:                     10px;
+    padding:                     10px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "message", "listview" ];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+/*****----- Inputbar -----*****/
 inputbar {
-    spacing:    8px;
-    padding:    8px;
-
-    background-color:   @bg0;
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @bg;
+    text-color:                  @fg;
+    children:                    [ "textbox-prompt-colon", "entry" ];
+}
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+entry {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search";
+    placeholder-color:           inherit;
 }
 
-prompt, entry, element-icon, element-text {
-    vertical-align: 0.5;
+/*****----- Mode Switcher -----*****/
+mode-switcher{
+    enabled:                     true;
+    spacing:                     20px;
+    background-color:            transparent;
+    text-color:                  @fg;
+}
+button {
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @bg;
+    text-color:                  inherit;
+    cursor:                      pointer;
+}
+button selected {
+    background-color:            @bg9;
+    text-color:                  @fg;
 }
 
-prompt {
-    text-color: @accent-color;
-}
-
-textbox {
-    padding:            8px;
-    background-color:   @bg0;
-}
-
+/*****----- Listview -----*****/
 listview {
-    padding:    1px 0;
-    lines:      8;
-    columns:    1;
-
-    fixed-height:   false;
+    enabled:                     true;
+    columns:                     1;
+    lines:                       8;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     0px;
+    background-color:            transparent;
+    text-color:                  @fg;
+    cursor:                      "default";
 }
 
+/*****----- Elements -----*****/
 element {
-    padding:    7px;
-    spacing:    7px;
+    enabled:                     true;
+    spacing:                     15px;
+    padding:                     8px;
+    border-radius:               10px;
+    background-color:            transparent;
+    text-color:                  @fg;
+    cursor:                      pointer;
 }
-
-element normal normal {
-    text-color: @fg;
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  inherit;
 }
-
-element normal urgent {
-    text-color: @urgent-color;
+element normal.urgent {
+    background-color:            @urgent;
+    text-color:                  @fg;
 }
-
-element normal active {
-    text-color: @accent-color;
+element normal.active {
+    background-color:            @bg3;
+    text-color:                  @fg;
 }
-
-element selected {
-    text-color: @trans;
+element selected.normal {
+    background-color:            @bg9;
+    text-color:                  @fg;
 }
-
-element selected normal, element selected active {
-    background-color:   @accent-color;
+element selected.urgent {
+    background-color:            @urgent;
+    text-color:                  @fg;
 }
-
-element selected urgent {
-    background-color:   @urgent-color;
+element selected.active {
+    background-color:            @urgent;
+    text-color:                  @fg;
 }
-
-
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        32px;
+    cursor:                      inherit;
+}
 element-text {
-    text-color: inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+/*****----- Message -----*****/
+message {
+    background-color:            transparent;
+}
+textbox {
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @bg;
+    text-color:                  @fg;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+error-message {
+    padding:                     15px;
+    border-radius:               20px;
+    background-color:            @bg;
+    text-color:                  @fg;
 }

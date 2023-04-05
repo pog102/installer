@@ -22,10 +22,12 @@ ROFI="rofi -dmenu -p 'Search:'"
 				CUR_SONG=$(mpc  current)
 				mpc  clear;
 				mpc  find album "$ALBUM" | mpc  add 
+        mpc play
 				if [ -n "$CUR_SONG" ]; then mpc  play; fi
 				$ESC_ACTION
 			elif [ "$TITLE" = "add all" ]; then
-				mpc  find album "$ALBUM" | mpc  add 
+				mpc  find album "$ALBUM" | mpc  add
+        mpc play
 				$ESC_ACTION
 			
 			fi

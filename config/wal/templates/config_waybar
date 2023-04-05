@@ -2,7 +2,7 @@
   "layer": "top",
     "modules-left": ["custom/arch", "wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/weather", "backlight", "pulseaudio", "network", "battery"],
+    "modules-right": ["custom/weather", "custom/pacman", "backlight", "pulseaudio", "network", "battery"],
     "custom/arch": {{
       "format": "  ",
       "on-click": "sh $HOME/.bin/power"
@@ -47,8 +47,37 @@
       "format": "<span color='{color3}'>{{icon}}</span> {{percent}}%",
       "format-icons": ["", "", "", "", "", "", "", "", ""]
     }},
-
-
+"image#album-art": {{
+	"path": "~/.cache/music/Swell.png",
+	"size": 32,
+	"interval": 5,
+	"on-click": "mpc toggle"
+}},
+"mpd": {{
+    "format": "{{stateIcon}} {{consumeIcon}}{{randomIcon}}{{repeatIcon}}{{singleIcon}}{{artist}} - {{album}} - {{title}} ({{elapsedTime:%M:%S}}/{{totalTime:%M:%S}}) ",
+    "format-disconnected": "Disconnected ",
+    "format-stopped": "{{consumeIcon}}{{randomIcon}}{{repeatIcon}}{{singleIcon}}Stopped ",
+    "interval": 10,
+    "consume-icons": {{
+        "on": " " // Icon shows only when "consume" is on
+    }},
+    "random-icons": {{
+        "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
+        "on": " "
+    }},
+    "repeat-icons": {{
+        "on": " "
+    }},
+    "single-icons": {{
+        "on": "1 "
+    }},
+    "state-icons": {{
+        "paused": "",
+        "playing": ""
+    }},
+    "tooltip-format": "MPD (connected)",
+    "tooltip-format-disconnected": "MPD (disconnected)"
+}},
  "custom/weather" : {{
         //shows the current weather and forecast
         "tooltip" : true,
@@ -60,16 +89,12 @@
         "return-type" : "json"
     }},
 
-       "custom/updates": {{
-       "format": "{{icon}} {{}}",
-       "return-type": "json",
-       "format-icons": {{
-           "has-updates": "<span color='{color15}'> 󱍷</span>",
-           "updated": "<span color='{color3}'> 󰂪</span>"
-       }},
-       "exec-if": "which waybar-module-pacman-updates",
-       "exec": "waybar-module-pacman-updates",
-	      "on-click": "foot -e sudo pacman -Syu"
+          "custom/pacman":{{
+        "format": " {{}}",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "interval": 120,
+        "on-click": "foot -e paru -Syu"
    }},
 
 "bluetooth": {{
@@ -105,7 +130,7 @@
 
 "network": {{
     "interface": "wlan0",
-    "format": "{{ifname}}",
+    "format": " Disabled",
     "format-wifi": "<span color='{color3}'> </span>{{essid}} ({{signalStrength}}%)",
     "format-ethernet": "{{ipaddr}}/{{cidr}} ",
     "format-disconnected": "<span color='{color3}'>󰖪</span> Disconnected", //An empty format will hide the module.

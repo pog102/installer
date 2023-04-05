@@ -1,0 +1,131 @@
+#!/bin/sh
+
+wp_dir="$HOME/.cache/music"
+
+list_wps() {
+  find "$wp_dir" -type f -regex '.*\(jpg\|jpeg\|png\)' -printf "%P\n" |
+    while read wp; do
+      echo -en "$wp\x00icon\x1f$wp_dir/$wp\n";
+    done
+}
+
+rofi_dmenu() {
+  # handwriting fonts: caveat #1 swankyandmoomoo #2 longcang #3
+  rofi -dmenu -show-icons \
+    -theme-str '#entry { placeholder: "Search music.."; }' \
+    -theme ~/scripts/music_rofi/music.rasi
+}
+
+# wp_ls(){
+#   list_wps | rofi_dmenu |sed 's/\(.*\)\..*/\1/' 
+# }
+
+
+wp=$( list_wps | rofi_dmenu |sed 's/\(.*\)\..*/\1/')
+# [ ! -z "$wp" ] && ~/.bin/list_album "$wp"
+[ ! -z "$wp" ] || exit
+
+
+
+
+
+
+
+
+
+
+ESC_ACTION="break"
+# source configuration file for rofi if exists
+
+ROFI="rofi -theme music -dmenu -p 'Search:'"
+
+		ALBUM=$wp
+		if [ "$ALBUM" = "" ]; then $ESC_ACTION;
+		fi
+		
+  if [ "$ALBUM" = "All" ]
+  then
+    mpc clear
+    mpc add /
+    mpc play
+    mpc random
+    
+  else
+		while true; do
+		
+
+
+
+			TITLES=$(mpc  list title album "$ALBUM")
+      if [ $( echo -e "$TITLES" | wc -l ) -gt "2" ]
+      then
+		  cp "$wp_dir/${wp}.png" /tmp/mus_cover.png
+
+			TITLE=$(echo -e "add all\n$TITLES" | $ROFI);
+			  if [ "$TITLE" = "" ]; then $ESC_ACTION
+			# elif [ "$TITLE" = "replace all" ]; then
+				# CUR_SONG=$(mpc  current)
+				# mpc  clear;
+				# mpc  find album "$ALBUM" | mpc  add 
+        # mpc play
+				# if [ -n "$CUR_SONG" ]; then mpc  play; fi
+				# $ESC_ACTION
+			  elif [ "$TITLE" = "add all" ]; then
+				  mpc  find album "$ALBUM" | mpc  add
+          num=$(mpc  find album "$ALBUM" | wc -l)
+          
+          mpc play $(( $(mpc playlist | wc -l) - $num + 1 ))
+				  $ESC_ACTION
+			
+			  fi
+			# while true; do
+			# 	DEC=$(echo -e "add after current and play\nadd after current\nreplace\nadd at the end" | $ROFI);
+			# 	case $DEC in 
+			#
+			# 		"")
+			# 		$ESC_ACTION
+			# 		;;
+			#
+			# 		"add after current and play")
+			# 		addaftercurrentandplay "$(mpc  find album "$ALBUM" title "$TITLE" | head -1 )"
+			# 		;;
+			#
+			# 		"add after current")
+			# 		addaftercurrent "$(mpc  find album "$ALBUM" title "$TITLE" | head -1 )"
+			# 		;;
+			#
+			# 		"replace")
+					# CUR_SONG=$(mpc  current)
+					# mpc  clear
+
+
+
+
+
+					# mpc  find album "$ALBUM" title "$TITLE" | head -1 | mpc  add
+     #      mpc play
+
+					mpc  find album "$ALBUM" title "$TITLE" | head -1 | mpc add 
+          mpc play $(mpc playlist | wc -l)
+
+					# if [ -n "$CUR_SONG" ]; then mpc  play; fi
+			# 		;;
+			# 		
+			# 		"add at the end")
+			# 		mpc  find album "$ALBUM" title "$TITLE" | head -1 | mpc  add
+			# 		;;
+			#
+			# 	esac
+			# 	$ESC_ACTION
+			# done
+      else 
+    # mpc add $TITLES
+    # mpc clear
+	    mpc  find album "$ALBUM" | mpc  add 
+          mpc play $(mpc playlist | wc -l)
+				$ESC_ACTION
+      fi
+		done
+
+  fi
+# wp=$( list_wps | rofi_dmenu |sed 's/\(.*\)\..*/\1/')

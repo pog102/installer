@@ -1,11 +1,13 @@
 #!/usr/bin/env python
+from os.path import expanduser
 
 import json
 import os.path
 import sys
 import requests
 from datetime import datetime
-path='/tmp/wet.txt'
+home = expanduser("~")
+path=home+"/.cache/wet.txt"
 place=""
 if os.path.isfile(path):
     with open(path) as f:

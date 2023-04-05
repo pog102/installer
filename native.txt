@@ -1,6 +1,7 @@
 wlsunset
 firefox
 bat
+starship
 dunst
 bluez
 foot
