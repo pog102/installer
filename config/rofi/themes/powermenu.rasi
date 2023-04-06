@@ -6,7 +6,7 @@ configuration {
 @theme "~/.cache/wal/color.rasi"
 * {
   border: 0;
-    font: "Symbols Nerd Font Mono 28";
+    font: "Hack Nerd Font 29";
   margin: 0;
   padding: 0;
   spacing: 0;
@@ -44,7 +44,7 @@ element {
     orientation:                    horizontal;
     /*border-radius:                  100%;*/
     /* padding:                        8px 32px 8px 32px; */
-    padding:                        0px 9px 0px 0px;
+    padding:                        0px 18px 0px 0px;
 }
  
 element-text {

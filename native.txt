@@ -1,6 +1,7 @@
 wlsunset
 firefox
 bat
+adobe-source-han-sans-jp-fonts
 starship
 dunst
 bluez

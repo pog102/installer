@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
-state: pause
-current: 29
-time: 11.223
-random: 1
+state: play
+current: 48
+time: 80.186
+random: 0
 repeat: 0
 single: 0
 consume: 0
@@ -11,51 +11,64 @@ crossfade: 0
 mixrampdb: 0
 mixrampdelay: -1
 playlist_begin
-0:The White Stripes - Seven Nation Army.mp3
-1:The White Stripes - Black Math.mp3
-2:The White Stripes - There's No Home For You Here.mp3
-3:The White Stripes - I Just Don't Know What to Do With Myself.mp3
-4:The White Stripes - In The Cold, Cold Night.mp3
-5:The White Stripes - I Want To Be The Boy To Warm Your Mother's Heart.mp3
-6:The White Stripes - You've Got Her In Your Pocket.mp3
-7:The White Stripes - Ball and Biscuit.mp3
-8:The White Stripes - The Hardest Button to Button.mp3
-9:The White Stripes - Little Acorns.mp3
-10:The White Stripes - Hypnotize.mp3
-11:The White Stripes - The Air Near My Fingers.mp3
-12:The White Stripes - Girl, You Have No Faith In Medicine.mp3
-13:The White Stripes - It's True That We Love One Another.mp3
-14:FIDLAR - Sober.mp3
-15:Clowns - Human Error.mp3
-16:Clowns - Never Enough.mp3
-17:Clowns - Euthanise Me.mp3
-18:Clowns - Figure It Out.mp3
-19:Clowns - Infected.mp3
-20:Clowns - Bad Blood.mp3
-21:Clowns - These Veins.mp3
-22:Clowns - Swallow Your Dreams.mp3
-23:Clowns - It Stops with You.mp3
-24:Clowns - Is This a Test.mp3
-25:Clowns - Derailed.mp3
-26:Clowns - Dead in the Suburbs.mp3
-27:Clowns - Play Dead.mp3
-28:Clowns - Human Terror.mp3
-29:Eminem - Public Service Announcement 2000.mp3
-30:Eminem -  You.mp3
-31:Eminem, Dido - Stan.mp3
-32:Eminem - Paul.mp3
-33:Eminem - Who Knew.mp3
-34:Eminem - Steve Berman.mp3
-35:Eminem - The Way I Am.mp3
-36:Eminem - The Real Slim Shady.mp3
-37:Eminem, RBX, Sticky Fingaz - Remember Me.mp3
-38:Eminem - I'm Back.mp3
-39:Eminem - Marshall Mathers.mp3
-40:Eminem - Ken Kaniff.mp3
-41:Eminem - Drug Ballad.mp3
-42:Eminem, Bizarre - Amityville.mp3
-43:Eminem, Dr. Dre, Snoop Dogg, Nate Dogg, Xzibit -  Please II.mp3
-44:Eminem - The Kids.mp3
-45:Eminem, D12 - Under The Influence.mp3
-46:Eminem - Criminal.mp3
+0:Uriah Heep - Look at Yourself - 2017 Remastered.mp3
+1:Uriah Heep - I Wanna Be Free - 2017 Remastered.mp3
+2:Uriah Heep - July Morning - 2017 Remastered.mp3
+3:Uriah Heep - Tears in My Eyes - 2017 Remastered.mp3
+4:Uriah Heep - Shadows of Grief - 2017 Remastered.mp3
+5:Uriah Heep - What Should Be Done - 2017 Remastered.mp3
+6:Uriah Heep - Love Machine - 2017 Remastered.mp3
+7:Uriah Heep - I Wanna Be Free - Alternative Mix.mp3
+8:Uriah Heep - Tears in My Eyes - Alternative Mix.mp3
+9:Uriah Heep - What Should Be Done - Alternative Mix.mp3
+10:Uriah Heep - Shadows of Grief - Alternative Mix.mp3
+11:Uriah Heep - Look At Yourself - Alternative Mix.mp3
+12:Uriah Heep - July Morning - Alternative Mix.mp3
+13:Uriah Heep - Why Fourteen Minutes - Alternative Mix.mp3
+14:Uriah Heep - Love Machine - Alternative Mix.mp3
+15:Uriah Heep - What's Within My Heart - Alternative Mix.mp3
+16:Uriah Heep - July Morning - (Alternative Mix) [Live].mp3
+17:Uriah Heep - Look At Yourself - Alternative Single Version.mp3
+18:Uriah Heep - What's Within My Heart - Outtake.mp3
+19:Uriah Heep - Why - Early Version.mp3
+20:Uriah Heep - Tears in My Eyes - Extended Mix.mp3
+21:Uriah Heep - What Should Be Done - Alternate Version.mp3
+22:Uriah Heep - Look at Yourself - Live at the BBC.mp3
+23:Uriah Heep - What Should Be Done - Live at the BBC.mp3
+24:Jeff Rona, Rachel Fannan - Crimson Cloud.mp3
+25:imase - NIGHT DANCER.mp3
+26:Andrew W.K. - Ready To Die.mp3
+27:TOOL - Stinkfist.mp3
+28:TOOL - Eulogy.mp3
+29:TOOL - H..mp3
+30:TOOL - Useful Idiot.mp3
+31:TOOL - Forty Six & 2.mp3
+32:TOOL - Message To Harry Manback.mp3
+33:TOOL - Hooker With A Penis.mp3
+34:TOOL - Intermission.mp3
+35:TOOL - Jimmy.mp3
+36:TOOL - Die Eier von Satan.mp3
+37:TOOL - Pushit.mp3
+38:TOOL - Cesaro Summability.mp3
+39:TOOL - Ænema.mp3
+40:TOOL - (-) Ions.mp3
+41:TOOL - Third Eye.mp3
+42:Eminem - Public Service Announcement 2000.mp3
+43:Eminem -  You.mp3
+44:Eminem, Dido - Stan.mp3
+45:Eminem - Paul.mp3
+46:Eminem - Who Knew.mp3
+47:Eminem - Steve Berman.mp3
+48:Eminem - The Way I Am.mp3
+49:Eminem - The Real Slim Shady.mp3
+50:Eminem, RBX, Sticky Fingaz - Remember Me.mp3
+51:Eminem - I'm Back.mp3
+52:Eminem - Marshall Mathers.mp3
+53:Eminem - Ken Kaniff.mp3
+54:Eminem - Drug Ballad.mp3
+55:Eminem, Bizarre - Amityville.mp3
+56:Eminem, Dr. Dre, Snoop Dogg, Nate Dogg, Xzibit -  Please II.mp3
+57:Eminem - The Kids.mp3
+58:Eminem, D12 - Under The Influence.mp3
+59:Eminem - Criminal.mp3
 playlist_end

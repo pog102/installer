@@ -11,9 +11,8 @@ yt-dlp-git
 ttf-fira-code
 ttf-liberation
 ttf-twemoji
-ttf-nerd-fonts-symbols-common
+ttf-nerd-fonts-hack-complete-git
 ttf-roboto-mono
-ttf-sazanami
 waybar-hyprland
 zaread-git
 zathura-pdf-poppler
