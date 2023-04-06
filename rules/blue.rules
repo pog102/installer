@@ -1,16 +1,13 @@
 SUBSYSTEM=="hid", ACTION=="bind", \
-IMPORT{program}="/usr/bin/xpub", \
-RUN+="/bin/su $env{XUSER} -c '~/.bin/blue_notify \"$env{HID_NAME}\" \"$env{ACTION}\"'"
+RUN+="/bin/su chad -c '~/.bin/blue_notify \"$env{HID_NAME}\" \"$env{ACTION}\"'"
 
 
 SUBSYSTEM=="hid", ACTION=="remove", \
-IMPORT{program}="/usr/bin/xpub", \
-RUN+="/bin/su $env{XUSER} -c '~/.bin/blue_notify \"$env{HID_NAME}\" \"$env{ACTION}\"'"
+RUN+="/bin/su chad -c '~/.bin/blue_notify \"$env{HID_NAME}\" \"$env{ACTION}\"'"
 
 
 ACTION=="change", KERNEL != "BAT[0-9]", \
 SUBSYSTEM=="power_supply", \
 ATTR{status}=="Discharging", \
 ATTR{capacity}=="[0-3]", \
-IMPORT{program}="/usr/bin/xpub", \
-RUN+="/bin/su $env{XUSER} -c '~/.bin/discharge \"$env{POWER_SUPPLY_NAME}\" \"$attr{capacity}\"'"
+RUN+="/bin/su chad -c '~/.bin/discharge \"$env{POWER_SUPPLY_NAME}\" \"$attr{capacity}\"'"

@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 state: play
-current: 48
-time: 80.186
-random: 0
+current: 176
+time: 120.08
+random: 1
 repeat: 0
 single: 0
 consume: 0
@@ -11,64 +11,414 @@ crossfade: 0
 mixrampdb: 0
 mixrampdelay: -1
 playlist_begin
-0:Uriah Heep - Look at Yourself - 2017 Remastered.mp3
-1:Uriah Heep - I Wanna Be Free - 2017 Remastered.mp3
-2:Uriah Heep - July Morning - 2017 Remastered.mp3
-3:Uriah Heep - Tears in My Eyes - 2017 Remastered.mp3
-4:Uriah Heep - Shadows of Grief - 2017 Remastered.mp3
-5:Uriah Heep - What Should Be Done - 2017 Remastered.mp3
-6:Uriah Heep - Love Machine - 2017 Remastered.mp3
-7:Uriah Heep - I Wanna Be Free - Alternative Mix.mp3
-8:Uriah Heep - Tears in My Eyes - Alternative Mix.mp3
-9:Uriah Heep - What Should Be Done - Alternative Mix.mp3
-10:Uriah Heep - Shadows of Grief - Alternative Mix.mp3
-11:Uriah Heep - Look At Yourself - Alternative Mix.mp3
-12:Uriah Heep - July Morning - Alternative Mix.mp3
-13:Uriah Heep - Why Fourteen Minutes - Alternative Mix.mp3
-14:Uriah Heep - Love Machine - Alternative Mix.mp3
-15:Uriah Heep - What's Within My Heart - Alternative Mix.mp3
-16:Uriah Heep - July Morning - (Alternative Mix) [Live].mp3
-17:Uriah Heep - Look At Yourself - Alternative Single Version.mp3
-18:Uriah Heep - What's Within My Heart - Outtake.mp3
-19:Uriah Heep - Why - Early Version.mp3
-20:Uriah Heep - Tears in My Eyes - Extended Mix.mp3
-21:Uriah Heep - What Should Be Done - Alternate Version.mp3
-22:Uriah Heep - Look at Yourself - Live at the BBC.mp3
-23:Uriah Heep - What Should Be Done - Live at the BBC.mp3
-24:Jeff Rona, Rachel Fannan - Crimson Cloud.mp3
-25:imase - NIGHT DANCER.mp3
-26:Andrew W.K. - Ready To Die.mp3
-27:TOOL - Stinkfist.mp3
-28:TOOL - Eulogy.mp3
-29:TOOL - H..mp3
-30:TOOL - Useful Idiot.mp3
-31:TOOL - Forty Six & 2.mp3
-32:TOOL - Message To Harry Manback.mp3
-33:TOOL - Hooker With A Penis.mp3
-34:TOOL - Intermission.mp3
-35:TOOL - Jimmy.mp3
-36:TOOL - Die Eier von Satan.mp3
-37:TOOL - Pushit.mp3
-38:TOOL - Cesaro Summability.mp3
-39:TOOL - Ænema.mp3
-40:TOOL - (-) Ions.mp3
-41:TOOL - Third Eye.mp3
-42:Eminem - Public Service Announcement 2000.mp3
-43:Eminem -  You.mp3
-44:Eminem, Dido - Stan.mp3
-45:Eminem - Paul.mp3
-46:Eminem - Who Knew.mp3
-47:Eminem - Steve Berman.mp3
-48:Eminem - The Way I Am.mp3
-49:Eminem - The Real Slim Shady.mp3
-50:Eminem, RBX, Sticky Fingaz - Remember Me.mp3
-51:Eminem - I'm Back.mp3
-52:Eminem - Marshall Mathers.mp3
-53:Eminem - Ken Kaniff.mp3
-54:Eminem - Drug Ballad.mp3
-55:Eminem, Bizarre - Amityville.mp3
-56:Eminem, Dr. Dre, Snoop Dogg, Nate Dogg, Xzibit -  Please II.mp3
-57:Eminem - The Kids.mp3
-58:Eminem, D12 - Under The Influence.mp3
-59:Eminem - Criminal.mp3
+0:Itachi Uchiha Theme    Extended.flac
+1:SyKo - #BrooklynBloodPop!.mp3
+2:will.i.am, Britney Spears - Scream & Shout.mp3
+3:Panic! At The Disco - I Write Sins Not Tragedies.mp3
+4:Ken Ashcorp - Absolute Territory.mp3
+5:TOOL - Stinkfist.mp3
+6:TOOL - Eulogy.mp3
+7:TOOL - H..mp3
+8:TOOL - Useful Idiot.mp3
+9:TOOL - Forty Six & 2.mp3
+10:TOOL - Message To Harry Manback.mp3
+11:TOOL - Hooker With A Penis.mp3
+12:TOOL - Intermission.mp3
+13:TOOL - Jimmy.mp3
+14:TOOL - Die Eier von Satan.mp3
+15:TOOL - Pushit.mp3
+16:TOOL - Cesaro Summability.mp3
+17:TOOL - Ænema.mp3
+18:TOOL - (-) Ions.mp3
+19:TOOL - Third Eye.mp3
+20:Fall Out Boy - Centuries.mp3
+21:The Used - Blood on My Hands.mp3
+22:Clowns - Human Error.mp3
+23:Clowns - Never Enough.mp3
+24:Clowns - Euthanise Me.mp3
+25:Clowns - Figure It Out.mp3
+26:Clowns - Infected.mp3
+27:Clowns - Bad Blood.mp3
+28:Clowns - These Veins.mp3
+29:Clowns - Swallow Your Dreams.mp3
+30:Clowns - It Stops with You.mp3
+31:Clowns - Is This a Test.mp3
+32:Clowns - Derailed.mp3
+33:Clowns - Dead in the Suburbs.mp3
+34:Clowns - Play Dead.mp3
+35:Clowns - Human Terror.mp3
+36:Susumu Hirasawa - Gats.mp3
+37:Bear Ghost - Necromancin Dancin.mp3
+38:Imagine Dragons - Bones.mp3
+39:SIAMES - The Wolf.mp3
+40:Stromae - Alors on danse - Radio Edit.mp3
+41:Bunji Garlin, Kubiyashi, Walshy Fire - Chicken and Dumplin.mp3
+42:Flying Lotus - Clock Catcher.mp3
+43:Flying Lotus - Pickled!.mp3
+44:Flying Lotus - Nose Art.mp3
+45:Flying Lotus - IntroA Cosmic Drama.mp3
+46:Flying Lotus - Zodiac Shit.mp3
+47:Flying Lotus - Computer FacePure Being.mp3
+48:Flying Lotus, Thom Yorke - ...And The World Laughs With You.mp3
+49:Flying Lotus - Arkestry.mp3
+50:Flying Lotus, Thundercat - MmmHmm.mp3
+51:Flying Lotus - Do The Astral Plane.mp3
+52:Flying Lotus - Satelllliiiiiiiteee.mp3
+53:Flying Lotus - German Haircut.mp3
+54:Flying Lotus - Recoiled.mp3
+55:Flying Lotus - Dance Of The Pseudo Nymph.mp3
+56:Flying Lotus - DripsAuntie's Harp.mp3
+57:Flying Lotus, Laura Darlington - Table Tennis.mp3
+58:Flying Lotus - Galaxy In Janaki.mp3
+59:Gorillaz - Cracker Island (feat. Thundercat).mp3
+60:Ken Ashcorp - Crazy Chicks.mp3
+61:Jeff Rona, Rachel Fannan - Crimson Cloud.mp3
+62:Rosa Walton, Hallie Coggins - I Really Want to Stay at Your House.mp3
+63:Panic! At The Disco - Emperor's New Clothes.mp3
+64:Panic! At The Disco - House of Memories.mp3
+65:Gorillaz - O Green World.mp3
+66:Gorillaz - DARE.mp3
+67:Casey Edwards, Ali Edwards - Devil Trigger.mp3
+68:MIKE - Evil Eye.mp3
+69:MIKE, Sideshow - alarmed!.mp3
+70:MIKE - Leaders of Tomorrow (Intro).mp3
+71:MIKE - Center City.mp3
+72:MIKE - Big Love.mp3
+73:MIKE - Aww (Zaza).mp3
+74:MIKE - ghoulish.mp3
+75:MIKE - Babyvillain (in our veins).mp3
+76:MIKE - at thirst sight by Assia.mp3
+77:MIKE - Frogville (Mk Ultra).mp3
+78:MIKE - Endgame.mp3
+79:MIKE - World Market (Mo' Money).mp3
+80:MIKE - Crystal Ball.mp3
+81:MIKE - Sandra.mp3
+82:MIKE - tailwind.mp3
+83:MIKE - Airdrop.mp3
+84:MIKE - SpiralDisco (Outro).mp3
+85:Green Day - Burnout.mp3
+86:Green Day - Having a Blast.mp3
+87:Green Day - Chump.mp3
+88:Green Day - Longview.mp3
+89:Green Day - Welcome to Paradise.mp3
+90:Green Day - Pulling Teeth.mp3
+91:Green Day - Basket Case.mp3
+92:Green Day - She.mp3
+93:Green Day - Sassafras Roots.mp3
+94:Green Day - When I Come Around.mp3
+95:Green Day - Coming Clean.mp3
+96:Green Day - Emenius Sleepus.mp3
+97:Green Day - In the End.mp3
+98:Green Day - F.O.D..mp3
+99:Green Day - All by Myself.mp3
+100:Pixies - Debaser.mp3
+101:Pixies - Tame.mp3
+102:Pixies - Wave Of Mutilation.mp3
+103:Pixies - I Bleed.mp3
+104:Pixies - Here Comes Your Man.mp3
+105:Pixies - Dead.mp3
+106:Pixies - Monkey Gone to Heaven.mp3
+107:Pixies - Mr. Grieves.mp3
+108:Pixies - Crackity Jones.mp3
+109:Pixies - La La Love You.mp3
+110:Pixies - No 13 Baby.mp3
+111:Pixies - There Goes My Gun.mp3
+112:Pixies - Hey.mp3
+113:Pixies - Silver.mp3
+114:Pixies - Gouge Away.mp3
+115:Set It Off - Wolf in Sheep's Clothing (feat. William Beckett).mp3
+116:The White Stripes - Seven Nation Army.mp3
+117:The White Stripes - Black Math.mp3
+118:The White Stripes - There's No Home For You Here.mp3
+119:The White Stripes - I Just Don't Know What to Do With Myself.mp3
+120:The White Stripes - In The Cold, Cold Night.mp3
+121:The White Stripes - I Want To Be The Boy To Warm Your Mother's Heart.mp3
+122:The White Stripes - You've Got Her In Your Pocket.mp3
+123:The White Stripes - Ball and Biscuit.mp3
+124:The White Stripes - The Hardest Button to Button.mp3
+125:The White Stripes - Little Acorns.mp3
+126:The White Stripes - Hypnotize.mp3
+127:The White Stripes - The Air Near My Fingers.mp3
+128:The White Stripes - Girl, You Have No Faith In Medicine.mp3
+129:The White Stripes - It's True That We Love One Another.mp3
+130:Celldweller - Good L_ck (Yo_'re F_cked).mp3
+131:Imagine Dragons - Enemy (with JID) - from the series Arcane League of Legends.mp3
+132:Melt-Banana - Candy Gun.mp3
+133:Melt-Banana - The Hive.mp3
+134:Melt-Banana - Vertigo Game.mp3
+135:Melt-Banana - Lefty Dog (Run, Caper, Run).mp3
+136:Melt-Banana - Infection Defective.mp3
+137:Melt-Banana - My Missing Link.mp3
+138:Melt-Banana - Zero+.mp3
+139:Melt-Banana - Schemes of the Tails.mp3
+140:Melt-Banana - Lie Lied Lies.mp3
+141:Melt-Banana - Red Data, Red Stage.mp3
+142:Melt-Banana - Then Red Eyed.mp3
+143:Melt-Banana - Zero.mp3
+144:Mystery Skulls - Ghost.mp3
+145:Neotokio3 - Future Diary- Yuno Gasai (My Crazy Yandere Girlfriend), Ver. 1.mp3
+146:PinocchioP - God-ish.mp3
+147:Gorillaz - 54.mp3
+148:Jonas Brothers - Sucker.mp3
+149:Tatsuya Kitani - There Must Be No Meaning in My Life.mp3
+150:Andrew W.K. - Ready To Die.mp3
+151:Radiohead - Everything In Its Right Place.mp3
+152:Radiohead - Kid A.mp3
+153:Radiohead - The National Anthem.mp3
+154:Radiohead - How to Disappear Completely.mp3
+155:Radiohead - Treefingers.mp3
+156:Radiohead - Optimistic.mp3
+157:Radiohead - In Limbo.mp3
+158:Radiohead - Idioteque.mp3
+159:Radiohead - Morning Bell.mp3
+160:Radiohead - Motion Picture Soundtrack.mp3
+161:Radiohead - Untitled.mp3
+162:Autoheart - Stalker's Tango.mp3
+163:The Used - The Bird and the Worm.mp3
+164:Uriah Heep - Look at Yourself - 2017 Remastered.mp3
+165:Uriah Heep - I Wanna Be Free - 2017 Remastered.mp3
+166:Uriah Heep - July Morning - 2017 Remastered.mp3
+167:Uriah Heep - Tears in My Eyes - 2017 Remastered.mp3
+168:Uriah Heep - Shadows of Grief - 2017 Remastered.mp3
+169:Uriah Heep - What Should Be Done - 2017 Remastered.mp3
+170:Uriah Heep - Love Machine - 2017 Remastered.mp3
+171:Uriah Heep - I Wanna Be Free - Alternative Mix.mp3
+172:Uriah Heep - Tears in My Eyes - Alternative Mix.mp3
+173:Uriah Heep - What Should Be Done - Alternative Mix.mp3
+174:Uriah Heep - Shadows of Grief - Alternative Mix.mp3
+175:Uriah Heep - Look At Yourself - Alternative Mix.mp3
+176:Uriah Heep - July Morning - Alternative Mix.mp3
+177:Uriah Heep - Why Fourteen Minutes - Alternative Mix.mp3
+178:Uriah Heep - Love Machine - Alternative Mix.mp3
+179:Uriah Heep - What's Within My Heart - Alternative Mix.mp3
+180:Uriah Heep - July Morning - (Alternative Mix) [Live].mp3
+181:Uriah Heep - Look At Yourself - Alternative Single Version.mp3
+182:Uriah Heep - What's Within My Heart - Outtake.mp3
+183:Uriah Heep - Why - Early Version.mp3
+184:Uriah Heep - Tears in My Eyes - Extended Mix.mp3
+185:Uriah Heep - What Should Be Done - Alternate Version.mp3
+186:Uriah Heep - Look at Yourself - Live at the BBC.mp3
+187:Uriah Heep - What Should Be Done - Live at the BBC.mp3
+188:Nujabes - Blessing It -remix (feat. Substantial & Pase Rock from Five Deez).mp3
+189:Nujabes - Horn in the middle.mp3
+190:Nujabes - Lady Brown (feat. Cise Starr from CYNE).mp3
+191:Nujabes - Kumomi.mp3
+192:Nujabes - Highs 2 Lows (feat. Cise Starr from CYNE).mp3
+193:Nujabes - Beat laments the world.mp3
+194:Nujabes - Letter from Yokosuka.mp3
+195:Nujabes - Think Different (feat. Substantial).mp3
+196:Nujabes - A day by atmosphere supreme.mp3
+197:Nujabes - Next view (feat. Uyama Hiroto).mp3
+198:Nujabes - Latitude -remix (feat. Five Deez).mp3
+199:Nujabes - F.I.L.O. (feat. Shing02).mp3
+200:Nujabes - Summer Gypsy.mp3
+201:Nujabes - The Final View.mp3
+202:Nujabes - Peaceland.mp3
+203:Lil Nas X - MONTERO (Call Me By Your Name).mp3
+204:Rush - Tom Sawyer.mp3
+205:Rush - Red Barchetta.mp3
+206:Rush - YYZ.mp3
+207:Rush - Limelight.mp3
+208:Rush - The Camera Eye.mp3
+209:Rush - Witch Hunt.mp3
+210:Rush - Vital Signs.mp3
+211:Kordhell - Murder In My Mind.mp3
+212:L.B. One, Datamotion, Perly I Lotry - My Mother Told Me - Vikings Anthem.mp3
+213:The Living Tombstone - My Ordinary Life.mp3
+214:Joji - Tick Tock.mp3
+215:Iglooghost - Pale Eyes.mp3
+216:Iglooghost - Super Ink Burst.mp3
+217:Iglooghost - Bug Thief.mp3
+218:Iglooghost - Sōlar Blade.mp3
+219:Iglooghost - White Gum.mp3
+220:Iglooghost - Purity Shards.mp3
+221:Iglooghost - Zen Champ.mp3
+222:Iglooghost, Cuushe - Infinite Mint.mp3
+223:Iglooghost, Mr. Yote - Teal Yomi  Olivine.mp3
+224:Iglooghost - Peanut Choker.mp3
+225:Iglooghost - Göd Grid.mp3
+226:Redfoo - New Thang.mp3
+227:imase - NIGHT DANCER.mp3
+228:Imagine Dragons - Bleeding Out.mp3
+229:Imagine Dragons - Radioactive.mp3
+230:Marilyn Manson - This Is Halloween.mp3
+231:Hollywood Undead - Another Way Out.mp3
+232:Radiohead - Airbag.mp3
+233:Radiohead - Paranoid Android.mp3
+234:Radiohead - Subterranean Homesick Alien.mp3
+235:Radiohead - Exit Music (For A Film).mp3
+236:Radiohead - Let Down.mp3
+237:Radiohead - Karma Police.mp3
+238:Radiohead - Fitter Happier.mp3
+239:Radiohead - Electioneering.mp3
+240:Radiohead - Climbing Up the Walls.mp3
+241:Radiohead - No Surprises.mp3
+242:Radiohead - Lucky.mp3
+243:Radiohead - The Tourist.mp3
+244:Middle Milk, MoistCr1tikal - One Nipple at a Time.mp3
+245:Minor Threat - Betray.mp3
+246:Minor Threat - It Follows.mp3
+247:Minor Threat - Think Again.mp3
+248:Minor Threat - Look Back & Laugh.mp3
+249:Minor Threat - Sob Story.mp3
+250:Minor Threat - No Reason.mp3
+251:Minor Threat - Little Friend.mp3
+252:Minor Threat - Out Of Step.mp3
+253:Minor Threat - Cashing In.mp3
+254:Yousei Teikoku - 狂気沈殿.mp3
+255:Gorillaz - Rhinestone Eyes.mp3
+256:Skillet - Not Gonna Die.mp3
+257:Ken Ashcorp - Ryder or Riot.mp3
+258:MIYAVI, Ken Ken - Flashback.mp3
+259:BROCKHAMPTON - BOOGIE.mp3
+260:Fall Out Boy - The Phoenix.mp3
+261:Fall Out Boy - My Songs Know What You Did In The Dark (Light Em Up).mp3
+262:Crush 40 - I Am... All Of Me.mp3
+263:Ken Ashcorp - Shut Up and Trust This.mp3
+264:The Avalanches - Since I Left You.mp3
+265:The Avalanches - Stay Another Season.mp3
+266:The Avalanches - Radio.mp3
+267:The Avalanches - Two Hearts in 34 Time.mp3
+268:The Avalanches - Avalanche Rock.mp3
+269:The Avalanches - Flight Tonight.mp3
+270:The Avalanches - Close to You.mp3
+271:The Avalanches - Diners Only.mp3
+272:The Avalanches - A Different Feeling.mp3
+273:The Avalanches - Electricity.mp3
+274:The Avalanches - Tonight May Have To Last Me All My Life.mp3
+275:The Avalanches - Pablo's Cruise.mp3
+276:The Avalanches - Frontier Psychiatrist.mp3
+277:The Avalanches - Etoh.mp3
+278:The Avalanches - Summer Crane.mp3
+279:The Avalanches - Little Journey.mp3
+280:The Avalanches - Live at Dominoes.mp3
+281:The Avalanches - Extra Kings.mp3
+282:Imagine Dragons - Warriors.mp3
+283:Imagine Dragons - Battle Cry.mp3
+284:Imagine Dragons - Monster.mp3
+285:Gorillaz - The Pink Phantom (feat. Elton John and 6LACK).mp3
+286:LMFAO, Lauren Bennett, GoonRock - Party Rock Anthem.mp3
+287:Tiny Moving Parts - Applause.mp3
+288:Tiny Moving Parts - Smooth It Out.mp3
+289:Tiny Moving Parts - Feel Alive.mp3
+290:Tiny Moving Parts - Caution.mp3
+291:Tiny Moving Parts - Wildfire.mp3
+292:Tiny Moving Parts - Whale Watching.mp3
+293:Tiny Moving Parts - It's Too Cold Tonight.mp3
+294:Tiny Moving Parts - Malfunction.mp3
+295:Tiny Moving Parts - Wishbone.mp3
+296:Tiny Moving Parts - Warm Hand Splash.mp3
+297:Ghost and Pals - Amygdala's Rag Doll.mp3
+298:Black Eyed Peas - The Time (Dirty Bit).mp3
+299:My Chemical Romance - Blood - End Credits.mp3
+300:Eminem - Without Me.mp3
+301:A Tribe Called Quest - Excursions.mp3
+302:A Tribe Called Quest - Buggin' Out.mp3
+303:A Tribe Called Quest - Rap Promoter.mp3
+304:A Tribe Called Quest - Butter.mp3
+305:A Tribe Called Quest - Verses from the Abstract.mp3
+306:A Tribe Called Quest - Show Business.mp3
+307:A Tribe Called Quest - Vibes and Stuff.mp3
+308:A Tribe Called Quest - Infamous Date Rape.mp3
+309:A Tribe Called Quest - Check the Rhime.mp3
+310:A Tribe Called Quest - Everything Is Fair.mp3
+311:A Tribe Called Quest - Jazz (We've Got).mp3
+312:A Tribe Called Quest - Skypager.mp3
+313:A Tribe Called Quest - What.mp3
+314:A Tribe Called Quest - Scenario - LP Mix.mp3
+315:Eminem - Public Service Announcement 2000.mp3
+316:Eminem -  You.mp3
+317:Eminem, Dido - Stan.mp3
+318:Eminem - Paul.mp3
+319:Eminem - Who Knew.mp3
+320:Eminem - Steve Berman.mp3
+321:Eminem - The Way I Am.mp3
+322:Eminem - The Real Slim Shady.mp3
+323:Eminem, RBX, Sticky Fingaz - Remember Me.mp3
+324:Eminem - I'm Back.mp3
+325:Eminem - Marshall Mathers.mp3
+326:Eminem - Ken Kaniff.mp3
+327:Eminem - Drug Ballad.mp3
+328:Eminem, Bizarre - Amityville.mp3
+329:Eminem, Dr. Dre, Snoop Dogg, Nate Dogg, Xzibit -  Please II.mp3
+330:Eminem - The Kids.mp3
+331:Eminem, D12 - Under The Influence.mp3
+332:Eminem - Criminal.mp3
+333:League of Legends, Djerv - Get Jinxed.mp3
+334:DECO27 - The Vampire.mp3
+335:Dropkick Murphys - Your Spirit's Alive.mp3
+336:Dropkick Murphys - The Warrior's Code.mp3
+337:Dropkick Murphys - Captain Kelly's Kitchen.mp3
+338:Dropkick Murphys - The Walking Dead.mp3
+339:Dropkick Murphys - Sunshine Highway.mp3
+340:Dropkick Murphys - Wicked Sensitive Crew.mp3
+341:Dropkick Murphys - The Burden.mp3
+342:Dropkick Murphys - Citizen C.I.A..mp3
+343:Dropkick Murphys - The Green Fields Of France (No Man's Land).mp3
+344:Dropkick Murphys - Take It and Run.mp3
+345:Dropkick Murphys - I'm Shipping Up To Boston.mp3
+346:Dropkick Murphys - The Auld Triangle.mp3
+347:Dropkick Murphys - Last Letter Home.mp3
+348:Dropkick Murphys - Tessie.mp3
+349:Finger Eleven - Paralyzer.mp3
+350:The Arrogant Sons Of Bitches - The Last Bell I Will Ever Hear.mp3
+351:The Arrogant Sons Of Bitches - (I Must Be a Proctologist Because) All I Do Is Deal With Assholes.mp3
+352:The Arrogant Sons Of Bitches - So Let's Go Nowhere.mp3
+353:The Arrogant Sons Of Bitches - Kill the President.mp3
+354:The Arrogant Sons Of Bitches - People Pops & Fudgesicles for the Hit Factory.mp3
+355:The Arrogant Sons Of Bitches - Rocketrocketrocketship.mp3
+356:The Arrogant Sons Of Bitches - 1-800-Alarm-Me.mp3
+357:The Arrogant Sons Of Bitches - I've Got Enemies in High Places.mp3
+358:The Arrogant Sons Of Bitches - Disappointment at the Taco Bell.mp3
+359:The Arrogant Sons Of Bitches - Piss Off.mp3
+360:The Arrogant Sons Of Bitches - Have Fun Rotting by Yourself.mp3
+361:The Arrogant Sons Of Bitches - 'Yeah, I Don't Know What It's Like to Be Around a Bunch of Hipsters'.mp3
+362:The Arrogant Sons Of Bitches - Last on My List.mp3
+363:FIDLAR - Sober.mp3
+364:Panic! At The Disco - Miss Jackson (feat. LOLO).mp3
+365:System Of A Down - Prison Song.mp3
+366:System Of A Down - Needles.mp3
+367:System Of A Down - Deer Dance.mp3
+368:System Of A Down - Jet Pilot.mp3
+369:System Of A Down - X.mp3
+370:System Of A Down - Chop Suey!.mp3
+371:System Of A Down - Bounce.mp3
+372:System Of A Down - Forest.mp3
+373:System Of A Down - ATWA.mp3
+374:System Of A Down - Science.mp3
+375:System Of A Down - Shimmy.mp3
+376:System Of A Down - Toxicity.mp3
+377:System Of A Down - Psycho.mp3
+378:System Of A Down - Aerials.mp3
+379:System Of A Down - Arto.mp3
+380:(K)NoW_NAME - Strange Meat Pie.mp3
+381:(K)NoW_NAME - Welcome トゥ 混沌.mp3
+382:illion - GASSHOW.mp3
+383:Sam Smith - Unholy (feat. Kim Petras).mp3
+384:Eminem - Venom - Music From The Motion Picture.mp3
+385:Porter Robinson, Amy Millan - Divinity.mp3
+386:Porter Robinson - Sad Machine.mp3
+387:Porter Robinson, Breanne Düren, Sean Caskey - Years Of War.mp3
+388:Porter Robinson - Flicker.mp3
+389:Porter Robinson - Fresh Static Snow.mp3
+390:Porter Robinson, Lemaitre - Polygon Dust.mp3
+391:Porter Robinson, Imaginary Cities - Hear The Bells.mp3
+392:Porter Robinson - Natural Light.mp3
+393:Porter Robinson, Urban Cone - Lionhearted.mp3
+394:Porter Robinson - Sea Of Voices.mp3
+395:Porter Robinson - Fellow Feeling.mp3
+396:Porter Robinson - Goodbye To A World.mp3
+397:Fatboy Slim - Right Here Right Now.mp3
+398:Fatboy Slim - Rockafeller Skank.mp3
+399:Fatboy Slim - Fucking in Heaven.mp3
+400:Fatboy Slim - Gangster Trippin.mp3
+401:Fatboy Slim - Build It Up, Tear It Down.mp3
+402:Fatboy Slim - Kalifornia.mp3
+403:Fatboy Slim - Soul Surfing.mp3
+404:Fatboy Slim - You're Not from Brighton.mp3
+405:Fatboy Slim - Praise You.mp3
+406:Fatboy Slim - Love Island.mp3
+407:Fatboy Slim - Acid 8000.mp3
+408:MINMI - 四季ノ唄.mp3
+409:暁Records - Necromantic.mp3
 playlist_end
