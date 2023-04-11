@@ -1,26 +1,8 @@
-Extension "XFIG Input" failed to load because a dependency was not met.
+Extension "Optimized PNG" failed to load because a dependency was not met.
 Dependency:
 	type: executable
 	location: path
-	string: fig2dev
-
-Extension "EPS Input" failed to load because a dependency was not met.
-Dependency:
-	type: executable
-	location: path
-	string: ps2pdf
-
-Extension "Formula (pdflatex)" failed to load because a dependency was not met.
-Dependency:
-	type: executable
-	location: path
-	string: pdflatex
-
-Extension "GIMP XCF" failed to load because a dependency was not met.
-Dependency:
-	type: executable
-	location: path
-	string: gimp
+	string: optipng
 
 Extension "Export to PDF via Scribus" failed to load because a dependency was not met.
 Dependency:
@@ -28,13 +10,31 @@ Dependency:
 	location: path
 	string: scribus
 
-Extension "Optimized PNG" failed to load because a dependency was not met.
+Extension "XFIG Input" failed to load because a dependency was not met.
 Dependency:
 	type: executable
 	location: path
-	string: optipng
+	string: fig2dev
+
+Extension "Formula (pdflatex)" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: pdflatex
 
 Extension "PostScript Input" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: ps2pdf
+
+Extension "GIMP XCF" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: gimp
+
+Extension "EPS Input" failed to load because a dependency was not met.
 Dependency:
 	type: executable
 	location: path

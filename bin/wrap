@@ -14,8 +14,9 @@ export QT_PLUGIN_PATH=/usr/lib/qt/plugins/
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export QT_QPA_PLATFORM=wayland;xcb
 export QT_QPA_PLATFORMTHEME=qt5ct 
-export XCURSOR_SIZE=30
-export XCURSOR_THEME=phinger-cursors
+export XCURSOR_SIZE=17
+export XCURSOR_THEME=Bibata-Modern-Classic
+
 # export $(dbus-launch)
 
 

@@ -26,6 +26,7 @@ window#waybar {
 #custom-arch {
   font-size: 19px;
 	margin-left: 15px;
+  padding-left: 5px;
 }
 tooltip {
      border-radius: 10px;
