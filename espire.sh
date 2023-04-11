@@ -51,6 +51,7 @@ mkdir $HOME/.config/
 mkdir $HOME/Downloads
 mkdir $HOME/Music
 mkdir $HOME/.bin
+mkdir $HOME/.icons
 mkdir -p $HOME/.local/share/sounds
 mkdir -p $HOME/.local/share/icons/custom/
 mkdir -p $HOME/.local/share/applications/
@@ -70,6 +71,7 @@ mv zprofile $HOME/.zprofile
 mv config/* $HOME/.config/
 mv apps/* $HOME/.local/share/applications/
 mv icons/* $HOME/.local/share/icons/custom/
+mv cusror/* $HOME/.icons/
 
 sudo timedatectl set-timezone Etc/GMT-2
 

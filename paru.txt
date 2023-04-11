@@ -25,4 +25,4 @@ xpub
 transg-tui-git
 python-pywalfox
 grimblast-git 
-phinger-cursors
+bibata-cursor-theme-bin 
