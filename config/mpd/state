@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
-state: play
-current: 0
-time: 77.933
-random: 1
+state: pause
+current: 13
+time: 283.283
+random: 0
 repeat: 0
 single: 0
 consume: 0
@@ -11,18 +11,25 @@ crossfade: 0
 mixrampdb: 0
 mixrampdelay: -1
 playlist_begin
-0:A Tribe Called Quest - Excursions.mp3
-1:A Tribe Called Quest - Buggin' Out.mp3
-2:A Tribe Called Quest - Rap Promoter.mp3
-3:A Tribe Called Quest - Butter.mp3
-4:A Tribe Called Quest - Verses from the Abstract.mp3
-5:A Tribe Called Quest - Show Business.mp3
-6:A Tribe Called Quest - Vibes and Stuff.mp3
-7:A Tribe Called Quest - Infamous Date Rape.mp3
-8:A Tribe Called Quest - Check the Rhime.mp3
-9:A Tribe Called Quest - Everything Is Fair.mp3
-10:A Tribe Called Quest - Jazz (We've Got).mp3
-11:A Tribe Called Quest - Skypager.mp3
-12:A Tribe Called Quest - What.mp3
-13:A Tribe Called Quest - Scenario - LP Mix.mp3
+0:Tiny Moving Parts - Applause.mp3
+1:Tiny Moving Parts - Smooth It Out.mp3
+2:Tiny Moving Parts - Feel Alive.mp3
+3:Tiny Moving Parts - Caution.mp3
+4:Tiny Moving Parts - Wildfire.mp3
+5:Tiny Moving Parts - Whale Watching.mp3
+6:Tiny Moving Parts - It's Too Cold Tonight.mp3
+7:Tiny Moving Parts - Malfunction.mp3
+8:Tiny Moving Parts - Wishbone.mp3
+9:Tiny Moving Parts - Warm Hand Splash.mp3
+10:Fatboy Slim - Right Here Right Now.mp3
+11:Fatboy Slim - Rockafeller Skank.mp3
+12:Fatboy Slim - Fucking in Heaven.mp3
+13:Fatboy Slim - Gangster Trippin.mp3
+14:Fatboy Slim - Build It Up, Tear It Down.mp3
+15:Fatboy Slim - Kalifornia.mp3
+16:Fatboy Slim - Soul Surfing.mp3
+17:Fatboy Slim - You're Not from Brighton.mp3
+18:Fatboy Slim - Praise You.mp3
+19:Fatboy Slim - Love Island.mp3
+20:Fatboy Slim - Acid 8000.mp3
 playlist_end

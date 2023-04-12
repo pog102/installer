@@ -14,7 +14,7 @@
 
 @theme "~/.cache/wal/color.rasi"
 * {
-    font:   "Roboto 12";
+    font:   "Fira Code 12";
 
 
     accent-color:     @bg4;
@@ -30,7 +30,7 @@
 
 window {
     location:   center;
-    width:      480;
+    width:      37%;
     /* y-offset:   -120; */
 
     background-color:   @bg;
@@ -58,7 +58,7 @@ textbox {
 
 listview {
     padding:    4px 0;
-    lines:      8;
+    lines:      12;
     columns:    1;
 
     fixed-height:   false;
