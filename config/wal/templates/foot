@@ -1,3 +1,4 @@
 [colors]
 foreground={foreground.strip}
+background={background.strip}
 alpha=0.63

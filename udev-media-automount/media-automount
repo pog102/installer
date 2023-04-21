@@ -41,7 +41,6 @@ then
         log "$dev device removed, umounting and cleaning /media"
         if umount "$dev"
         then
-    	DISPLAY=:0 runuser -u chad notify-send "Unmounting USB"
             exitcode=0
         else
             exitcode=$?
@@ -59,6 +58,9 @@ then
     do
         # Only clean non active mountpoints that have no /etc/fstab entry
         if [ -d "$dir" ] && ! mountpoint -q "$dir" && ! grep -q "^\s*[^#\s]\+\s\+${dir}" /etc/fstab; then
+    	#DISPLAY=:0 runuser -u chad "notify-send -i \"USB\" \"USB unplugged\""
+    	DISPLAY=:0 runuser -u chad notify-send "USB unplugged"
+	pkill -SIGRTMIN+13 waybar
             rmdir "$dir"
         fi
     done
@@ -89,7 +91,7 @@ fi
 
 # directory name
 #AUTOMOUNT_DIR="${mediadir}/${LABEL:-${dev##*/}}"
-AUTOMOUNT_DIR="${mediadir}/USB}"
+AUTOMOUNT_DIR="${mediadir}/USB"
 
 # Avoid conflicts when multiple devices have the same label
 if [ -e "$AUTOMOUNT_DIR" ] && mountpoint -q "$AUTOMOUNT_DIR"
@@ -113,8 +115,9 @@ mkdir -p "$AUTOMOUNT_DIR"
 if mount -t "$AUTOMOUNT_TYPE" -o "$AUTOMOUNT_OPTS" "$dev" "$AUTOMOUNT_DIR"
 then
     # Notify
-    username="chad"
-    DISPLAY=:0 runuser -u "$username" notify-send "Mounted succusfully"
+	pkill -SIGRTMIN+13 waybar
+    #DISPLAY=:0 runuser -u "$username" notify-send -i "USB" "Mounted succusfully"
+    DISPLAY=:0 runuser -u chad notify-send -i "USB.svg" "Mounted succusfully" "a"
     
     log "Device successfully mounted: $AUTOMOUNT_DIR"
     exit 0

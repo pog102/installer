@@ -17,7 +17,7 @@
     "cache-size-mb": 4,
     "default-trackers": "",
     "dht-enabled": true,
-    "download-dir": "/run/media/chad/4C99-6202/",
+    "download-dir": "/media/USB",
     "download-queue-enabled": true,
     "download-queue-size": 5,
     "encryption": 1,

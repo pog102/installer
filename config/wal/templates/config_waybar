@@ -1,6 +1,6 @@
 {{
   "layer": "top",
-    "modules-left": ["custom/arch", "wlr/workspaces"],
+    "modules-left": ["custom/arch","custom/wf", "wlr/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["custom/weather", "custom/pacman", "backlight", "pulseaudio", "network", "battery"],
     "custom/arch": {{
@@ -53,6 +53,38 @@
 	"interval": 5,
 	"on-click": "mpc toggle"
 }},
+    "pulseaudio": {{
+	"format": "<span color='{color3}'>{{icon}}</span> {{volume}}%",
+	"format-bluetooth": "{{volume}}% {{icon}}",
+	"format-muted": "",
+	"format-icons": {{
+		"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+		"headphones": "",
+		"handsfree": "",
+		"headset": "",
+		"phone": "",
+		"portable": "",
+		"car": "",
+		"default": ["", ""]
+	}},
+	"scroll-step": 1,
+	"on-click": "pavucontrol"
+}},
+
+"disk": {{
+            "signal": 1,
+        "format": "Icon {{used}}",
+	"interval": "once",
+    "path": "/media/USB"
+}},
+
+"custom/wf": {{
+    "exec": "~/.bin/tk.sh",
+    "format": "{{}}",
+    "interval": "once",
+    "signal": 13
+}},
+
 "mpd": {{
     "format": "{{stateIcon}} {{consumeIcon}}{{randomIcon}}{{repeatIcon}}{{singleIcon}}{{artist}} - {{album}} - {{title}} ({{elapsedTime:%M:%S}}/{{totalTime:%M:%S}}) ",
     "format-disconnected": "Disconnected ",
@@ -110,22 +142,12 @@
 }},
 
 
-    "pulseaudio": {{
-	"format": "<span color='{color3}'>{{icon}}</span> {{volume}}%",
-	"format-bluetooth": "{{volume}}% {{icon}}",
-	"format-muted": "",
-	"format-icons": {{
-		"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
-		"headphones": "",
-		"handsfree": "",
-		"headset": "",
-		"phone": "",
-		"portable": "",
-		"car": "",
-		"default": ["", ""]
-	}},
-	"scroll-step": 1,
-	"on-click": "pavucontrol"
+
+"custom/pipewire": {{
+        "tooltip": false,
+        "max-length": 6,
+        "signal": 14,
+    "exec": "$HOME/.bin/pipewire.sh"
 }},
 
 "network": {{

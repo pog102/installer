@@ -5,7 +5,7 @@ rsync --progress -r ~/.config/* ~/$dir/config/
 
 rsync --progress -r ~/scripts/* ~/$dir/scripts/
 
-rsync --progress -r ~/Pictures/* ~/$dir/Pictures/
+#rsync --progress -r ~/Pictures/* ~/$dir/Pictures/
 
 rsync --progress -r  ~/.local/share/icons/custom/* ~/$dir/icons/
 rsync --progress -r  /etc/udev/rules.d/* ~/$dir/rules/

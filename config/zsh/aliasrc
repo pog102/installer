@@ -1,10 +1,8 @@
 alias n="nvim"
-alias t="startx"
-alias config="git push --git-dir=$HOME/installer https://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@github.com/pog102/installer.git"
 alias get="sudo pacman -S"
 alias my_ip="ip addr show wlan0 | awk '/inet / {print $2}'"
 alias mpvp="mpvpaper -p -f -o --loop eDP-1"
-
+alias password="nmcli device wifi show-password"
 alias up="sudo pacman -Syu && paru"
 alias dots="git clone https://github.com/pog102/installer"
 alias ban="sudo pacman -Rcns"
@@ -16,10 +14,6 @@ alias usb="sudo umount -l /dev/sda"
 alias clean="sudo pacman -Scc"
 alias bl="bluetuith"
 alias c="clifm"
-alias l="lvim"
-alias kl="killall transmission-daemon"
-alias trans="transmission-daemon&"
-alias delt="rm -f ~/.config/transmission-daemon/torrents/* ~/.config/transmission-daemon/resume/*"
 alias ns="nsxiv"
 alias ls="lsd -t"
 alias song="yt-dlp -x --add-metadata --output '~/Music/%(title)s.%(ext)s' --audio-quality 0 -i --audio-format flac "
@@ -31,10 +25,3 @@ ssh cha@192.168.1.85 "sh /home/cha/bin/nyatog \"$1\""
 }
 alias ani_up="ssh cha@192.168.1.85 \"sh /home/cha/bin/nyaupdate2 \""
 alias size="du -h --max-depth=0"
-alias c="nvim '/home/chad/csharp/..\..\mokykla1.txt' '/home/chad/csharp/..\..\mokykla2.txt' '/home/chad/csharp/..\..\Rezultatai.txt'"
-alias -g ...='../..'
-alias -g ....='../../..'
-alias -g .....='../../../..'
-alias -g ......='../../../../..'
-alias -g .......='../../../../../..'
-alias -g ........='../../../../../../..'

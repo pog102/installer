@@ -1,6 +1,7 @@
 wlsunset
 firefox
 bat
+networkmanager
 adobe-source-han-sans-jp-fonts
 starship
 dunst

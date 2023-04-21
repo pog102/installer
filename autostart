@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+notify-send "downloading music"
+~/.bin/music &
+notify-send "downloading wallpapers"
+~/.bin/wallpapers &
+rm "${0}"

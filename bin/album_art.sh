@@ -2,6 +2,7 @@
 COVER="$HOME/.cache/music/$(mpc current -f %album%).png"
 # file="$(mpc current -f %file%)"
 # song="$(mpc current -f %title%)"
+# fir
 # playlist="$HOME/playlist/liked.m3u"
 # if grep -q "$file" "$playlist"
 # then
@@ -12,4 +13,5 @@ COVER="$HOME/.cache/music/$(mpc current -f %album%).png"
 #   notify-send -i "$COVER"  "$song" "added" -t 5000 -r 4
 # fi
 echo $COVER
-
+fo
+fo

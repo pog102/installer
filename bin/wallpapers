@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+cd ~/Pictures/
+git clone https://github.com/BitterSweetcandyshop/wallpapers.git
+git clone https://github.com/dharmx/walls.git      
+git clone https://github.com/rackodo/minimalceleste.git
+
+

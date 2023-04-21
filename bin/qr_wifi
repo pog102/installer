@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+wifi=$(iwctl station wlan0 show)
+SSID=$(echo "$wifi" | awk '/Connected network/ {print $3}')
+AUTH_TYPE=$(echo "$wifi" |  awk '/Security/ {print $2}')
+#qrencode -s 6 -l H -o "wifi-5g.png" 'WIFI:S:${SSID};T:${AUTH_TYPE};P:"{PASSWORD}";H:{true/false/blank};'
+#qrencode -s 6 -l H -o - -t utf8 
+echo "WIFI:S:${SSID};T:${AUTH_TYPE};P:{PASSWORD};;"
+

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 autologin=true
-music_install=false
+media=true #install my spotify music library and wallpapers
 
 # Installing Chaotic AUR
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
@@ -23,6 +23,7 @@ sudo mv NetworkManager.conf /etc/NetworkManager/
 sudo systemctl enable NetworkManager
 sudo systemctl enable NetworkManager
 sudo systemctl enable bluetooth.service
+sudo systemctl disable iwd.service
 
 sudo usermod -aG video $USER
 brillo -c -S 1
@@ -65,7 +66,7 @@ sudo mv bin/transadd /usr/local/bin
 sudo mv rules/* /etc/udev/rules.d/
 mv zshrc $HOME/.zshrc
 mv scripts $HOME/
-mv Pictures $HOME/
+#mv Pictures $HOME/
 mv bin/* $HOME/.bin
 mv zprofile $HOME/.zprofile
 mv config/* $HOME/.config/
@@ -79,10 +80,8 @@ my_array=($HOME/Pictures/*)
 
 wal -i ${my_array[$(( $RANDOM % ${#my_array[@]}))]}
 
-if [[ $music_install ]]; then
-  cd ~/Music/
-  sh ~/.bin/music
-  
+if [[ $media ]]; then
+ mv autostart ~/.bin/ 
 fi
 
 # setup for symlinks

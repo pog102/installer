@@ -1,0 +1,20 @@
+#!/bin/sh
+
+wp_dir="$HOME/Pictures"
+
+list_wps() {
+  find "$wp_dir" -type f -regex '.*\(jpg\|jpeg\|png\)' -printf "%P\n" |shuf |
+    while read wp; do
+      magick mogrify -resize 1920x1080 "$wp_dir/$wp"
+      echo -en "$wp_dir/$wp"
+    done
+}
+
+rofi_dmenu() {
+  # handwriting fonts: caveat #1 swankyandmoomoo #2 longcang #3
+  rofi -dmenu -show-icons \
+    -theme-str '#entry { placeholder: "Wallpaper to apply.."; }' \
+    -theme ~/scripts/wallpaper/wall.rasi
+}
+list_wps
+# [ ! -z $wp ] && rm "$wp_dir/$wp" 

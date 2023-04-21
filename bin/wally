@@ -1,17 +1,18 @@
 #!/bin/bash
+killall wal
 wal -n -q -i $HOME/Pictures/$1
-# killall swaybg
-# swaybg -m fill -i "$HOME/Pictures/$1" &
+ killall swaybg
+swaybg -m fill -i "$HOME/Pictures/$1" &
 color=$(sed '4!d' ~/.cache/wal/colors)
-for i in $HOME/.local/share/icons/custom/*; do
+#notify-send -i pywal "Colors are set"
+for i in $HOME/.local/share/icons/custom/*svg; do
 sed -i "s/fill=\"#.*\"/fill=\"$color\"/g" "$i"
 done
-
 echo -e "preload=$HOME/Pictures/$1" > ~/.config/hypr/hyprpaper.conf
 echo -e "wallpaper=eDP-1,contain:$HOME/Pictures/$1\nwallpaper=HDMI-A-1,contain:$HOME/Pictures/$1" >> ~/.config/hypr/hyprpaper.conf
 echo -e "ipc=off" >> ~/.config/hypr/hyprpaper.conf
-killall hyprpaper > /dev/null 2>&1
-hyprpaper > /dev/null 2>&1 &
+#killall hyprpaper > /dev/null 2>&1
+#hyprpaper > /dev/null 2>&1 &
 killall dunst> /dev/null 2>&1
 # killall -SIGUSR2 waybar
 killall waybar
