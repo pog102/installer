@@ -583,7 +583,8 @@
        append_extension="1"
        enable_preview="1"
        path=""
-       use_current_dir="1" />
+       use_current_dir="1"
+       enable_svgexport="0" />
     <group
        id="save_copy"
        default=""
@@ -940,12 +941,12 @@
      id="desktop"
      style="fill:#800000">
     <group
-       width="931"
+       width="1876"
        height="969"
        x="0"
        y="0"
        maximized="1"
-       fullscreen="1"
+       fullscreen="0"
        id="geometry" />
     <group
        id="XYfront" />

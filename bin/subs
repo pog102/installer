@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
 k=$(curl "http://www.subtitrai.net/subtitrai.html" | grep -Po "2/[0-9]+.html\">.* </a>" | sed 's#2/##g; s#.html\">##g; s#</a>##g' | fzf | cut -f1 -d ' ')
 
-curl -s "http://www.subtitrai.net/2/www.subtitrai.net.$k.zip" > /run/media/chad/4C99-6202/subs.zip
-cd /run/media/chad/4C99-6202/
+cd /media/USB/
+curl -o subs.zip "http://www.subtitrai.net/2/www.subtitrai.net.$k.zip"
+
 unzip subs.zip
 title=$(ls | fzf )
 # mav=$( ls "$title/*mp4" | cut -f1 -d ".")
 # mv *srt "$mav.srt"
 mv *srt "$title"
 rm "subs.zip"
+cd $title
+
 
 # <div class="list"><a href="2/2375.html"> 3 Idiots (2009) 3 Idiotai </a></div>
 

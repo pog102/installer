@@ -1,0 +1,4 @@
+start=62.192000
+fullscreen=yes
+vf=@blackout:!lavfi=graph=
+af=@silencedetect:!lavfi=graph=%32%silencedetect=noise=-45dB:d=0.85

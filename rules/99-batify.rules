@@ -2,6 +2,14 @@ ACTION=="change", KERNEL=="BAT[0-9]", \
 SUBSYSTEM=="power_supply", \
 ENV{DISPLAY}=":0", \
 ENV{DBUS_SESSION_BUS_ADDRESS}="unix:path=/run/user/1000/bus", \
+ATTR{status}=="Charging", \
+ATTR{capacity}=="9[5-9]", \
+RUN+="/bin/su chad -c 'notify-send -u critical -i battery \"Battery status\" \"Battery level is $attr{capacity}%\"'"
+
+ACTION=="change", KERNEL=="BAT[0-9]", \
+SUBSYSTEM=="power_supply", \
+ENV{DISPLAY}=":0", \
+ENV{DBUS_SESSION_BUS_ADDRESS}="unix:path=/run/user/1000/bus", \
 ATTR{status}=="Discharging", \
 ATTR{capacity}=="[0-9]", \
 RUN+="/bin/su chad -c 'notify-send -u critical -i battery-empty \"Battery status\" \"Battery level is CRITICAL at $attr{capacity}%\"'"
@@ -14,13 +22,6 @@ ATTR{status}=="Discharging", \
 ATTR{capacity}=="1[0-9]", \
 RUN+="/bin/su chad -c 'notify-send -u normal -i battery-caution \"Battery status\" \"Battery is getting low at $attr{capacity}%\"'"
 
-ACTION=="change", KERNEL=="BAT[0-9]", \
-SUBSYSTEM=="power_supply", \
-ENV{DISPLAY}=":0", \
-ENV{DBUS_SESSION_BUS_ADDRESS}="unix:path=/run/user/1000/bus", \
-ATTR{status}=="Charging", \
-ATTR{capacity}=="9[5-9]", \
-RUN+="/bin/su chad -c 'notify-send -u critical -i battery \"Battery status\" \"Battery level is $attr{capacity}%\"'"
 
 SUBSYSTEM=="power_supply", ACTION=="change", \
 ENV{POWER_SUPPLY_ONLINE}=="0", ENV{POWER}="off", \

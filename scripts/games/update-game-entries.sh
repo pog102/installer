@@ -21,6 +21,18 @@ steam-libraries() {
 
 # Generate the contents of a .desktop file for a Steam game.
 # Expects appid, title, and box art file to be given as arguments
+# desktop-entry() {
+# cat <<EOF
+# [Desktop Entry]
+# Name=$2
+# Exec=bash -c "$HOME/.bin/gamemode;steam steam://rungameid/$1"
+# Icon=$3
+# Terminal=false
+# Type=Application
+# Categories=SteamLibrary;
+# EOF
+# }
+
 desktop-entry() {
 cat <<EOF
 [Desktop Entry]
@@ -32,7 +44,6 @@ Type=Application
 Categories=SteamLibrary;
 EOF
 }
-
 update-game-entries() {
     local OPTIND=1
     local quiet update

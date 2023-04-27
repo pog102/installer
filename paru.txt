@@ -3,6 +3,7 @@ python-spotdl
 hyprpaper-git
 cli-visualizer
 cmake
+swww
 git
 hyprland
 hyprpaper-git

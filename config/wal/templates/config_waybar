@@ -25,7 +25,7 @@
     }},
     "clock": {{
       "format": "<span color='{color3}'> </span>{{:%H:%M}}",
-      "format-alt": "{{:%A, %B %d, %Y (%R)}}  ",
+      "format-alt": "{{:%Y-%m-%d}}  ",
 	"tooltip-format": "<big>{{:%Y %B}}</big>\n<tt><big>{{calendar}}</big></tt>",
         "calendar": {{
                     "mode"          : "year",
@@ -123,10 +123,11 @@
 
           "custom/pacman":{{
         "format": " {{}}",
+            "signal": 19,
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 120,
-        "on-click": "foot -e paru -Syu"
+        "on-click": "foot -e paru -Syu;pkill -RTMIN+19 waybar"
    }},
 
 "bluetooth": {{
@@ -166,6 +167,7 @@
 
 
     "battery": {{
+        "on-click": "~/.bin/gamemode",
       "format": "<span color='{color3}'>{{icon}}</span> {{capacity}}%",
       "format-icons": ["", "", "", "", "", "", "", "", "", ""],
       "format-charging": "<span color='{color3}'></span> {{capacity}}%"
