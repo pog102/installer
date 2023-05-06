@@ -1,6 +1,8 @@
 wlsunset
+thunar
 firefox
 bat
+arc-gtk-theme
 networkmanager
 adobe-source-han-sans-jp-fonts
 starship

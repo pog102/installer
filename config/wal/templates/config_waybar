@@ -2,7 +2,7 @@
   "layer": "top",
     "modules-left": ["custom/arch","custom/wf", "wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/weather", "custom/pacman", "backlight", "pulseaudio", "network", "battery"],
+    "modules-right": ["custom/weather", "custom/bb", "custom/pacman", "backlight", "pulseaudio", "network", "battery"],
     "custom/arch": {{
       "format": "  ",
       "on-click": "sh $HOME/.bin/power"
@@ -110,6 +110,15 @@
     "tooltip-format": "MPD (connected)",
     "tooltip-format-disconnected": "MPD (disconnected)"
 }},
+
+"custom/bb": {{
+    "format": "{{}}",
+    "return-type": "json",
+    "interval": "once",
+    "exec": "/home/chad/.bin/birthday",
+        "tooltip": true
+}},
+
  "custom/weather" : {{
         //shows the current weather and forecast
         "tooltip" : true,
@@ -122,7 +131,7 @@
     }},
 
           "custom/pacman":{{
-        "format": " {{}}",
+        "format": "<span color='{color14}'> </span>{{}}",
             "signal": 19,
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
@@ -154,7 +163,7 @@
 "network": {{
     "interface": "wlan0",
     "format": " Disabled",
-    "format-wifi": "<span color='{color3}'> </span>{{essid}} ({{signalStrength}}%)",
+    "format-wifi": "<span color='{color3}'> </span> {{signalStrength}}%",
     "format-ethernet": "{{ipaddr}}/{{cidr}} ",
     "format-disconnected": "<span color='{color3}'>󰖪</span> Disconnected", //An empty format will hide the module.
     "tooltip-format": "{{ifname}} via {{gwaddr}} ",

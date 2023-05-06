@@ -1,0 +1,24 @@
+#!/bin/bash
+# Read the list of birthdays from a file
+declare -A birthdays=( [Mom]=78 [Dad]=130 [Grandma]=147 [Me]=155 [Sis]=140 [Nojus]=328 )
+
+
+for name in "${!birthdays[@]}"
+do
+how_many=$((${birthdays[$name]} - $(date +%j)))
+if [ "$how_many" -lt "0" ]
+then
+how_many=$((365 + how_many))
+fi
+  ats+="$how_many $name\n"
+# if [ "$name" != "Grandma" ]
+# then
+#   ats+="\n"
+# fi
+done
+
+a=$(echo -e "$ats" | sort -s -n -k 1,1)
+pap=$(echo -e "$a" | head -n 2)
+be=$(echo -e "$a" | tail -n +3 | sed 's/$/\\n/' | tr -d '\n' )
+echo '{"text":"'🎂 $pap'","tooltip":"'${be::-2}'"}'}
+

@@ -7,7 +7,7 @@ rsync --progress -r ~/scripts/* ~/$dir/scripts/
 
 #rsync --progress -r ~/Pictures/* ~/$dir/Pictures/
 
-rsync --progress -r  ~/.local/share/icons/custom/* ~/$dir/icons/
+rsync --progress -r  ~/.local/share/icons/* ~/$dir/share
 rsync --progress -r  /etc/udev/rules.d/* ~/$dir/rules/
 cp ~/.zprofile ~/$dir/zprofile
 cp ~/.xinitrc ~/$dir/xinitrc

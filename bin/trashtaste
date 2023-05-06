@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Set the URL of your RSS feed
+RSS_FEED_URL='https://feeds.megaphone.fm/trashtaste'
+
+# Download the RSS feed and parse it using xmllint
+RSS_FEED=$(curl -s "$RSS_FEED_URL" | xmllint --format -)
+
+# Extract the title and URL of each podcast episode
+TITLES=$(echo -e "$RSS_FEED" | grep "<title>" | tail -n +3 | sed -e 's/.*<title>//g' -e 's/<\/title>.*//g')
+URLS=($(echo "$RSS_FEED" | grep "<enclosure" | sed -e 's/.*url="//g' -e 's/".*//g'))
+
+# Print the titles and URLs in a TUI using whiptail
+# CHOICE=$(whiptail --title "Podcast TUI" --menu "Choose an episode:" 15 50 5 "${TITLES[@]}" 3>&1 1>&2 2>&3)
+# echo -e "${TITLES}"
+CHOICE=$(echo -e "${TITLES}" | rofi -theme trashtaste -dmenu -i -p "Choose an episode:")
+
+# Open the URL of the chosen episode in the default web browser
+if [ $? -eq 0 ]; then
+    INDEX=$(echo -e "${TITLES}" | grep -n "$CHOICE" |cut -d : -f 1)
+    URL=${URLS[$INDEX-1]}
+    mpv --save-position-on-quit "$URL"
+    echo $INDEX
+fi
+
+
+
+

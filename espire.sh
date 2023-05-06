@@ -71,7 +71,7 @@ mv bin/* $HOME/.bin
 mv zprofile $HOME/.zprofile
 mv config/* $HOME/.config/
 mv apps/* $HOME/.local/share/applications/
-mv icons/* $HOME/.local/share/icons/custom/
+mv share/* $HOME/.local/share/icons/
 mv cusror/* $HOME/.icons/
 
 sudo timedatectl set-timezone Etc/GMT-2

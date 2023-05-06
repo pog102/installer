@@ -13,7 +13,7 @@ configuration {
     font: "Roboto Mono 11";
 	modi:                       "drun,filebrowser,window";
 	icon-theme: 					"Papirus";
-    show-icons:                 true;
+    show-icons:                 false;
     display-drun:               "";
     display-run:                "";
     display-filebrowser:        "";

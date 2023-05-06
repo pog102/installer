@@ -1,6 +1,7 @@
 brillo
 python-spotdl
 hyprpaper-git
+bat-extras
 cli-visualizer
 cmake
 swww

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# list=$(pacman -Qi | grep -E '^(Name|Installed)' | cut -f2 -d':' | paste - - | column -t | sort -nrk 2 | grep MiB)
+# lis=$(pacman -Qi | grep -E '^(Name|Installed)' | cut -f2 -d':' | paste - - | column -t | sort -nrk 2 | grep MiB | sed -e 's/^/"/;s/$/" "" OFF \\/')
+lis=$(pacman -Qi | grep -E '^(Name|Installed)' | cut -f2 -d':' | paste - - | column -t | sort -nrk 2 | grep MiB | sed -e 's/^/"/;s/$/" "" OFF \\/')
+whiptail --title "SELECT PACKAGES TO INSTALL" --checklist \
+"List of packages" 20 100 10 \
+"$lis"
+"virtualboxvirtualization" "" ON
+# whiptail --title "Welcome Message" --msgbox "$list" 40 78

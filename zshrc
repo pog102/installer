@@ -1,13 +1,15 @@
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Luke's config for the Zoomer Shell
-[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 export PATH=$HOME/.bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # Enable colors and change rompt:
 cat ~/.cache/wal/sequences
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[blue]%} %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-
+# PS1="%B%{$fg[red]%}[%{$fg[blue]%} %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
@@ -27,7 +29,7 @@ export KEYTIMEOUT=1
 # Yank to the system clipboard
 function vi-yank-xclip {
     zle vi-yank
-   echo "$CUTBUFFER" | xclip -sel clip
+   echo "$CUTBUFFER" | wl-copy
 }
 
 zle -N vi-yank-xclip

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+mpc clear
+mpc random off
+albums="$(mpc list album | shuf)"
+SAVEIFS=$IFS   # Save current IFS (Internal Field Separator)
+IFS=$'\n'      # Change IFS to newline char
+
+for k in $albums
+do
+     mpc  find album "$k" | mpc  add
+done
+IFS=$SAVEIFS   # Restore original IFS
+mpc play

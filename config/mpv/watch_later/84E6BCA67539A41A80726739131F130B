@@ -1,0 +1,7 @@
+start=4792.539000
+fullscreen=yes
+vf=@blackout:!lavfi=graph=
+af=@silencedetect:!lavfi=graph=%32%silencedetect=noise=-45dB:d=0.85
+panscan=0.200000
+sub-delay=-0.200000
+sub-ass-override=force
