@@ -1,8 +1,4 @@
 /usr/bin/bashtop: line 1207: local: `36': invalid variable name for name reference
-/usr/bin/bashtop: line 1207: local: `2': invalid variable name for name reference
-/usr/bin/bashtop: line 1207: local: `56': invalid variable name for name reference
-06:24:52 PM ERROR: On line 1215 
-/usr/bin/bashtop: line 1207: local: `36': invalid variable name for name reference
 06:24:55 PM ERROR: On line 1207 (MUTED!)
 /usr/bin/bashtop: line 1207: local: `2': invalid variable name for name reference
 06:24:55 PM ERROR: On line 1207 (MUTED!)
@@ -500,3 +496,7 @@ New instance of bashtop version: 0.9.25 Pid: 10790
 New instance of bashtop version: 0.9.25 Pid: 2676
  
 New instance of bashtop version: 0.9.25 Pid: 18298
+ 
+New instance of bashtop version: 0.9.25 Pid: 18453
+ 
+New instance of bashtop version: 0.9.25 Pid: 18963
