@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/chad/.config/wpg/wallpapers/berry.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#070605",
+        "foreground": "#abd690",
+        "cursor": "#abd690"
+    },
+    "colors": {
+        "color0": "#070605",
+        "color1": "#E12D2B",
+        "color2": "#F6573E",
+        "color3": "#FC5D42",
+        "color4": "#FF6042",
+        "color5": "#5DA62B",
+        "color6": "#69BC31",
+        "color7": "#abd690",
+        "color8": "#779564",
+        "color9": "#E12D2B",
+        "color10": "#F6573E",
+        "color11": "#FC5D42",
+        "color12": "#FF6042",
+        "color13": "#5DA62B",
+        "color14": "#69BC31",
+        "color15": "#abd690"
+    }
+}

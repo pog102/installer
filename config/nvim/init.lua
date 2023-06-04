@@ -10,7 +10,7 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
-
+vim.g.vimwiki_list = {{path = '~/Documents/', syntax = 'markdown', ext = '.md'}}
 require("config.autocommands")
 require("config.lazy")
 require("config.options")

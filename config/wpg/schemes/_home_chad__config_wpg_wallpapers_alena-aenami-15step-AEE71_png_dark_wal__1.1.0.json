@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/chad/.config/wpg/wallpapers/alena-aenami-15step-AEE71.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#11171b",
+        "foreground": "#e5beb9",
+        "cursor": "#e5beb9"
+    },
+    "colors": {
+        "color0": "#11171b",
+        "color1": "#927884",
+        "color2": "#C67E81",
+        "color3": "#3D89A4",
+        "color4": "#4F96B0",
+        "color5": "#7194A4",
+        "color6": "#A2888E",
+        "color7": "#e5beb9",
+        "color8": "#a08581",
+        "color9": "#927884",
+        "color10": "#C67E81",
+        "color11": "#3D89A4",
+        "color12": "#4F96B0",
+        "color13": "#7194A4",
+        "color14": "#A2888E",
+        "color15": "#e5beb9"
+    }
+}

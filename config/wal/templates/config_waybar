@@ -135,7 +135,7 @@
             "signal": 19,
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
-        "interval": 120,
+        "interval": 320,
         "on-click": "foot -e paru -Syu;pkill -RTMIN+19 waybar"
    }},
 
