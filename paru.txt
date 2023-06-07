@@ -1,6 +1,7 @@
 brillo
 python-spotdl
 hyprpaper-git
+rofi-games
 bat-extras
 cli-visualizer
 cmake
