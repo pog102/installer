@@ -1,0 +1,13 @@
+#/etc/pacman.d/hooks/50-pacman-list.hook
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Target = *
+
+[Action]
+Description = Sending notification via notify-send
+When = PostTransaction
+Exec = /usr/bin/notify-send "this is dog"
+
