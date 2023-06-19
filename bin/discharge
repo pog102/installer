@@ -9,6 +9,6 @@ case "$1" in
   ;;
   "Corsair CORSAIR KATAR PRO Wireless Gaming Dongle") notify-send -u low -i "cor" "$1" "is at ${2}%"
   ;;
-  *) echo default
+  "BAT1") notify-send -u critical -i battery-empty "Battery status" "Battery level is CRITICAL at ${2}%"
   ;;
 esac

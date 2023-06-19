@@ -23,6 +23,6 @@ case "$1" in
   ;;
   *"Keyboard"*) Bind_f "$1" "board" 7
   ;;
-  *) Bind_f "$1" "a" 8
+  *)  Bind_f "$1" "a" 8
   ;;
 esac

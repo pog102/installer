@@ -1,37 +1,62 @@
 #!/bin/sh
-battery="/sys/class/power_supply/BAT1"
 
-percent=$(cat "$battery/capacity")  # battery percentage
-    status="$(cat "$battery/status")"   # battery status
+uevents="/sys/class/power_supply/*/uevent"
 
-
-    if  [ "$status" = "Charging" ]; then
+batt ()
+{
+  
+    if  [ "$1" = "Charging" ]; then
         icon_battery=""
-    elif  [ "$percent" -eq 100 ]; then
+    elif  [ "$2" -eq 100 ]; then
         icon_battery=""
         dunstify " Full chage" -t 5100 -r 6 
-    elif [ "$percent" -ge 90 ]; then
+    elif [ "$2" -ge 90 ]; then
         icon_battery=""
-    elif [ "$percent" -ge 80 ]; then
+    elif [ "$2" -ge 80 ]; then
         icon_battery=""
-    elif [ "$percent" -ge 70 ]; then
+    elif [ "$2" -ge 70 ]; then
         icon_battery=""
-    elif [ "$percent" -ge 60 ]; then
+    elif [ "$2" -ge 60 ]; then
         icon_battery=""
-    elif [ "$percent" -ge 50 ]; then
+    elif [ "$2" -ge 50 ]; then
         icon_battery=""
-    elif [ "$percent" -ge 40 ]; then
+    elif [ "$2" -ge 40 ]; then
         icon_battery=""
-    elif [ "$percent" -ge 30 ]; then
+    elif [ "$2" -ge 30 ]; then
         icon_battery=""
-    elif [ "$percent" -ge 20 ]; then
+    elif [ "$2" -ge 20 ]; then
         icon_battery=""
-    elif [ "$percent" -ge 10 ]; then
+    elif [ "$2" -ge 10 ]; then
         icon_battery=""
     else
         icon_battery=""
-	[ "$status" != "Charging" ] && dunstify " Battery is getting low" -t 5100 -r 6 && sleep 1 && dunstify " Battery is getting low" -t 5100 -r 6
     fi
-
-    printf "%s %s %s%s%% " "$bg4$fg0" "$icon_battery" "$reset$fg4" " $percent" 
-    #echo "$bg4$fg0 $icon_battery ${percent} $reset" 
+    echo "$icon_battery $2%"
+}
+cases ()
+{
+  case "$3" in
+    "BAT1") batt "$1" "$2"
+    ;;
+    *"ps-controller-battery"*) echo "controller $2%" 
+    ;;
+    *) echo "mousey $3"
+    ;;
+  esac
+  
+}
+ counter=false
+ for k in $uevents
+ do
+if  $counter; then
+          # awk -F '=' -v name="$1" -v status="$2" -v percent="$3" '/POWER_SUPPLY_NAME=|POWER_SUPPLY_CAPACITY=|POWER_SUPPLY_STATUS=/ {print $2}' "$k"
+          # batt $status $percent
+            name=$(awk -F '=' '/POWER_SUPPLY_NAME=/ {print $2}' "$k")
+        capacity=$(awk -F '=' '/POWER_SUPPLY_CAPACITY=/ {print $2}' "$k")
+        status=$(awk -F '=' '/POWER_SUPPLY_STATUS=/ {print $2}' "$k")
+        
+        cases "$status" "$capacity" "$name"
+        # echo "$status $capacity"
+fi
+counter=true
+done

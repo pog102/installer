@@ -16,7 +16,7 @@ export QT_QPA_PLATFORM=wayland;xcb
 export QT_QPA_PLATFORMTHEME=qt5ct 
 export XCURSOR_SIZE=17
 export XCURSOR_THEME=Bibata-Modern-Classic
-
+# export DBUS_SESSION_BUS_ADDRESS='unix:path=/run/user/$(id -u)/bus'
 # export $(dbus-launch)
 
 
