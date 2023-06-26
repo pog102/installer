@@ -1,7 +1,7 @@
 export PATH := ${HOME}/.local/bin:${HOME}/.node_modules/bin:${HOME}/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/bin/core_perl:${HOME}/bin:${HOME}/google-cloud-sdk/bin
 export GOPATH := ${HOME}
 
-PACKAGES	:= wlsunset thunar firefox bat arc-gtk-theme networkmanager adobe-source-han-sans-jp-fonts
+PACKAGES	:= wlsunset swww thunar firefox bat arc-gtk-theme networkmanager adobe-source-han-sans-jp-fonts
 PACKAGES	+= starship dunst foot fzf gcc gettext git grep groff gzip lsd lua-language-server
 PACKAGES	+= make neovim pamixer papirus-icon-theme python-pywal ripgrep rsync sed shellcheck tree
 PACKAGES	+= unzip wl-clipboard zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
