@@ -4,11 +4,11 @@
      corner_radius = 16
     # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
     follow = mouse
-    geometry = "0x0-520+520"
-    shrink = yes
+    #geometry = "0x0-520+520"
+    shrink = no
     offset = 0x4
     #width = 320
-    #width = 0
+    width = (300, 450)
     #scale = 0
     # Show multiple notifications in the same box
     separator_height = 1
