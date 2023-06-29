@@ -6,6 +6,7 @@ bat-extras
 cli-visualizer
 cmake
 swww
+mpd-notification
 git
 hyprland
 hyprpaper-git
