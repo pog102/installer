@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+cd ~/Music/
+spotdl download 'https://open.spotify.com/playlist/1vxrCesVqAa1Qoxgi1FCQI?si=fe48907b2aff4329' # all
+# spotdl download 'https://open.spotify.com/playlist/2qCa1qUXv4BLTV8oSQ2NhJ?si=7b72b9f8f8684bbd' #by albums
+~/.bin/sorter_mus
+mpc update

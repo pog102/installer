@@ -13,4 +13,4 @@ elif [ "$brightness" -gt 45 ]; then
 else
 	icon="sun_emp"
 fi
-	dunstify -a "changebrightness" -u low -r 2 -h int:value:"$brightness" -i "$icon" "$brightness%" -t 1100
+	dunstify -a "changebrightness" -u low -r 50 -h int:value:"$brightness" -i "$icon" "$brightness%" -t 1100

@@ -8,7 +8,7 @@
     shrink = no
     offset = 0x4
     #width = 320
-    width = (300, 450)
+    width = (300, 400)
     #scale = 0
     # Show multiple notifications in the same box
     separator_height = 1

@@ -7,7 +7,11 @@ wal -n -q -i $HOME/Pictures/$1
 swww img $HOME/Pictures/$1 --transition-type grow --transition-pos top-right
 color=$(sed '4!d' ~/.cache/wal/colors)
 #notify-send -i pywal "Colors are set"
-for i in $HOME/.local/share/icons/custom/*svg; do
+fold=$HOME/.local/share/icons/custom
+# fold=$HOME/devify/icons
+# fold=/usr/share/icons/MonoDev
+for i in $fold/*svg; do
+  echo "$i"
 sed -i "s/fill=\"#.*\"/fill=\"$color\"/g" "$i"
 done
 echo -e "preload=$HOME/Pictures/$1" > ~/.config/hypr/hyprpaper.conf
