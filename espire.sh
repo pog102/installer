@@ -73,6 +73,8 @@ mv config/* $HOME/.config/
 mv apps/* $HOME/.local/share/applications/
 mv share/* $HOME/.local/share/icons/
 mv cusror/* $HOME/.icons/
+sudo mv hooks /etc/pacman.d/
+
 
 sudo timedatectl set-timezone Etc/GMT-2
 
