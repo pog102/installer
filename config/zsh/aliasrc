@@ -25,3 +25,7 @@ ssh cha@192.168.1.85 "sh /home/cha/bin/nyatog \"$1\""
 }
 alias ani_up="ssh cha@192.168.1.85 \"sh /home/cha/bin/nyaupdate2 \""
 alias size="du -h --max-depth=0"
+gr()
+{
+git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1
+}
