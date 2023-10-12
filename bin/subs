@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 k=$(curl "http://www.subtitrai.net/subtitrai.html" | grep -Po "2/[0-9]+.html\">.* </a>" | sed 's#2/##g; s#.html\">##g; s#</a>##g' | fzf | cut -f1 -d ' ')
 
-cd /media/USB/
+# cd /media/USB/
+cd ~/anime/
 curl -o subs.zip "http://www.subtitrai.net/2/www.subtitrai.net.$k.zip"
 
 unzip subs.zip

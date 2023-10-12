@@ -1,11 +1,12 @@
 #!/bin/sh
-
-transmission-remote -l | grep % |
-	sed " # The letters are for sorting and will not appear.
-	s/.*Stopped.*/A /;
-	s/.*Idle.*/B /;
-    s/.*Seeding.*/Z 🌱/;
-	s/.*100%.*/N ✅/;
-	s/.*Uploading.*/L ⬆️/;
-	s/.*%.*/M /" |
-		sort -h | uniq -c | awk '{print $3 " " $1}' | paste -sd ' ' -
+tr_detailed=$(transmission-remote --json -l | jq -r '.arguments.torrents[] | " \(((1 - .leftUntilDone / .sizeWhenDone) * 100 | floor))% \(.name | if length > 17 then .[:17] + "..." else . end) \(.status | if . == 6 then "" else if . == 0 then "󰏃" else "" end end) \(if .status == 6 then "" else .eta | if . == -1 then "" elif . == -2 then "" elif . >= 3600 then "\(./3600|floor)h \(.%60|floor)min" elif . >= 60 then "\(./60|floor)min \(.%60)s" else "\(.)s" end end)"')
+[ -z "$tr_detailed" ] && exit # exit when there are no torrents
+tr_concise=$(echo "$tr_detailed" | # The letters are for sorting and will not appear.
+	sed -e " 
+	s/.*󰏃.*/D 󰏃/;
+	s/.*.*/A /;
+	s/.*.*/C /;
+  s/.*\(\]\|[a-zA-Z]\)$/B /;
+ "  |
+ sort -h | uniq -c | awk '{print $3 " " $1}' | paste -sd ' ' -)
+echo '{"text":"'$tr_concise'","tooltip":"'${tr_detailed//$'\n'/\\n}'"}'

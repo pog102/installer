@@ -1,7 +1,2 @@
-$w1 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/celeste/aside.png"
-$w2 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/celeste/berry.png"
-$w3 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/celeste/bside.png"
-$w4 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/celeste/cside.png"
-$w5 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/celeste/golden.png"
-$w6 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/celeste/wingedberry.png"
+$w1 = hyprctl hyprpaper wallpaper "eDP-1,/home/chad/Pictures/ignore/*"
 

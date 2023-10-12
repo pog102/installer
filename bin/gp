@@ -1,0 +1,4 @@
+#!/bin/bash
+gitt=$(curl -L 'https://github.com/pog102?tab=repositories' | grep -oP 'href="/pog102/[^"]+' | sed 's/href="\/pog102\///' | fzf)
+git clone "https://github.com/pog102/$gitt"
+cd "$gitt"

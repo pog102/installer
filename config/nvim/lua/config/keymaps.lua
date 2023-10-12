@@ -1,8 +1,10 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = ","
-
+local map = vim.api.nvim_set_keymap
+local utils = require("utils")
 local set = vim.keymap.set
-
+map('n', '<Space>', '', {})
+vim.g.mapleader = ' '
+options = { noremap = true }
+vim.g.maplocalleader = ","
 -- better up/down
 set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
@@ -56,3 +58,15 @@ set("n", "<Esc>", "<Cmd>nohlsearch<CR>")
 
 set("n", "<Leader>p", "<Cmd>Lazy<CR>", { desc = "Plugins" })
 set('n', '<C-e>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+-- local builtin = require('telescope.builtin')
+set('n', 'fo', ':Telescope oldfiles<CR>',{ noremap = true, silent = true })
+set('n', '<Tab>', ':bnext<CR>',{ noremap = true, silent = true })
+set('n', '\\', ':bprevious<CR>',{ noremap = true, silent = true })
+set('n', 'r', ':lua LspRename()<CR>',{ noremap = true, silent = true })
+set('n', 'ff', ':Telescope find_files<CR>',{ noremap = true, silent = true })
+set('n', 'fb', ':Telescope buffers<CR>',{ noremap = true, silent = true })
+set('n', 'lg', ':Telescope live_grep<CR>',{ noremap = true, silent = true })
+set('n', 'fw', ':Telescope live_grep<CR>',{ noremap = true, silent = true })
+-- set('n', '<leader>fg', builtin.live_grep, {})
+-- set('n', '<leader>fb', builtin.buffers, {})
+-- set('n', '<leader>fh', builtin.help_tags, {})

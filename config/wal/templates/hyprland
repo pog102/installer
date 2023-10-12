@@ -5,3 +5,8 @@ general {{
     layout = dwindle
 }}
 
+decoration {{
+
+   col.shadow = rgba({color5.strip}ee)
+   col.shadow_inactive=rgba({color0.strip}ee)
+}}

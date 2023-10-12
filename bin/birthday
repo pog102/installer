@@ -13,9 +13,9 @@ ats+="$how_many $name\n"
 elif [ "$how_many" -eq "0" ]
 then
 stat=false
-ats+="🎉 $name 🎉\n"
-else 
-ats+="$how_many $name\n"
+  ats+="🎉 $name 🎉\n"
+  else 
+  ats+="$how_many $name\n"
 fi
 # if [ "$name" != "Grandma" ]
 # then

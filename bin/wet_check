@@ -1,14 +1,14 @@
 #!/bin/bash
 path="$HOME/.cache/wet.txt"
-[[ -f "$path" ]] || echo "Klaipeda" > $path
+[[ -f "$path" ]] || touch $path
 location=$(cat $path)
 
 case "$location" in
-  "Kaunas") echo "Klaipeda" > $path
+  "Kaunas") echo "" > $path
   ;;
-  "Klaipeda") echo "Kaunas" > $path
+  "") echo "Kaunas" > $path
   ;;
-  *) echo "Klaipeda" > $path
+  *) echo "" > $path
   ;;
 esac
 pkill -SIGRTMIN+8 "waybar"

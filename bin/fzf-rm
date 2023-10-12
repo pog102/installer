@@ -1,0 +1,8 @@
+#!/bin/sh
+ find . -maxdepth 1 -printf '%f\n' | fzf \
+--multi \
+--pointer='→' \
+--marker='󰆴' \
+--preview '[ -d {} ] && tree -C {} | head -200 || bat --style=numbers --color=always --line-range :500 {}' \
+--header='Shift+Tab' | xargs -I {} rm -rf {}
+#rm -rf {}

@@ -1,6 +1,7 @@
 #!/bin/sh
 
 wp_dir="$HOME/Pictures"
+# wp_dir="$HOME/new"
 
 list_wps() {
   find "$wp_dir" -type f -regex '.*\(jpg\|jpeg\|png\)' -printf "%P\n" |shuf |
@@ -13,9 +14,10 @@ rofi_dmenu() {
   # handwriting fonts: caveat #1 swankyandmoomoo #2 longcang #3
   rofi -dmenu -show-icons \
     -theme-str '#entry { placeholder: "Wallpaper to apply.."; }' \
-    -theme ~/scripts/wallpaper/wall.rasi
+    -theme wall
 }
 
 wp=$( list_wps | rofi_dmenu )
+# [ ! -z $wp ] && ~/.bin/wal_c "$wp" 
 [ ! -z $wp ] && ~/.bin/wally "$wp" 
 # [ ! -z $wp ] && rm "$wp_dir/$wp" 

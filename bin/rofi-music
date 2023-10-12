@@ -39,8 +39,8 @@ ESC_ACTION="break"
 
 ROFI="rofi -theme music -dmenu -p 'Search:'"
 
-		ALBUM=$wp
-		if [ "$ALBUM" = "" ]; then $ESC_ACTION;
+    ALBUM=$wp
+if [ "$ALBUM" = "" ]; then $ESC_ACTION;
 		fi
 		
   if [ "$ALBUM" = "All" ]
@@ -114,11 +114,12 @@ ROFI="rofi -theme music -dmenu -p 'Search:'"
 			# 		"add at the end")
 			# 		mpc  find album "$ALBUM" title "$TITLE" | head -1 | mpc  add
 			# 		;;
-			#
+#
 			# 	esac
-			# 	$ESC_ACTION
-			# done
-      else 
+# 	$ESC_ACTION
+# done
+# done
+          else 
     # mpc add $TITLES
     # mpc clear
 	    mpc  find album "$ALBUM" | mpc  add 

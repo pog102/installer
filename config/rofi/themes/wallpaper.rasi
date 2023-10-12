@@ -11,7 +11,7 @@
 /*****----- Configuration -----*****/
 configuration {
     font: "Fira Code 22";
-	modi:                       "drun,filebrowser,window";
+	modi:                       "drun,filebrowser";
 	icon-theme: 					"Papirus";
     show-icons:                 true;
     display-drun:               "";

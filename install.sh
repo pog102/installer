@@ -1,26 +1,26 @@
 #!/bin/bash
 # Installing Chaotic AUR
-sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
-sudo pacman-key --lsign-key FBA220DFC880C036
+code=$(curl https://aur.chaotic.cx/ | grep -m 1 -o '[0-9A-Z]\{16\}')
+sudo pacman-key --recv-key $code --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key $code
 sudo pacman --noconfirm -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 sudo mv pacman.conf /etc/
 sudo pacman --noconfirm -Syu
 
 # Instaling packagess
 sudo pacman --needed --noconfirm -S - < native.txt xf86-video-vesa libva-intel-driver
-
-
 paru --needed --noconfirm -S - < paru.txt grub-silent
 
 # Disabeling random MAC
 sudo mkdir /etc/NetworkManager
 sudo mv NetworkManager.conf /etc/NetworkManager/
+
 # Instaling packer
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+# Enableling services
 sudo systemctl enable NetworkManager
-sudo systemctl enable NetworkManager
-sudo systemctl enable bluetooth.service
+# sudo systemctl enable bluetooth.service
 
 sudo usermod -aG video $USER
 brillo -c -S 1
@@ -46,6 +46,7 @@ mkdir -p $HOME/.local/share/icons/custom/
 mkdir -p $HOME/.local/share/applications/
 mkdir $HOME/.config/dunst/
 mkdir $HOME/.config/zathura/
+mkdir ~/.mozilla/
 
 sudo mv bin/transadd /usr/local/bin
 mv zshrc $HOME/.zshrc
@@ -56,6 +57,9 @@ mv zprofile $HOME/.zprofile
 mv config/* $HOME/.config/
 mv apps/* $HOME/.local/share/applications/
 mv icons/* $HOME/.local/share/icons/custom/
+mv moziila/* ~/.mozilla/
+sudo mv rules/rules.d/* /etc/udev/rules.d/
+mv nvim $HOME/.local/share/
 
 sudo timedatectl set-timezone Etc/GMT-2
 
@@ -69,10 +73,8 @@ ln -fs $HOME/.cache/wal/config_waybar $HOME/.config/waybar/config
 ln -fs $HOME/.cache/wal/zathurarc $HOME/.config/zathura/zathurarc
 ln -fs $HOME/.cache/wal/colors.css $HOME/.config/firefox/chrome/styles/colors.css
 
-nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
-sed -i 's/background.*//g' ~/.local/share/nvim/site/pack/packer/start/pywal.nvim/lua/pywal/core.lua
 color=$(sed '5!d' ~/.cache/wal/colors)
 for i in $HOME/.local/share/icons/custom/*; do
 sed -i "s/fill=\".*\"/fill=\"$color\"/g" "$i"
 done
-reboot
+# reboot

@@ -15,7 +15,8 @@ require("config.autocommands")
 require("config.lazy")
 require("config.options")
 require("config.keymaps")
-
+require("utils.rename")
+-- require("ibl").setup()
 require("lazy").setup("plugins", {
   install = {
     missing = true,

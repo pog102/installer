@@ -1,12 +1,18 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
 local opt = vim.opt
-
+vim.cmd("highlight Pmenu guibg=NONE")
+opt.wildignore = "*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx,*DS_STORE,*.db"
 opt.autowrite = true -- Enable auto write
 opt.clipboard = "unnamedplus" -- Sync with system clipboard
+
+-- vim.g.tex_flavor='latex'
+-- vim.g.vimtex_view_method='zathura'
+-- vim.g.vimtex_quickfix_mode=0
+-- vim.g.tex_conceal='abdmg'
+-- vim.g.vimtex_compiler_method = 'latexrun'
 opt.completeopt = "menu,menuone,noselect"
-opt.conceallevel = 3 -- Hide * markup for bold and italic
+opt.conceallevel = 1 -- Hide * markup for bold and italic
 opt.confirm = false -- Confirm to save changes before exiting modified buffer
 opt.cursorline = true -- Enable highlighting of the current line
 opt.expandtab = true -- Use spaces instead of tabs
@@ -42,9 +48,27 @@ opt.undofile = true
 opt.undolevels = 10000
 opt.updatetime = 200 -- Save swap file and trigger CursorHold
 opt.wildmode = "longest:full,full" -- Command-line completion mode
+
+opt.autoindent = true
+opt.swapfile = false
+opt.termguicolors = true
 opt.winminwidth = 5 -- Minimum window width
 opt.wrap = true -- Disable line wrap
-
+opt.foldlevel = 99
+vim.o.foldcolumn = "1"
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldenable = true
+opt.fillchars = {
+	foldopen = "",
+	foldclose = "",
+	fold = " ",
+	foldsep = " ",
+	diff = "/",
+	eob = " ",
+}
+opt.mousemoveevent = true
+opt.pumblend = 0
 if vim.fn.has("nvim-0.9.0") == 1 then
   opt.splitkeep = "screen"
   opt.shortmess:append { C = true }

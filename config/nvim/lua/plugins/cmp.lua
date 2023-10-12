@@ -131,7 +131,7 @@ return {
         completion = cmp.config.window.bordered {
           border = "rounded",
                 scrollbar = false,
---          winhighlight = "Normal:Normal,FloatBorder:CmpCompletionBorder,CursorLine:CmpCursorLine,Search:Search",
+         winhighlight = "Normal:Normal",
           col_offset = -3,
           side_padding = 1,
         },

@@ -1,0 +1,29 @@
+#!/bin/bash
+killall wal
+wal -n -q -i $HOME/Pictures/$1
+# killall swaybg
+# swaybg -m fill -i "$HOME/Pictures/$1" &
+# swww init
+sh /home/chad/steam/steam.sh -i $HOME/Pictures/$1
+# swww img $HOME/Pictures/$1 --transition-type grow --transition-pos top-right
+swww img $HOME/steam/output_image.png --transition-type grow --transition-pos top-right
+color=$(sed '4!d' ~/.cache/wal/colors)
+#notify-send -i pywal "Colors are set"
+fold=$HOME/.local/share/icons/
+# fold=$HOME/devify/icons
+# fold=/usr/share/icons/MonoDev
+for k in /home/chad/.cache/thumbnails/neofetch/*; do
+convert $k -fill "$color" -colorize 100 $k 
+done
+for i in $fold/*svg; do
+sed -i "s/fill=\"#.*\"/fill=\"$color\"/g" "$i"
+done
+# echo -e "preload=$HOME/Pictures/$1" > ~/.config/hypr/hyprpaper.conf
+# echo -e "wallpaper=eDP-1,contain:$HOME/Pictures/$1\nwallpaper=HDMI-A-1,contain:$HOME/Pictures/$1" >> ~/.config/hypr/hyprpaper.conf
+# echo -e "ipc=off" >> ~/.config/hypr/hyprpaper.conf
+#killall hyprpaper > /dev/null 2>&1
+#hyprpaper > /dev/null 2>&1 &
+killall dunst> /dev/null 2>&1
+killall -SIGUSR2 waybar
+# killall waybar
+# waybar > /dev/null 2>&1 &

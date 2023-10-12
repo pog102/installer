@@ -3,16 +3,14 @@
 # Options for powermenu
 lock=""
 logout=""
-reboot=""
+reboot="󰦛"
 sleep=""
 shutdown=""
 
 # Get answer from user via rofi
 selected_option=$(echo "$shutdown
 $reboot
-$sleep
-$logout
-$lock" | rofi -dmenu \
+$sleep" | rofi -dmenu \
                   -i \
                   -p "Power" \
 		  -theme powermenu)

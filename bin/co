@@ -1,0 +1,18 @@
+#!/bin/sh
+#test
+com="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+  if [ "all" == "$1" ]; then
+  $com add ~/.config
+  $com add ~/.bin
+  $com add ~/.zshrc
+  $com add ~/.zprofile
+  $com add ~/.local/share/icons
+  $com commit -am "dot"
+  $com push
+  elif [ "add" == "$1" ];then
+  $com "$@" 
+  $com commit -am "dot"
+  $com push
+else
+  $com "$@"
+  fi

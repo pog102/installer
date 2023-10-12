@@ -2,6 +2,7 @@ wlsunset
 thunar
 firefox
 bat
+bat-extras
 arc-gtk-theme
 networkmanager
 adobe-source-han-sans-jp-fonts
@@ -15,11 +16,21 @@ gettext
 git
 grep
 groff
+btop
 gzip
 lsd
 lua-language-server
 make
+grimblast-git
+make
 neovim
+imv
+xdg-desktop-portal-hyprland
+hyprland
+intel-ucode
+neofetch
+chafa
+swww
 pamixer
 papirus-icon-theme
 paru
@@ -39,3 +50,4 @@ udiskie
 mpv
 npm
 transmission-cli
+ttf-hack-nerd

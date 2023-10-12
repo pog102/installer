@@ -18,16 +18,17 @@ return {
 
   config = function()
   local configs = require "nvim-treesitter.configs"
-
   configs.setup {
     ensure_installed = {
       'html',
       'css',
+      'scss',
       'javascript',
       'python',
       'bash',
       'lua',
       'json',
+      'yuck',
     },
     highlight = {
       enable = true, -- false will disable the whole extension
@@ -37,7 +38,7 @@ return {
       enable = true,
     },
     indent = {
-      enable = false,
+      enable = true,
       disable = {}
     },
   }

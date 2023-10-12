@@ -36,7 +36,7 @@
     icons_position = Left
     max_icon_size = 77
     #icon_size = 33
-    icon_path = /home/chad/.local/share/icons/custom/
+    icon_path = /home/chad/.local/share/icons/
     word_wrap = yes
     ellipsize = end
     origin = top-center
@@ -52,19 +52,19 @@
     highlight="{color3}"
     progress_bar_corner_radius = 20
     progress_bar_max_corner_radius = 40
-   # transparency = 30
+    transparency = 73
 [shortcuts]
     close = ctrl+space
     close_all = ctrl+shift+space
-    history = ctrl+grave
+    history = ctrl+h
 [urgency_low]
     background ="{background}"
-    #foreground ="{color4}"
+    #foreground ="{color3}"
     foreground ="{foreground}"
     timeout=3
 [urgency_normal]
     background = "{background}"
-    #foreground ="{color8}"
+    #foreground ="{color3}"
     foreground = "{foreground}"
     timeout=3
 
@@ -72,3 +72,7 @@
     background = "{background}"
     foreground = "{foreground}"
     timeout=4
+[brightness]
+    # This notification will not be saved in history
+    appname="mediakeys"
+    history_ignore = yes

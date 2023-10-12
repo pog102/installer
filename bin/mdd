@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-mpd&
-sleep 2
-mpd-notification&
+# mpd&
+# sleep 2
+# mpd-notification&

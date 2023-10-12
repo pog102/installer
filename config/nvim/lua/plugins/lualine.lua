@@ -48,7 +48,7 @@ return {
           }
         },
         lualine_c = {
-          'filename'
+          'filetype'
         },
         lualine_x = {
           'encoding', 'fileformat',
@@ -69,7 +69,7 @@ return {
         lualine_a = {},
         lualine_b = {},
         lualine_c = {
-          'filename'
+          ''
         },
         lualine_x = {
           'location'

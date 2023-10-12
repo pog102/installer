@@ -10,11 +10,11 @@ return {
         dark = "mocha",
       },
       transparent_background = true,
+      -- transparent_background = false,
       show_end_of_buffer = false,
       term_colors = true,
       dim_inactive = {
         enabled = false,
-        shade = "dark",
         percentage = 0.15,
       },
       no_italic = false,

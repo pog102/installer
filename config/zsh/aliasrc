@@ -4,15 +4,20 @@ alias my_ip="ip addr show wlan0 | awk '/inet / {print $2}'"
 alias mpvp="mpvpaper -p -f -o --loop eDP-1"
 alias password="nmcli device wifi show-password"
 alias up="paru;pkill -RTMIN+19 waybar"
-alias dots="git clone https://github.com/pog102/installer"
+alias dots="git clone git@github.com:pog102/installer"
 alias ban="sudo pacman -Rcns"
 alias r="reboot"
+alias man="batman"
 alias on="bluetoothctl power on"
 alias off="bluetoothctl power off"
 alias ss="shutdown now"
 alias usb="sudo umount -l /dev/sda"
 alias clean="sudo paru -Scc --noconfirm"
 alias bl="bluetuith"
+arch_iso (){
+  sudo -i
+  mkarchiso -v -w ~/Archiso/out -o ~/Archiso/out ~/Archiso/releng/; [ -e /dev/sdb ] &&  cat /home/chad/Archiso/out/arch*iso > /dev/sdb
+}
 alias c="clifm"
 alias ns="nsxiv"
 alias ls="lsd -t"
@@ -25,7 +30,5 @@ ssh cha@192.168.1.85 "sh /home/cha/bin/nyatog \"$1\""
 }
 alias ani_up="ssh cha@192.168.1.85 \"sh /home/cha/bin/nyaupdate2 \""
 alias size="du -h --max-depth=0"
-gp()
-{
-git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1
-}
+alias gr="git fetch origin;git reset --hard origin/main"
+alias con='/usr/bin/git --git-dir=/home/chad/.cfg/ --work-tree=/'

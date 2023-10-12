@@ -6,7 +6,7 @@ configuration {
 
 /* @import "launcher" */
 @import "~/.cache/wal/game.rasi"
-@import "~/scripts/games/launcher.rasi"
+@import "launcher.rasi"
 
 window {
     height:                         360;

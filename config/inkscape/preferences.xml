@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <inkscape
-   version="1"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+   version="1">
   <group
      id="window">
     <group
@@ -94,9 +93,10 @@
   </group>
   <group
      id="template">
-    <sodipodi:namedview
+    <group
        id="base"
        pagecolor="#ffffff"
+       deskcolor="#d1d1d1"
        pageopacity="0.0"
        pagecheckerboard="0"
        bordercolor="#000000"
@@ -117,9 +117,7 @@
       <eventcontext
          id="rect"
          style="fill:blue;"
-         usecurrent="1"
-         width="3.32047629356384"
-         height="3.86537194252014" />
+         usecurrent="1" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -154,9 +152,7 @@
          style="fill:red;"
          end="0"
          start="0"
-         usecurrent="1"
-         rx="3.98401165008545"
-         ry="3.98401165008545" />
+         usecurrent="1" />
       <eventcontext
          id="star"
          magnitude="5"
@@ -519,8 +515,32 @@
   </group>
   <group
      id="colorselector"
-     page="0"
-     switcher="1" />
+     page="1"
+     switcher="1">
+    <group
+       id="RGB"
+       visible="1" />
+    <group
+       id="HSL"
+       visible="1" />
+    <group
+       id="CMYK"
+       visible="1" />
+    <group
+       id="HSV"
+       visible="1" />
+    <group
+       id="HSLuv"
+       visible="1" />
+    <group
+       id="OKLAB"
+       visible="1" />
+    <group
+       id="CMS"
+       visible="1" />
+    <group
+       id="OKHSL" />
+  </group>
   <group
      id="embedded">
     <group
@@ -529,14 +549,25 @@
        panel_mode="1"
        panel_ratio="100"
        panel_wrap="0"
-       palette="Inkscape default" />
+       palette="Inkscape default">
+      <group
+         id="pinned"
+         none="1"
+         rgb000000="1"
+         black="1"
+         rgb808080="1"
+         gray-50="1"
+         rgbffffff="1"
+         white="1" />
+    </group>
   </group>
   <group
      id="dialogs">
     <group
        id="toolbox" />
     <group
-       id="fillstroke" />
+       id="fillstroke"
+       page="1" />
     <group
        id="filtereffects" />
     <group
@@ -573,18 +604,24 @@
        append_extension="1"
        path="">
       <group
-         id="exportarea" />
+         id="exportarea"
+         value="page" />
       <group
          id="defaultxdpi" />
+      <group
+         id="batchexportarea"
+         value="layer" />
+      <group
+         id="defaultdpi"
+         value="96.8018951416016" />
     </group>
     <group
        id="save_as"
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path=""
-       use_current_dir="1"
-       enable_svgexport="0" />
+       path="/home/chad/steam"
+       use_current_dir="1" />
     <group
        id="save_copy"
        default=""
@@ -594,7 +631,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/chad/Downloads" />
+       path="" />
     <group
        id="import"
        enable_preview="1"
@@ -602,7 +639,8 @@
        ask="1"
        ask_svg="1"
        link="link"
-       scale="optimizeSpeed" />
+       scale="auto"
+       import_mode_svg="include" />
     <group
        id="debug"
        redirect="0" />
@@ -610,7 +648,8 @@
        id="clonetiler"
        dotrace="0" />
     <group
-       id="gridtiler" />
+       id="gridtiler"
+       SpacingType="20" />
     <group
        id="extension-error"
        show-on-startup="0" />
@@ -619,7 +658,8 @@
     <group
        id="messages" />
     <group
-       id="swatches" />
+       id="swatches"
+       palette="Auto" />
     <group
        id="iconpreview" />
     <group
@@ -642,6 +682,9 @@
        id="colorpickerwindow" />
     <group
        id="undo-history" />
+    <group
+       id="objects"
+       expand_to_layer="1" />
   </group>
   <group
      id="printing">
@@ -653,7 +696,8 @@
   </group>
   <group
      id="options"
-     rotationlock="1">
+     rotationlock="1"
+     onungroup="0">
     <group
        id="renderingcache"
        size="512" />
@@ -706,7 +750,6 @@
        gamutcolor="#808080"
        gamutwarn="0"
        bpc="0"
-       preserveblack="0"
        uri="" />
     <group
        id="savewindowgeometry"
@@ -836,9 +879,6 @@
        id="filterquality"
        value="1" />
     <group
-       id="showfiltersinfobox"
-       value="1" />
-    <group
        id="startmode"
        outline="0" />
     <group
@@ -881,9 +921,6 @@
        id="forkgradientvectors"
        value="1" />
     <group
-       id="iconrender"
-       named_nodelay="0" />
-    <group
        id="autosave"
        enable="1"
        interval="10"
@@ -894,7 +931,6 @@
        no_emphasize_when_zoomedout="0">
       <group
          id="xy"
-         units="px"
          origin_x="0.0"
          origin_y="0.0"
          spacing_x="1.0"
@@ -920,17 +956,13 @@
        unitType="2" />
     <group
        id="boot"
-       theme="colorful">
-      <group
-         id="shown"
-         ver1.2.1="1"
-         ver1.2.2="1" />
-    </group>
-    <group
-       id="kbshortcuts"
-       shortcutfile="carbon.xml" />
+       theme="colorful" />
     <group
        id="rendering" />
+    <group
+       id="threading" />
+    <group
+       id="ruler" />
   </group>
   <group
      id="extensions"
@@ -939,7 +971,7 @@
      org.inkscape.output.png.inkscape.png_antialias="2" />
   <group
      id="desktop"
-     style="fill:#800000">
+     style="fill:#000000;stroke-width:11.588;stroke:#ffffff">
     <group
        width="1876"
        height="969"
@@ -1050,11 +1082,7 @@
     </group>
   </group>
   <group
-     id="debug">
-    <group
-       id="latency"
-       skew="1" />
-  </group>
+     id="debug" />
   <group
      id="ui"
      language="" />
@@ -1070,15 +1098,10 @@
      preferDarkTheme="1"
      darkTheme="1"
      symbolicIcons="1"
-     symbolicDefaultBaseColors="0"
+     symbolicDefaultBaseColors="1"
      symbolicDefaultHighColors="0"
-     gtkTheme="Adwaita"
-     iconTheme="multicolor">
-    <group
-       id="multicolor"
-       symbolicBaseColor="3958107135"
-       symbolicSuccessColor="10029823"
-       symbolicWarningColor="4279865599"
-       symbolicErrorColor="10086143" />
-  </group>
+     syntax-color-theme="inkscape-dark" />
+  <group
+     id="gradient-edit"
+     stoplist="1" />
 </inkscape>
