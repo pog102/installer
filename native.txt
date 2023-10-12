@@ -1,4 +1,5 @@
 wlsunset
+ttf-twemoji
 thunar
 firefox
 bat
@@ -53,3 +54,4 @@ mpv
 npm
 transmission-cli
 ttf-hack-nerd
+ttf-roboto-mono
