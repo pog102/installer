@@ -17,6 +17,8 @@ git
 grep
 groff
 btop
+mpc 
+mpd
 gzip
 lsd
 lua-language-server
